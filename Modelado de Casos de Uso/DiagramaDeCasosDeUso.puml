@@ -1,0 +1,504 @@
+@startuml DiagramaContexto
+!include ./Actors/Actors.wsd
+
+left to right direction
+
+/'Definicion del paquete'/
+package ZMGestion{
+
+}
+
+/'Relacion de los actores con el paquete'/
+Usuarios ..|> ZMGestion
+Administradores ..|> ZMGestion
+Vendedores ..|> ZMGestion
+Fabricantes ..|> ZMGestion
+@enduml
+
+@startuml DiagramaSubsistemas
+!include ./Actors/Actors.wsd
+
+left to right direction
+
+rectangle ZMGestion{
+    rectangle GestionEmpleados{
+    }
+    rectangle GestionSesiones{
+    }
+    rectangle GestionVentas{
+        rectangle GestionLineasVenta{
+        }
+    }
+    rectangle GestionProductos{
+    }
+    rectangle GestionTelas{
+    }
+    rectangle GestionUbicaciones{
+    }
+    rectangle GestionRemitos{
+    }
+    rectangle GestionPresupuestos{
+        rectangle GestionLineasPresupuesto{
+        }
+    }
+    rectangle GestionOrdenesProduccion{
+        rectangle GestionLineasOrdenesProduccion{
+        }
+    }
+    rectangle GestionOrdenesReposicion{
+    }
+    rectangle GestionRoles{
+    }
+    rectangle GestionProductosFinales{
+    }
+    rectangle GestionFacturas{
+    }
+    rectangle GestionNotasCredito{
+    }
+    rectangle GestionRecibos{
+    }
+
+    Administradores ..|> GestionEmpleados
+    Usuarios  ..|> GestionSesiones
+    Vendedores  ..|> GestionVentas
+    Administradores  ..|> GestionProductos
+    Vendedores  ..|> GestionRemitos
+    Vendedores  ..|> GestionPresupuestos
+    Fabricantes  ..|> GestionOrdenesProduccion
+    Vendedores  ..|> GestionOrdenesReposicion
+    Administradores  ..|> GestionRoles
+    Vendedores  ..|> GestionProductosFinales
+    Vendedores  ..|> GestionFacturas
+    Vendedores  ..|> GestionNotasCredito
+    Vendedores  ..|> GestionRecibos
+    Administradores ..|> GestionTelas
+    Administradores ..|> GestionUbicaciones
+}
+
+@enduml
+
+@startuml Gestion
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle Gestion{
+    UseCase "CU - Crear" as C
+    UseCase "CU - Buscar avanzado " as BA
+    UseCase "CU - Listar " as L
+    UseCase "CU - Dar de baja" as DB
+    UseCase "CU - Dar de alta" as DA
+    UseCase "CU - Modificar" as M
+    UseCase "CU - Borrar" as B
+    Actors -- BA
+    Actors -- L
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+
+@startuml GestionEmpleados
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionEmpleados{
+    UseCase "CU001 - Crear empleado" as C
+    UseCase "CU002 - Buscar avanzado empleados" as BA
+    UseCase "CU003 - Dar de baja empleado" as DB
+    UseCase "CU004 - Dar de alta empleado" as DA
+    UseCase "CU005 - Modificar empleado" as M
+    UseCase "CU006 - Borrar empleado" as B
+    Administradores -- C
+    Administradores -- BA
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+
+@startuml GestionProductos
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionProductos{
+    UseCase "CU007 - Crear producto" as C
+    UseCase "CU008 - Buscar avanzado productos " as BA
+    UseCase "CU009 - Dar de baja producto" as DB
+    UseCase "CU010 - Dar de alta producto" as DA
+    UseCase "CU011 - Modificar producto" as M
+    UseCase "CU012 - Borrar producto" as B
+    Administradores -- C
+    Vendedores -- BA
+    Administradores -- M
+    Administradores -- B
+    Administradores -- DB
+    Administradores -- DA
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+
+@startuml GestionTelas
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionTelas{
+    UseCase "CU013 - Crear tela" as C
+    UseCase "CU014 - Listar telas " as L
+    UseCase "CU015 - Dar de baja tela" as DB
+    UseCase "CU016 - Dar de alta tela" as DA
+    UseCase "CU017 - Modificar tela" as M
+    UseCase "CU018 - Borrar tela" as B
+    Administradores -- C
+    Vendedores -- L
+    Administradores -- M
+    Administradores -- B
+    Administradores -- DB
+    Administradores -- DA
+    L <|.. M : <<Extends>>
+    L <|.. DA : <<Extends>>
+    L <|.. DB : <<Extends>>
+    L <|.. B : <<Extends>>
+}
+
+@enduml
+@startuml GestionUbicaciones
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionUbicaciones{
+    UseCase "CU019 - Crear ubicacion" as C
+    UseCase "CU020 - Listar ubicaciones " as L
+    UseCase "CU021 - Dar de baja ubicacion" as DB
+    UseCase "CU022 - Dar de alta ubicacion" as DA
+    UseCase "CU023 - Modificar ubicacion" as M
+    UseCase "CU024 - Borrar ubicacion" as B
+    Administradores -- C
+    Vendedores -- L
+    Administradores -- M
+    Administradores -- B
+    Administradores -- DB
+    Administradores -- DA
+    L <|.. M : <<Extends>>
+    L <|.. DA : <<Extends>>
+    L <|.. DB : <<Extends>>
+    L <|.. B : <<Extends>>
+}
+
+@enduml
+@startuml GestionFacturas
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionFacturas{
+    UseCase "CU025 - Crear factura" as C
+    UseCase "CU026 - Buscar avanzado facturas " as BA
+    UseCase "CU027 - Dar de baja factura" as DB
+    UseCase "CU028 - Dar de alta factura" as DA
+    UseCase "CU029 - Modificar factura" as M
+    UseCase "CU030 - Borrar factura" as B
+    Vendedores -- C
+    Vendedores -- BA
+    Administradores -- B
+    Administradores -- DB
+
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+@startuml GestionNotasCredito
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionNotasCredito{
+    UseCase "CU031 - Crear nota de credito" as C
+    UseCase "CU032  - Buscar avanzado nota de credito" as BA
+    UseCase "CU033 - Dar de baja nota de credito" as DB
+    UseCase "CU034 - Dar de alta nota de credito" as DA
+    UseCase "CU035 - Modificar nota de credito" as M
+    UseCase "CU036 - Borrar nota de credito" as B
+    Vendedores -- C
+    Vendedores -- BA
+    Administradores -- B
+    Administradores -- DB
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+@startuml GestionRecibos
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionRecibos{
+    UseCase "CU037 - Crear recibo" as C
+    UseCase "CU038 - Buscar avanzado recibos " as BA
+    UseCase "CU039 - Dar de baja recibo" as DB
+    UseCase "CU040 - Dar de alta recibo" as DA
+    UseCase "CU041 - Modificar recibo" as M
+    UseCase "CU042 - Borrar recibo" as B
+    Vendedores -- C
+    Vendedores -- BA
+    Administradores -- B
+    Administradores -- DB
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+@startuml GestionRemitos
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionRemitos{
+    UseCase "CU043 - Crear remito" as C
+    UseCase "CU044 - Buscar avanzado remitos " as BA
+    UseCase "CU045 - Dar de baja remito" as DB
+    UseCase "CU046 - Dar de alta remito" as DA
+    UseCase "CU047 - Borrar remito" as B
+    Vendedores -- C
+    Vendedores -- BA
+    Administradores -- B
+    Administradores -- DB
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+@startuml GestionOrdenesReposicion
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionOrdenesReposicion{
+    UseCase "CU048 - Crear orden de reposicion" as C
+    UseCase "CU049 - Buscar avanzado ordenes de reposicion " as BA
+    UseCase "CU050 - Dar de baja orden de reposicion" as DB
+    UseCase "CU051 - Dar de alta orden de reposicion" as DA
+    UseCase "CU052 - Borrar orden de reposicion" as B
+    Administradores -- C
+    Administradores -- BA
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+@startuml GestionOrdenesProduccion
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle Gestion{
+    UseCase "CU - Crear" as C
+    UseCase "CU - Buscar avanzado " as BA
+    UseCase "CU - Listar " as L
+    UseCase "CU - Dar de baja" as DB
+    UseCase "CU - Dar de alta" as DA
+    UseCase "CU - Modificar" as M
+    UseCase "CU - Borrar" as B
+    Administradores -- C
+    Actors -- BA
+    Actors -- L
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+
+@startuml GestionLineasOrdenesProduccion
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle Gestion{
+    UseCase "CU - Crear" as C
+    UseCase "CU - Buscar avanzado " as BA
+    UseCase "CU - Listar " as L
+    UseCase "CU - Dar de baja" as DB
+    UseCase "CU - Dar de alta" as DA
+    UseCase "CU - Modificar" as M
+    UseCase "CU - Borrar" as B
+    Administradores -- C
+    Actors -- BA
+    Actors -- L
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+
+@startuml GestionObservaciones
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle Gestion{
+    UseCase "CU - Crear" as C
+    UseCase "CU - Buscar avanzado " as BA
+    UseCase "CU - Listar " as L
+    UseCase "CU - Dar de baja" as DB
+    UseCase "CU - Dar de alta" as DA
+    UseCase "CU - Modificar" as M
+    UseCase "CU - Borrar" as B
+    Administradores -- C
+    Actors -- BA
+    Actors -- L
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+
+
+@startuml GestionRoles
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle Gestion{
+    UseCase "CU - Crear" as C
+    UseCase "CU - Buscar avanzado " as BA
+    UseCase "CU - Listar " as L
+    UseCase "CU - Dar de baja" as DB
+    UseCase "CU - Dar de alta" as DA
+    UseCase "CU - Modificar" as M
+    UseCase "CU - Borrar" as B
+    Administradores -- C
+    Actors -- BA
+    Actors -- L
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+
+@startuml GestionPrespuestos
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle Gestion{
+    UseCase "CU - Crear" as C
+    UseCase "CU - Buscar avanzado " as BA
+    UseCase "CU - Listar " as L
+    UseCase "CU - Dar de baja" as DB
+    UseCase "CU - Dar de alta" as DA
+    UseCase "CU - Modificar" as M
+    UseCase "CU - Borrar" as B
+    Administradores -- C
+    Actors -- BA
+    Actors -- L
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+@startuml GestionLineasPresupuesto
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle Gestion{
+    UseCase "CU - Crear" as C
+    UseCase "CU - Buscar avanzado " as BA
+    UseCase "CU - Listar " as L
+    UseCase "CU - Dar de baja" as DB
+    UseCase "CU - Dar de alta" as DA
+    UseCase "CU - Modificar" as M
+    UseCase "CU - Borrar" as B
+    Administradores -- C
+    Actors -- BA
+    Actors -- L
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+@startuml GestionVentas
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle Gestion{
+    UseCase "CU - Crear" as C
+    UseCase "CU - Buscar avanzado " as BA
+    UseCase "CU - Listar " as L
+    UseCase "CU - Dar de baja" as DB
+    UseCase "CU - Dar de alta" as DA
+    UseCase "CU - Modificar" as M
+    UseCase "CU - Borrar" as B
+    Administradores -- C
+    Actors -- BA
+    Actors -- L
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+@startuml GestionLineasVenta
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle Gestion{
+    UseCase "CU - Crear" as C
+    UseCase "CU - Buscar avanzado " as BA
+    UseCase "CU - Listar " as L
+    UseCase "CU - Dar de baja" as DB
+    UseCase "CU - Dar de alta" as DA
+    UseCase "CU - Modificar" as M
+    UseCase "CU - Borrar" as B
+    Administradores -- C
+    Actors -- BA
+    Actors -- L
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
+
+@startuml Sesiones
+!include ./Actors/Actors.wsd
+ left to right direction
+
+rectangle Sesiones{
+    UseCase "CU - Crear" as C
+    UseCase "CU - Buscar avanzado " as BA
+    UseCase "CU - Listar " as L
+    UseCase "CU - Dar de baja" as DB
+    UseCase "CU - Dar de alta" as DA
+    UseCase "CU - Modificar" as M
+    UseCase "CU - Borrar" as B
+
+    Actors -- BA
+    Actors -- L
+    BA <|.. M : <<Extends>>
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+
+@enduml
