@@ -1,0 +1,15 @@
+@startuml
+top to bottom direction
+/' Definicion de los actores'/
+:Usuarios: 
+:Administradores: 
+:Vendedores:
+:Fabricantes:
+
+/' Relacion entre los actores'/
+Usuarios <|-- Vendedores
+Usuarios <|-- Fabricantes
+Vendedores <|-- Administradores
+Fabricantes <|-- Administradores
+
+@enduml
