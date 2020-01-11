@@ -1,0 +1,146 @@
+\documentclass[a4paper,oneside]{book}
+\usepackage[top=2.54cm, bottom=2.54cm, left=3.17cm, right=3.17cm]{geometry}
+\usepackage[spanish,es-tabla]{babel} % Traduce cuadros por tablas
+% La siguiente linea es para que se reconozcan los acentos.
+% Si falla probar con la siguiente
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\graphicspath{ {imagenes/} }
+\DeclareGraphicsExtensions{.png,.jpg}
+\setlength{\parindent}{12pt}
+\setcounter{secnumdepth}{3}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\chead{sistema de gestión de mueblería}
+\lfoot{\leftmark}
+\rfoot{\thepage}
+\usepackage{titlesec}
+% \setcounter{tocdepth}{3} para que aparezcan las subsecciones en el indice https://www.lawebdelprogramador.com/foros/TeX-Latex/619886-subsubsection.html
+% \usepackage[latin1]{inputenc}
+\usepackage[none]{hyphenat}
+\usepackage[
+pdfauthor={Nicolás Bachs, Loïk Choua},
+pdftitle={Sistema de Gestión de mueblería},
+pageanchor,
+hidelinks,
+plainpages=false,
+pdfpagelabels,
+hypertexnames=false,
+unicode	]{hyperref}
+% Poner links en el proyecto
+% \url{http://www.latex-project.org/}
+% \href{http://www.latex-project.org/}{latex project}
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+\usepackage{multirow, array}
+\usepackage{array,longtable}
+\usepackage{float}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[euler]{textgreek}
+\usepackage{makecell}
+\usepackage{caption}
+\input{comandos.tex}
+
+
+\definecolor{tableCaseUseBackground}{HTML}{2A7F84}
+\definecolor{tableCaseUseFontColor}{HTML}{FFFFFF}
+
+% Variables para el llenado de las tablas de casos de uso
+\newcommand{\caseUseRow}[1]{& \multicolumn{2}{L{\secondColumnWidth}|}{{#1}} \\}
+\newcommand{\caseUseCreated}{Editar fecha de creación}
+\newcommand{\caseUseModified}{Editar fecha de modificación}
+\newcommand{\caseUseName}{Usar renewcommand}
+\newcommand{\caseUseShortName}{sinAcentos}
+\newcommand{\caseUseSummary}{Editar resumen}
+\newcommand{\caseUsePeople}{Editar personas}
+\newcommand{\caseUsePreconditions}{Editar precondiciones}
+\newcommand{\caseUsePostconditions}{Editar postcondiciones}
+\newcommand{\caseUseScene}{Editar escenario}
+\newcommand{\caseUseRequirementsGUI}{Editar requisitos}
+\newcommand{\caseUseResponseTime}{Editar tiempo de respuesta}
+\newcommand{\caseUseConcurrence}{Editar concurrencia}
+\newcommand{\caseUseAvailability}{Editar disponibilidad}
+\newcounter{rownumbers}
+\newcommand{\rownumber}{\stepcounter{rownumbers}\arabic{rownumbers} }
+\newcommand{\secondColumnWidth}{0.7\textwidth}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\addCaseUseRow}[1]{\caseUseRow{{#1}}}
+\newcommand{\addCaseUseStep}[1]{\caseUseRow{\rownumber {#1}}}
+
+
+\newcommand{\caseUseWidthScene}{0.7\textwidth}
+\setcounter{rownumbers}{0}
+	% @params 1: Nombre de la tabla de caso de uso - 2: Nombre del caso de uso
+	\newcommand{\itemCaseUse}[2]{%
+	\caseUseNext{#1}%
+	\item \hyperref[tabla:#1]{\caseUseNumber{#1} {#2} (Página \pageref{tabla:#1})}}
+
+	%Flujos alternativos
+	\newcounter{beginAlternative} %Contador para las filas de cada flujo alternativo
+	\newcommand{\alternativeCaseUse}{Editar flujo alternativo} %Contenido de la fila de casos de usos alternativos
+	
+	% @params 1: Nombre del caso de uso - 2: Paso en el que comienza
+	\newcommand{\newAlternative}[2]{\setcounter{beginAlternative}{#2} \caseUseRow{\textbf{{#1}}}}
+	\newcommand{\beginAlternative}{\stepcounter{beginAlternative}\arabic{beginAlternative} } %Devuelve el número de una nueva fila
+	\newcommand{\alternativeRow}[1]{\caseUseRow{\beginAlternative {#1}}}
+
+
+\usepackage{multicol}
+
+\begin{document}
+\sloppy
+
+\begin{titlepage}
+	\centering
+	{\scshape universidad nacional de tucumán - facultad de ciencias exactas y tecnología\par}
+	{\scshape departamento de electricidad, electrónica y computación\par}
+	{\scshape\Large ingeniería en computación\par}
+	\vspace{0.5cm}
+	{\scshape julio 2020\par} %modificar e ingresar fecha cuando corresponda
+	\vfill
+	{\LARGE\mdseries Trabajo de Graduación\par}
+	\vspace{0.5cm}
+	{\scshape\huge Sistema de Gestión de mueblería\par}
+	{\scshape revisión 1\par}
+	\vfill
+	{\mdseries autores\par}
+	\par\noindent\rule{0.9\textwidth}{0.2pt}
+	\begin{multicols}{2}
+	{\large Nicolás Bachs\par}
+	{\small CX1401187\par}
+	\columnbreak
+	{\large Loïk Choua\par}
+	{\small CX1707456\par}
+	\end{multicols}
+	\vspace{0.5cm}
+	{\mdseries tutores\par}
+	\par\noindent\rule{0.9\textwidth}{0.2pt}
+	\begin{multicols}{2}
+	{\large Ing. Maximiliano Odstricil\par}
+	{\small tutor\par}
+	\columnbreak
+	{\large Ing. Matias Mendiondo\par}
+	{\small co-tutor\par}
+	\end{multicols}
+\end{titlepage}
+\stepcounter{page}
+
+\input{Agradecimientos.tex}
+\input{Dedicatorias.tex}
+\tableofcontents
+\input{Capitulo1.tex}
+\input{Capitulo2.tex}
+%\input{Capitulo3.tex}
+%\input{Capitulo4.tex}
+%\input{Capitulo5.tex}
+%\input{Capitulo6.tex}
+%\input{Capitulo7.tex}
+%\input{Capitulo8.tex}
+%\input{Capitulo9.tex}
+%\input{Capitulo10.tex}
+\end{document}
