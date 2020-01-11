@@ -1,0 +1,693 @@
+\section{Análisis de requisitos del sistema}
+	\paragraph\indent
+	Esta especificación tiene como objetivo analizar y documentar las necesidades funcionales que deberán ser soportadas por el sistema a desarrollar. Para ello, se identificarán los requisitos que ha de satisfacer el nuevo sistema, mediante técnicas de educción de requisitos, el estudio de los problemas de las unidades afectadas y sus necesidades actuales. Además de identificar los requisitos se deberán establecer prioridades, lo cual proporciona un punto de referencia para validar el sistema final que compruebe que se ajusta a las necesidades del usuario.
+	\subsection{Identificación de los usuarios participantes}
+		\paragraph\indent
+			Los objetivos de esta tarea son identificar a los responsables de cada una de las unidades implicadas y a los principales usuarios implicados. En la organización se identificaron los siguientes usuarios:
+		\begin{itemize}
+			\item Usuarios: Formado por el conjunto de usuarios capaces de acceder a la información brindada por el sistema.
+			\item Operadores:	Formado por los usuarios capaces de realizar operaciones sobre los datos del sistema.
+			\item Administradores: Formado por aquellos usuarios que poseen la responsabilidad de gestionar los datos del sistema, agregando nuevos datos o actualizando los ya existentes.
+		\end{itemize}
+		\paragraph\indent
+			En todos los casos, los distintos grupos de usuarios están definidos por el dueño del sistema.
+		\paragraph\indent
+			Es de destacar la necesidad de una participación activa de los usuarios del futuro sistema en las actividades de desarrollo del mismo, con objeto de conseguir la máxima adecuación del sistema a sus necesidades y facilitar el conocimiento paulatino de dicho sistema, permitiendo una rápida implantación.
+	\subsection{Catálogo de requisitos del sistema}
+		\paragraph\indent
+			El objetivo de la especificación es definir en forma clara, precisa, completa y verificable todas las funcionalidades y restricciones del sistema que se desea construir. Será el canal de comunicación entre las partes implicadas. Esta documentación estará sujeta a revisiones, hasta alcanzar su aprobación. Una vez aprobado servirá de base al equipo para el desarrollo del nuevo sistema.
+		\paragraph\indent
+			Esta especificación se ha realizado de acuerdo al estándar ``IEEE Recommended Practice for Software Requirements Specifications (IEEE/ANSI 830-1998)''.
+		\subsubsection{Objetivos y alcance del sistema}
+			\paragraph\indent
+				El principal objetivo del módulo a desarrollar es permitir a los usuarios la gestión de los datos obtenidos a partir de otros módulos del sistema SCADA DIGICOM. El sistema deberá permitir a los usuarios conocer en tiempo real el estado de la red eléctrica de la provincia de Tucumán; para ello debe gestionar los datos provenientes de un gran número de equipos de medición distribuidos a lo largo de la provincia.
+			\paragraph\indent
+				El usuario deberá conocer el estado actual de cada equipo, permitiéndole tomar decisiones sobre las acciones a ejecutar para lograr el correcto funcionamiento de la red. Para esto, también debe ser capaz de ejecutar ordenes sobre los equipos.
+		\subsubsection{Definiciones, acrónimos y abreviaturas}
+			\textbf{Componente:} Un componente es un equipo físico que puede obtener datos mediante sus sensores y enviarlos a otros componentes. Algunos equipos también pueden recibir una orden desde otros equipos y ejecutar alguna acción en el medio (por ejemplo, abrir una línea de transmisión de energía).
+			
+			\textbf{Sitio:} Un sitio es un conjunto de componentes que se encuentran en una misma instalación. Cada componente que conforma un sitio tiene una función diferente a los otros.
+			
+			\textbf{Dispositivo:} Un dispositivo es un equipo físico que forma parte de la red eléctrica por ejemplo un transformador de tensión.
+			
+			\textbf{Diagrama unifilar:} Un diagrama unifilar es una forma de representar como están conectados los diferentes dispositivos de una red. En él se pueden ver los diferentes dispositivos que forman la red, el estado de los mismos, mediciones de algunos de sus parámetros. También, las conexiones de los dispositivos son representadas de diferentes formas según las características de las mismas.
+			
+			\textbf{Pedido:} Un pedido es un mensaje enviado por el servidor a algún componente en donde se le solicita las últimas mediciones que tomó.
+			
+			\textbf{Ciclo:} Los pedidos a los componentes son continuamente enviados. Cuando todos los componentes son encuestados, se comienza un nuevo ciclo de encuesta.
+			
+			\textbf{Comando:} Un comando es un mensaje enviado por el servidor a algún componente en donde se le solicita que ejecuta alguna acción mediante los actuadores que estén conectados a él.
+			
+			\textbf{Prioridad:} El termino prioridad se utiliza para indicar que un pedido está siendo enviado con mayor frecuencia que lo normal. Esto se hace con el fin de obtener mayor cantidad de datos en tiempo real de las mediciones de los componentes.
+			
+			\textbf{Transformación:} Es una función que es aplicada a los datos obtenidos de los componentes con el fin de transformarlos por valores procesables por el sistema.
+			
+			\textbf{Entidad:} Una entidad se define como un grupo de objetos que deben ser gestionados por el sistema. Por ejemplo, una entidad pueden ser los sitios, entonces el sistema debe permitir la gestión de los mismos.
+			
+			\textbf{Perfil:} Un usuario que tiene asignado cierto perfil puede realizar en el sistema las funciones que los permisos que están asignados a ese perfil permiten.
+			
+			\textbf{Acción (Action):} es un objeto plano que representa una intención de modificar el estado de la aplicación. Las acciones son la única forma en que los datos llegan al store. Cualquier dato, ya sean eventos de UI, callbacks de red, u otros recursos como WebSockets eventualmente van a ser despachados como acciones.
+			
+			\textbf{Función despachadora (Dispatcher):} es una función que acepta una acción o una acción asíncrona; entonces puede o no despachar una o más acciones al store.
+			
+			\textbf{Creador de acciones (Action creator):} es una función que devuelve una acción. No confunda los dos términos — una acción es un pedazo de información, y los creadores de acciones son fabricas que crean esas acciones. Llamar un creador de acciones solo produce una acción, no la despacha.
+			
+			\textbf{Store:} es un objeto que mantiene el árbol de estado de la aplicación.
+			
+		\subsubsection{Descripción general}
+			\paragraph\indent
+				Esta sección presenta una descripción general del sistema con el fin de conocer las funciones que debe soportar, los datos asociados, las restricciones impuestas y cualquier otro factor que pueda influir en la construcción del mismo.
+			\paragraph\indent	
+				La empresa de distribución de energía eléctrica de la provincia de Tucumán (EDET) necesita conocer en tiempo real el estado de la red eléctrica, con el objetivo de poder tomar las acciones necesarias para normalizar el estado de ésta.
+			\paragraph\indent
+				Actualmente cuenta con más de 1000 equipos (desde ahora sitios), todos ellos distribuidos en la provincia, los cuales constantemente realizan mediciones sobre la red, por ejemplo, miden tensiones, corrientes, potencias y el factor de potencia.
+			\paragraph\indent
+				Existen diferentes tipos de sitios, cada una de ellos tiene una configuración diferente de entradas analógicas y digitales. Los sitios están conectados a una red de comunicaciones, donde un programa transmite diferentes mensajes a estos. Algunos de estos mensajes se denominan ``pedidos'', estos indican al sitio que debe transmitir al gestor de pedidos una serie de datos relacionados con las últimas lecturas tomadas de la red. Otros mensajes se denominan ``comandos'', los cuales indican al sitio que debe realizar alguna acción sobre la red, por ejemplo, abrir o cerrar un tramo de ésta, permitiendo al personal de mantenimiento realizar las tareas de mantenimiento necesarias.
+			\paragraph\indent
+				Estos sitios tienen diferentes funcionalidades y características por lo que es necesario utilizar diferentes protocolos de comunicación en la red de comunicación.
+			\paragraph\indent
+				Una vez que el gestor de pedidos recibe una respuesta de un sitio, analiza el valor de las lecturas (analógicas o digitales) y determina en base a su valor y a diferentes intervalos predefinidos el estado actual de cada entrada, algunos de estos estados pueden ser Abierto, Cerrado, Tensión Alta, Tensión Baja, Normal. Para cada estado es necesario indicar si se corresponde con un estado de alarma o no.
+			\paragraph\indent
+				Si se determina un estado de alarma, inmediatamente se genera una alarma a los usuarios, los cuales deben reconocer en un determinado intervalo de tiempo. Cuando una entrada que estaba en un estado de alarma, pasa a un estado de funcionamiento normal, se dice que la alarma anterior se solucionó.
+			\paragraph\indent
+				Los operarios del sistema analizan constantemente el estado de varios sitios formados por diferentes componentes. Para hacer más fácil el manejo de estos componentes, se utilizan diagramas unifilares, donde se indica cómo se conectan, el estado actual de estos y algunos valores de las lecturas más importantes.
+		\subsubsection{Requisitos funcionales}
+		
+		\begin{enumerate}
+			\item Inicio de sesión
+				\begin{itemize}
+					\item Introducción: El sistema debe permitir a los usuarios iniciar sesión en el sistema para hacer uso de él.
+					\item Entrada: Nombre + Contraseña
+					\item Proceso: Buscar si el usuario puede acceder al sistema, en caso afirmativo, determinar los permisos que posee y re direccionar a la página de inicio. En otro caso re direccionar a la página de inicio de sesión.
+					\item Salida: Si el inicio de sesión es exitoso entonces se redirecciona al usuario a la página principal, en otro caso se muestra un mensaje indicando que no puede acceder al sistema. 
+				\end{itemize}
+				
+			\item Cierre de sesión
+				\begin{itemize}
+					\item Introducción: El sistema debe permitir cerrar la sesión de un usuario logueado.
+					\item Entrada: Token de sesión
+					\item Proceso: finalizar la sesión del usuario usando el Token de sesión. En caso de éxito redirigir a la página de inicio de sesión.
+					\item Salida:	Sesión finalizada y redirección a la página de inicio de sesión.
+				\end{itemize}
+				
+			\item Gestión de usuarios
+				\begin{itemize}
+					\item Introducción: El sistema debe permitir a los usuarios con rol de administrador crear los usuarios del sistema y actualizarlos.
+					\item Entrada: Nombre + Apellido + Contraseña + Nombre de cuenta + Perfiles + Sitios + Administraciones + Tipos de sitio
+					\item Proceso: Para el alta, agregar el usuario al listado de usuarios con los datos correspondientes y devolver como salida el usuario que se acaba de crear y un mensaje informativo. Para la modificación, actualizar los datos del usuario y devolver como salida el usuario con los datos actualizados y un mensaje informativo. En caso de error al realizar alguna acción mostrar el mensaje informativo.
+					\item Salida: Datos del usuario + Mensaje informativos.
+				\end{itemize}
+				
+			\item Gestión de administraciones
+				\begin{itemize}
+					\item Introducción: El sistema debe permitir a los usuarios con rol de administrador dar de alta, baja o modificar las administraciones.
+					\item Entrada: Nombre + Ubicación + Color + (Administración a la cual pertenece)
+					\item Proceso: Para el alta, agregar la administración al listado de administraciones con los datos correspondientes y devolver como salida la administración que se acaba de crear y un mensaje informativo. Para la modificación, actualizar los datos de la administración y devolver como salida la administración con los datos actualizados y un mensaje informativo. Para la baja, eliminar la administración del listado de administraciones y devolver como salida el mensaje informativo correspondientemente. En caso de error al realizar alguna acción mostrar el mensaje informativo.
+					\item Salida: (Datos de la administración) + Mensaje informativos.
+				\end{itemize}
+			
+			\item Listado de administraciones
+				\begin{itemize}
+					\item Introducción: Muestra las administraciones en un mapa respetando el color establecido para cada una.
+					\item Entrada: Conjunto de administraciones
+					\item Proceso: Dibuja las regiones que abarcan las administraciones sobre un mapa respetando el color que fue establecido para cada una de ellas.
+					\item Salida: Mapa con las administraciones dibujadas.
+				\end{itemize}
+				
+			\item Gestión de canales de comunicación
+				\begin{itemize}
+					\item Introducción: El sistema debe permitir a los usuarios con rol de administrador dar de alta, baja o modificar los canales de comunicación.
+					\item Entrada: Nombre + Dirección + Puerto + Intervalo entre pedidos + Intervalo entre pedidos en prioridad + Intervalo entre pedidos de diagnóstico + Tipo de canal + ${}_{0}\{$Parámetro de canal$\}_n$ + Estado
+					\item Proceso: Para el alta, agregar el canal de comunicación al listado de canales de comunicación con los datos correspondientes y devolver como salida el canal de comunicación que se acaba de crear y un mensaje informativo. Para la modificación, actualizar los datos del canal de comunicación y devolver como salida el canal de comunicación con los datos actualizados y un mensaje informativo. Para la baja, eliminar el canal de comunicación del listado de canales de comunicación y devolver como salida el mensaje informativo correspondientemente. En caso de error al realizar alguna acción mostrar el mensaje informativo.
+					\item Salida: (Datos del canal de comunicación) + Mensaje informativos.
+				\end{itemize}
+						
+			\item Gestión de conexiones
+				\begin{itemize}
+					\item Introducción: El sistema debe permitir a los usuarios con rol de administrador dar de alta, baja o modificar las conexiones asociadas a un canal de comunicación.
+					\item Entrada: Dirección + Puerto + Protocolo + Tipo + Estado + Canal
+					\item Proceso: Para el alta, agregar la conexión al canal de comunicación con los datos correspondientes y devolver como salida la conexión que se acaba de crear. Para la modificación, actualizar los datos de la conexión y devolver como salida la conexión con los datos actualizados y un mensaje informativo. Para la baja, eliminar la conexión del canal de comunicación y devolver como salida el mensaje informativo correspondientemente. En caso de error al realizar alguna acción mostrar el mensaje informativo.
+					\item Salida: (Datos de la conexión) + Mensaje informativos.
+				\end{itemize}
+				
+			\item Listado de canales de comunicación
+				\begin{itemize}
+					\item Introducción: Mostrar los canales de comunicación y las conexiones asociadas a cada uno de ellos.
+					\item Entrada: Nombre + Dirección + Puerto + Intervalo entre pedidos + Intervalo entre pedidos en prioridad + Intervalo entre pedidos de diagnóstico + Tipo de canal + ${}_{0}\{$Parámetro de canal$\}_n$ + Estado + Conexiones
+					\item Proceso: Obtener el listado de canales de comunicación con las conexiones asociadas a cada uno. Mostrarlos en pantalla.
+					\item Salida:	Listado con los canales de comunicación.
+				\end{itemize}
+				
+			\item Gestión de sitios
+				\begin{itemize}
+					\item Introducción: El sistema debe permitir a los usuarios con rol de administrador dar de alta, baja o modificar los sitios.
+					\item Entrada: Nombre + Ubicación + Configuración + Tipo de sitio + ${}_{0}\{$Componente$\}_n$ + ${}_{0}\{$Parámetro de sitio$\}_n$ + Administración a la que pertenece + Estado
+					\item Proceso: Para el alta, agregar el sitio al listado de sitios con los datos correspondientes y devolver como salida el sitio que se acaba de crear y un mensaje informativo. Para la modificación, actualizar los datos del sitio y devolver como salida el sitio con los datos actualizados y un mensaje informativo. Para la baja, eliminar el sitio del listado de sitios y devolver como salida el mensaje informativo correspondientemente. En caso de error al realizar alguna acción mostrar el mensaje informativo.
+					\item Salida: (Datos del sitio) + Mensaje informativos.
+				\end{itemize}
+				
+			\item Listado de sitios
+				\begin{itemize}
+					\item Introducción: Los usuarios del sistema deben poder ver una lista de sitios.
+					\item Entrada: Conjunto de sitios + Conjunto de alarmas
+					\item Proceso: A partir de la lista de alarmas determinar que sitios se encuentran en estado de alarma. Para cada sitio obtener su símbolo de acuerdo al tipo de sitio y si se encuentran o no en estado de alarma. Ubicar los símbolos sobre un mapa para que los usuarios puedan conocer su ubicación en el terreno.
+					\item Salida: Mapa con los sitios representados mediante los correspondientes símbolos.
+				\end{itemize}
+				
+			\item Filtrado de sitios
+				\begin{itemize}
+					\item Introducción: Los usuarios deben poder filtrar los sitios en el mapa de sitios.
+					\item Entrada: Conjunto de sitios + Criterio[Tipo de sitio | Estado | Canal de comunicación]
+					\item Proceso: Filtrar los sitios que se muestran según los criterios especificados. En caso de que algún criterio no se especifique se mostrarán todos los sitios que cumplan los otros criterios.
+					\item Salida: Mapa con los sitios representados mediante los correspondientes símbolos.
+				\end{itemize}
+				
+			\item Gestión de diagramas unifilares
+				\begin{itemize}
+					\item Introducción: El sistema debe permitir a los usuarios con rol de administrador definir y modificar el diagrama unifilar de un sitio.
+					\item Entrada: Diagrama del sitio
+					\item Proceso: Dar de alta o actualizar la información referida al diagrama unifilar del sitio.
+					\item Salida: Mensaje de confirmación de la acción ejecutada.
+				\end{itemize}
+				
+			\item Visualización de diagramas unifilares
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios del sistema la visualización del diagrama unifilar de un sitio.
+					\item Entrada: Sitio + ${}_{0}\{$Parámetro de sitio$\}_n$ + Tipo de sitio + Diagrama unifilar completo
+					\item Proceso: Obtener los datos del diagrama unifilar del sitio. Mostrar el diagrama unifilar al usuario. Registrarse en la API para obtener actualizaciones de los datos en tiempo real. Mandar un mensaje a la API para que los pedidos asociados al sitio se pongan en prioridad.
+					\item Salida: Vista del diagrama unifilar. Mostrar los campos ``Parámetro de sitio'' según su configuración para el tipo de sitio.
+				\end{itemize}
+	
+			\item Gestión de prioridades de pedidos
+				\begin{itemize}
+					\item Introducción: El sistema debe permitir a los operadores y administradores poner y sacar los pedidos de prioridad.
+					\item Entrada: Pedido + Prioridad[Si | No]
+					\item Proceso: Enviar un mensaje por websocket a la API solicitando que el pedido sea puesto o sacado de prioridad según si el valor de prioridad sea Si o No.
+					\item Salida: Pedido en prioridad o no. Mensaje del resultado de la acción.
+				\end{itemize}
+				
+			\item Ejecución de comandos
+				\begin{itemize}
+					\item Introducción: El sistema debe permitir a los operadores y administradores ejecutar comandos sobre los sitios.
+					\item Entrada: Comando + Contraseña
+					\item Proceso: Bloquear la opción de ejecución de cualquier otro comando. Solicitar la contraseña del operario. Mandar un mensaje por websocket a la API indicando el comando a ejecutar y la contraseña del usuario. Cuando se reciba la respuesta mostrar un mensaje al usuario informando el resultado del comando. El usuario debe reconocer el resultado y entonces se activa la opción de ejecutar un nuevo comando.
+					\item Salida:	Mensaje informando el resultado de la ejecución del comando.
+				\end{itemize}
+				
+			\item Reconocer y solucionar alarmas
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de operador y administrador reconocer las alarmas y borrar las que ya fueron solucionadas.
+					\item Entrada: ${}_{0}\{$ Alarma $\}_n$ + Acción[Reconocer | Borrar]
+					\item Proceso: Cuando una alarma se produce y antes que sea solucionada, el usuario tiene la opción de reconocer la alarma. Una vez que la alarma fue solucionada el usuario tiene la opción de borrar la alarma de la lista de alarmas. Cuando una alarma se encuentra solucionada el usuario ya no puede reconocerla. Se debe comunicar a la API sobre la acción que el usuario quiere ejecutar y esperar como respuesta la confirmación de la acción y la fecha del servidor en que se realizó.
+					\item Salida:	Actualización de la lista de alarmas según corresponda.
+				\end{itemize}
+				
+			\item Listar alarmas
+				\begin{itemize}
+					\item Introducción: Listar las alarmas indicando sus principales atributos.
+					\item Entrada: ${}_{0}\{$ Alarma + Sitio + Descripción  + Fecha + Estado$\}_n$
+					\item Proceso: Listar las alarmas indicando fecha en que fue producida, fecha de reconocimiento, fecha de solución, entrada que produjo la alarma, descripción de la alarma.
+					\item Salida:	Listado de alarmas
+				\end{itemize}
+				
+			\item Listar errores de comunicación
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios del sistema obtener una lista con los errores de comunicación que existen actualmente.
+					\item Entrada: Conjunto de errores de comunicación
+					\item Proceso: Crear una lista con los errores de comunicación existentes detallando Sitio, Pedido, Fecha en que fue producido, Descripción.
+					\item Salida:	${}_{0}\{$Errores de comunicación$\}_n$
+				\end{itemize}
+				
+			\item Gestión de protocolos
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar un protocolo en el sistema.
+					\item Entrada: Nombre + Dirección Ip + Puerto + ${}_{0}\{$ Parámetros de inicialización $\}_n$  + ${}_{0}\{$ Campos de protocolo $\}_n$
+					\item Proceso: Comprobar si el protocolo existe por medio del nombre. En caso de no existir:
+							Para el alta, agregarlo al listado de protocolos con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo. En el momento inicial, el Estado del protocolo es Habilitado.
+							Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+							En caso que ya exista el protocolo, mostrar el mensaje correspondiente.
+							El campo ``Parámetros de inicialización'' son todos aquellos parámetros necesarios para inicializar el módulo de protocolo y dependen del tipo de protocolo.
+							El campo ``Campos de protocolo'' son todos aquellos parámetros que deberán ser cargados en una ``Configuración de componente'' para que un dado componente pueda operar sobre un determinado protocolo.
+					\item Salida: Protocolo ingresado. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+				
+			\item Listado de protocolos
+				\begin{itemize}
+					\item Introducción: Despliega un listado de todos los protocolos cargados en el sistema.
+					\item Entrada: Conjunto de protocolos
+					\item Proceso: Muestra todos los protocolos en el sistema con los datos correspondientes.
+					\item Salida: ${}_{0}\{$ Nombre + Dirección Ip + Puerto + ${}_{0}\{$ Parámetros de inicialización $\}_n$ + ${}_{0}\{$ Campos de protocolo $\}_n$ $\}_n$.
+				\end{itemize}
+			
+			\item Gestión de tipos de componentes
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar un tipo de componente en el sistema.
+					\item Entrada: Nombre
+					\item Proceso: Comprobar si el tipo de componente existe por medio del nombre. En caso de no existir: 
+					Para el alta, agregarlo al listado de tipos de componente con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					En caso que ya exista el tipo de componente, mostrar el mensaje correspondiente.
+					\item Salida: Tipo de componente ingresado. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+			
+			\item Listado de tipos de componentes
+				\begin{itemize}
+					\item Introducción: Despliega un listado de todos los tipos de componentes cargados en el sistema.
+					\item Entrada: Conjunto de tipos de componentes
+					\item Proceso: Muestra todos los tipos de componentes en el sistema con los datos correspondientes.
+					\item Salida: ${}_{0}\{$ Nombre $\}_n$.
+				\end{itemize}
+				
+			\item Gestión de transformaciones
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una transformación en el sistema.
+					\item Entrada: Nombre + Descripción + Expresión + ${}_{0}\{$ Campos de transformación $\}_n$
+					\item Proceso: Comprobar si la transformación existe por medio del nombre. En caso de no existir:
+							Para el alta, agregarla al listado de transformaciones con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo. En el momento inicial, el Estado de la transformación es Habilitado.
+							Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+							En caso que ya exista la transformación, mostrar el mensaje correspondiente.
+							El campo ``Expresión'' contiene una expresión matemática que permite procesar los datos recibidos desde las entradas a las que se le aplica esta transformación
+							El campo ``Campos de Transformación'' son todos aquellos parámetros relacionados a la transformación (como variables de la expresión matemática) que deberán ser cargados en una ``Configuración de entrada''.
+					\item Salida: Transformación ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+				
+			\item Listado de transformaciones
+				\begin{itemize}
+					\item Introducción: Despliega un listado de todas las transformaciones cargadas en el sistema.
+					\item Entrada: Conjunto de transformaciones
+					\item Proceso: Muestra todas las transformaciones en el sistema con los datos correspondientes.
+					\item Salida: ${}_{0}\{$ Nombre + Descripción + Expresión + ${}_{0}\{$ Campos de transformación $\}_n$ $\}_n$.
+				\end{itemize}
+			
+			\item Gestión de categorías de entradas
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una categoría de entrada en el sistema.
+					\item Entrada: Nombre
+					\item Proceso: Comprobar si la categoría de entrada existe por medio del nombre. En caso de no existir: 
+					Para el alta, agregarla al listado de categorías de entradas con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					En caso que ya exista la categoría de entrada, mostrar el mensaje correspondiente.
+					\item Salida: Categoría de entrada ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+			
+			\item Listado de categorías de entradas
+				\begin{itemize}
+					\item Introducción: Despliega un listado de todas las categorías de entradas cargadas en el sistema.
+					\item Entrada: Conjunto de categorías de entradas
+					\item Proceso: Muestra todas las categorías de entradas en el sistema con los datos correspondientes.
+					\item Salida: ${}_{0}\{$ Nombre $\}_n$.
+				\end{itemize}
+				
+			\item Gestión de tipos de entradas
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar un tipo de entrada en el sistema.
+					\item Entrada: Nombre
+					\item Proceso: Comprobar si el tipo de entrada existe por medio del nombre. En caso de no existir: 
+					Para el alta, agregarlo al listado de tipos de entrada con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					En caso que ya exista el tipo de entrada, mostrar el mensaje correspondiente.
+					\item Salida: Tipo de entrada ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+			
+			\item Listado de tipos de entradas
+				\begin{itemize}
+					\item Introducción: Despliega un listado de todos los tipos de entradas cargados en el sistema
+					\item Entrada: Conjunto de tipos de entradas 
+					\item Proceso: Muestra todos los tipos de entradas en el sistema con los datos correspondientes.
+					\item Salida: ${}_{0}\{$ Nombre $\}_n$.
+				\end{itemize}
+				
+			\item  Gestión de tipos de pedidos
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar un tipo de pedido en el sistema.
+					\item Entrada: Nombre
+					\item Proceso: Comprobar si el tipo de pedido existe por medio del nombre. En caso de no existir: 
+					Para el alta, agregarlo al listado de tipos de pedidos con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					En caso que ya exista el tipo de pedido, mostrar el mensaje correspondiente.
+					\item Salida: Tipo de pedido ingresado. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+
+			\item Listado de tipos de pedidos
+				\begin{itemize}
+					\item Introducción: Despliega un listado de todos los tipos de pedidos cargados en el sistema.
+					\item Entrada: Conjunto de tipos de pedidos
+					\item Proceso: Muestra todos los tipos de pedidos en el sistema con los datos correspondientes.
+					\item Salida: ${}_{0}\{$ Nombre $\}_n$.
+				\end{itemize}
+				
+			\item Gestión de campos de pedido
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar un campo de un pedido en el sistema.
+					\item Entrada: ${}_{0}\{$ Campos de pedido $\}_n$ + Nombre de protocolo
+					\item Proceso: Para el alta, agregarlo al listado de campos de pedido con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					El campo ``Campos de pedido'' son todos aquellos parámetros que deberán ser cargados en una ``Configuración de pedido'' para que un dado pedido sea válido sobre un determinado protocolo.
+					\item Salida: Campo de pedido ingresado. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+
+			\item Búsqueda de campos de pedido asociados a un protocolo
+				\begin{itemize}
+					\item Introducción: Permite buscar todos los campos de pedido asociados a un determinado protocolo.
+					\item Entrada: Conjunto de campos de pedido + Nombre de protocolo
+					\item Proceso: Ingresando el nombre del protocolo se podrá buscar los campos de pedido asociados a este y verificar si existen en el sistema o no.
+					\item Salida: ${}_{0}\{$ Campos de pedido $\}_n$.
+				\end{itemize}
+				
+			\item Gestión de tipos de sitios
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar un tipo de sitio en el sistema.
+					\item Entrada: Nombre + ${}_{0}\{$Nombre + Etiqueta + Tipo[Boolean | Integer | Number | Enum | String | Hex | JSON] + Requerido[Si | No] + (Mostrar[Si | No])$\}_n$
+					\item Proceso: Comprobar si el tipo de sitio existe por medio del nombre. En caso de no existir: 
+					Para el alta, agregarlo al listado de tipos de sitio con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación del mismo.
+					En caso que ya exista el tipo de sitio, mostrar el mensaje correspondiente.
+					\item Salida: Tipo de sitio ingresado. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+
+			\item Listado de tipos de sitios
+				\begin{itemize}
+					\item Introducción: Despliega un listado de todos los tipos de sitios cargados en el sistema
+					\item Entrada: Conjunto de tipos de sitios
+					\item Proceso: Muestra todos los tipos de sitios en el sistema con los datos correspondientes.
+					\item Salida: ${}_{0}\{$ Nombre $\}_n$.
+				\end{itemize}
+				
+			\item Gestión de tipos de dispositivos
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar un tipo de dispositivo en el sistema.
+					\item Entrada: Nombre + Gráfico
+					\item Proceso: Comprobar si el tipo de dispositivo existe por medio del nombre. En caso de no existir: 
+					Para el alta, agregarlo al listado de tipos de dispositivo con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					En caso que ya exista el tipo de dispositivo, mostrar el mensaje correspondiente.
+					El campo ``Gráfico'' es una imagen que representa al dispositivo.
+					\item Salida: Tipo de dispositivo ingresado. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+
+			\item Listado de tipos de dispositivos
+				\begin{itemize}
+					\item Introducción: Despliega un listado de todos los tipos de dispositivos cargados en el sistema.
+					\item Entrada: Conjunto de tipos de dispositivos
+					\item Proceso: Muestra todos los tipos de dispositivos en el sistema con los datos correspondientes.
+					\item Salida: ${}_{0}\{$ Nombre + Gráfico $\}_n$.
+				\end{itemize}
+				
+			\item Gestión de tipos de conectores
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar un tipo de conector en el sistema.
+					\item Entrada: Nombre + Color
+					\item Proceso: Comprobar si el tipo de conector existe por medio del nombre. En caso de no existir: 
+					Para el alta, agregarlo al listado de tipos de conectores con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo. 
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos. 
+					En caso que ya exista el tipo de conector, mostrar el mensaje correspondiente.
+					\item Salida: Tipo de conector ingresado. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+			
+			\item Listado de tipos de conectores
+				\begin{itemize}
+					\item Introducción: Despliega un listado de todos los tipos de conectores cargados en el sistema
+					\item Entrada: Conjunto de tipos de conectores
+					\item Proceso: Muestra todos los tipos de conectores en el sistema con los datos correspondientes.
+					\item Salida: ${}_{0}\{$ Nombre + Color $\}_n$.
+				\end{itemize}
+			
+			\item Gestión de configuraciones de componentes
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una configuración de componente en el sistema.
+					\item Entrada: Nombre + Timeout + Numero de reintentos + ${}_{0}\{$ Parámetros de componente $\}_n$  + Nombre de protocolo + Nombre de tipo de componente
+					\item Proceso: Comprobar si la configuración de componente existe por medio del nombre. En caso de no existir:
+							Para el alta, agregarlo al listado de configuraciones de componentes con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+							Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+							En caso que ya exista la configuración de componente, mostrar el mensaje correspondiente.
+							El campo ``Parámetros de componente'' son todos aquellos parámetros que son necesarios para que el componente pueda implementar el protocolo elegido, este campo depende del tipo de protocolo. 
+					\item Salida: Configuración de componente ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+			
+			\item Listado de configuraciones de componentes
+				\begin{itemize}
+					\item Introducción: Despliega un listado de todas las configuraciones de componentes cargadas en el sistema
+					\item Entrada: Conjunto de configuraciones de componentes
+					\item Proceso: Muestra todas las configuraciones de componente en el sistema con los datos correspondientes.
+					\item Salida: ${}_{0}\{$ Nombre + Timeout + Numero de reintentos + ${}_{0}\{$ Parámetros de componente $\}_n$  + Nombre de protocolo + Nombre de tipo de componente $\}_n$. 
+				\end{itemize}
+				
+			\item Búsqueda de una configuración de componente
+				\begin{itemize}
+					\item Introducción: Permite buscar una configuración de componente.
+					\item Entrada: Conjunto de configuraciones de componente + Nombre de configuración de componente
+					\item Proceso: Ingresando el nombre se podrá buscar una configuración de componente y verificar si existe en el sistema o no.
+					\item Salida: Nombre + Timeout + Numero de reintentos + ${}_{0}\{$ Parámetros de componente $\}_n$  + Nombre de protocolo + Nombre de tipo de componente
+				\end{itemize}
+			
+			\item Gestión de configuraciones de entradas
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una configuración de entrada en el sistema.
+					\item Entrada: Nombre + ${}_{0}\{$ Parámetros de entrada $\}_n$ + Nombre de categoría de entrada + Nombre de tipo de entrada + Nombre de configuración de componente + Nombre de transformación
+					\item Proceso: Para el alta, agregarla al listado de configuraciones de entrada con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					El campo ``Parámetros de entrada'' son todos aquellos parámetros que son necesarios para que la entrada pueda implementar la transformación elegida, este campo depende de dicha transformación.
+					\item Salida: configuración de entrada ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+			
+			\item Búsqueda de configuraciones de entradas asociadas a una configuración de componente
+				\begin{itemize}
+					\item Introducción: Permite buscar todas las configuraciones de entradas asociadas a una determinada configuración de componente.
+					\item Entrada: Conjunto de configuraciones de entradas + Nombre de configuración de componente
+					\item Proceso: Ingresando el nombre de la configuración de componente se podrán buscar las configuraciones de entrada asociadas a esta y verificar si existen en el sistema o no.
+					\item Salida: ${}_{0}\{$ Nombre + ${}_{0}\{$ Parámetros de entrada $\}_n$ + Nombre de categoría de entrada + Nombre de tipo de entrada + Nombre de transformación $\}_n$.
+				\end{itemize}
+
+			\item Gestión de configuraciones de estados de entradas
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una configuración de estado de entrada en el sistema.
+					\item Entrada: Nombre + Valor máximo + Valor mínimo + Alarma [Si | No] + Nombre de configuración de entrada 
+					\item Proceso: Para el alta, agregarla al listado de configuraciones de estados de entradas con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					Los campos ``Valor máximo'' y ``Valor mínimo''  indican el valor mínimo y máximo en los que deben encontrarse los datos medidos para pertenecer al estado actual.
+					El campo ``Alarma'' indica si el estado actual es considerado un estado normal o de alarma.
+					\item Salida: Configuración de estado de entrada ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+
+			\item Búsqueda de configuraciones de estados de entradas asociadas a una configuración de entrada
+				\begin{itemize}
+					\item Introducción: Permite buscar todas las configuraciones de estados asociadas a una determinada configuración de entrada.
+					\item Entrada: Conjunto de configuraciones de estados de entradas + Nombre de configuración de entrada
+					\item Proceso: Ingresando el nombre de la configuración de entrada se podrán buscar las configuraciones de estados de entradas asociadas a esta y verificar si existen en el sistema o no.
+					\item Salida: ${}_{0}\{$ Nombre + Valor máximo + Valor mínimo + Alarma $\}_n$.
+				\end{itemize}
+	
+			\item Gestión de configuraciones de pedidos
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una configuración de pedido en el sistema.
+					\item Entrada: Nombre + ${}_{0}\{$ Parámetros de pedido $\}_n$ + Nombre de tipo de Pedido + Nombre de configuración de componente
+					\item Proceso: Para el alta, agregarla al listado de configuraciones de pedidos con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					El campo ``Parámetros de pedido'' son todos aquellos parámetros que son necesarios para que el pedido pueda ser implementado en el protocolo elegido, este campo depende de dicho protocolo. Los datos necesarios para llenar este campo se encuentran en ``Campos de Pedido''.
+					\item Salida: configuración de pedidos ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+				
+			\item Búsqueda de configuraciones de pedidos asociadas a una configuración de componente
+				\begin{itemize}
+					\item Introducción: Permite buscar todas las configuraciones de pedidos asociadas a una determinada configuración de componente.
+					\item Entrada: Conjunto de configuraciones de pedidos + Nombre de configuración de componente
+					\item Proceso: Ingresando el nombre de la configuración de componente se podrán buscar las configuraciones de pedidos asociadas a esta y verificar si existen en el sistema o no.
+					\item Salida: ${}_{0}\{$  Nombre + ${}_{0}\{$ Parámetros de pedido $\}_n$ + Nombre de tipo de pedido $\}_n$.
+				\end{itemize}
+
+			\item Gestión de configuraciones de sitios
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una configuración de sitio en el sistema.
+					\item Entrada: Nombre + ${}_{0}\{$ Nombre de configuración de componente  $\}_n$ + Nombre de tipo de sitio
+					\item Proceso: Comprobar si la configuración de sitio existe por medio del nombre. En caso de no existir:
+					Para el alta, agregarla al listado de configuraciones de sitios con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					En caso que ya exista la configuración de sitio, mostrar el mensaje correspondiente.
+					\item Salida: Configuración de sitio ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+				
+			\item Búsqueda de configuraciones de componentes asociadas a una configuración de sitio
+				\begin{itemize}
+					\item Introducción: Permite buscar todas las configuraciones de componentes asociadas a una determinada configuración de sitio.
+					\item Entrada: Conjunto de configuraciones de componentes + Nombre de configuración de sitio
+					\item Proceso: Ingresando el nombre de la configuración de sitio se podrán buscar las configuraciones de componentes asociadas a esta y verificar si existen en el sistema o no.
+					\item Salida: ${}_{0}\{$ Nombre + Timeout + Numero de reintentos + ${}_{0}\{$ Parámetros de componente $\}_n$  + Nombre de protocolo + Nombre de tipo de componente $\}_n$.
+				\end{itemize}
+					
+			\item Gestión de configuraciones de diagramas
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una configuración de diagrama en el sistema.
+					\item Entrada: Nombre + Nombre de configuración de sitio
+					\item Proceso: Para el alta, agregarla al listado de configuraciones de diagramas con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					\item Salida: Configuración de diagrama ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+				
+			\item Gestión de configuraciones de dispositivos
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una configuración de dispositivo en el sistema.
+					\item Entrada: Nombre + Posición X + Posición Y + Nombre de tipo de dispositivo + Nombre de configuración de diagrama
+					\item Proceso: Comprobar si la configuración de dispositivo existe por medio del nombre. En caso de no existir:
+					Para el alta, agregarla al listado de configuraciones de dispositivos con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					En caso que ya exista la configuración de dispositivo, mostrar el mensaje correspondiente.
+					Los campos ``Posición X'' y ``Posición Y'' indican la posición en el eje X y en el eje Y del dispositivo en el diagrama
+					\item Salida: configuración de dispositivo ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+
+			\item Gestión de configuraciones de entradas de las configuraciones de dispositivos
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios dar de alta, baja y modificar una configuración de entrada asociada a una configuración de dispositivo en el sistema.
+					\item Entrada: Nombre de configuración de entrada + Nombre de configuración de dispositivo + (Abreviación) + Índice
+					\item Proceso: Para el alta, agregarla al listado de configuraciones de entradas de las configuraciones de dispositivos con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					El contenido del campo ``Abreviación'' será utilizado para representar a la entrada en el diagrama, si no posee ningún valor la entrada no se muestra en el diagrama 
+					El campo ``Índice'' indica el orden en el que aparecerá en la lista de entradas
+					\item Salida: Configuración de entrada de la configuración de dispositivo ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+				
+			\item Búsqueda de configuraciones de entradas asociadas a una configuración de dispositivo
+				\begin{itemize}
+					\item Introducción: Permite buscar todas las configuraciones de entradas asociadas a una determinada configuración de dispositivo.
+					\item Entrada: Conjunto de configuraciones de entradas + Nombre de configuración de dispositivo
+					\item Proceso: Ingresando el nombre de la configuración de dispositivo se podrán buscar las configuraciones de entrada asociadas a esta y verificar si existen en el sistema o no.
+					\item Salida: ${}_{0}\{$ Nombre + ${}_{0}\{$ Parámetros de entrada $\}_n$ + Nombre de categoría de entrada + Nombre de tipo de entrada + Nombre de transformación $\}_n$.
+				\end{itemize}
+
+			\item Gestión de configuraciones de pedidos de las configuraciones de dispositivos
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una configuración de pedido asociada a una configuración de dispositivo en el sistema.
+					\item Entrada: Nombre de configuración de pedido + Nombre de configuración de dispositivo + Índice
+					\item Proceso: Para el alta, agregarla al listado de configuraciones de pedidos de las configuraciones dispositivos con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					El campo ``Índice'' indica el orden en el que aparecerá en la lista de pedidos
+					\item Salida: Configuración de pedido de la configuración de dispositivo ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+				
+			\item Búsqueda de configuraciones de pedidos asociadas a una configuración de dispositivo
+				\begin{itemize}
+					\item Introducción: Permite buscar todas las configuraciones de pedidos asociadas a una determinada configuración de dispositivo.
+					\item Entrada: Conjunto de configuraciones de pedidos + Nombre de configuración de dispositivo
+					\item Proceso: Ingresando el nombre de la configuración de dispositivo se podrán buscar las configuraciones de pedidos asociadas a esta y verificar si existen en el sistema o no.
+					\item Salida: ${}_{0}\{$  Nombre + ${}_{0}\{$ Parámetros de pedido $\}_n$ + Nombre de tipo de pedido $\}_n$.
+				\end{itemize}
+
+			\item  Gestión de configuraciones de entradas de las configuraciones de diagramas
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una entrada asociada a una configuración de diagrama en el sistema.
+					\item Entrada: Nombre de configuración de entrada + Nombre de configuración de Diagrama + Índice
+					\item Proceso: Para el alta, agregarla al listado de entradas de diagrama con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					El campo ``Índice'' indica el orden en el que aparecerá en diagrama
+					\item Salida: Entrada de diagrama ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+				
+			\item Búsqueda de configuraciones de entradas asociadas a una configuración de diagrama
+				\begin{itemize}
+					\item Introducción: Permite buscar todas las configuraciones de entradas asociadas a una determinada configuración de diagrama.
+					\item Entrada: Conjunto de configuraciones de entradas + Nombre de configuración de diagrama
+					\item Proceso: Ingresando el nombre de la configuración de diagrama se podrán buscar las configuraciones de entrada asociadas a esta y verificar si existen en el sistema o no.
+					\item Salida: ${}_{0}\{$ Nombre + ${}_{0}\{$ Parámetros de entrada $\}_n$ + Nombre de categoría de entrada + Nombre de tipo de entrada + Nombre de transformación $\}_n$.
+				\end{itemize}
+
+			\item Gestión de configuraciones de pedidos de las configuraciones de diagramas
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar un pedido asociado a una configuración de diagrama en el sistema.
+					\item Entrada: Nombre de configuración de pedido + Nombre de configuración de diagrama + Índice
+					\item Proceso: Para el alta, agregarlo al listado de pedidos de diagrama con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo.
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos.
+					El campo ``Índice'' indica el orden en el que aparecerá en diagrama
+					\item Salida: Pedido de diagrama ingresado. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+				
+			\item Búsqueda de configuraciones de pedidos asociadas a una configuración de diagrama
+				\begin{itemize}
+					\item Introducción: Permite buscar todas las configuraciones de pedidos asociadas a una determinada configuración de diagrama.
+					\item Entrada: Conjunto de configuraciones de pedidos + Nombre de configuración de diagrama
+					\item Proceso: Ingresando el nombre de la configuración de diagrama se podrán buscar las configuraciones de pedidos asociadas a esta y verificar si existen en el sistema o no.
+					\item Salida: ${}_{0}\{$  Nombre + ${}_{0}\{$ Parámetros de pedido $\}_n$ + Nombre de tipo de pedido $\}_n$.
+				\end{itemize}
+				
+			\item Gestión de configuraciones de etiquetas
+				\begin{itemize}
+					\item Introducción: Permitir a los usuarios con rol de administrador dar de alta, baja y modificar una configuración de etiqueta asociada a una configuración de diagrama en el sistema.
+					\item Entrada: Texto + Posición X + Posición Y + Nombre de configuración de diagrama
+					\item Proceso: Para el alta, agregarla al listado de configuraciones de etiquetas con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo. 
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos. 
+					Los campos ``Posición X'' y ``Posición Y'' indican la posición en el eje X y en el eje Y de la etiqueta en el diagrama.
+					\item Salida: Configuración de etiqueta ingresada. Mensaje informando lo que está sucediendo.
+				\end{itemize}
+				
+			\item Gestión de configuraciones de conectores
+				\begin{itemize}
+					\item Introducción: Permite a los usuarios con rol de administrador dar de alta, baja y modificar una configuración de conector asociada a un diagrama en el sistema.
+					\item Entrada: ${}_{0}\{$ Puntos $\}_n$ + Nombre de configuración de diagrama + Nombre de tipo de conector
+					\item Proceso: Para el alta, agregarla al listado de configuraciones de conectores con los datos correspondientes y devolver como salida el elemento que se acaba de cargar y un mensaje informativo. 
+					Para la modificación, mostrar los datos permitiendo al usuario la modificación de los mismos. 
+					El campo ``Puntos'' es un listado de pares de coordenadas que definen a un conector en el diagrama.
+					\item Salida: Configuración de conector ingresada. Mensaje informando lo que está sucediendo. 
+				\end{itemize}
+				
+			\item Búsqueda de configuración de diagrama asociada a una configuración de sitio
+				\begin{itemize}
+					\item Introducción: Permite buscar la configuración de diagrama que está asociada a una determinada configuración de sitio, como así también todos aquellos dispositivos, etiquetas y conectores pertenecientes a la configuración de diagrama encontrada.
+					\item Entrada: Conjunto de configuraciones de diagrama + Conjunto de configuraciones de dispositivo + Conjunto de configuraciones de etiquetas + Conjunto de configuraciones de conectores + Nombre de configuración de sitio
+					\item Proceso: Ingresando el nombre de la configuración de sitio se podrá buscar si existe una configuración de diagrama en el sistema o no. En caso de existir devolverá la configuración de diagrama junto con todos los dispositivos, etiquetas y conectores asociados a esta.
+					\item Salida: Nombre de configuración del diagrama + ${}_{0}\{$ Nombre de la configuración de dispositivo + Posición X + Posición Y + Nombre de Tipo de dispositivo $\}_n$ + ${}_{0}\{$ Texto de etiqueta + Posición X + Posición Y $\}_n$ + ${}_{0}\{$ ${}_{0}\{$ Puntos $\}_n$ + Nombre de tipo de conector $\}_n$.
+				\end{itemize}
+				
+					\item Búsqueda de históricos de alarmas
+				\begin{itemize}
+					\item Introducción: Permite buscar todas las alarmas producidas en un determinado rango de fechas.
+					\item Entrada: Cantidad de alarmas por página + Nombre de sitio + Fecha inicial + Fecha final
+					\item Proceso: Se podrá buscar los datos de las alarmas del sistema que se produjeron en un determinado rango de fechas. Si se ingresa como parámetro de búsqueda el nombre de un sitio, solo se buscarán los históricos asociados a ese sitio. Los datos serán paginados con el tamaño de página indicado.
+					\item Salida: ${}_{0}\{$ Nombre de sitio + Nombre de componente + Nombre de entrada + Nombre de estado de entrada + Fecha en que se produjo + Fecha en que se reconoció + Fecha en que se solucionó $\}_n$.
+				\end{itemize}
+				
+					\item Búsqueda de históricos de comandos
+				\begin{itemize}
+					\item Introducción: Permite buscar todos los comandos efectuados en un determinado rango de fechas.
+					\item Entrada: Cantidad de comandos por página + Nombre de sitio + Fecha inicial + Fecha final
+					\item Proceso: Se podrá buscar los datos de los comandos del sistema que se produjeron en un determinado rango de fechas. Si se ingresa como parámetro de búsqueda el nombre de un sitio, solo se buscarán los históricos asociados a ese sitio. Los datos serán paginados con el tamaño de página indicado.
+					\item Salida: ${}_{0}\{$ Nombre de sitio + Nombre de componente + Nombre de pedido + Fecha en que se produjo + Nombre de usuario $\}_n$.
+				\end{itemize}
+				
+					\item Búsqueda de históricos de mediciones
+				\begin{itemize}
+					\item Introducción: Permite buscar todas las mediciones efectuadas por los equipos del sistema en un determinado rango de fechas.
+					\item Entrada: Cantidad de mediciones por página + Nombre de entrada + Fecha inicial + Fecha final
+					\item Proceso: Se podrá buscar los datos de las mediciones efectuadas por los equipos del sistema en un determinado rango de fechas. Si se ingresa como parámetro de búsqueda el nombre de una entrada de un determinado sitio, solo se buscarán las mediciones asociadas a esa entrada. Los datos serán paginados con el tamaño de página indicado.
+					\item Salida: ${}_{0}\{$ Nombre de entrada + Tipo de entrada + Medición + Fecha en que se produjo $\}_n$.
+				\end{itemize}
+				
+		\end{enumerate}
+		
+\section{Suposiciones y dependencias}
+\paragraph\indent 	
+\textbf{Suposiciones:} Se asume que los requisitos en este documento son estables una vez que sean aprobados por el administrador del Sistema. Cualquier petición de cambios en la especificación debe ser aprobada por todas las partes que intervienen y será gestionada por el equipo de desarrollo.
+\paragraph\indent
+\textbf{Dependencias:} No posee dependencias.
+
+\section{Requisitos de usuario y tecnológicos}
+\textbf{Requisitos de usuario:} Los usuarios serán las personas que trabajan en el centro de operaciones de EDET. Existirá un grupo de administradores que se encargarán de diferentes tareas en cuanto a la gestión de datos del sistema. Las interfaces deben ser intuitivas, fáciles de usar y amigables de modo que con breves instrucciones los usuarios sean capaces de usarla. Además se deberá tener en cuenta el diseño de las interfaces del sistema actualmente en funcionamiento con la idea de que el nuevo sistema adopte ciertos procedimientos y estándares ya establecidos.
+
+\textbf{Requisitos tecnológicos:} La aplicación se ejecutará sobre un esquema cliente/servidor, con los procesos e interfaz de usuario ejecutándose en los clientes y éstos solicitando requerimientos al servidor que cumple su proceso. El usuario podrá ejecutar el sistema en cualquier sistema operativo en donde se pueda ejecutar un navegador WEB que soporte HTML5, Websocket y pueda interpretar código javascript estándar. Para poder acceder al sistema el usuario debe tener una conexión a la red en donde se encuentre el servidor.
+
+\section{Requisitos de interfaces externas}
+\textbf{Interfaces de usuario:}
+
+\textbf{Interfaces hardware:} Ratón, teclado estándar y monitor a color con una resolución mínima de 1024 x 768 pixeles.
+
+\textbf{Interfaces software:} Los datos del sistema serán obtenidos a partir de una API que estará implementada en el servidor. La API validará tanto el pedido como el envío de información entre los usuarios y los módulos del sistema.
+
+\section{Requisitos de rendimiento}
+El tiempo de respuesta de la aplicación a cada función solicitada por el usuario no debe ser superior a los 10 segundos. El tiempo de respuesta a los listados dependerá de la cantidad de datos solicitados.
+
+\section{Requisitos de desarrollo}
+El ciclo de vida será el de prototipado evolutivo utilizando una metodología V-Script, debiendo orientarse hacia el desarrollo de un sistema flexible que permita incorporar de manera sencilla cambios y nuevas funcionalidades.
+
+\section{Restricciones de diseño}
+\textbf{Ajuste a estándares:} El sistema deberá respetar los estándares actuales establecidos para el comportamiento de las alarmas y la ejecución de los comandos. También debe permitir la representación de los equipos usando diagramas unifilares.
+
+\textbf{Seguridad:} La seguridad de los datos estará implementada en el servidor. La conexión del servidor estará cifrada, y para la autenticación se usará el mecanismo de tokens.
+
+

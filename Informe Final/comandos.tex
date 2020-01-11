@@ -1,0 +1,180 @@
+% Comandos para los diagramas de actividad
+\newcommand{\activityDiagram}[2]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.95\textheight,keepaspectratio]{#1}
+		\caption{#2}
+	\label{fig:#1}
+	\end{figure}
+}
+
+% Comandos para los diagramas de estado
+\newcommand{\stateDiagram}[2]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.95\textheight,keepaspectratio]{#1}
+		\caption{#2}
+	\label{fig:#1}
+	\end{figure}
+}
+
+
+% Cargar imagen de escenario
+% Parámetro 1: nombre de imagen - Parámetro 2: epígrafe
+\newcommand{\stageImage}[2]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.35\textheight,keepaspectratio]{escenarios/#1}
+		\caption{#2}
+	\label{fig:#1}
+	\end{figure}
+}
+
+\newcommand{\stageTitle}[2]{
+	\noindent\begin{minipage}{\textwidth}
+	{#2}
+	\stageImage{#1}{#2}
+	\end{minipage}
+}
+
+\newcommand{\stageTitleD}[3]{
+	\noindent\begin{minipage}{\textwidth}
+	{#3}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.35\textheight,keepaspectratio]{escenarios/#1}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.35\textheight,keepaspectratio]{escenarios/#2}
+		\caption{#3}
+	\label{fig:#1}
+	\end{figure}
+	\end{minipage}
+	}
+
+% Comandos para numerar los escenarios
+% Ejemplo de uso: \stageLogin{00} --> AI_01_00
+\newcommand{\stageLogin}[1]{\hyperref[fig:login]{AI\_01\_#1}}
+\newcommand{\stageMain}[1]{\hyperref[fig:main]{AI\_02\_#1}}
+\newcommand{\stageHeader}[1]{\hyperref[fig:header]{AI\_03\_#1}}
+\newcommand{\stageAlarms}[1]{\hyperref[fig:alarms]{AI\_04\_#1}}
+\newcommand{\stageCommunicationErrors}[1]{\hyperref[fig:communicationErrors]{AI\_05\_#1}}
+\newcommand{\stageSitesMap}[1]{\hyperref[fig:sitesMap]{AI\_06\_#1}}
+\newcommand{\stageFilters}[1]{\hyperref[fig:filters]{AI\_07\_#1}}
+
+\newcommand{\stageDashboard}[1]{\hyperref[fig:dashboard]{AI\_08\_#1}}
+\newcommand{\stageManagement}[1]{\hyperref[fig:management]{AI\_09\_#1}}
+
+\newcommand{\stageSiteData}[1]{\hyperref[fig:siteData]{AI\_10\_#1}}
+\newcommand{\stageSiteLocation}[1]{\hyperref[fig:siteLocation]{AI\_11\_#1}}
+\newcommand{\stageSiteComponent}[1]{\hyperref[fig:siteComponent]{AI\_12\_#1}}
+\newcommand{\stageChannel}[1]{{AI\_13\_#1}}
+\newcommand{\stageAdministration}[1]{{AI\_14\_#1}}
+
+\newcommand{\stageComponentConfig}[1]{\hyperref[fig:componentConfig]{AI\_15\_#1}}
+\newcommand{\stageRequestConfig}[1]{\hyperref[fig:requestConfig]{AI\_16\_#1}}
+\newcommand{\stageInputConfig}[1]{\hyperref[fig:inputConfig]{AI\_17\_#1}}
+\newcommand{\stageSiteConfig}[1]{\hyperref[fig:siteConfig]{AI\_18\_#1}}
+\newcommand{\stageUnifilarConfig}[1]{\hyperref[fig:unifilarConfig]{AI\_19\_#1}}
+\newcommand{\stageUnifilarConfigOp}[1]{\hyperref[fig:unifilarConfigOp]{AI\_20\_#1}}
+\newcommand{\stageUnifilarConfigOpInputs}[1]{\hyperref[fig:unifilarConfigOpInputs]{AI\_21\_#1}}
+\newcommand{\stageUnifilarConfigOpRequests}[1]{\hyperref[fig:unifilarConfigOpRequests]{AI\_22\_#1}}
+\newcommand{\stageUnifilarConfigOpStates}[1]{\hyperref[fig:unifilarConfigOpStates]{AI\_23\_#1}}
+
+\newcommand{\stageUserData}[1]{\hyperref[fig:userData]{AI\_24\_#1}}
+\newcommand{\stageUserSite}[1]{\hyperref[fig:userSite]{AI\_25\_#1}}
+\newcommand{\stageProfile}[1]{\hyperref[fig:profile]{AI\_26\_#1}}
+
+\newcommand{\stageChannelCommunication}[1]{\hyperref[fig:channelCommunication]{AI\_27\_#1}}
+
+\newcommand{\stageUnifilar}[1]{\hyperref[fig:unifilar]{AI\_28\_#1}}
+\newcommand{\stageDevices}[1]{\hyperref[fig:devices]{AI\_29\_#1}}
+\newcommand{\stageSiteRequests}[1]{\hyperref[fig:requestsSite]{AI\_30\_#1}}
+\newcommand{\stageAnalogInputs}[1]{\hyperref[fig:analog]{AI\_31\_#1}}
+\newcommand{\stageDigitalInputs}[1]{\hyperref[fig:digital]{AI\_32\_#1}}
+\newcommand{\stageCommands}[1]{\hyperref[fig:commands]{AI\_33\_#1}}
+\newcommand{\stageRequests}[1]{\hyperref[fig:requests]{AI\_34\_#1}}
+\newcommand{\stageTasks}[1]{\hyperref[fig:tasks]{AI\_35\_#1}}
+
+\newcommand{\stageHistory}[1]{{UI\_36\_#1}}
+
+\newcommand{\stageName}[2]{Escenario #1 : #2}
+\newcommand{\stageLoginName}{\stageName{\stageLogin{00}}{Inicio de sesión}}
+\newcommand{\stageHeaderName}{\stageName{\stageHeader{00}}{Encabezado del sistema}}
+\newcommand{\stageMainName}{\stageName{\stageMain{00}}{Vista principal}}
+\newcommand{\stageAlarmsName}{\stageName{\stageAlarms{00}}{Alarmas}}
+\newcommand{\stageCommunicationErrorsName}{\stageName{\stageCommunicationErrors{00}}{Errores de comunicación}}
+\newcommand{\stageSitesMapName}{\stageName{\stageSitesMap{00}}{Mapa de sitios}}
+\newcommand{\stageFiltersName}{\stageName{\stageFilters{00}}{Filtros de mapa}}
+
+\newcommand{\stageDashboardName}{\stageName{\stageDashboard{00}}{Panel de control}}
+\newcommand{\stageManagementName}{\stageName{\stageManagement{00}}{Gestión de entidades}}
+\newcommand{\stageSiteDataName}{\stageName{\stageSiteData{00}}{Sitios - Datos generales}}
+\newcommand{\stageSiteLocationName}{\stageName{\stageSiteLocation{00}}{Sitios - Ubicación}}
+\newcommand{\stageSiteComponentName}{\stageName{\stageSiteComponent{00}}{Sitios - Configuración de componentes}}
+\newcommand{\stageUserDataName}{\stageName{\stageUserData{00}}{Usuarios - Datos generales}}
+\newcommand{\stageUserSiteName}{\stageName{\stageUserSite{00}}{Usuarios - Asignación de sitios}}
+\newcommand{\stageProfileName}{\stageName{\stageProfile{00}}{Perfiles}}
+
+\newcommand{\stageComponentConfigName}{\stageName{\stageComponentConfig{00}}{Configuración de componentes - Datos generales}}
+\newcommand{\stageRequestConfigName}{\stageName{\stageRequestConfig{00}}{Configuración de componentes - Pedidos}}
+\newcommand{\stageInputConfigName}{\stageName{\stageInputConfig{00}}{Configuración de componentes - Entradas}}
+\newcommand{\stageSiteConfigName}{\stageName{\stageSiteConfig{00}}{Configuración de sitios - Datos generales}}
+\newcommand{\stageUnifilarConfigName}{\stageName{\stageUnifilarConfig{00}}{Configuración de sitios - Creación de diagrama unifilar}}
+\newcommand{\stageUnifilarConfigOpName}{\stageName{\stageUnifilarConfigOp{00}}{Configuración de diagrama unifilar}}
+\newcommand{\stageUnifilarConfigOpInputsName}{\stageName{\stageUnifilarConfigOpInputs{00}}{Configuración de diagrama unifilar - Entradas}}
+\newcommand{\stageUnifilarConfigOpRequestsName}{\stageName{\stageUnifilarConfigOpRequests{00}}{Configuración de diagrama unifilar - Pedidos}}
+\newcommand{\stageUnifilarConfigOpStatesName}{\stageName{\stageUnifilarConfigOpStates{00}}{Configuración de diagrama unifilar - Estados de dispositivos}}
+\newcommand{\stageChannelCommunicationName}{\stageName{\stageChannelCommunication{00}}{Sistema de comunicaciones}}
+
+\newcommand{\stageUnifilarName}{\stageName{\stageUnifilar{00}}{Unifilar}}
+\newcommand{\stageDevicesName}{\stageName{\stageDevices{00}}{Dispositivos}}
+\newcommand{\stageSiteRequestsName}{\stageName{\stageSiteRequests{00}}{Pedidos de sitio}}
+\newcommand{\stageAnalogInputsName}{\stageName{\stageAnalogInputs{00}}{Entradas analógicas}}
+\newcommand{\stageDigitalInputsName}{\stageName{\stageDigitalInputs{00}}{Entradas digitales}}
+\newcommand{\stageCommandsName}{\stageName{\stageCommands{00}}{Comandos}}
+\newcommand{\stageRequestsName}{\stageName{\stageRequests{00}}{Pedidos}}
+\newcommand{\stageTasksName}{\stageName{\stageTasks{00}}{Tareas}}
+
+\newcommand{\stageHistoryName}{\stageName{\stageHistory{00}}{Históricos}}
+\newcommand{\stageChannelName}{\stageName{\stageChannel{00}}{Canales}}
+\newcommand{\stageAdministrationName}{\stageName{\stageAdministration{00}}{Administraciones}}
+
+
+% Comandos para numerar los casos de uso
+\newcounter{caseUseCounter}
+\setcounter{caseUseCounter}{0}
+
+\newcommand{\caseUseNext}[1]{%
+	\refstepcounter{caseUseCounter}\label{CUL#1}
+	\expandafter\gdef\csname CU#1\endcsname{CU\ref{CUL#1}}%
+}
+
+\newcommand{\caseUseNumber}[1]{%
+	CU\ref{CUL#1}
+}
+
+% Comando para un diagrama de secuencia pequeño
+% Parámetro 1: nombre de imagen - Parámetro 2: epígrafe
+\newcommand{\SmallSecuenceD}[3]{
+\begin{minipage}{0.45\textwidth}
+{#3}
+\end{minipage}%
+\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{tabular}{|p{\textwidth}}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.35\textheight,keepaspectratio]{#1}
+		\caption{#2}
+	\label{fig:#1}
+	\end{figure}
+\end{tabular}
+\end{minipage}%
+}
+
+% Comandos para las tablas de acciones
+\newcommand{\actionFileName}{sinAcentos}
+\newcommand{\actionName}{Nombre completo}
+\newcommand{\actionsFunctions}{Nombre completo}
