@@ -1,4 +1,4 @@
-@startuml
+@startuml Actors
 top to bottom direction
 /' Definicion de los actores'/
 :Usuarios: 

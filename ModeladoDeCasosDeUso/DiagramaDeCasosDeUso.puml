@@ -15,7 +15,7 @@ Vendedores ..|> ZMGestion
 Fabricantes ..|> ZMGestion
 @enduml
 
-@startuml DiagramaSubsistemas
+@startuml DiagramaSubsistema
 !include ./Actors/Actors.wsd
 
 left to right direction
@@ -285,7 +285,7 @@ rectangle GestionClientes{
 @enduml
 
 
-@startuml GestionPrespuestos
+@startuml GestionPresupuestos
 !include ./Actors/Actors.wsd
  left to right direction
 
