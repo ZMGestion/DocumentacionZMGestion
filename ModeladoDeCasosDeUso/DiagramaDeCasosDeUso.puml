@@ -1,5 +1,5 @@
 @startuml DiagramaContexto
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
 
 left to right direction
 
@@ -16,7 +16,7 @@ Fabricantes ..|> ZMGestion
 @enduml
 
 @startuml DiagramaSubsistema
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
 
 left to right direction
 
@@ -84,7 +84,7 @@ rectangle ZMGestion{
 @enduml
 
 @startuml Sesiones
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle Sesiones{
@@ -97,7 +97,7 @@ rectangle Sesiones{
 @enduml
 
 @startuml GestionEmpleados
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionEmpleados{
@@ -118,7 +118,7 @@ rectangle GestionEmpleados{
 @enduml
 
 @startuml GestionRoles
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionRoles{
@@ -135,7 +135,7 @@ rectangle GestionRoles{
 @enduml
 
 @startuml GestionProductos
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionProductos{
@@ -160,7 +160,7 @@ rectangle GestionProductos{
 @enduml
 
 @startuml GestionTelas
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionTelas{
@@ -185,7 +185,7 @@ rectangle GestionTelas{
 @enduml
 
 @startuml GestionProductosFinales
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionProductosFinales{
@@ -210,7 +210,7 @@ rectangle GestionProductosFinales{
 @enduml
 
 @startuml GestionGruposProducto
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionGruposProducto{
@@ -236,7 +236,7 @@ rectangle GestionGruposProducto{
 @enduml
 
 @startuml GestionUbicaciones
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionUbicaciones{
@@ -262,7 +262,7 @@ rectangle GestionUbicaciones{
 @enduml
 
 @startuml GestionClientes
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionClientes{
@@ -286,7 +286,7 @@ rectangle GestionClientes{
 
 
 @startuml GestionPresupuestos
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionPrespuestos{
@@ -316,7 +316,7 @@ rectangle GestionPrespuestos{
 @enduml
 
 @startuml GestionLineasPresupuesto
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionLineasPresupuesto{
@@ -331,7 +331,7 @@ rectangle GestionLineasPresupuesto{
 @enduml
 
 @startuml GestionVentas
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionVentas{
@@ -360,7 +360,7 @@ rectangle GestionVentas{
 @enduml
 
 @startuml GestionLineasVenta
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionLineasVenta{
@@ -375,7 +375,7 @@ rectangle GestionLineasVenta{
 @enduml
 
 @startuml GestionFacturas
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionFacturas{
@@ -402,7 +402,7 @@ rectangle GestionFacturas{
 @enduml
 
 @startuml GestionRecibos
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionRecibos{
@@ -425,7 +425,7 @@ rectangle GestionRecibos{
 @enduml
 
 @startuml GestionNotasCredito
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionNotasCredito{
@@ -448,7 +448,7 @@ rectangle GestionNotasCredito{
 @enduml
 
 @startuml GestionRemitos
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionRemitos{
@@ -470,7 +470,7 @@ rectangle GestionRemitos{
 @enduml
 
 @startuml GestionOrdenesReposicion
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionOrdenesReposicion{
@@ -490,19 +490,20 @@ rectangle GestionOrdenesReposicion{
 @enduml
 
 @startuml GestionOrdenesProduccion
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionOrdenesProduccion{
     UseCase "CU099 - Crear orden de producción" as C
     UseCase "CU101 - Buscar avanzado órdenes de producción " as BA
     UseCase "CU100 - Modificar orden de producción" as M
-    UseCase "CU102 - Listar lineas de orden de producción" as Listar
+    UseCase "CU102 - Listar lineas de orden de producción" as ListarLineas
     UseCase "CU103 - Borrar orden de producción" as B
     UseCase "CU104 - Finalizar orden de producción" as Finalizar
     UseCase "CU105 - Verificar orden de producción" as Verificar
     UseCase "CU106 - Producir orden de producción" as Producir
     UseCase "CU107 - Cancelar orden de producción" as Cancelar
+    UseCase "CU108 - Listar observaciones de línea de orden de producción" as ListarObservaciones
     package GestionLineasOrdenProduccion{
     }
     package GestionObservaciones{
@@ -510,16 +511,16 @@ rectangle GestionOrdenesProduccion{
 
     BA <|.. M : <<Extends>>
     BA <|.. B : <<Extends>>
-    BA <|.. Listar : <<Extends>>
+    BA <|.. ListarLineas : <<Extends>>
     BA <|.. Finalizar : <<Extends>>
     BA <|.. Verificar : <<Extends>>
     BA <|.. Cancelar : <<Extends>>
     BA <|.. Producir : <<Extends>>
+    ListarLineas <|.. ListarObservaciones : <<Extends>>
     C <|.. GestionLineasOrdenProduccion : <<Extends>>
     M <|.. GestionLineasOrdenProduccion : <<Extends>>
     BA <|.. GestionLineasOrdenProduccion : <<Extends>>
     Listar <|.. GestionObservaciones : <<Extends>>
-
 }
     Administradores -- C
     Fabricantes -- BA
@@ -530,21 +531,20 @@ rectangle GestionOrdenesProduccion{
 @enduml
 
 @startuml GestionLineasOrdenesProduccion
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionLineasOrdenesProduccion{
-    UseCase "CU108 - Crear linea de orden de producción" as C
-    UseCase "CU109 - Modificar linea de orden de producción" as M
-    UseCase "CU110 - Borrar linea de orden de producción" as B
-    UseCase "CU111 - Finalizar linea de orden de producción" as Finalizar
-    UseCase "CU112 - Verificar linea de orden de producción" as Verificar
+    UseCase "CU109 - Crear linea de orden de producción" as C
+    UseCase "CU110 - Modificar linea de orden de producción" as M
+    UseCase "CU111 - Borrar linea de orden de producción" as B
+    UseCase "CU112 - Finalizar linea de orden de producción" as Finalizar
+    UseCase "CU113 - Verificar linea de orden de producción" as Verificar
     /'Designar fabricante'/
-    UseCase "CU113 - Asignar fabricante a linea de orden de producción" as Asignar 
+    UseCase "CU114 - Asignar fabricante a linea de orden de producción" as Asignar 
     /'Fabricantes anuncia que comienzan a producir'/
-    UseCase "CU114 - Producir linea de orden de producción" as Producir 
-    UseCase "CU115 - Cancelar linea de orden de producción" as Cancelar
-
+    UseCase "CU115 - Producir linea de orden de producción" as Producir 
+    UseCase "CU116 - Cancelar linea de orden de producción" as Cancelar
 }
     Administradores -- C
     Administradores -- Verificar
@@ -558,18 +558,14 @@ rectangle GestionLineasOrdenesProduccion{
 @enduml
 
 @startuml GestionObservaciones
-!include ./Actors/Actors.wsd
+!include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionObservaciones{
-    UseCase "CU116 - Crear observación" as C
-    UseCase "CU117 - Listar observaciones" as L
+    UseCase "CU117 - Crear observación" as C
     UseCase "CU118 - Borrar observación" as B
-
-    L <|.. B : <<Extends>>
 }
     Administradores -- C
-    Fabricantes -- L
     Administradores -- B
 
 @enduml
