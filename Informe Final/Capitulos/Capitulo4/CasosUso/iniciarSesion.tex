@@ -1,0 +1,50 @@
+\renewcommand{\caseUseShortName}{iniciarSesion}
+\renewcommand{\caseUseCreated}{17/04/2018}
+\renewcommand{\caseUseModified}{17/04/2018}
+\renewcommand{\caseUseName}{\CUiniciarSesion - Iniciar sesión}
+
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un usuario iniciar sesión en el sistema.}
+
+\renewcommand{\caseUsePeople}{Usuarios (todos): quiere ingresar al sistema.}
+
+\renewcommand{\caseUsePreconditions}{
+	\caseUseRow{No estar logueado en el sistema.}
+}
+
+\renewcommand{\caseUsePostconditions}{
+	\caseUseRow{Ninguna.}
+}
+
+\renewcommand{\caseUseScene}{
+	\addCaseUseStep{Un usuario desea ingresar al sistema.}
+	\addCaseUseStep{El usuario ingresa nombre de usuario y contraseña.}
+	\addCaseUseStep{El usuario hace click en el botón Iniciar sesión.}
+	\addCaseUseStep{El sistema envía los datos a la API.} %4
+	\addCaseUseStep{La API responde con un código 201 (Éxito).}
+	\addCaseUseStep{El sistema autentica al usuario en la conexión websocket.} %6
+	\addCaseUseStep{La API responde con un código 201 (Éxito).}
+	\addCaseUseStep{El sistema muestra al usuario la pantalla de operación.}
+}
+
+\renewcommand{\alternativeCaseUse}{
+	\newAlternative{A1: Error al iniciar sesión.}{4}
+	\caseUseRow{La secuencia A1 comienza luego del punto 4 del escenario principal.}
+	\alternativeRow{La API responde con un código de error 422.}
+	\alternativeRow{El sistema muestra al usuario el error ocurrido.}
+	\alternativeRow{El sistema borra los datos ingresados por el usuario.}
+	\caseUseRow{}
+	
+	\newAlternative{A2: Error al autenticar al usuario por websocket.}{6}
+	\caseUseRow{La secuencia A2 comienza luego del punto 6 del escenario principal.}
+	\alternativeRow{La API responde con un código de error 422.}
+	\alternativeRow{El sistema vuelve al paso 7 del escenario principal.}
+}
+
+\renewcommand{\caseUseRequirementsGUI}{
+	\caseUseRow{Teclado, Mouse, Pantalla}
+}
+\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 5 segundos.}
+\renewcommand{\caseUseConcurrence}{}
+\renewcommand{\caseUseAvailability}{}
+\item Caso de uso: \caseUseName
+\input{capitulos/capitulo4/casosUso/generalTable.tex}
