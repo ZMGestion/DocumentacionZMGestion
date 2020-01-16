@@ -520,7 +520,7 @@ rectangle GestionOrdenesProduccion{
     C <|.. GestionLineasOrdenProduccion : <<Extends>>
     M <|.. GestionLineasOrdenProduccion : <<Extends>>
     BA <|.. GestionLineasOrdenProduccion : <<Extends>>
-    Listar <|.. GestionObservaciones : <<Extends>>
+    ListarLineas <|.. GestionObservaciones : <<Extends>>
 }
     Administradores -- C
     Fabricantes -- BA
