@@ -1,44 +1,48 @@
 \renewcommand{\caseUseShortName}{iniciarSesion}
-\renewcommand{\caseUseCreated}{15/02/2020}
-\renewcommand{\caseUseModified}{15/02/2020}
+\renewcommand{\caseUseCreated}{16/01/2020}
+\renewcommand{\caseUseModified}{16/01/2020}
 \renewcommand{\caseUseName}{\CUiniciarSesion - Iniciar sesión}
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un usuario iniciar sesión en el sistema.}
-\renewcommand{\caseUsePeople}{Usuarios (todos): quiere ingresar al sistema.}
+\renewcommand{\caseUsePeople}{Usuarios: quiere ingresar al sistema.}
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{No estar logueado en el sistema.}
+	\caseUseRow{El usuario se encuentra creado y activo en ZMGestion.}
 }
 \renewcommand{\caseUsePostconditions}{
-	\caseUseRow{Ninguna.}
+	\caseUseRow{Se valida al usuario, se genera el token de sesión y se le muestra al usuario las opciones personales disponibles.}
 }
 \renewcommand{\caseUseScene}{
-	\addCaseUseStep{Un usuario desea ingresar al sistema.}
-	\addCaseUseStep{El usuario ingresa nombre de usuario y contraseña.}
-	\addCaseUseStep{El usuario hace click en el botón Iniciar sesión.}
-	\addCaseUseStep{El sistema envía los datos a la API.} %4
-	\addCaseUseStep{La API responde con un código 201 (Éxito).}
-	\addCaseUseStep{El sistema autentica al usuario en la conexión websocket.} %6
-	\addCaseUseStep{La API responde con un código 201 (Éxito).}
-	\addCaseUseStep{El sistema muestra al usuario la pantalla de operación.}
+	\addCaseUseStep{El usuario ingresa la dirección de la aplicación en un dispositivo conectado a Internet.}
+	\addCaseUseStep{ZMGestion muestra un formulario para que el usuario ingrese su nombre de usuario y contraseña.}
+	\addCaseUseStep{El usuario introduce su nombre de usuario y contraseña.}
+	\addCaseUseStep{ZMGestion genera el token correspondiente y lo registra en su sesión.} %4
+	\addCaseUseStep{ZMGestion trae los permisos del usuario y le muestra sus opciones.}
+	
 }
 \renewcommand{\alternativeCaseUse}{
-	\newAlternative{A1: Error al iniciar sesión.}{4}
-	\caseUseRow{La secuencia A1 comienza luego del punto 4 del escenario principal.}
-	\alternativeRow{La API responde con un código de error 422.}
-	\alternativeRow{El sistema muestra al usuario el error ocurrido.}
-	\alternativeRow{El sistema borra los datos ingresados por el usuario.}
+	\newAlternative{A1: El nombre de usuario no existe en ZMGestion.}{3}
+	\caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.}
+	\alternativeRow{ZMGestion muestra un mensaje de error.}
+	\caseUseRow{El escenario vuelve al punto 2.}
 	\caseUseRow{}
 	
-	\newAlternative{A2: Error al autenticar al usuario por websocket.}{6}
-	\caseUseRow{La secuencia A2 comienza luego del punto 6 del escenario principal.}
-	\alternativeRow{La API responde con un código de error 422.}
-	\alternativeRow{El sistema vuelve al paso 7 del escenario principal.}
+	\newAlternative{A2: El usuario no se encuentra activo.}{3}
+	\caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.}
+	\alternativeRow{ZMGestion informa al usuario que el mismo no se encuentra activo y que debe comuicarse con un administrador.}
+	\caseUseRow{El escenario vuelve al punto 2.}
+	\caseUseRow{}
+
+	\newAlternative{A3: La contraseña ingresada es incorrecta y el número de intentos no supero el limite permitido.}{3}
+	\caseUseRow{La secuencia A3 comienza luego del punto 3 del escenario principal.}
+	\alternativeRow{ZMGestion informa al usuario que la contraseña ingresada es incorrecta.}
+	\caseUseRow{El escenario vuelve al punto 2.}
+	\caseUseRow{}
+
+	\newAlternative{A4: La contraseña ingresada es incorrecta y el número de intentos supero el limite permitido.}{3}
+	\caseUseRow{La secuencia A4 comienza luego del punto 3 del escenario principal.}
+	\alternativeRow{ZMGestion informa al usuario que la contraseña es incorrecta, que el usuario ha sido bloqueado y que debe comunicarse con un administrador.}
+	\caseUseRow{El escenario vuelve al punto 2.}
+	\caseUseRow{}	
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse, Pantalla}
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 5 segundos.}
-\renewcommand{\caseUseConcurrence}{}
-\renewcommand{\caseUseAvailability}{}
 
 \item Caso de uso \caseUseName
 

@@ -25,10 +25,10 @@ Escenario principal: \caseUseScene \hline
 
 Flujos alternativos: \alternativeCaseUse \hline
 
-Requisitos de interfaz de usuario: \caseUseRequirementsGUI \hline
-\multirow{3}{*}{Requisitos funcionales:}  & Tiempo de respuesta: & \caseUseResponseTime \\ \cline{2-3} 
-& Concurrencia: & \caseUseConcurrence \\ \cline{2-3} 
-& Disponibilidad: & \caseUseAvailability \\ \hline
+Requisitos de interfaz de usuario: \caseUseRow{Un teclado alfanumérico, pantalla 320 x 80 mínimo y un dispositivo señalizador.} \hline
+\multirow{3}{*}{Requisitos funcionales:}  & Tiempo de respuesta: & la interfaz debe responder dentro de un tiempo máximo de 10 segundos en una velocidad efectiva de conexión de 512 Kbps. \\ \cline{2-3} 
+& Concurrencia: & debe soportar 40 usuarios simultáneos. \\ \cline{2-3} 
+& Disponibilidad: & deberá estar disponible en un régimen de 24x7. \\ \hline
 \end{longtable}
 
 \setcounter{rownumbers}{0}

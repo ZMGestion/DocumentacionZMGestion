@@ -1,0 +1,25 @@
+@startuml iniciarSesion
+|Usuario|
+start
+:Ingresa la dirección de ZMGestion 
+en un dispositivo conectado a Internet;
+|ZMGestion|
+:Muestra un formulario para que
+el usuario ingrese su nombre de 
+usuario y contraseña ;
+
+
+
+|Usuario|
+    repeat
+    :Ingrese el nombre de usuario y contraseña;
+    |ZMGestion|
+    if(El usuario existe) then (Si)
+    else (No)
+    endif
+        repeat while ()
+        
+                
+
+stop
+@enduml
