@@ -1,55 +1,51 @@
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseShortName}{modificarEmpleado} %cammelCase name
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
+\renewcommand{\caseUseCreated}{27/01/2020} %Fecha creación
+\renewcommand{\caseUseModified}{27/01/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUmodificarEmpleado - Modificar empleado} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion modificar un empleado existente.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere modificar un empleado.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoEmpleados (Buscar avanzado empleados).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El administrador indica el usuario que desea modificar.}
+    \addCaseUseStep{ZMGestion muestra un formulario autocompletado con los datos del usuario seleccionado para que el administrador modifique: Nombres, apellidos, correo electrónico, número de teléfono, nombre de usuario, contraseña, fecha de inicio de actividad laboral, cantidad de hijos, estado civil, tipo de documento, documento, teléfono, fecha de nacimiento y/o rol del empleado. Indicando que son requeridos todos los campos.}
+    \addCaseUseStep{El usuario modifica los campos que desea cambiar.}
+    \addCaseUseStep{ZMGestion modifica el usuario con los nuevos valores de los campos solicitados.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
+	\newAlternative{A1: El nombre de usuario ingresado está siendo usado por otro empleado.}{3} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error informando que el nombre de usuario ingresado ya está en uso.}
+    \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
-
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+    \newAlternative{A2: El correo electrónico ingresado está siendo usado por otro empleado.}{3} %Flujo alternativo A2.
+	\caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error informando que el correo electrónico ingresado ya está en uso.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
+    \newAlternative{A3: El documento y tipo de documento ingresado está siendo usado por otro empleado.}{3} %Flujo alternativo A3.
+	\caseUseRow{La secuencia A3 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error informando que el documento y tipo de documento ya existe.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
+    \newAlternative{A4: El usuario ha modificado el rol del usuario.}{3} %Flujo alternativo A3.
+	\caseUseRow{La secuencia A4 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion cierra la sesión del usuario que se está modificando.}
+    \caseUseRow{El escenario continúa desde el punto 4.}
+    \caseUseRow{}
+    \newAlternative{A5: El usuario ha dejado un campo requerido vacio.}{3} %Flujo alternativo A3.
+	\caseUseRow{La secuencia A5 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion informa al usuario que dicho campo es requerido.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}

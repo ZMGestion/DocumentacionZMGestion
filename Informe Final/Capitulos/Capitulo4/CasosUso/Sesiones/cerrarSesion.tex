@@ -1,57 +1,27 @@
-
-\renewcommand{\caseUseShortName}{cerrarSesion} %cammelCase name
-
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CUcerrarSesion - Cerrar sesión} %{\CUcammelCase - Title}
-
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un usuario } %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseShortName}{cerrarSesion}
+\renewcommand{\caseUseCreated}{16/01/2020}
+\renewcommand{\caseUseModified}{16/01/2020}
+\renewcommand{\caseUseName}{\CUcerrarSesion - Cerrar sesión}
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un usuario cerrar sesión en el sistema.}
+\renewcommand{\caseUsePeople}{Usuarios: quiere salir del sistema.}
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Tener una sesión iniciada en el sistema.}
 }
 \renewcommand{\caseUsePostconditions}{
-	\caseUseRow{Ninguna.} %Postcondiciones
+	\caseUseRow{Se borra el token de sesión almacenado en el dispositivo del usuario.}
 }
-\renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+\renewcommand{\caseUseScene}{
+	\addCaseUseStep{El usuario accede a la pantalla destinada para cerrar sesión.}
+	\addCaseUseStep{ZMGestion elimina el token de sesión del usuario y muestra un mensaje informando el éxito de la operación.}
 }
-\renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
-    \caseUseRow{}
-
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+\renewcommand{\alternativeCaseUse}{
+	\caseUseRow{Ninguno.}
+	\caseUseRow{}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
+
+%DESCRIPCION TEXTUAL
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 
 %DIAGRAMA DE ACTIVIDAD
