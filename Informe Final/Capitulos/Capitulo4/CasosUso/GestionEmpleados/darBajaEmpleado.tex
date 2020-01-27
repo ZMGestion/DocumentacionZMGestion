@@ -1,55 +1,29 @@
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseShortName}{darBajaEmpleado} %cammelCase name
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
+\renewcommand{\caseUseCreated}{27/01/2020} %Fecha creación
+\renewcommand{\caseUseModified}{27/01/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUdarBajaEmpleado - Dar de baja empleado} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador dar de baja un empleado que se encuentra en el estado de Activo.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere dar de baja un empleado que se encuentra en estado Activo.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoEmpleados (Buscar avanzado empleados).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
-	\caseUseRow{Ninguna.} %Postcondiciones
+	\caseUseRow{Se cierra la sesión del empleado que se está dando de baja eliminando el token de sesión del mismo.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El administrador indica el usuario que desea dar de baja.}
+    \addCaseUseStep{ZMGestión da de baja al empleado indicado y muestra un mensaje informando que la operación se realizó con éxito.}
+    \addCaseUseStep{ZMGestión cierra la sesión del usuario que se dió de baja eliminando su token de sesión.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
-    \caseUseRow{}
-
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+	\newAlternative{A1: El usuario ya se encuentra en estado Baja.}{1} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion informa que el usuario indicado ya que encuentra en estado Baja.}
+    \caseUseRow{El escenario vuelve al punto 1.}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
