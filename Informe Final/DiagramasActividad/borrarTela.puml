@@ -1,0 +1,10 @@
+@startuml borrarTela
+|Adinistrador|
+:Ha ejecutado con éxito el CU Listar telas;
+repeat
+:Indica la tela que desea borrar;
+repeat while(La tela fue utilizada para crear al menos un producto final)
+|ZMGestion|
+:Borra la tela y muestra un mensaje indicando el éxito de la operación;
+end
+@enduml

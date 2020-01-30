@@ -22,25 +22,25 @@
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: El nombre del producto ingresado, la categoria y grupo seleccionado ya existe.}{3} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{ZMGestion muestra un mensaje indicando que el nombre del producto ya esta en uso para el grupo y categoria seleccionado.}
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que el nombre del producto ya esta en uso para el grupo y categoria seleccionado.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 
-    \newAlternative{A2: El usuario ha dejado un campo obligatorio vacio.}{3} %Flujo alternativo A1.
+    \newAlternative{A2: El administrador ha dejado un campo obligatorio vacio.}{3} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{ZMGestion informa al usuario que dicho campo es requerido.}
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que dicho campo es requerido.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 
-    \newAlternative{A3: El usuario ingresa un precio menor o igual a cero.}{3} %Flujo alternativo A1.
+    \newAlternative{A3: El precio ingresado es menor o igual a cero.}{3} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A3 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{ZMGestion informa el precio ingresado es invalido.}
+    \alternativeRow{ZMGestion muestra un mensaje de error informando que el precio no puede ser menor o igual que cero<.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 
-    \newAlternative{A4: El usuario una cantidad de tela requerida menor a cero.}{3} %Flujo alternativo A1.
+    \newAlternative{A4: La cantidad de tela requerida ingresada es menor a cero.}{3} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A4 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{ZMGestion informa que la cantidad de tela necesaria ingresada es invalida.}
+    \alternativeRow{ZMGestion muestra un mensaje de error informando que la cantidad de tela necesaria ingresada es invalida.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 
