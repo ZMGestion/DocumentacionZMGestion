@@ -1,0 +1,11 @@
+@startuml darAltaProducto
+|Administrador|
+start
+:Ha ejecutado con exito el CU Buscar avanzado productos;
+repeat
+:Indica el producto que quiere dar de alta;
+repeat while(El producto ya se encuentra en estado de Alta)
+|ZMGestion|
+:Da de alta el producto indicado y muestra un mensaje 
+indicando el éxito de la operación;
+@enduml
