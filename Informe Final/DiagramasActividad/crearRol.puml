@@ -1,0 +1,19 @@
+@startuml crearRol
+|Administrador|
+start
+:Accede la la pantalla para crear roles;
+|ZMGestion|
+repeat
+repeat
+:Muestra un formulario para que el administador ingrese el nombre del rol
+y seleccione los permisos que desea otorgarle. Indicando que ambos campos
+son obligatorios;
+|Administrador|
+:Completa los campos requeridos;
+|ZMGestion|
+repeat while(Alguno de los campos obligatorios se encuentra vacio)
+repeat while(El nombre ingresado ya esta en uso)
+:Crea el rol y muestra un mensaje indicando el éxito de la operación;
+end
+
+@enduml

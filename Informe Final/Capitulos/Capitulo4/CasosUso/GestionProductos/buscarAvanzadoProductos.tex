@@ -5,8 +5,8 @@
 \renewcommand{\caseUseModified}{28/01/2020} %Fecha modificación
 \renewcommand{\caseUseName}{\CUbuscarAvanzadoProductos - Buscar avanzado productos } %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{Este caso de uso permite a los usuarios buscar productos a partir de una cadena de búsqueda.} %Resumen
-\renewcommand{\caseUsePeople}{Usuarios: quiere encontrar un producto existente en el sistema.} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion  buscar productos a partir de una cadena de búsqueda.} %Resumen
+\renewcommand{\caseUsePeople}{Vendendor: quiere encontrar un producto existente en el sistema.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber iniciado sesión en el sistema y tener el permiso necesario para realizar esta función.} %Precondiciones
 }
@@ -14,9 +14,9 @@
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{ El usuario accede a la pantalla para realizar la búsqueda de productos.}
-    \addCaseUseStep{ZMGestion muestra un formulario para que el usuario ingrese una cadena de búsqueda, elegir el grupo y categoría y tambien seleccionar si desea buscar productos dados de baja.}
-    \addCaseUseStep{El usuario completa los campos solicitados.}
+    \addCaseUseStep{ El vendedor accede a la pantalla para realizar la búsqueda de productos.}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor ingrese una cadena de búsqueda, elegir el grupo y categoría y tambien seleccionar si desea buscar productos dados de baja.}
+    \addCaseUseStep{El vendedor completa los campos solicitados.}
     \addCaseUseStep{ZMGestion realiza la busqueda por nombre del producto, categoría y grupo de productos y estado.}
     \addCaseUseStep{ZMGestion lista las coincidencias encontradas.}
 }

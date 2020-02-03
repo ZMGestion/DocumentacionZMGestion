@@ -1,48 +1,42 @@
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseShortName}{modificarCliente} %cammelCase name
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
+\renewcommand{\caseUseCreated}{03/02/2020} %Fecha creación
+\renewcommand{\caseUseModified}{03/02/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUmodificarCliente - Modificar cliente} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion modificar un cliente existente.} %Resumen
+\renewcommand{\caseUsePeople}{Vendedor: quiere modificar un cliente.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoClientes (Buscar avanzado clientes).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El vendedor selecciona el cliente que desea modificar.}
+    \addCaseUseStep{ZMGestion muestra un formulario autocompletado con los datos del cliente seleccioando para que el vendedor modifique: el tipo de persona, nombre y apellido (o razón social), número y tipo de documento, correo electrónico, número de telefono y nacionalidad. }
+    \addCaseUseStep{El vendedor modifica los campos que desea cambiar.}
+    \addCaseUseStep{ZMGestion modifica el cliente y muestra un mensaje indicando el éxito de la operación.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
+	\newAlternative{A1: El correo electrónico ingresado ya está en uso.}{3} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando el que correo electrónico ya se encuentra en uso.}
+    \caseUseRow{El escenario vuele al punto 2.}
     \caseUseRow{}
 
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+	\newAlternative{A2: El tipo y número de documento ya existe.}{3} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que el tipo y número de documento ya existe.}
+    \caseUseRow{El escenario vuele al punto 2.}
+    \caseUseRow{}
+
+    \newAlternative{A3: El vendedor ha dejado un campo obligatorio vacio.}{3} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A3 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que dicho campo es requerido.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
 }
 \renewcommand{\caseUseRequirementsGUI}{
 	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario

@@ -1,13 +1,13 @@
 @startuml buscarAvanzadoProductos
-|Usuarios|
+|Vendedor|
 start
 :Accede a la pantalla para buscar productos;
 |ZMGestion|
 repeat
-:Muestra un formulario para ingresar la cadena de busqueda,
+:Muestra un formulario para que el vendedor ingrese la cadena de busqueda,
 elegir grupo y categoría de producto y si se desea 
 buscar prodcutos dados de baja;
-|Usuarios|
+|Vendedor|
 :Completa los campos solicitados;
 |ZMGestion| 
 :Busca por nombre de producto, grupo y categoría y estado;

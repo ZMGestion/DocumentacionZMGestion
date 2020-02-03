@@ -1,5 +1,5 @@
 @startuml listarTelas
-|Usuario|
+|Vendedor|
 start
 :Accede a la pantalla para listar las telas;
 |ZMGestion|
