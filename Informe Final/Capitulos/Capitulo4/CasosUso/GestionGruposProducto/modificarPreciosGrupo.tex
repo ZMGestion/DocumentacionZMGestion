@@ -1,55 +1,37 @@
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseShortName}{modificarPreciosGrupo} %cammelCase name
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
+\renewcommand{\caseUseCreated}{04/02/2020} %Fecha creación
+\renewcommand{\caseUseModified}{04/02/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUmodificarPreciosGrupo - Modificar precios grupo} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{} %Resumen
+\renewcommand{\caseUseSummary}{Este caso de uso permite modificar de manera proporcional el precio de todos los productos que pertenecen a un determinado grupo de productos.} %Resumen
 \renewcommand{\caseUsePeople}{} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber realizado con éxito el \CUlistarGruposProducto (Listar grupos de productos).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El administrador selecciona el grupo de productos al cual desea modificar el precio.}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el administrador ingrese un porcentaje e indique si el mismo corresponde a un aumento o descuento a realizar sobre el precio actual de los productos que pertenecen al grupo seleccionado. Siendo ambos campos requeridos.}
+    \addCaseUseStep{El administrador indica el porcentaje y si es un aumento o descuento del precio actual.}
+    \addCaseUseStep{ZMGestion modifica el precio de todos los productos que pertenecen al grupo seleccionado de manera proporcional al precio actual, de acuerdo al porcentaje ingresado por el administrador y si el mismo corresponde a un aumento o descuento del precio actual.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+	\newAlternative{A1: El porcentaje ingresado es menor a cero.}{3} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error informando que debe ingresar un número mayor o igual a cero.}
+    \caseUseRow{El escenario vuelve al punto 2.}
     
     \caseUseRow{}
 
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+	\newAlternative{A2: El administrador ha dejado un campo requerido vacío.}{3} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje informando que debe completar todos los campos requeridos.}
+    \caseUseRow{El escenario vuelve al punto 2.}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
