@@ -1,56 +1,32 @@
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseShortName}{transformarPresupuestoEnVenta} %cammelCase name
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
+\renewcommand{\caseUseCreated}{04/02/2020} %Fecha creación
+\renewcommand{\caseUseModified}{04/02/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUtransformarPresupuestoEnVenta\ - Transformar presupuesto en venta.} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor modificar un presupuesto existente.} %Resumen
+\renewcommand{\caseUsePeople}{Vendedores: quiere realizar una venta a partir de un presupuesto.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoPresupuestos\ (Buscar avanzado presupuestos).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El vendedor indica uno o más presupuestos a partir de los cuales desea generar la venta.}
+    \addCaseUseStep{Se ejecuta el \CUlistarLineasPresupuesto\ (Listar lineas de presupuesto) para cada presupuesto seleccionado, mostrando una opción para seleccionar si desea añadir dicha linea de presupuesto a la venta.}
+    \addCaseUseStep{El vendedor selecciona las lineas de presupuestos que desea agregar a la venta.}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor seleccione un cliente.}
+    \addCaseUseStep{El vendedor selecciona un cliente existente.}
+    \addCaseUseStep{ZMGestion crea una venta en estado "En edición" para el cliente seleccionado y ejecuta el CUcrearLineaVenta\ (Crear linea de venta) para cada linea de presupuesto seleccionada y cambia el estado de las lineas de presupuesto seleccionadas a "Utilizadas" y las no seleccionadas a "No utilizadas".}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
-    \caseUseRow{}
-
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+	\newAlternative{A1: Uno o más de los presupuestos seleccionados se encuentra en estado "Vendido".}{5} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que uno de los presupuestos seleccionados se encuentra en estado "Vendido".}
+    \caseUseRow{El escenario vuelve al punto 1.}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
-
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 

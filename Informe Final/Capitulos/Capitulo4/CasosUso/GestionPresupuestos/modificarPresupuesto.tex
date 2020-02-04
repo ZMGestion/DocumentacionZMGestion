@@ -1,56 +1,43 @@
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseShortName}{modificarPresupuesto} %cammelCase name
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
+\renewcommand{\caseUseCreated}{04/02/2020} %Fecha creación
+\renewcommand{\caseUseModified}{04/02/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUmodificarPresupuesto - Modificar presupuesto} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor modificar un presupuesto existente.} %Resumen
+\renewcommand{\caseUsePeople}{Vendedores: quiere modificar un presupuesto existente.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoPresupuestos\ (Buscar avanzado presupuestos).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El vendedor indica el presupuesto que desea modificar.}
+    \addCaseUseStep{Se ejecuta el \CUlistarLineasPresupuesto\ (Listar lineas de presupuesto) para el presupuesto seleccionado, mostrando las opciones de modificar y borrar en cada linea de presupuesto.}
+    \addCaseUseStep{Si el vendedor elije la opción modificar se ejecuta el \CUmodificarLineaPresupuesto\ (Modificar linea presupuesto). Si elije la opción borrar se ejecuta el \CUborrarLineaPresupuesto\ (Borrar linea presupuesto).}
+    \addCaseUseStep{ZMGestion muestra un formulario autocompletado para que el usuario modifique el cliente y/o el periodo de validez. Si el vendedor cuenta con los permisos necesarios para modificar el periodo de validez dicho campo se le muestra habilitado, caso contrario, deshabilitado.}
+    \addCaseUseStep{El vendedor modifica el cliente y periodo de validez.}
+    \addCaseUseStep{ZMGestion modifica el cliente y el periodo de validez del presupuesto seleccionado.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
+	\newAlternative{A1: El presupuesto se encuentra en estado "Vendido".}{5} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje indicando que no se puede modificar el presupuesto ya que se encuentra en estado "Vendido".}
+    \caseUseRow{El escenario vuelve al punto 4.}
     \caseUseRow{}
-
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+    \newAlternative{A2: El vendedor modificó el periodo de validez y no cuenta con los permisos necesarios para hacerlo.}{5} %Flujo alternativo A2.
+	\caseUseRow{La secuencia A2 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje indicando que no cuenta con los permisos necesarios para modificar el periodo de validez.}
+    \caseUseRow{El escenario vuelve al punto 4.}
+    \caseUseRow{}
+    \newAlternative{A3: El vendedor ha dejado el campo de cliente o periodo de validez vacío.}{5} %Flujo alternativo A2.
+	\caseUseRow{La secuencia A3 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje indicando que los campos son requeridos.}
+    \caseUseRow{El escenario vuelve al punto 4.}
+    \caseUseRow{}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
-
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 
