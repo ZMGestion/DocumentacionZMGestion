@@ -1,0 +1,14 @@
+@startuml buscarAvanzadoClientes
+|Vendedor|
+:Accede a la pantalla para buscar clientes;
+|ZMGestion|
+repeat
+:Muestra un formulario para que el vendedor ingrese la cadena de busqueda,
+seleccione el tipo de persona y decida si desea buscar clientes dados de baja;
+|Vendedor|
+:Completa el formulario;
+|ZMGestion|
+repeat while(No se econtro ningun resultado para la busqueda)
+:Lista las coincidencias encontradas;
+end
+@enduml

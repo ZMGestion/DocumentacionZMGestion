@@ -1,0 +1,21 @@
+@startuml crearTela
+|Administrador|
+start 
+:Accede a la pantalla para crear telas;
+|ZMGestion|
+repeat
+repeat
+repeat
+:Muestra un formulario para que el usuario ingrese
+el nombre y el precio por metro de tela. Indicando que
+ambos campos son obligatorios;
+|Administrador|
+:Completa los campos requeridos;
+|ZMGestion|
+repeat while(Alguno de los campos obligatorios se encuentra vacio)
+repeat while(El nombre ingresado ya se encuentra en uso)
+repeat while(El precio ingresado sea menor o igual que cero)
+:Crea la tela y muestra un mensaje 
+indicando el éxito de la operación;
+end
+@enduml

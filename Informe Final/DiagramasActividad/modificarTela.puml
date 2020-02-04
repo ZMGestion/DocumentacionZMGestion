@@ -1,0 +1,21 @@
+@startuml modificarTela
+|Administrador|
+:Ha ejecutado con éxito el CU Listar telas;
+:Indica la tela que desea modificar;
+|ZMGestion|
+repeat
+repeat
+repeat
+:Muestra un formulario autocompletado con los datos de la tela seleccionada
+para que el administrador modifique: nombre y precio por metro de la tela.
+Indicando que ambos campos son obligatorios;
+|Administrador|
+:Modifica los campos que desea cambiar;
+|ZMGestion|
+repeat while(El nombre de la tela se encuentra en uso)
+repeat while(El precio ingresado es menor o igual a cero)
+repeat while(Al menos un campo requerido está vacio)
+:Modifica la tela y muestra un mensaje indicando
+el éxito de la operación;
+end
+@enduml

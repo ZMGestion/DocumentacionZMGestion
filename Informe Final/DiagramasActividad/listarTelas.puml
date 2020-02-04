@@ -1,0 +1,12 @@
+@startuml listarTelas
+|Vendedor|
+start
+:Accede a la pantalla para listar las telas;
+|ZMGestion|
+if(Existe alguna tela en el sistema) then (Si)
+:Muestra una lista con las telas existentes;
+else (No)
+:Muestra un mensaje indicando que no existe ninguna tela;
+endif
+end
+@enduml
