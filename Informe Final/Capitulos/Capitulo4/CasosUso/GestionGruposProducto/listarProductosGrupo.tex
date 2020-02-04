@@ -1,0 +1,29 @@
+
+\renewcommand{\caseUseShortName}{listarProductosGrupo} %cammelCase name
+
+\renewcommand{\caseUseCreated}{04/02/2020} %Fecha creación
+\renewcommand{\caseUseModified}{04/02/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUlistarProductosGrupo - Listar productos por grupo} %{\CUcammelCase - Title}
+
+\renewcommand{\caseUseSummary}{Este caso de uso permite a los administradores listar todos los productos que pertenecen a un grupo.} %Resumen
+\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUsePreconditions}{
+	\caseUseRow{Haber realizado con éxito el \CUlistarGruposProducto (Listar grupos de productos).} %Precondiciones
+}
+\renewcommand{\caseUsePostconditions}{
+	\caseUseRow{Ninguna.} %Postcondiciones
+}
+\renewcommand{\caseUseScene}{ %Escenario principal
+    \addCaseUseStep{El administrador indica un grupo de productos.}
+    \addCaseUseStep{ZMGestion muestra una lista con todos los productos que pertenecen a dicho grupo de productos.}
+}
+\renewcommand{\alternativeCaseUse}{ %Flujos alternativos
+    \caseUseRow{Ningun flujo alternativo.}
+}
+
+\item Caso de uso \caseUseName
+\input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
+
+%DIAGRAMA DE ACTIVIDAD
+%\lineabreak[0]
+%\activityDiagram{AD_\caseUseShortName}{Diagrama de actividad - \caseUseName}
