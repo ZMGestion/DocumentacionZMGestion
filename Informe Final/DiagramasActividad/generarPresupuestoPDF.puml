@@ -1,0 +1,9 @@
+@startuml generarPresupuestoPDF
+|Vendedor|
+start
+:Ha ejecutado con éxito el CU Buscar avanzado presupuestos;
+:Selecciona el presupuesto para generarlo en formato PDF;
+|ZMGestion|
+:Genera un achivo con formato PDF con los datos del presupuesto;
+end
+@enduml

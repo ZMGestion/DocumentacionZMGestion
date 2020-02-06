@@ -1,0 +1,16 @@
+@startuml buscarAvanzadoPresupuestos
+|Vendedor|
+start
+:Accede a la pantalla para buscar presupuestos;
+|ZMGestion|
+repeat
+:Muestra un formulario para que el vendedor seleccione un cliente, producto, tela,
+lustre y estado del presupuesto. Siendo todos los campos opcionales;
+|Vendedor|
+:Completa los campos seleccionados;
+|ZMGestion|
+:Busca por cliente, producto, tela, lustre y estado del presupuesto;
+repeat while(Hay al menos una coincidencia) is (F)
+:Lista las coincidencias encontradas;
+end
+@enduml

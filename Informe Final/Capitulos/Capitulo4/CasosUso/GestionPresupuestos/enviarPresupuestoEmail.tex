@@ -5,7 +5,7 @@
 \renewcommand{\caseUseModified}{04/02/2020} %Fecha modificación
 \renewcommand{\caseUseName}{\CUenviarPresupuestoEmail - Enviar presupuesto por correo electrónico} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor enviar un presupuesto por email.} %Resumen
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor enviar un presupuesto por correo electrónico.} %Resumen
 \renewcommand{\caseUsePeople}{Vendedores: quiere enviar un presupuesto al correo electrónico del cliente al que se le realizó el presupuesto.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoPresupuestos\ (Buscar avanzado presupuestos).} %Precondiciones
@@ -15,7 +15,8 @@
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El administrador indica el presupuesto que desea enviar.}
-    \addCaseUseStep{ZMGestion envia el presupuesto al correo electrónico del cliente al que se le realizó el presupuesto seleccionado.}
+    \addCaseUseStep{ZMGestion ejecuta el \CUgenerarPresupuestoPDF\ (Generar presupuesto en formato PDF).}
+    \addCaseUseStep{ZMGestion envia el presupuesto en formato al correo electrónico del cliente al que se le realizó el presupuesto.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: El cliente al que se le realizó el presupuesto no tiene un correo electrónico.}{1} %Flujo alternativo A1.
