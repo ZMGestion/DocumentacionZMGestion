@@ -5,8 +5,8 @@
 \renewcommand{\caseUseModified}{04/02/2020} %Fecha modificación
 \renewcommand{\caseUseName}{\CUtransformarPresupuestoEnVenta\ - Transformar presupuesto en venta.} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor modificar un presupuesto existente.} %Resumen
-\renewcommand{\caseUsePeople}{Vendedores: quiere realizar una venta a partir de un presupuesto.} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor transformar uno o más presupuestos existentes en venta.} %Resumen
+\renewcommand{\caseUsePeople}{Vendedores: quiere realizar una venta a partir de uno o más presupuestos.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoPresupuestos\ (Buscar avanzado presupuestos).} %Precondiciones
 }
@@ -15,11 +15,9 @@
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El vendedor indica uno o más presupuestos a partir de los cuales desea generar la venta.}
-    \addCaseUseStep{Se ejecuta el \CUlistarLineasPresupuesto\ (Listar lineas de presupuesto) para cada presupuesto seleccionado, mostrando una opción para seleccionar si desea añadir dicha linea de presupuesto a la venta.}
-    \addCaseUseStep{El vendedor selecciona las lineas de presupuestos que desea agregar a la venta.}
-    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor seleccione un cliente.}
-    \addCaseUseStep{El vendedor selecciona un cliente existente.}
-    \addCaseUseStep{ZMGestion crea una venta en estado "En edición" para el cliente seleccionado y ejecuta el CUcrearLineaVenta\ (Crear linea de venta) para cada linea de presupuesto seleccionada y cambia el estado de las lineas de presupuesto seleccionadas a "Utilizadas" y las no seleccionadas a "No utilizadas".}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor seleccione un cliente existente y se ejecuta el \CUlistarLineasPresupuesto\ (Listar lineas de presupuesto) para cada presupuesto seleccionado, mostrando una opción para indicar si desea añadir dicha linea de presupuesto a la venta.}
+    \addCaseUseStep{El vendedor selecciona un cliente existente y las lineas de presupuestos que desea agregar a la venta.}
+    \addCaseUseStep{ZMGestion crea una venta en estado "En edición" para el cliente seleccionado, ejecuta el CUcrearLineaVenta\ (Crear linea de venta) para cada linea de presupuesto seleccionada, cambia el estado de los presupuestos seleccionados a "Vendido", el estado de las lineas de presupuesto seleccionadas a "Utilizadas" y las no seleccionadas a "No utilizadas".}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: Uno o más de los presupuestos seleccionados se encuentra en estado "Vendido".}{5} %Flujo alternativo A1.
