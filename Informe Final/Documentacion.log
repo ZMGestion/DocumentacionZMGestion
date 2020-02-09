@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.31)  6 FEB 2020 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.31)  9 FEB 2020 20:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1859,7 +1859,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [68])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/transformarPresupuestoEnVenta.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--28
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1869,7 +1869,7 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 28--32
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
@@ -1953,7 +1953,10 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[73])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasPresupuesto/borrarLineaPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+[73]
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+ [74])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasPresupuesto/borrarLineaPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1963,9 +1966,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
  [] [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
-[74]))))
+))))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
 LaTeX Info: Redefining \. on input line 146.
 LaTeX Info: Redefining \% on input line 146.
@@ -1982,15 +1983,15 @@ Package rerunfilecheck Info: File `Documentacion.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 14767 strings out of 492616
- 251986 string characters out of 6129481
+ 14768 strings out of 492616
+ 252001 string characters out of 6129481
  332813 words of memory out of 5000000
- 17815 multiletter control sequences out of 15000+600000
+ 17816 multiletter control sequences out of 15000+600000
  16464 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,53p,1110b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on "/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.pdf" (75 pages, 2079800 bytes).
+Output written on "/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.pdf" (75 pages, 2079782 bytes).
 PDF statistics:
  1436 PDF objects out of 1440 (max. 8388607)
  1199 compressed objects within 12 object streams
