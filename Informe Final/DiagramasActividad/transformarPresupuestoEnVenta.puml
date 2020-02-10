@@ -7,16 +7,18 @@ repeat
 repeat while(Al menos un presupuesto seleccionado se encuentra en estado de "Vendido") is (V)
 |ZMGestion|
 repeat
-:Muestra un formulario para que el vendedor seleccione el cliente y muestra todas
-las lineas de presupuesto de los presupuestos seleccionados, permitiendo agrear nuevas lineas
+:Muestra un formulario para que el vendedor seleccione
+el cliente y muestra todas las lineas de presupuesto 
+de los presupuestos seleccionados, permitiendo agrear nuevas lineas
 y borrar o modificar alguna de las existentes;
 |Vendedor|
 :Selecciona el cliente y agrega, modifica y borra lineas de presupuesto;
 |ZMGestion|
-repeat while(No se ha ingresado un cliente valido) is (V)
-:Crea un venta para el cliente seleccionado en estado de "En Edición" y crea una linea de venta
-por cada linea de presupuesto con los mismos datos;
-:Modifica los presupuestos seleccionados al estado de "Vendidos" y a cada linea de presupuesto utilizada
-le cambia el estado a "Utilizada" y a las descartadas a "No Utilizadas";
+repeat while(No ha seleccionado un cliente válido) is (V)
+:Crea un venta para el cliente seleccionado en estado de "En Edición"
+y crea una linea de venta por cada linea de presupuesto con los mismos datos;
+:Modifica los presupuestos seleccionados al estado de "Vendidos" 
+y a cada linea de presupuesto utilizada le cambia el estado a "Utilizada"
+y a las descartadas a "No Utilizadas";
 end
 @enduml
