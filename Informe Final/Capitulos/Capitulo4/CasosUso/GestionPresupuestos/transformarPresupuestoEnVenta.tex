@@ -20,10 +20,16 @@
     \addCaseUseStep{ZMGestion crea una venta en estado "En edición" para el cliente seleccionado, ejecuta el CUcrearLineaVenta\ (Crear linea de venta) para cada linea de presupuesto seleccionada, cambia el estado de los presupuestos seleccionados a "Vendido", el estado de las lineas de presupuesto seleccionadas a "Utilizadas" y las no seleccionadas a "No utilizadas".}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Uno o más de los presupuestos seleccionados se encuentra en estado "Vendido".}{5} %Flujo alternativo A1.
+	\newAlternative{A1: Uno o más de los presupuestos seleccionados se encuentra en estado "Vendido".}{1} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que uno de los presupuestos seleccionados se encuentra en estado "Vendido".}
+    \caseUseRow{}
     \caseUseRow{El escenario vuelve al punto 1.}
+    \newAlternative{A2:El vendedor ha dejado el campo de cliente vacío.}{3} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe seleccionar un cliente válido.}
+    \caseUseRow{}
+    \caseUseRow{El escenario vuelve al punto 2.}
 }
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}

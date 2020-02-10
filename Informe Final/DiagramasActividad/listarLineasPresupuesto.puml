@@ -1,0 +1,12 @@
+@startuml listarLineasPresupuesto
+|Vendedor|
+start
+:He ejecutado con éxito el CU Buscar avanzado presupuesto;
+repeat
+:Indica el presupuesto del cual desea listar las lineas de presupuesto;
+repeat while(El presupuesto no posee lineas de presupuesto) is (V)
+|ZMGestion|
+:Lista las lineas de presupuesto;
+end
+
+@enduml

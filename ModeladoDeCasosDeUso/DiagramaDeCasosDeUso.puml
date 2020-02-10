@@ -24,61 +24,57 @@ rectangle ZMGestion{
     rectangle Sesiones{
     }
     rectangle GestionEmpleados{
-    }
-    rectangle GestionRoles{
-    }
-    rectangle GestionProductos{
-    }
-    rectangle GestionTelas{
-    }
-    rectangle GestionProductosFinales{
-    }
-    rectangle GestionGruposProducto{
-    }
-    rectangle GestionUbicaciones{
-    }
-    rectangle GestionClientes{
-    }
-    rectangle GestionPresupuestos{
-        rectangle GestionLineasPresupuesto{
+        rectangle GestionRoles{
         }
     }
-    rectangle GestionVentas{
-        rectangle GestionLineasVenta{
+    rectangle GestionArticulosVenta{
+        rectangle GestionProductos{
         }
-        rectangle GestionFacturas{
-            rectangle GestionRecibos{
+        rectangle GestionTelas{
+        }
+        rectangle GestionProductosFinales{
+        }
+        rectangle GestionGruposProducto{
+        }
+    }
+    rectangle GestionOperaciones{
+        rectangle GestionPresupuestos{
+            rectangle GestionLineasPresupuesto{
             }
         }
-        rectangle GestionNotasCredito{
-        }   
-    }
-    rectangle GestionRemitos{
-    }
-    rectangle GestionOrdenesReposicion{
-    }
-    rectangle GestionOrdenesProduccion{
-        rectangle GestionLineasOrdenesProduccion{
+        rectangle GestionVentas{
+            rectangle GestionLineasVenta{
+            }
+            rectangle GestionFacturas{
+                rectangle GestionRecibos{
+                }
+            }
+            rectangle GestionNotasCredito{
+            }   
         }
-        rectangle GestionObservaciones{
+        rectangle GestionOrdenesProduccion{
+            rectangle GestionLineasOrdenesProduccion{
+            }
+            rectangle GestionObservaciones{
+            }
+        }
+    }
+    rectangle GestionStock{
+        rectangle GestionRemitos{
+        }
+        rectangle GestionUbicaciones{
         }
     }
     
+    rectangle GestionClientes{
+    }
+
     Usuarios  ..|> Sesiones
     Administradores ..|> GestionEmpleados
-    Administradores  ..|> GestionRoles
-    Administradores  ..|> GestionProductos
-    Administradores ..|> GestionTelas
-    Vendedores  ..|> GestionProductosFinales
-    Administradores ..|> GestionGruposProducto
-    Administradores ..|> GestionUbicaciones
+    Usuarios ..|> GestionOperaciones
+    Vendedores  ..|> GestionStock
+    Vendedores  ..|> GestionArticulosVenta
     Vendedores ..|> GestionClientes
-    Vendedores  ..|> GestionPresupuestos
-    Vendedores  ..|> GestionVentas
-    Vendedores  ..|> GestionRemitos
-    Vendedores  ..|> GestionOrdenesReposicion
-    Fabricantes  ..|> GestionOrdenesProduccion
-
 }
 
 @enduml
@@ -107,6 +103,8 @@ rectangle GestionEmpleados{
     UseCase "CU006 - Dar de alta empleado" as DA
     UseCase "CU007 - Modificar empleado" as M
     UseCase "CU008 - Borrar empleado" as B
+    rectangle GestionRoles as Roles{
+    }
     BA <|.. M : <<Extends>>
     BA <|.. DA : <<Extends>>
     BA <|.. DB : <<Extends>>
@@ -114,6 +112,8 @@ rectangle GestionEmpleados{
 }
     Administradores -- C
     Administradores -- BA
+    Administradores -- Roles
+    
 
 @enduml
 
@@ -131,6 +131,26 @@ rectangle GestionRoles{
 }
     Administradores -- C
     Administradores -- L
+
+@enduml
+
+@startuml GestionArticulosVenta
+!include ../Actors/Actors.wsd
+ left to right direction
+rectangle GestionArticulosVenta{
+    rectangle GestionProductos as Productos{
+    }
+    rectangle GestionTelas as Telas{ 
+    }
+    rectangle GestionProductosFinales as ProductosFinales{
+    }
+    rectangle GestionGruposProductos as GruposProductos{
+    }
+}
+    Vendedores -- Productos
+    Vendedores -- Telas
+    Vendedores -- ProductosFinales
+    Administradores -- GruposProductos 
 
 @enduml
 
@@ -235,6 +255,19 @@ rectangle GestionGruposProducto{
 
 @enduml
 
+@startuml GestionStock
+!include ../Actors/Actors.wsd
+ left to right direction
+rectangle GestionStock{
+    rectangle GestionRemitos as Remitos{
+    }
+    rectangle GestionUbicaciones as Ubicaciones{
+    }
+}
+    Vendedores -- Remitos
+    Vendedores -- Ubicaciones
+@enduml
+
 @startuml GestionUbicaciones
 !include ../Actors/Actors.wsd
  left to right direction
@@ -261,17 +294,39 @@ rectangle GestionUbicaciones{
 
 @enduml
 
+@startuml GestionRemitos
+!include ../Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionRemitos{
+    UseCase "CU045 - Crear remito" as C
+    UseCase "CU046 - Buscar avanzado remitos " as BA
+    UseCase "CU047 - Dar de baja remito" as DB
+    UseCase "CU048 - Dar de alta remito" as DA
+    UseCase "CU049 - Borrar remito" as B
+
+    BA <|.. DA : <<Extends>>
+    BA <|.. DB : <<Extends>>
+    BA <|.. B : <<Extends>>
+}
+    Vendedores -- C
+    Vendedores -- BA
+    Administradores -- B
+    Administradores -- DB
+
+@enduml
+
 @startuml GestionClientes
 !include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionClientes{
-    UseCase "CU045 - Crear cliente" as C
-    UseCase "CU046 - Buscar avanzado clientes" as BA
-    UseCase "CU047 - Dar de baja cliente" as DB
-    UseCase "CU048 - Dar de alta cliente" as DA
-    UseCase "CU049 - Modificar cliente" as M
-    UseCase "CU050 - Borrar cliente" as B
+    UseCase "CU050 - Crear cliente" as C
+    UseCase "CU051 - Buscar avanzado clientes" as BA
+    UseCase "CU052 - Dar de baja cliente" as DB
+    UseCase "CU053 - Dar de alta cliente" as DA
+    UseCase "CU054 - Modificar cliente" as M
+    UseCase "CU055 - Borrar cliente" as B
     BA <|.. M : <<Extends>>
     BA <|.. DA : <<Extends>>
     BA <|.. DB : <<Extends>>
@@ -284,20 +339,51 @@ rectangle GestionClientes{
 
 @enduml
 
+@startuml GestionOperaciones
+!include ../Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionOperaciones{
+    rectangle GestionPresupuestos as Presupuestos{
+            rectangle GestionLineasPresupuesto{
+            }
+        }
+        rectangle GestionVentas as Ventas{
+            rectangle GestionLineasVenta{
+            }
+            rectangle GestionFacturas{
+                rectangle GestionRecibos{
+                }
+            }
+            rectangle GestionNotasCredito{
+            }   
+        }
+        rectangle GestionOrdenesProduccion as OrdenesProduccion{
+            rectangle GestionLineasOrdenesProduccion{
+            }
+            rectangle GestionObservaciones{
+            }
+        }
+}
+    Vendedores -- Presupuestos
+    Vendedores -- Ventas
+    Fabricantes -- OrdenesProduccion
+
+@enduml
 
 @startuml GestionPresupuestos
 !include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionPrespuestos{
-    UseCase "CU051 - Crear presupuesto" as C
-    UseCase "CU052 - Buscar avanzado presupuestos" as BA
-    UseCase "CU053 - Modificar presupuesto" as M
-    UseCase "CU054 - Borrar presupuesto" as B
-    UseCase "CU055 - Transformar presupuestos en venta" as Transformar
-    UseCase "CU056 - Generar presupuesto en formato PDF" as PDF
-    UseCase "CU057 - Enviar presupuesto por correo electrónico" as Enviar
-    UseCase "CU058 - Listar lineas de presupuesto" as Listar
+    UseCase "CU056 - Crear presupuesto" as C
+    UseCase "CU057 - Buscar avanzado presupuestos" as BA
+    UseCase "CU058 - Modificar presupuesto" as M
+    UseCase "CU059 - Borrar presupuesto" as B
+    UseCase "CU060 - Transformar presupuestos en venta" as Transformar
+    UseCase "CU061 - Generar presupuesto en formato PDF" as PDF
+    UseCase "CU062 - Enviar presupuesto por correo electrónico" as Enviar
+    UseCase "CU063 - Listar lineas de presupuesto" as Listar
     package GestionLineasPresupuesto{
     }
 
@@ -320,9 +406,9 @@ rectangle GestionPrespuestos{
  left to right direction
 
 rectangle GestionLineasPresupuesto{
-    UseCase "CU059 - Crear linea de prespuesto" as C
-    UseCase "CU060 - Modificar linea de presupuesto" as M
-    UseCase "CU061 - Borrar linea de presupuesto " as B
+    UseCase "CU064 - Crear linea de prespuesto" as C
+    UseCase "CU065 - Modificar linea de presupuesto" as M
+    UseCase "CU066 - Borrar linea de presupuesto " as B
 }
     Vendedores -- C
     Vendedores -- M
@@ -335,12 +421,13 @@ rectangle GestionLineasPresupuesto{
  left to right direction
 
 rectangle GestionVentas{
-    UseCase "CU062 - Crear venta" as C
-    UseCase "CU063 - Buscar avanzado ventas " as BA
-    UseCase "CU064 - Listar lineas de venta " as Listar
-    UseCase "CU065 - Modificar venta" as M
-    UseCase "CU066 - Borrar venta" as B
-    UseCase "CU067 - Generar orden de producción a partir de una venta" as Generar
+    UseCase "CU067 - Crear venta" as C
+    UseCase "CU068 - Buscar avanzado ventas " as BA
+    UseCase "CU069 - Listar lineas de venta " as Listar
+    UseCase "CU070 - Modificar venta" as M
+    UseCase "CU071 - Borrar venta" as B
+    UseCase "CU072 - Generar orden de producción a partir de una venta" as Generar
+    UseCase "CU073 - Revisar venta" as Revisar
     package GestionFacturas{
     }
     package GestionNotasCredito{
@@ -356,6 +443,7 @@ rectangle GestionVentas{
     Vendedores -- C
     Vendedores -- BA
     Administradores -- B
+    Administradores -- Revisar
 
 @enduml
 
@@ -364,9 +452,9 @@ rectangle GestionVentas{
  left to right direction
 
 rectangle GestionLineasVenta{
-    UseCase "CU068 - Crear linea de venta" as C
-    UseCase "CU069 - Modificar linea de venta" as M
-    UseCase "CU070 - Borrar linea de venta" as B
+    UseCase "CU074 - Crear linea de venta" as C
+    UseCase "CU075 - Modificar linea de venta" as M
+    UseCase "CU076 - Borrar linea de venta" as B
 }
     Vendedores -- C
     Administradores -- B
@@ -379,12 +467,12 @@ rectangle GestionLineasVenta{
  left to right direction
 
 rectangle GestionFacturas{
-    UseCase "CU071 - Crear factura" as C
-    UseCase "CU072 - Buscar avanzado facturas " as BA
-    UseCase "CU073 - Dar de baja factura" as DB
-    UseCase "CU074 - Dar de alta factura" as DA
-    UseCase "CU075 - Modificar factura" as M
-    UseCase "CU076 - Borrar factura" as B
+    UseCase "CU077 - Crear factura" as C
+    UseCase "CU078 - Buscar avanzado facturas " as BA
+    UseCase "CU079 - Dar de baja factura" as DB
+    UseCase "CU080 - Dar de alta factura" as DA
+    UseCase "CU081 - Modificar factura" as M
+    UseCase "CU082 - Borrar factura" as B
     package GestionRecibos{
     }
 
@@ -406,12 +494,12 @@ rectangle GestionFacturas{
  left to right direction
 
 rectangle GestionRecibos{
-    UseCase "CU077 - Crear recibo" as C
-    UseCase "CU078 - Buscar avanzado recibos " as BA
-    UseCase "CU079 - Dar de baja recibo" as DB
-    UseCase "CU080 - Dar de alta recibo" as DA
-    UseCase "CU081 - Modificar recibo" as M
-    UseCase "CU082 - Borrar recibo" as B
+    UseCase "CU083 - Crear recibo" as C
+    UseCase "CU084 - Buscar avanzado recibos " as BA
+    UseCase "CU085 - Dar de baja recibo" as DB
+    UseCase "CU086 - Dar de alta recibo" as DA
+    UseCase "CU087 - Modificar recibo" as M
+    UseCase "CU088 - Borrar recibo" as B
     BA <|.. M : <<Extends>>
     BA <|.. DA : <<Extends>>
     BA <|.. DB : <<Extends>>
@@ -429,12 +517,12 @@ rectangle GestionRecibos{
  left to right direction
 
 rectangle GestionNotasCredito{
-    UseCase "CU083 - Crear nota de credito" as C
-    UseCase "CU084 - Buscar avanzado notas de credito" as BA
-    UseCase "CU085 - Dar de baja nota de credito" as DB
-    UseCase "CU086 - Dar de alta nota de credito" as DA
-    UseCase "CU087 - Modificar nota de credito" as M
-    UseCase "CU088 - Borrar nota de credito" as B
+    UseCase "CU089 - Crear nota de credito" as C
+    UseCase "CU090 - Buscar avanzado notas de credito" as BA
+    UseCase "CU091 - Dar de baja nota de credito" as DB
+    UseCase "CU092 - Dar de alta nota de credito" as DA
+    UseCase "CU093 - Modificar nota de credito" as M
+    UseCase "CU094 - Borrar nota de credito" as B
     BA <|.. M : <<Extends>>
     BA <|.. DA : <<Extends>>
     BA <|.. DB : <<Extends>>
@@ -447,63 +535,24 @@ rectangle GestionNotasCredito{
 
 @enduml
 
-@startuml GestionRemitos
-!include ../Actors/Actors.wsd
- left to right direction
 
-rectangle GestionRemitos{
-    UseCase "CU089 - Crear remito" as C
-    UseCase "CU090 - Buscar avanzado remitos " as BA
-    UseCase "CU091 - Dar de baja remito" as DB
-    UseCase "CU092 - Dar de alta remito" as DA
-    UseCase "CU093 - Borrar remito" as B
 
-    BA <|.. DA : <<Extends>>
-    BA <|.. DB : <<Extends>>
-    BA <|.. B : <<Extends>>
-}
-    Vendedores -- C
-    Vendedores -- BA
-    Administradores -- B
-    Administradores -- DB
-
-@enduml
-
-@startuml GestionOrdenesReposicion
-!include ../Actors/Actors.wsd
- left to right direction
-
-rectangle GestionOrdenesReposicion{
-    UseCase "CU094 - Crear orden de reposición" as C
-    UseCase "CU095 - Buscar avanzado órdenes de reposición " as BA
-    UseCase "CU096 - Dar de baja orden de reposición" as DB
-    UseCase "CU097 - Dar de alta orden de reposición" as DA
-    UseCase "CU098 - Borrar orden de reposición" as B
-
-    BA <|.. DA : <<Extends>>
-    BA <|.. DB : <<Extends>>
-    BA <|.. B : <<Extends>>
-}
-    Administradores -- C
-    Administradores -- BA
-
-@enduml
 
 @startuml GestionOrdenesProduccion
 !include ../Actors/Actors.wsd
  left to right direction
 
 rectangle GestionOrdenesProduccion{
-    UseCase "CU099 - Crear orden de producción" as C
-    UseCase "CU101 - Buscar avanzado órdenes de producción " as BA
-    UseCase "CU100 - Modificar orden de producción" as M
-    UseCase "CU102 - Listar lineas de orden de producción" as ListarLineas
-    UseCase "CU103 - Borrar orden de producción" as B
-    UseCase "CU104 - Finalizar orden de producción" as Finalizar
-    UseCase "CU105 - Verificar orden de producción" as Verificar
-    UseCase "CU106 - Producir orden de producción" as Producir
-    UseCase "CU107 - Cancelar orden de producción" as Cancelar
-    UseCase "CU108 - Listar observaciones de línea de orden de producción" as ListarObservaciones
+    UseCase "CU095 - Crear orden de producción" as C
+    UseCase "CU906 - Buscar avanzado órdenes de producción " as BA
+    UseCase "CU097 - Modificar orden de producción" as M
+    UseCase "CU098 - Listar lineas de orden de producción" as ListarLineas
+    UseCase "CU099 - Borrar orden de producción" as B
+    UseCase "CU100 - Finalizar orden de producción" as Finalizar
+    UseCase "CU101 - Verificar orden de producción" as Verificar
+    UseCase "CU102 - Producir orden de producción" as Producir
+    UseCase "CU103 - Cancelar orden de producción" as Cancelar
+    UseCase "CU104 - Listar observaciones de línea de orden de producción" as ListarObservaciones
     package GestionLineasOrdenProduccion{
     }
     package GestionObservaciones{
@@ -535,16 +584,16 @@ rectangle GestionOrdenesProduccion{
  left to right direction
 
 rectangle GestionLineasOrdenesProduccion{
-    UseCase "CU109 - Crear linea de orden de producción" as C
-    UseCase "CU110 - Modificar linea de orden de producción" as M
-    UseCase "CU111 - Borrar linea de orden de producción" as B
-    UseCase "CU112 - Finalizar linea de orden de producción" as Finalizar
-    UseCase "CU113 - Verificar linea de orden de producción" as Verificar
+    UseCase "CU105 - Crear linea de orden de producción" as C
+    UseCase "CU106 - Modificar linea de orden de producción" as M
+    UseCase "CU107 - Borrar linea de orden de producción" as B
+    UseCase "CU108 - Finalizar linea de orden de producción" as Finalizar
+    UseCase "CU109 - Verificar linea de orden de producción" as Verificar
     /'Designar fabricante'/
-    UseCase "CU114 - Asignar fabricante a linea de orden de producción" as Asignar 
+    UseCase "CU110 - Asignar fabricante a linea de orden de producción" as Asignar 
     /'Fabricantes anuncia que comienzan a producir'/
-    UseCase "CU115 - Producir linea de orden de producción" as Producir 
-    UseCase "CU116 - Cancelar linea de orden de producción" as Cancelar
+    UseCase "CU111 - Producir linea de orden de producción" as Producir 
+    UseCase "CU112 - Cancelar linea de orden de producción" as Cancelar
 }
     Administradores -- C
     Administradores -- Verificar
@@ -562,13 +611,13 @@ rectangle GestionLineasOrdenesProduccion{
  left to right direction
 
 rectangle GestionObservaciones{
-    UseCase "CU117 - Crear observación" as C
-    UseCase "CU118 - Borrar observación" as B
+    UseCase "CU113 - Crear observación" as C
+    UseCase "CU114 - Borrar observación" as B
 }
     Administradores -- C
     Administradores -- B
-
 @enduml
+
 
 
 

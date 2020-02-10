@@ -85,13 +85,21 @@
 		\end{itemize}
 		\item Gestión ubicaciones
 		\begin{itemize}
-			\item Quitar esto cuando se descomente alguna línea de abajo
-			%\itemCaseUse{crearUbicacion}{Crear ubicación}
+			\itemCaseUse{crearUbicacion}{Crear ubicación}
 			%\itemCaseUse{listarUbicaciones}{Listar ubicaciones}
 			%\itemCaseUse{darBajaUbicacion}{Dar de baja ubicación}
 			%\itemCaseUse{darAltaUbicacion}{Dar de alta ubicación}
 			%\itemCaseUse{modificarUbicacion}{Modificar ubicación}
 			%\itemCaseUse{borrarUbicacion}{Borrar ubicación}
+		\end{itemize}
+		\item Gestión remitos
+		\begin{itemize}
+			\item Quitar esto cuando se descomente alguna línea de abajo
+			%\itemCaseUse{crearRemito}{Crear remito}
+			%\itemCaseUse{buscarAvanzadoRemitos}{Buscar avanzado remitos}
+			%\itemCaseUse{darBajaRemito}{Dar de baja remito}
+			%\itemCaseUse{darAltaRemito}{Dar de alta remito}
+			%\itemCaseUse{borrarRemito}{Borrar remito}
 		\end{itemize}
 		\item Gestión clientes
 		\begin{itemize}
@@ -130,6 +138,7 @@
 			%\itemCaseUse{modificarVenta}{Modificar venta}
 			%\itemCaseUse{borrarVenta}{Borrar venta}
 			%\itemCaseUse{generarOrdenProduccionDesdeVenta}{Generar orden de producción a partir de venta}
+			%\itemCaseUse{revisarVenta}{Revisar venta}
 		\end{itemize}
 		\item Gestión líneas de venta
 		\begin{itemize}
@@ -168,24 +177,7 @@
 			%\itemCaseUse{modificarNotaCredito}{Modificar nota de crédito}
 			%\itemCaseUse{borrarNotaCredito}{Borrar nota de crédito}
 		\end{itemize}
-		\item Gestión remitos
-		\begin{itemize}
-			\item Quitar esto cuando se descomente alguna línea de abajo
-			%\itemCaseUse{crearRemito}{Crear remito}
-			%\itemCaseUse{buscarAvanzadoRemitos}{Buscar avanzado remitos}
-			%\itemCaseUse{darBajaRemito}{Dar de baja remito}
-			%\itemCaseUse{darAltaRemito}{Dar de alta remito}
-			%\itemCaseUse{borrarRemito}{Borrar remito}
-		\end{itemize}
-		\item Gestión órdenes de reposición
-		\begin{itemize}
-			\item Quitar esto cuando se descomente alguna línea de abajo
-			%\itemCaseUse{crearOrdenReposicion}{Crear orden de reposición}
-			%\itemCaseUse{buscarAvanzadoOrdenesReposicion}{Buscar avanzado órdenes de reposición}
-			%\itemCaseUse{darBajaOrdenReposicion}{Dar de baja orden de reposición}
-			%\itemCaseUse{darAltaOrdenReposicion}{Dar de alta orden de reposición}
-			%\itemCaseUse{borrarOrdenReposicion}{Borrar orden de reposición}
-		\end{itemize}
+
 		\item Gestión órdenes de producción
 		\begin{itemize}
 			\item Quitar esto cuando se descomente alguna línea de abajo
@@ -238,7 +230,13 @@
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles}
 		\caption{Diagrama de casos de uso para la gestión de roles}
 	\label{fig:GestionRoles}
-    \end{figure}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta}
+		\caption{Diagrama de casos de uso para la gestión de articulos de venta}
+	\label{fig:GestionArticulosVenta}
+	\end{figure}
     \begin{figure}[H]
 		\centering
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos}
@@ -262,19 +260,37 @@
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto}
 		\caption{Diagrama de casos de uso para la gestión de grupos de producto}
 	\label{fig:GestionGruposProducto}
-    \end{figure}
-    \begin{figure}[H]
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock}
+		\caption{Diagrama de casos de uso para la gestión de stock}
+	\label{fig:GestionStock}
+	\end{figure}
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones}
 		\caption{Diagrama de casos de uso para la gestión de ubicaciones}
 	\label{fig:GestionUbicaciones}
+    \end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos}
+		\caption{Diagrama de casos de uso para la gestión de remitos}
+	\label{fig:GestionRemitos}
     \end{figure}
     \begin{figure}[H]
 		\centering
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes}
 		\caption{Diagrama de casos de uso para la gestión de clientes}
 	\label{fig:GestionClientes}
-    \end{figure}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones}
+		\caption{Diagrama de casos de uso para la gestión de operaciones}
+	\label{fig:GestionOperaciones}
+	\end{figure}
     \begin{figure}[H]
 		\centering
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos}
@@ -316,18 +332,6 @@
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito}
 		\caption{Diagrama de casos de uso para la gestión de notas de crédito}
 	\label{fig:GestionNotasCredito}
-    \end{figure}
-    \begin{figure}[H]
-		\centering
-		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos}
-		\caption{Diagrama de casos de uso para la gestión de remitos}
-	\label{fig:GestionRemitos}
-    \end{figure}
-    \begin{figure}[H]
-		\centering
-		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesReposicion}
-		\caption{Diagrama de casos de uso para la gestión de órdenes de reposición}
-	\label{fig:GestionOrdenesReposicion}
     \end{figure}
     \begin{figure}[H]
 		\centering
@@ -403,12 +407,19 @@
 			\input{Capitulos/Capitulo4/CasosUso/GestionGruposProducto/modificarPreciosGrupo.tex}
 	
 			%GestionUbicaciones
-			%\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/crearUbicacion.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/crearUbicacion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/listarUbicaciones.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darBajaUbicacion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darAltaUbicacion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/modificarUbicacion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/borrarUbicacion.tex}
+
+			%GestionRemitos
+			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/crearRemito.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/buscarAvanzadoRemitos.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/darBajaRemito.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/darAltaRemito.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/borrarRemito.tex}
 
 			%GestionClientes
 			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/crearCliente.tex}
@@ -440,6 +451,7 @@
 			%\input{Capitulos/Capitulo4/CasosUso/GestionVentas/modificarVenta.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionVentas/borrarVenta.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionVentas/generarOrdenProduccionDesdeVenta.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionVentas/revisarVenta.tex}
 
 			%GestionLineasVenta
 			%\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/crearLineaVenta.tex}
@@ -470,19 +482,7 @@
 			%\input{Capitulos/Capitulo4/CasosUso/GestionNotasCredito/modificarNotaCredito.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionNotasCredito/borrarNotaCredito.tex}
 
-			%GestionRemitos
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/crearRemito.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/buscarAvanzadoRemitos.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/darBajaRemito.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/darAltaRemito.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/borrarRemito.tex}
-
-			%GestionOrdenesReposicion
-			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesReposicion/crearOrdenReposicion.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesReposicion/buscarAvanzadoOrdenesReposicion.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesReposicion/darBajaOrdenReposicion.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesReposicion/darAltaOrdenReposicion.tex}
-
+			
 			%GestionOrdenesProduccion
 			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/crearOrdenProduccion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/buscarAvanzadoOrdenesProduccion.tex}
