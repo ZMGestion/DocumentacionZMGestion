@@ -19,7 +19,7 @@
     \addCaseUseStep{El vendedor selecciona un cliente y modifica el periodo de validez.}%3
     \addCaseUseStep{ZMGestion crea un presupuesto en estado de "En creación" para el cliente con el periodo de validez ingresado por el vendedor.}%4
     \addCaseUseStep{ZMGestion pregunta si desea agregar una nueva linea de presupuesto.}%5
-    \addCaseUseStep{En caso afirmativo se ejecuta el \CUcrearLineaPresupuesto (Crear linea de presupuesto). En caso contrario ZMGestión pasa el estado del presupuesto a "Creado".}
+    \addCaseUseStep{En caso afirmativo se ejecuta el \CUcrearLineaPresupuesto (Crear linea de presupuesto) y se vuelve a realizar la pregunta. En caso contrario ZMGestión pasa el estado del presupuesto a "Creado".}
     \addCaseUseStep{ZMGestión muestra un mensaje indicando el éxito de la operacion y vuelve al punto 5 del escenario principal.
     }
 }
@@ -29,15 +29,11 @@
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe seleccionar un cliente.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
-	\newAlternative{A2: No ha agregado ninguna linea de presupuesto.}{5} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto 5 del escenario principal.}%¡Indicar número paso!
+	\newAlternative{A2: No ha agregado ninguna linea de presupuesto.}{6} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A2 comienza luego del punto 6 del escenario principal.}%¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe agregar al menos una linea de presupuesto.}
     \caseUseRow{El escenario vuelve al punto 5.}
     \caseUseRow{}
-	\newAlternative{A3: No ha agregado ninguna linea de presupuesto.}{3} %Flujo alternativo A3.
-    \caseUseRow{La secuencia A3 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{ZMGestion muestra un mensaje de error indicando que no cuenta con los permisos necesarios para modificar el periodo de validez de un presupuesto.}
-    \caseUseRow{El escenario vuelve al punto 2.}
 }
 
 \item Caso de uso \caseUseName

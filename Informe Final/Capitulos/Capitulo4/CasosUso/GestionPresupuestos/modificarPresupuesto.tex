@@ -37,6 +37,11 @@
     \alternativeRow{ZMGestion muestra un mensaje indicando que los campos son requeridos.}
     \caseUseRow{El escenario vuelve al punto 4.}
     \caseUseRow{}
+    \newAlternative{A4: El vendedor que creó el presupuesto no es el mismo que el que quiere modificarlo y no es un administrador.}{5} %Flujo alternativo A4.
+	\caseUseRow{La secuencia A4 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje informando que no puede modificar el presupuesto de otro vendedor.}
+    \caseUseRow{El escenario vuelve al punto 4.}
+    \caseUseRow{}
 }
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}

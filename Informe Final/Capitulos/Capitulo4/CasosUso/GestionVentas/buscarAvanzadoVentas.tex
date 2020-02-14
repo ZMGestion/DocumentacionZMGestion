@@ -1,56 +1,30 @@
+\renewcommand{\caseUseShortName}{buscarAvanzadoVentas} %cammelCase name
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseCreated}{13/02/2020} %Fecha creación
+\renewcommand{\caseUseModified}{13/02/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUbuscarAvanzadoPresupuestos - Buscar avanzado ventas} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
-
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un usuario } %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion buscar ventas a partir de un cliente, producto, estado y/o tela.} %Resumen
+\renewcommand{\caseUsePeople}{Vendedores: quiere encontrar una venta existente en el sistema.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber iniciado sesión en el sistema y tener el permiso necesario para realizar esta función.} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{ El vendedor accede a la pantalla para realizar la búsqueda de ventas.}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor seleccione un cliente, producto, tela, lustre y estado de la venta. Siendo opcionales todos los campos solicitados.}
+    \addCaseUseStep{El vendedor completa los campos solicitados.}
+    \addCaseUseStep{ZMGestion realiza la busqueda por cliente, producto, tela, lustre y estado de la venta.}
+    \addCaseUseStep{ZMGestion lista las coincidencias encontradas.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
-    \caseUseRow{}
-
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+	\newAlternative{A1: No se encontró ninguna coincidencia.}{4} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion informa al usuario que no se encontron resultados para su búsqueda.}
+    \caseUseRow{El escenario vuelve al punto 2.}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
-
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 
