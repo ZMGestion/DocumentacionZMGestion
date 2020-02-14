@@ -8,7 +8,7 @@
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor borrar una linea de presupuesto.} %Resumen
 \renewcommand{\caseUsePeople}{Vendedores: quiere borrar una linea de presupuesto.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasPresupuesto (Listar lineas presupuestos)} %Precondiciones
+	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasPresupuesto (Listar lineas de presupuesto)} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
@@ -21,9 +21,13 @@
 
     %VER QUE A1 TAMBIEN SE PUEDE HACER REVISANDO SI LA LINEA ESTA UTILIZADA O NO
 
-	\newAlternative{A1: El presupuesto al cual pertenece la linea se encuentra en estado "Vendido".}{1} %Flujo alternativo A1.
+	\newAlternative{A1: El presupuesto al cual pertenece la linea no se encuentra en estado "En edición".}{1} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{ZMGestion muestra un mensaje de error indicando que no se puede borrar la linea de presupuesto ya que se encuentra en estado "Vendido".}
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que no se puede borrar la linea de presupuesto ya que el presupuesto no se encuentra en estado "En edición".}
+    \caseUseRow{El escenario vuelve al punto 1.}
+    \newAlternative{A2: El vendedor que creo el presupuesto no es el mismo que el que quiere borrar la linea de presupuesto y no es un administrador.}{1} %Flujo alternativo A2.
+	\caseUseRow{La secuencia A2 comienza luego del punto 1 del escenario principal.} 
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que puede borrar el presupuesto de otro vendedor si no es un administrador.}
     \caseUseRow{El escenario vuelve al punto 1.}
 }
 

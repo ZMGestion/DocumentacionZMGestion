@@ -28,14 +28,8 @@
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 
-	\newAlternative{A2: El producto seleccionado es de tipo "Sin proceso de producción" y el vendedor a indicado una tela o lustre distinto a "Virgen" o "No lleva".}{3} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{ZMGestion muestra un mensaje de error indicando que el producto ingresado no es válido.}
-    \caseUseRow{El escenario vuelve al punto 2.}
-    \caseUseRow{}
-
-    \newAlternative{A3: El vendedor no cuenta con los permisos necesarios para modificar el precio.}{5} %Flujo alternativo A3.
-    \caseUseRow{La secuencia A3 comienza luego del punto 5 del escenario principal.}%¡Indicar número paso!
+    \newAlternative{A2: El vendedor no cuenta con los permisos necesarios para modificar el precio.}{5} %Flujo alternativo A3.
+    \caseUseRow{La secuencia A2 comienza luego del punto 5 del escenario principal.}%¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que no cuenta con los permisos necesarios para modificar el precio unitario.}
     \caseUseRow{El escenario vuelve al punto 4.}
 }

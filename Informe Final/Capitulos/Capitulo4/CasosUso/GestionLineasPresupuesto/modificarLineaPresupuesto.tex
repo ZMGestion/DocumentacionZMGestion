@@ -8,7 +8,7 @@
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor modificar una linea de presupuesto.} %Resumen
 \renewcommand{\caseUsePeople}{Vendedores: quiere modificar una linea de presupuesto.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasPresupuesto (Listar lineas presupuestos)} %Precondiciones
+	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasPresupuesto (Listar lineas de presupuesto)} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Si el producto, tela y lustre seleccionado no pertenece a ningún producto final existente se ejecuta el \CUcrearProductoFinal\ (Crear producto final) con el producto, tela y lustre seleccionados.} %Postcondiciones
@@ -19,7 +19,7 @@
     \addCaseUseStep{El vendedor modifica el producto, tela, lustre y la cantidad solicitada.}
     \addCaseUseStep{ZMGestion autocompleta el campo precio unitario con el precio actual del producto seleccionado con la tela solicitada. Si el vendedor cuenta con los permisos necesario para modificar este campo se le permite la edición, caso contrario se le muestra el campo deshabilitado con el precio.}
     \addCaseUseStep{El vendedor cuenta con los permisos necesarios y modifica el precio.}
-    \addCaseUseStep{ZMGestion modifica la linea de presupuesto con el valor de los campos producto, tela, lustre, precio unitario y cantidad solicitada ingresados por el usuario.}
+    \addCaseUseStep{ZMGestion modifica la linea de presupuesto con el valor de los campos producto, tela, lustre, precio unitario y cantidad solicitada ingresados por el vendedor.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 
@@ -37,14 +37,8 @@
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 
-	\newAlternative{A3: El producto seleccionado es de tipo "Sin proceso de producción" y el vendedor a indicado una tela o lustre distinto a "Virgen" o "No lleva".}{3} %Flujo alternativo A3.
-    \caseUseRow{La secuencia A3 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{ZMGestion muestra un mensaje de error indicando que el producto ingresado no es válido.}
-    \caseUseRow{El escenario vuelve al punto 2.}
-    \caseUseRow{}
-
-    \newAlternative{A4: El vendedor no cuenta con los permisos necesarios para modificar el precio.}{5} %Flujo alternativo A4.
-    \caseUseRow{La secuencia A4 comienza luego del punto 5 del escenario principal.}%¡Indicar número paso!
+    \newAlternative{A3: El vendedor no cuenta con los permisos necesarios para modificar el precio.}{5} %Flujo alternativo A3.
+    \caseUseRow{La secuencia A3 comienza luego del punto 5 del escenario principal.}%¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que no cuenta con los permisos necesarios para modificar el precio unitario.}
     \caseUseRow{El escenario vuelve al punto 4.}
 }
