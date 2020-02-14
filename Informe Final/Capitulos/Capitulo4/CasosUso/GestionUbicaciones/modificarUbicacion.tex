@@ -1,14 +1,14 @@
 
-\renewcommand{\caseUseShortName}{modificarUbicación} %cammelCase name
+\renewcommand{\caseUseShortName}{modificarUbicacion} %cammelCase name
 
 \renewcommand{\caseUseCreated}{11/02/2020} %Fecha creación
 \renewcommand{\caseUseModified}{11/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CUmodificarUbicacion - Modificar ubicación} %{\CUcammelCase - Title}
+\renewcommand{\caseUseName}{\CUmodificarUbicacion- Modificar ubicación} %{\CUcammelCase - Title}
 
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion modificar una ubicación.} %Resumen
 \renewcommand{\caseUsePeople}{Administradores: quiere modificar una ubicación.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber realizado con éxito el \CUlistarUbicaciones (Listar ubicaciones).}%Precondiciones
+	\caseUseRow{Haber realizado con éxito el \CUlistarUbicaciones (Listar ubicaciones).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
@@ -17,7 +17,7 @@
     \addCaseUseStep{El administrador inidca la ubicación que desea modificar.}
     \addCaseUseStep{ZMGestion muestra un formulario autocompletado con los datos de la ubicación seleccionada para que el administrador modifique: nombre de la ubicación y dirección (nombre y número de calle, código postal, ciudad, provincia y pais) de la misma. Indicando que todos los campos son obligatorios.}
     \addCaseUseStep{El administrador modifica los datos que desea cambiar de la ubicación.}
-    \addCaseUseStep{ZMGestion modifica la ubicación y muestra un mensaje de éxito.}
+    \addCaseUseStep{ZMGestion modifica la ubicación y muestra un mensaje indicando el éxito de la operación.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: El nombre de la ubicación ingresado ya se encuentra en uso.}{3} %Flujo alternativo A1.
@@ -38,6 +38,7 @@
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 }
+
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 

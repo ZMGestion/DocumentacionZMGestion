@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.31)  11 FEB 2020 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.31)  14 FEB 2020 18:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -760,10 +760,7 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \mult@nat@firstbox=\box62
 \colbreak@box=\box63
 \mc@col@check@num=\count129
-) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.aux
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
-)
+) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.aux)
 \openout1 = `Documentacion.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
@@ -851,7 +848,6 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 95.
 LaTeX Info: Redefining \pageref on input line 95.
 LaTeX Info: Redefining \nameref on input line 95.
- (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.out) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.out)
 \@outlinefile=\write3
 \openout3 = `Documentacion.out'.
 
@@ -864,14 +860,7 @@ Package caption Info: End \AtBeginDocument code.
 
 ]) [3
 
-] (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 11.
-)
+]
 \tf@toc=\write4
 \openout4 = `Documentacion.toc'.
 
@@ -886,39 +875,71 @@ Cap\'{\i }tulo 2.
 (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo2/cap2sec1.tex [6
 
 ]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 30.
 LaTeX Info: Redefining \. on input line 57.
 LaTeX Info: Redefining \% on input line 57.
- [7]
+
+
+LaTeX Warning: Reference `ch:capitulo2' on page 7 undefined on input line 57.
+
+[7]
 LaTeX Info: Redefining \. on input line 71.
 LaTeX Info: Redefining \% on input line 71.
- [8]
+
+
+LaTeX Warning: Reference `ch:capitulo2' on page 8 undefined on input line 71.
+
+[8]
 LaTeX Info: Redefining \. on input line 93.
 LaTeX Info: Redefining \% on input line 93.
- [9]
-LaTeX Info: Redefining \. on input line 124.
-LaTeX Info: Redefining \% on input line 124.
- [10]
+
+
+LaTeX Warning: Reference `ch:capitulo2' on page 9 undefined on input line 93.
+
+[9]
+LaTeX Info: Redefining \. on input line 125.
+LaTeX Info: Redefining \% on input line 125.
+
+
+LaTeX Warning: Reference `ch:capitulo2' on page 10 undefined on input line 125.
+
+[10]
 LaTeX Info: Redefining \. on input line 153.
 LaTeX Info: Redefining \% on input line 153.
- [11]
-LaTeX Info: Redefining \. on input line 182.
-LaTeX Info: Redefining \% on input line 182.
- [12])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulo3.tex
+
+
+LaTeX Warning: Reference `ch:capitulo2' on page 11 undefined on input line 153.
+
+[11]
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+
+
+LaTeX Warning: Reference `ch:capitulo2' on page 12 undefined on input line 183.
+
+[12])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulo3.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [13]
+
+
+LaTeX Warning: Reference `ch:capitulo2' on page 13 undefined on input line 1.
+
+[13]
 Cap\'{\i }tulo 3.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulo4.tex [14
 
 ]
 Cap\'{\i }tulo 4.
 (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/cap4sec1.tex
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaContexto.png, id=288, 572.1375pt x 247.92625pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaContexto.png, id=175, 572.1375pt x 247.92625pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaContexto.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaContexto.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaContexto.png  used on input line 13.
 (pdftex.def)             Requested size: 417.12436pt x 180.75389pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistema.png, id=289, 728.7225pt x 1349.04pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistema.png, id=176, 728.7225pt x 1349.04pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistema.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistema.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistema.png  used on input line 20.
@@ -928,177 +949,799 @@ Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Diag
  </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaContexto.png (PNG copy)>]
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
- [16 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistema.png (PNG copy)>]
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 16 undefined on input line 29.
+
+[16 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistema.png (PNG copy)>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 29.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+
+
+LaTeX Warning: Hyper reference `tabla:iniciarSesion' on page 17 undefined on input line 29.
+
+
+LaTeX Warning: Reference `CULiniciarSesion' on page 17 undefined on input line 29.
+
+
+LaTeX Warning: Reference `tabla:iniciarSesion' on page 17 undefined on input line 29.
+
+
+LaTeX Warning: Hyper reference `tabla:cerrarSesion' on page 17 undefined on input line 30.
+
+
+LaTeX Warning: Reference `CULcerrarSesion' on page 17 undefined on input line 30.
+
+
+LaTeX Warning: Reference `tabla:cerrarSesion' on page 17 undefined on input line 30.
+
+
+LaTeX Warning: Hyper reference `tabla:crearEmpleado' on page 17 undefined on input line 34.
+
+
+LaTeX Warning: Reference `CULcrearEmpleado' on page 17 undefined on input line 34.
+
+
+LaTeX Warning: Reference `tabla:crearEmpleado' on page 17 undefined on input line 34.
+
+
+LaTeX Warning: Hyper reference `tabla:buscarAvanzadoEmpleados' on page 17 undefined on input line 35.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoEmpleados' on page 17 undefined on input line 35.
+
+
+LaTeX Warning: Reference `tabla:buscarAvanzadoEmpleados' on page 17 undefined on input line 35.
+
+
+LaTeX Warning: Hyper reference `tabla:darBajaEmpleado' on page 17 undefined on input line 36.
+
+
+LaTeX Warning: Reference `CULdarBajaEmpleado' on page 17 undefined on input line 36.
+
+
+LaTeX Warning: Reference `tabla:darBajaEmpleado' on page 17 undefined on input line 36.
+
+
+LaTeX Warning: Hyper reference `tabla:darAltaEmpleado' on page 17 undefined on input line 37.
+
+
+LaTeX Warning: Reference `CULdarAltaEmpleado' on page 17 undefined on input line 37.
+
+
+LaTeX Warning: Reference `tabla:darAltaEmpleado' on page 17 undefined on input line 37.
+
+
+LaTeX Warning: Hyper reference `tabla:modificarEmpleado' on page 17 undefined on input line 38.
+
+
+LaTeX Warning: Reference `CULmodificarEmpleado' on page 17 undefined on input line 38.
+
+
+LaTeX Warning: Reference `tabla:modificarEmpleado' on page 17 undefined on input line 38.
+
+
+LaTeX Warning: Hyper reference `tabla:borrarEmpleado' on page 17 undefined on input line 39.
+
+
+LaTeX Warning: Reference `CULborrarEmpleado' on page 17 undefined on input line 39.
+
+
+LaTeX Warning: Reference `tabla:borrarEmpleado' on page 17 undefined on input line 39.
+
+
+LaTeX Warning: Hyper reference `tabla:crearRol' on page 17 undefined on input line 43.
+
+
+LaTeX Warning: Reference `CULcrearRol' on page 17 undefined on input line 43.
+
+
+LaTeX Warning: Reference `tabla:crearRol' on page 17 undefined on input line 43.
+
+
+LaTeX Warning: Hyper reference `tabla:listarRoles' on page 17 undefined on input line 44.
+
+
+LaTeX Warning: Reference `CULlistarRoles' on page 17 undefined on input line 44.
+
+
+LaTeX Warning: Reference `tabla:listarRoles' on page 17 undefined on input line 44.
+
+
+LaTeX Warning: Hyper reference `tabla:modificarRol' on page 17 undefined on input line 45.
+
+
+LaTeX Warning: Reference `CULmodificarRol' on page 17 undefined on input line 45.
+
+
+LaTeX Warning: Reference `tabla:modificarRol' on page 17 undefined on input line 45.
+
+
+LaTeX Warning: Hyper reference `tabla:borrarRol' on page 17 undefined on input line 46.
+
+
+LaTeX Warning: Reference `CULborrarRol' on page 17 undefined on input line 46.
+
+
+LaTeX Warning: Reference `tabla:borrarRol' on page 17 undefined on input line 46.
+
+
+LaTeX Warning: Hyper reference `tabla:crearProducto' on page 17 undefined on input line 50.
+
+
+LaTeX Warning: Reference `CULcrearProducto' on page 17 undefined on input line 50.
+
+
+LaTeX Warning: Reference `tabla:crearProducto' on page 17 undefined on input line 50.
+
+
+LaTeX Warning: Hyper reference `tabla:buscarAvanzadoProductos' on page 17 undefined on input line 51.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductos' on page 17 undefined on input line 51.
+
+
+LaTeX Warning: Reference `tabla:buscarAvanzadoProductos' on page 17 undefined on input line 51.
+
+
+LaTeX Warning: Hyper reference `tabla:darBajaProducto' on page 17 undefined on input line 52.
+
+
+LaTeX Warning: Reference `CULdarBajaProducto' on page 17 undefined on input line 52.
+
+
+LaTeX Warning: Reference `tabla:darBajaProducto' on page 17 undefined on input line 52.
+
+
+LaTeX Warning: Hyper reference `tabla:darAltaProducto' on page 17 undefined on input line 53.
+
+
+LaTeX Warning: Reference `CULdarAltaProducto' on page 17 undefined on input line 53.
+
+
+LaTeX Warning: Reference `tabla:darAltaProducto' on page 17 undefined on input line 53.
+
+
+LaTeX Warning: Hyper reference `tabla:modificarProducto' on page 17 undefined on input line 54.
+
+
+LaTeX Warning: Reference `CULmodificarProducto' on page 17 undefined on input line 54.
+
+
+LaTeX Warning: Reference `tabla:modificarProducto' on page 17 undefined on input line 54.
+
+
+LaTeX Warning: Hyper reference `tabla:borrarProducto' on page 17 undefined on input line 55.
+
+
+LaTeX Warning: Reference `CULborrarProducto' on page 17 undefined on input line 55.
+
+
+LaTeX Warning: Reference `tabla:borrarProducto' on page 17 undefined on input line 55.
+
+
+LaTeX Warning: Hyper reference `tabla:crearTela' on page 17 undefined on input line 59.
+
+
+LaTeX Warning: Reference `CULcrearTela' on page 17 undefined on input line 59.
+
+
+LaTeX Warning: Reference `tabla:crearTela' on page 17 undefined on input line 59.
+
+
+LaTeX Warning: Hyper reference `tabla:listarTelas' on page 17 undefined on input line 60.
+
+
+LaTeX Warning: Reference `CULlistarTelas' on page 17 undefined on input line 60.
+
+
+LaTeX Warning: Reference `tabla:listarTelas' on page 17 undefined on input line 60.
+
+
+LaTeX Warning: Hyper reference `tabla:darBajaTela' on page 17 undefined on input line 61.
+
+
+LaTeX Warning: Reference `CULdarBajaTela' on page 17 undefined on input line 61.
+
+
+LaTeX Warning: Reference `tabla:darBajaTela' on page 17 undefined on input line 61.
+
+
+LaTeX Warning: Hyper reference `tabla:darAltaTela' on page 17 undefined on input line 62.
+
+
+LaTeX Warning: Reference `CULdarAltaTela' on page 17 undefined on input line 62.
+
+
+LaTeX Warning: Reference `tabla:darAltaTela' on page 17 undefined on input line 62.
+
+
+LaTeX Warning: Hyper reference `tabla:modificarTela' on page 17 undefined on input line 63.
+
+
+LaTeX Warning: Reference `CULmodificarTela' on page 17 undefined on input line 63.
+
+
+LaTeX Warning: Reference `tabla:modificarTela' on page 17 undefined on input line 63.
+
+
+LaTeX Warning: Hyper reference `tabla:borrarTela' on page 17 undefined on input line 64.
+
+
+LaTeX Warning: Reference `CULborrarTela' on page 17 undefined on input line 64.
+
+
+LaTeX Warning: Reference `tabla:borrarTela' on page 17 undefined on input line 64.
+
+
+LaTeX Warning: Hyper reference `tabla:crearProductoFinal' on page 17 undefined on input line 68.
+
+
+LaTeX Warning: Reference `CULcrearProductoFinal' on page 17 undefined on input line 68.
+
+
+LaTeX Warning: Reference `tabla:crearProductoFinal' on page 17 undefined on input line 68.
+
+
+LaTeX Warning: Hyper reference `tabla:buscarAvanzadoProductosFinales' on page 17 undefined on input line 69.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductosFinales' on page 17 undefined on input line 69.
+
+
+LaTeX Warning: Reference `tabla:buscarAvanzadoProductosFinales' on page 17 undefined on input line 69.
+
+
+LaTeX Warning: Hyper reference `tabla:darBajaProductoFinal' on page 17 undefined on input line 70.
+
+
+LaTeX Warning: Reference `CULdarBajaProductoFinal' on page 17 undefined on input line 70.
+
+
+LaTeX Warning: Reference `tabla:darBajaProductoFinal' on page 17 undefined on input line 70.
+
+
+LaTeX Warning: Hyper reference `tabla:darAltaProductoFinal' on page 17 undefined on input line 71.
+
+
+LaTeX Warning: Reference `CULdarAltaProductoFinal' on page 17 undefined on input line 71.
+
+
+LaTeX Warning: Reference `tabla:darAltaProductoFinal' on page 17 undefined on input line 71.
+
+
+LaTeX Warning: Hyper reference `tabla:modificarProductoFinal' on page 17 undefined on input line 72.
+
+
+LaTeX Warning: Reference `CULmodificarProductoFinal' on page 17 undefined on input line 72.
+
+
+LaTeX Warning: Reference `tabla:modificarProductoFinal' on page 17 undefined on input line 72.
+
+
+LaTeX Warning: Hyper reference `tabla:borrarProductoFinal' on page 17 undefined on input line 73.
+
+
+LaTeX Warning: Reference `CULborrarProductoFinal' on page 17 undefined on input line 73.
+
+
+LaTeX Warning: Reference `tabla:borrarProductoFinal' on page 17 undefined on input line 73.
+
+
+LaTeX Warning: Hyper reference `tabla:crearGrupoProducto' on page 17 undefined on input line 77.
+
+
+LaTeX Warning: Reference `CULcrearGrupoProducto' on page 17 undefined on input line 77.
+
+
+LaTeX Warning: Reference `tabla:crearGrupoProducto' on page 17 undefined on input line 77.
+
+
+LaTeX Warning: Hyper reference `tabla:listarGruposProducto' on page 17 undefined on input line 78.
+
+
+LaTeX Warning: Reference `CULlistarGruposProducto' on page 17 undefined on input line 78.
+
+
+LaTeX Warning: Reference `tabla:listarGruposProducto' on page 17 undefined on input line 78.
+
+
+LaTeX Warning: Hyper reference `tabla:darBajaGrupoProducto' on page 17 undefined on input line 79.
+
+
+LaTeX Warning: Reference `CULdarBajaGrupoProducto' on page 17 undefined on input line 79.
+
+
+LaTeX Warning: Reference `tabla:darBajaGrupoProducto' on page 17 undefined on input line 79.
+
+
+LaTeX Warning: Hyper reference `tabla:darAltaGrupoProducto' on page 17 undefined on input line 80.
+
+
+LaTeX Warning: Reference `CULdarAltaGrupoProducto' on page 17 undefined on input line 80.
+
+
+LaTeX Warning: Reference `tabla:darAltaGrupoProducto' on page 17 undefined on input line 80.
+
+
+LaTeX Warning: Hyper reference `tabla:modificarGrupoProducto' on page 17 undefined on input line 81.
+
+
+LaTeX Warning: Reference `CULmodificarGrupoProducto' on page 17 undefined on input line 81.
+
+
+LaTeX Warning: Reference `tabla:modificarGrupoProducto' on page 17 undefined on input line 81.
+
+
+LaTeX Warning: Hyper reference `tabla:borrarGrupoProducto' on page 17 undefined on input line 82.
+
+
+LaTeX Warning: Reference `CULborrarGrupoProducto' on page 17 undefined on input line 82.
+
+
+LaTeX Warning: Reference `tabla:borrarGrupoProducto' on page 17 undefined on input line 82.
+
+
+LaTeX Warning: Hyper reference `tabla:listarProductosGrupo' on page 17 undefined on input line 83.
+
+
+LaTeX Warning: Reference `CULlistarProductosGrupo' on page 17 undefined on input line 83.
+
+
+LaTeX Warning: Reference `tabla:listarProductosGrupo' on page 17 undefined on input line 83.
+
+
+LaTeX Warning: Hyper reference `tabla:modificarPreciosGrupo' on page 17 undefined on input line 84.
+
+
+LaTeX Warning: Reference `CULmodificarPreciosGrupo' on page 17 undefined on input line 84.
+
+
+LaTeX Warning: Reference `tabla:modificarPreciosGrupo' on page 17 undefined on input line 84.
+
 LaTeX Info: Redefining \. on input line 88.
 LaTeX Info: Redefining \% on input line 88.
- [17]
+
+LaTeX Warning: Reference `ch:capitulo4' on page 17 undefined on input line 88.
+
+[17]
+
+LaTeX Warning: Hyper reference `tabla:crearUbicacion' on page 18 undefined on input line 88.
+
+
+LaTeX Warning: Reference `CULcrearUbicacion' on page 18 undefined on input line 88.
+
+
+LaTeX Warning: Reference `tabla:crearUbicacion' on page 18 undefined on input line 88.
+
+
+LaTeX Warning: Hyper reference `tabla:listarUbicaciones' on page 18 undefined on input line 89.
+
+
+LaTeX Warning: Reference `CULlistarUbicaciones' on page 18 undefined on input line 89.
+
+
+LaTeX Warning: Reference `tabla:listarUbicaciones' on page 18 undefined on input line 89.
+
+
+LaTeX Warning: Hyper reference `tabla:darBajaUbicacion' on page 18 undefined on input line 90.
+
+
+LaTeX Warning: Reference `CULdarBajaUbicacion' on page 18 undefined on input line 90.
+
+
+LaTeX Warning: Reference `tabla:darBajaUbicacion' on page 18 undefined on input line 90.
+
+
+LaTeX Warning: Hyper reference `tabla:darAltaUbicacion' on page 18 undefined on input line 91.
+
+
+LaTeX Warning: Reference `CULdarAltaUbicacion' on page 18 undefined on input line 91.
+
+
+LaTeX Warning: Reference `tabla:darAltaUbicacion' on page 18 undefined on input line 91.
+
 
 LaTeX Warning: Hyper reference `tabla:modificarUbicacion' on page 18 undefined on input line 92.
 
 
+LaTeX Warning: Reference `CULmodificarUbicacion' on page 18 undefined on input line 92.
+
+
 LaTeX Warning: Reference `tabla:modificarUbicacion' on page 18 undefined on input line 92.
 
-LaTeX Info: Redefining \. on input line 194.
-LaTeX Info: Redefining \% on input line 194.
+
+LaTeX Warning: Hyper reference `tabla:borrarUbicacion' on page 18 undefined on input line 93.
+
+
+LaTeX Warning: Reference `CULborrarUbicacion' on page 18 undefined on input line 93.
+
+
+LaTeX Warning: Reference `tabla:borrarUbicacion' on page 18 undefined on input line 93.
+
+
+LaTeX Warning: Hyper reference `tabla:crearCliente' on page 18 undefined on input line 106.
+
+
+LaTeX Warning: Reference `CULcrearCliente' on page 18 undefined on input line 106.
+
+
+LaTeX Warning: Reference `tabla:crearCliente' on page 18 undefined on input line 106.
+
+
+LaTeX Warning: Hyper reference `tabla:buscarAvanzadoClientes' on page 18 undefined on input line 107.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoClientes' on page 18 undefined on input line 107.
+
+
+LaTeX Warning: Reference `tabla:buscarAvanzadoClientes' on page 18 undefined on input line 107.
+
+
+LaTeX Warning: Hyper reference `tabla:darBajaCliente' on page 18 undefined on input line 108.
+
+
+LaTeX Warning: Reference `CULdarBajaCliente' on page 18 undefined on input line 108.
+
+
+LaTeX Warning: Reference `tabla:darBajaCliente' on page 18 undefined on input line 108.
+
+
+LaTeX Warning: Hyper reference `tabla:darAltaCliente' on page 18 undefined on input line 109.
+
+
+LaTeX Warning: Reference `CULdarAltaCliente' on page 18 undefined on input line 109.
+
+
+LaTeX Warning: Reference `tabla:darAltaCliente' on page 18 undefined on input line 109.
+
+
+LaTeX Warning: Hyper reference `tabla:modificarCliente' on page 18 undefined on input line 110.
+
+
+LaTeX Warning: Reference `CULmodificarCliente' on page 18 undefined on input line 110.
+
+
+LaTeX Warning: Reference `tabla:modificarCliente' on page 18 undefined on input line 110.
+
+
+LaTeX Warning: Hyper reference `tabla:borrarCliente' on page 18 undefined on input line 111.
+
+
+LaTeX Warning: Reference `CULborrarCliente' on page 18 undefined on input line 111.
+
+
+LaTeX Warning: Reference `tabla:borrarCliente' on page 18 undefined on input line 111.
+
+
+LaTeX Warning: Hyper reference `tabla:crearPresupuesto' on page 18 undefined on input line 115.
+
+
+LaTeX Warning: Reference `CULcrearPresupuesto' on page 18 undefined on input line 115.
+
+
+LaTeX Warning: Reference `tabla:crearPresupuesto' on page 18 undefined on input line 115.
+
+
+LaTeX Warning: Hyper reference `tabla:buscarAvanzadoPresupuestos' on page 18 undefined on input line 116.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 18 undefined on input line 116.
+
+
+LaTeX Warning: Reference `tabla:buscarAvanzadoPresupuestos' on page 18 undefined on input line 116.
+
+
+LaTeX Warning: Hyper reference `tabla:modificarPresupuesto' on page 18 undefined on input line 117.
+
+
+LaTeX Warning: Reference `CULmodificarPresupuesto' on page 18 undefined on input line 117.
+
+
+LaTeX Warning: Reference `tabla:modificarPresupuesto' on page 18 undefined on input line 117.
+
+
+LaTeX Warning: Hyper reference `tabla:borrarPresupuesto' on page 18 undefined on input line 118.
+
+
+LaTeX Warning: Reference `CULborrarPresupuesto' on page 18 undefined on input line 118.
+
+
+LaTeX Warning: Reference `tabla:borrarPresupuesto' on page 18 undefined on input line 118.
+
+
+LaTeX Warning: Hyper reference `tabla:transformarPresupuestoEnVenta' on page 18 undefined on input line 119.
+
+
+LaTeX Warning: Reference `CULtransformarPresupuestoEnVenta' on page 18 undefined on input line 119.
+
+
+LaTeX Warning: Reference `tabla:transformarPresupuestoEnVenta' on page 18 undefined on input line 119.
+
+
+LaTeX Warning: Hyper reference `tabla:generarPresupuestoPDF' on page 18 undefined on input line 120.
+
+
+LaTeX Warning: Reference `CULgenerarPresupuestoPDF' on page 18 undefined on input line 120.
+
+
+LaTeX Warning: Reference `tabla:generarPresupuestoPDF' on page 18 undefined on input line 120.
+
+
+LaTeX Warning: Hyper reference `tabla:enviarPresupuestoEmail' on page 18 undefined on input line 121.
+
+
+LaTeX Warning: Reference `CULenviarPresupuestoEmail' on page 18 undefined on input line 121.
+
+
+LaTeX Warning: Reference `tabla:enviarPresupuestoEmail' on page 18 undefined on input line 121.
+
+
+LaTeX Warning: Hyper reference `tabla:listarLineasPresupuesto' on page 18 undefined on input line 122.
+
+
+LaTeX Warning: Reference `CULlistarLineasPresupuesto' on page 18 undefined on input line 122.
+
+
+LaTeX Warning: Reference `tabla:listarLineasPresupuesto' on page 18 undefined on input line 122.
+
+
+LaTeX Warning: Hyper reference `tabla:crearLineaPresupuesto' on page 18 undefined on input line 128.
+
+
+LaTeX Warning: Reference `CULcrearLineaPresupuesto' on page 18 undefined on input line 128.
+
+
+LaTeX Warning: Reference `tabla:crearLineaPresupuesto' on page 18 undefined on input line 128.
+
+
+LaTeX Warning: Hyper reference `tabla:modificarLineaPresupuesto' on page 18 undefined on input line 129.
+
+
+LaTeX Warning: Reference `CULmodificarLineaPresupuesto' on page 18 undefined on input line 129.
+
+
+LaTeX Warning: Reference `tabla:modificarLineaPresupuesto' on page 18 undefined on input line 129.
+
+
+LaTeX Warning: Hyper reference `tabla:borrarLineaPresupuesto' on page 18 undefined on input line 130.
+
+
+LaTeX Warning: Reference `CULborrarLineaPresupuesto' on page 18 undefined on input line 130.
+
+
+LaTeX Warning: Reference `tabla:borrarLineaPresupuesto' on page 18 undefined on input line 130.
+
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+
+LaTeX Warning: Reference `ch:capitulo4' on page 18 undefined on input line 183.
+
 [18]
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png, id=609, 494.84875pt x 382.42876pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png, id=265, 494.84875pt x 382.42876pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png  used on input line 218.
 (pdftex.def)             Requested size: 271.93358pt x 210.15556pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png, id=610, 1165.35374pt x 375.4025pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png, id=266, 1165.35374pt x 375.4025pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png  used on input line 224.
 (pdftex.def)             Requested size: 417.1087pt x 134.36575pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png, id=611, 998.73125pt x 219.82124pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png, id=267, 998.73125pt x 219.82124pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png  used on input line 230.
 (pdftex.def)             Requested size: 417.1174pt x 91.80774pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png, id=612, 653.44125pt x 324.21124pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png, id=268, 653.44125pt x 324.21124pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png  used on input line 236.
 (pdftex.def)             Requested size: 417.11417pt x 206.95525pt.
 LaTeX Info: Redefining \. on input line 239.
 LaTeX Info: Redefining \% on input line 239.
- [19 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png (PNG copy)>]
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png, id=620, 1156.32pt x 691.58376pt>
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 19 undefined on input line 239.
+
+[19 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png, id=277, 1156.32pt x 691.58376pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png  used on input line 242.
 (pdftex.def)             Requested size: 417.10416pt x 249.46593pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png, id=621, 1014.79124pt x 672.5125pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png, id=278, 1014.79124pt x 672.5125pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png  used on input line 248.
 (pdftex.def)             Requested size: 417.12004pt x 276.4297pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png, id=622, 1108.14pt x 550.055pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png, id=279, 1108.14pt x 550.055pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png  used on input line 254.
 (pdftex.def)             Requested size: 417.10709pt x 207.04228pt.
 LaTeX Info: Redefining \. on input line 257.
 LaTeX Info: Redefining \% on input line 257.
- [20 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png (PNG copy)>]
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png, id=630, 1209.51875pt x 595.22375pt>
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 20 undefined on input line 257.
+
+[20 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png, id=287, 1209.51875pt x 595.22375pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png  used on input line 260.
 (pdftex.def)             Requested size: 417.11832pt x 205.27068pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png, id=631, 441.65pt x 270.00874pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png, id=288, 441.65pt x 270.00874pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png  used on input line 266.
 (pdftex.def)             Requested size: 417.13905pt x 255.02364pt.
 LaTeX Info: Redefining \. on input line 269.
 LaTeX Info: Redefining \% on input line 269.
- [21 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png (PNG copy)>]
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png, id=638, 1097.09875pt x 677.53125pt>
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 21 undefined on input line 269.
+
+[21 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png, id=295, 1097.09875pt x 677.53125pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png  used on input line 272.
 (pdftex.def)             Requested size: 417.10275pt x 257.58861pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png, id=639, 946.53625pt x 386.44376pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png, id=296, 946.53625pt x 386.44376pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png  used on input line 278.
 (pdftex.def)             Requested size: 417.11273pt x 170.29523pt.
 LaTeX Info: Redefining \. on input line 281.
 LaTeX Info: Redefining \% on input line 281.
- [22 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png (PNG copy)>]
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png, id=647, 946.53625pt x 473.77pt>
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 22 undefined on input line 281.
+
+[22 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png, id=303, 946.53625pt x 473.77pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png  used on input line 284.
 (pdftex.def)             Requested size: 417.11273pt x 208.77753pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png, id=648, 546.04pt x 721.69624pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png, id=304, 546.04pt x 721.69624pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png  used on input line 290.
 (pdftex.def)             Requested size: 417.11934pt x 551.30296pt.
 LaTeX Info: Redefining \. on input line 293.
 LaTeX Info: Redefining \% on input line 293.
- [23 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png (PNG copy)>]
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png, id=655, 1656.1875pt x 682.55pt>
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 23 undefined on input line 293.
+
+[23 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png, id=311, 1656.1875pt x 682.55pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png  used on input line 296.
 (pdftex.def)             Requested size: 417.1037pt x 171.89728pt.
 LaTeX Info: Redefining \. on input line 299.
 LaTeX Info: Redefining \% on input line 299.
- [24 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png (PNG copy)>]
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png, id=661, 755.82375pt x 312.16624pt>
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 24 undefined on input line 299.
+
+[24 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png, id=317, 755.82375pt x 312.16624pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png  used on input line 302.
 (pdftex.def)             Requested size: 417.11136pt x 172.27307pt.
 LaTeX Info: Redefining \. on input line 305.
 LaTeX Info: Redefining \% on input line 305.
- [25 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png (PNG copy)>]
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png, id=668, 1746.525pt x 465.74pt>
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 25 undefined on input line 305.
+
+[25 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png, id=324, 1746.525pt x 465.74pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png  used on input line 308.
 (pdftex.def)             Requested size: 417.09589pt x 111.22556pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png, id=669, 709.65125pt x 286.06876pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png, id=325, 709.65125pt x 286.06876pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png  used on input line 314.
 (pdftex.def)             Requested size: 417.13132pt x 168.15053pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png, id=670, 952.55875pt x 561.09625pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png, id=326, 952.55875pt x 561.09625pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png  used on input line 320.
 (pdftex.def)             Requested size: 417.12134pt x 245.7016pt.
 LaTeX Info: Redefining \. on input line 323.
 LaTeX Info: Redefining \% on input line 323.
- [26 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png (PNG copy)>]
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png, id=678, 942.52126pt x 473.77pt>
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 26 undefined on input line 323.
+
+[26 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png, id=334, 942.52126pt x 473.77pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png  used on input line 326.
 (pdftex.def)             Requested size: 417.11238pt x 209.6667pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png, id=679, 1057.9525pt x 488.82625pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png, id=335, 1057.9525pt x 488.82625pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png  used on input line 332.
 (pdftex.def)             Requested size: 417.11986pt x 192.72995pt.
 LaTeX Info: Redefining \. on input line 335.
 LaTeX Info: Redefining \% on input line 335.
- [27 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png (PNG copy)>]
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png, id=686, 1845.89626pt x 1053.9375pt>
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 27 undefined on input line 335.
+
+[27 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png, id=342, 1845.89626pt x 1053.9375pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png  used on input line 338.
 (pdftex.def)             Requested size: 417.11137pt x 238.15494pt.
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png, id=687, 884.30376pt x 911.405pt>
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png, id=343, 884.30376pt x 911.405pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png  used on input line 344.
 (pdftex.def)             Requested size: 417.12059pt x 429.90407pt.
 LaTeX Info: Redefining \. on input line 347.
 LaTeX Info: Redefining \% on input line 347.
- [28 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png (PNG copy)>]
-<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png, id=694, 678.535pt x 220.825pt>
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 28 undefined on input line 347.
+
+[28 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png, id=350, 678.535pt x 220.825pt>
 File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png Graphic file (type png)
 <use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png>
 Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png  used on input line 350.
 (pdftex.def)             Requested size: 417.11536pt x 135.74759pt.
 LaTeX Info: Redefining \. on input line 353.
 LaTeX Info: Redefining \% on input line 353.
- [29 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png (PNG copy)>]
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 29 undefined on input line 353.
+
+[29 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png (PNG copy)>]
 LaTeX Info: Redefining \. on input line 354.
 LaTeX Info: Redefining \% on input line 354.
- [30 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png (PNG copy)>] (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/Sesiones/iniciarSesion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+
+LaTeX Warning: Reference `ch:capitulo4' on page 30 undefined on input line 354.
+
+[30 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png (PNG copy)>] (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/Sesiones/iniciarSesion.tex
+
+LaTeX Warning: Reference `CULiniciarSesion' on page 31 undefined on input line 47.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 31 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULiniciarSesion' on page 31 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 31 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULiniciarSesion' on page 31 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULiniciarSesion' on page 31 undefined on input line 8.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1108,15 +1751,42 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.1 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
+
+LaTeX Warning: Reference `ch:capitulo4' on page 31 undefined on input line 32.
+
 [31
 
-])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/Sesiones/cerrarSesion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/Sesiones/cerrarSesion.tex
+
+LaTeX Warning: Reference `CULcerrarSesion' on page 32 undefined on input line 22.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 32 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcerrarSesion' on page 32 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 32 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcerrarSesion' on page 32 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcerrarSesion' on page 32 undefined on input line 8.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1126,8 +1796,28 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/crearEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/crearEmpleado.tex
+
+LaTeX Warning: Reference `CULcrearEmpleado' on page 32 undefined on input line 45.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 32 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearEmpleado' on page 32 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 32 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearEmpleado' on page 32 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearEmpleado' on page 32 undefined on input line 8.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1137,16 +1827,46 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
+
+LaTeX Warning: Reference `ch:capitulo4' on page 32 undefined on input line 32.
+
 [32]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.3 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
- [33])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/buscarAvanzadoEmpleados.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 33 undefined on input line 32.
+
+[33])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/buscarAvanzadoEmpleados.tex
+
+LaTeX Warning: Reference `CULbuscarAvanzadoEmpleados' on page 34 undefined on input line 30.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 34 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoEmpleados' on page 34 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 34 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoEmpleados' on page 34 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoEmpleados' on page 34 undefined on input line 8.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1161,7 +1881,30 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/darBajaEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/darBajaEmpleado.tex
+
+LaTeX Warning: Reference `CULdarBajaEmpleado' on page 34 undefined on input line 28.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 34 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaEmpleado' on page 34 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 34 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaEmpleado' on page 34 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaEmpleado' on page 34 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoEmpleados' on page 34 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1178,7 +1921,33 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[34])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/darAltaEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 34 undefined on input line 32.
+
+[34])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/darAltaEmpleado.tex
+
+LaTeX Warning: Reference `CULdarAltaEmpleado' on page 35 undefined on input line 27.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 35 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaEmpleado' on page 35 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 35 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaEmpleado' on page 35 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaEmpleado' on page 35 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoEmpleados' on page 35 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1190,8 +1959,34 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[35])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/modificarEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 35 undefined on input line 32.
+
+[35])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/modificarEmpleado.tex
+
+LaTeX Warning: Reference `CULmodificarEmpleado' on page 36 undefined on input line 50.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 36 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarEmpleado' on page 36 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 36 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarEmpleado' on page 36 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarEmpleado' on page 36 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoEmpleados' on page 36 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1201,19 +1996,50 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--29
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--29
  [] [] [] 
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 29--32
  [] [] [] 
  []
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[36])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/borrarEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 36 undefined on input line 32.
+
+[36]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.7 on input line 32.
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/borrarEmpleado.tex
+
+LaTeX Warning: Reference `CULdarBajaEmpleado' on page 37 undefined on input line 42.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 37 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaEmpleado' on page 37 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 37 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaEmpleado' on page 37 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaEmpleado' on page 37 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoEmpleados' on page 37 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1223,14 +2049,42 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[37])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/crearRol.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 37 undefined on input line 32.
+
+[37]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.8 on input line 32.
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/crearRol.tex
+
+LaTeX Warning: Reference `CULcrearRol' on page 38 undefined on input line 36.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 38 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearRol' on page 38 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 38 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearRol' on page 38 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearRol' on page 38 undefined on input line 8.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1240,13 +2094,41 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[38])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/listarRoles.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 38 undefined on input line 32.
+
+[38]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.9 on input line 32.
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/listarRoles.tex
+
+LaTeX Warning: Reference `CULlistarRoles' on page 39 undefined on input line 21.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 39 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarRoles' on page 39 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 39 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarRoles' on page 39 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarRoles' on page 39 undefined on input line 8.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1258,8 +2140,34 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[39])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/modificarRol.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 39 undefined on input line 32.
+
+[39])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/modificarRol.tex
+
+LaTeX Warning: Reference `CULmodificarRol' on page 40 undefined on input line 35.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 40 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarRol' on page 40 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 40 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarRol' on page 40 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarRol' on page 40 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarRoles' on page 40 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1269,13 +2177,43 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.11 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[40])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/borrarRol.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 40 undefined on input line 32.
+
+[40])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/borrarRol.tex
+
+LaTeX Warning: Reference `CULborrarRol' on page 41 undefined on input line 28.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 41 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarRol' on page 41 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 41 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarRol' on page 41 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarRol' on page 41 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarRoles' on page 41 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1290,8 +2228,28 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/crearProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/crearProducto.tex
+
+LaTeX Warning: Reference `CULcrearProducto' on page 41 undefined on input line 49.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 41 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearProducto' on page 41 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 41 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearProducto' on page 41 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearProducto' on page 41 undefined on input line 8.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1301,17 +2259,47 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
+
+LaTeX Warning: Reference `ch:capitulo4' on page 41 undefined on input line 32.
+
 [41]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.13 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
- [42])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/buscarAvanzadoProductos.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--28
+
+LaTeX Warning: Reference `ch:capitulo4' on page 42 undefined on input line 32.
+
+[42])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/buscarAvanzadoProductos.tex
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductos' on page 43 undefined on input line 30.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 43 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductos' on page 43 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 43 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductos' on page 43 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductos' on page 43 undefined on input line 8.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--28
  [] [] [] 
  []
 
@@ -1321,11 +2309,38 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 28--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 28--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/darBajaProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.14 on input line 32.
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/darBajaProducto.tex
+
+LaTeX Warning: Reference `CULdarBajaProducto' on page 43 undefined on input line 28.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 43 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaProducto' on page 43 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 43 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaProducto' on page 43 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaProducto' on page 43 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductos' on page 43 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1342,7 +2357,33 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[43])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/darAltaProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 43 undefined on input line 32.
+
+[43])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/darAltaProducto.tex
+
+LaTeX Warning: Reference `CULdarAltaProducto' on page 44 undefined on input line 27.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 44 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaProducto' on page 44 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 44 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaProducto' on page 44 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaProducto' on page 44 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductos' on page 44 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1359,8 +2400,34 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[44])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/modificarProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 44 undefined on input line 32.
+
+[44])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/modificarProducto.tex
+
+LaTeX Warning: Reference `CULmodificarProducto' on page 45 undefined on input line 53.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 45 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarProducto' on page 45 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 45 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarProducto' on page 45 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarProducto' on page 45 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductos' on page 45 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1370,18 +2437,49 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--29
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--29
  [] [] [] 
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 29--32
  [] [] [] 
  []
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[45])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/borrarProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 45 undefined on input line 32.
+
+[45]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.17 on input line 32.
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/borrarProducto.tex
+
+LaTeX Warning: Reference `CULborrarProducto' on page 46 undefined on input line 27.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 46 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarProducto' on page 46 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 46 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarProducto' on page 46 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarProducto' on page 46 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductos' on page 46 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1398,8 +2496,31 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[46])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/crearTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 46 undefined on input line 32.
+
+[46])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/crearTela.tex
+
+LaTeX Warning: Reference `CULcrearTela' on page 47 undefined on input line 40.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 47 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearTela' on page 47 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 47 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearTela' on page 47 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearTela' on page 47 undefined on input line 8.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1409,13 +2530,40 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.19 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[47])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/listarTelas.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 47 undefined on input line 32.
+
+[47])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/listarTelas.tex
+
+LaTeX Warning: Reference `CULlistarTelas' on page 48 undefined on input line 28.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 48 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarTelas' on page 48 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 48 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarTelas' on page 48 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarTelas' on page 48 undefined on input line 8.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1427,7 +2575,33 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[48])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/darBajaTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 48 undefined on input line 32.
+
+[48])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/darBajaTela.tex
+
+LaTeX Warning: Reference `CULdarBajaTela' on page 49 undefined on input line 28.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 49 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaTela' on page 49 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 49 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaTela' on page 49 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaTela' on page 49 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarTelas' on page 49 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1442,7 +2616,30 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/darAltaTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/darAltaTela.tex
+
+LaTeX Warning: Reference `CULdarAltaTela' on page 49 undefined on input line 29.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 49 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaTela' on page 49 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 49 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaTela' on page 49 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaTela' on page 49 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarTelas' on page 49 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1459,8 +2656,34 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[49])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/modificarTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 49 undefined on input line 32.
+
+[49])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/modificarTela.tex
+
+LaTeX Warning: Reference `CULmodificarTela' on page 50 undefined on input line 44.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 50 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarTela' on page 50 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 50 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarTela' on page 50 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarTela' on page 50 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarTelas' on page 50 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1470,13 +2693,43 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.23 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[50])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/borrarTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 50 undefined on input line 32.
+
+[50])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/borrarTela.tex
+
+LaTeX Warning: Reference `CULborrarTela' on page 51 undefined on input line 29.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 51 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarTela' on page 51 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 51 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarTela' on page 51 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarTela' on page 51 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarTelas' on page 51 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1493,7 +2746,30 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[51])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/crearProductoFinal.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 51 undefined on input line 32.
+
+[51])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/crearProductoFinal.tex
+
+LaTeX Warning: Reference `CULcrearProductoFinal' on page 52 undefined on input line 30.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 52 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearProductoFinal' on page 52 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 52 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearProductoFinal' on page 52 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearProductoFinal' on page 52 undefined on input line 8.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1508,8 +2784,28 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/buscarAvanzadoProductosFinales.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--28
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/buscarAvanzadoProductosFinales.tex
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductosFinales' on page 52 undefined on input line 30.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 52 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductosFinales' on page 52 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 52 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductosFinales' on page 52 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductosFinales' on page 52 undefined on input line 8.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--28
  [] [] [] 
  []
 
@@ -1519,13 +2815,44 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 28--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 28--32
  [] [] [] 
  []
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[52])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/darBajaProductoFinal.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 52 undefined on input line 32.
+
+[52]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.26 on input line 32.
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/darBajaProductoFinal.tex
+
+LaTeX Warning: Reference `CULdarBajaProductoFinal' on page 53 undefined on input line 28.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 53 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaProductoFinal' on page 53 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 53 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaProductoFinal' on page 53 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaProductoFinal' on page 53 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductosFinales' on page 53 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1542,7 +2869,33 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[53])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/darAltaProductoFinal.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 53 undefined on input line 32.
+
+[53])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/darAltaProductoFinal.tex
+
+LaTeX Warning: Reference `CULdarAltaProductoFinal' on page 54 undefined on input line 27.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 54 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaProductoFinal' on page 54 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 54 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaProductoFinal' on page 54 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaProductoFinal' on page 54 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductosFinales' on page 54 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1559,8 +2912,34 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[54])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/modificarProductoFinal.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 54 undefined on input line 32.
+
+[54])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/modificarProductoFinal.tex
+
+LaTeX Warning: Reference `CULmodificarProductoFinal' on page 55 undefined on input line 42.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 55 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarProductoFinal' on page 55 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 55 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarProductoFinal' on page 55 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarProductoFinal' on page 55 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductosFinales' on page 55 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1570,14 +2949,44 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.29 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[55])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/borrarProductoFinal.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 55 undefined on input line 32.
+
+[55])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/borrarProductoFinal.tex
+
+LaTeX Warning: Reference `CULborrarProductoFinal' on page 56 undefined on input line 32.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 56 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarProductoFinal' on page 56 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 56 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarProductoFinal' on page 56 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarProductoFinal' on page 56 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoProductosFinales' on page 56 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1587,13 +2996,40 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.30 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[56])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/crearGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 56 undefined on input line 32.
+
+[56])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/crearGrupoProducto.tex
+
+LaTeX Warning: Reference `CULcrearGrupoProducto' on page 57 undefined on input line 31.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 57 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearGrupoProducto' on page 57 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 57 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearGrupoProducto' on page 57 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearGrupoProducto' on page 57 undefined on input line 8.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1608,7 +3044,27 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarGruposProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarGruposProducto.tex
+
+LaTeX Warning: Reference `CULlistarGruposProducto' on page 57 undefined on input line 28.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 57 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarGruposProducto' on page 57 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 57 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarGruposProducto' on page 57 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarGruposProducto' on page 57 undefined on input line 8.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1620,7 +3076,33 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[57])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darBajaGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 57 undefined on input line 32.
+
+[57])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darBajaGrupoProducto.tex
+
+LaTeX Warning: Reference `CULdarBajaGrupoProducto' on page 58 undefined on input line 28.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 58 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaGrupoProducto' on page 58 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 58 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaGrupoProducto' on page 58 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaGrupoProducto' on page 58 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarGruposProducto' on page 58 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1637,7 +3119,33 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[58])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darAltaGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 58 undefined on input line 32.
+
+[58])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darAltaGrupoProducto.tex
+
+LaTeX Warning: Reference `CULdarAltaGrupoProducto' on page 59 undefined on input line 27.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 59 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaGrupoProducto' on page 59 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 59 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaGrupoProducto' on page 59 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaGrupoProducto' on page 59 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarGruposProducto' on page 59 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1654,8 +3162,34 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[59])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/modificarGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 59 undefined on input line 32.
+
+[59])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/modificarGrupoProducto.tex
+
+LaTeX Warning: Reference `CULmodificarGrupoProducto' on page 60 undefined on input line 36.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 60 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarGrupoProducto' on page 60 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 60 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarGrupoProducto' on page 60 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarGrupoProducto' on page 60 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarGruposProducto' on page 60 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1665,11 +3199,38 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/borrarGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.35 on input line 32.
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/borrarGrupoProducto.tex
+
+LaTeX Warning: Reference `CULborrarGrupoProducto' on page 60 undefined on input line 27.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 60 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarGrupoProducto' on page 60 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 60 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarGrupoProducto' on page 60 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarGrupoProducto' on page 60 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarGruposProducto' on page 60 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1681,12 +3242,38 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
 
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
+
+LaTeX Warning: Reference `ch:capitulo4' on page 60 undefined on input line 31.
+
 [60]
 Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarProductosGrupo.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarProductosGrupo.tex
+
+LaTeX Warning: Reference `CULlistarProductosGrupo' on page 61 undefined on input line 24.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 61 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarProductosGrupo' on page 61 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 61 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarProductosGrupo' on page 61 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarProductosGrupo' on page 61 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarGruposProducto' on page 61 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1698,8 +3285,34 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[61])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/modificarPreciosGrupo.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 61 undefined on input line 32.
+
+[61])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/modificarPreciosGrupo.tex
+
+LaTeX Warning: Reference `CULmodificarPreciosGrupo' on page 62 undefined on input line 36.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 62 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarPreciosGrupo' on page 62 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 62 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarPreciosGrupo' on page 62 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarPreciosGrupo' on page 62 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarGruposProducto' on page 62 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1709,14 +3322,41 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.38 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[62])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/crearUbicacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 62 undefined on input line 32.
+
+[62])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/crearUbicacion.tex
+
+LaTeX Warning: Reference `CULcrearUbicacion' on page 63 undefined on input line 42.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 63 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearUbicacion' on page 63 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 63 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearUbicacion' on page 63 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearUbicacion' on page 63 undefined on input line 8.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1726,13 +3366,40 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.39 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[63])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/listarUbicaciones.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 63 undefined on input line 32.
+
+[63])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/listarUbicaciones.tex
+
+LaTeX Warning: Reference `CULlistarUbicaciones' on page 64 undefined on input line 27.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 64 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarUbicaciones' on page 64 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 64 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarUbicaciones' on page 64 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarUbicaciones' on page 64 undefined on input line 8.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1742,7 +3409,30 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darBajaUbicacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darBajaUbicacion.tex
+
+LaTeX Warning: Reference `CULdarAltaUbicacion' on page 64 undefined on input line 27.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 64 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaUbicacion' on page 64 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 64 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaUbicacion' on page 64 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaUbicacion' on page 64 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarUbicaciones' on page 64 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1754,7 +3444,33 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[64])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darAltaUbicacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 64 undefined on input line 32.
+
+[64])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darAltaUbicacion.tex
+
+LaTeX Warning: Reference `CULdarAltaUbicacion' on page 65 undefined on input line 27.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 65 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaUbicacion' on page 65 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 65 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaUbicacion' on page 65 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaUbicacion' on page 65 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarUbicaciones' on page 65 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1766,8 +3482,34 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[65])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/modificarUbicacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 65 undefined on input line 32.
+
+[65])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/modificarUbicacion.tex
+
+LaTeX Warning: Reference `CULmodificarUbicacion' on page 66 undefined on input line 42.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 66 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarUbicacion' on page 66 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 66 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarUbicacion' on page 66 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarUbicacion' on page 66 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarUbicaciones' on page 66 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1777,16 +3519,41 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.43 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[66])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/crearCliente.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
- [] [] [] 
- []
+
+LaTeX Warning: Reference `ch:capitulo4' on page 66 undefined on input line 32.
+
+[66])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/borrarUbicacion.tex
+
+LaTeX Warning: Reference `CULborrarUbicacion' on page 67 undefined on input line 31.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 67 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarUbicacion' on page 67 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 67 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarUbicacion' on page 67 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarUbicacion' on page 67 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarUbicaciones' on page 67 undefined on input line 20.
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
@@ -1794,13 +3561,85 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
  [] [] [] 
  []
 
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
+ [] [] [] 
+ []
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/crearCliente.tex
+
+LaTeX Warning: Reference `CULcrearCliente' on page 67 undefined on input line 42.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 67 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearCliente' on page 67 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 67 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearCliente' on page 67 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearCliente' on page 67 undefined on input line 8.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+
+LaTeX Warning: Reference `ch:capitulo4' on page 67 undefined on input line 26.
+
+[67]
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
+ [] [] [] 
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.45 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[67])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/buscarAvanzadoClientes.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 68 undefined on input line 32.
+
+[68])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/buscarAvanzadoClientes.tex
+
+LaTeX Warning: Reference `CULbuscarAvanzadoClientes' on page 69 undefined on input line 29.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 69 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoClientes' on page 69 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 69 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoClientes' on page 69 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoClientes' on page 69 undefined on input line 8.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1815,9 +3654,30 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
  [] [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
-[68])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/darBajaCliente.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/darBajaCliente.tex
+
+LaTeX Warning: Reference `CULdarBajaCliente' on page 69 undefined on input line 28.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 69 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaCliente' on page 69 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 69 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaCliente' on page 69 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarBajaCliente' on page 69 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoClientes' on page 69 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1832,7 +3692,35 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/darAltaCliente.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+
+LaTeX Warning: Reference `ch:capitulo4' on page 69 undefined on input line 32.
+
+[69])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/darAltaCliente.tex
+
+LaTeX Warning: Reference `CULdarAltaCliente' on page 70 undefined on input line 28.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 70 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaCliente' on page 70 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 70 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaCliente' on page 70 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULdarAltaCliente' on page 70 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoClientes' on page 70 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1849,8 +3737,34 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[69])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/modificarCliente.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 70 undefined on input line 32.
+
+[70])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/modificarCliente.tex
+
+LaTeX Warning: Reference `CULmodificarCliente' on page 71 undefined on input line 48.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 71 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarCliente' on page 71 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 71 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarCliente' on page 71 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarCliente' on page 71 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoClientes' on page 71 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1860,14 +3774,44 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.49 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[70])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/borrarCliente.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 71 undefined on input line 32.
+
+[71])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/borrarCliente.tex
+
+LaTeX Warning: Reference `CULborrarCliente' on page 72 undefined on input line 33.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 72 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarCliente' on page 72 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 72 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarCliente' on page 72 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarCliente' on page 72 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoClientes' on page 72 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1877,14 +3821,44 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.50 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[71])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/crearPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 72 undefined on input line 32.
+
+[72])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/crearPresupuesto.tex
+
+LaTeX Warning: Reference `CULcrearPresupuesto' on page 73 undefined on input line 39.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 73 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearPresupuesto' on page 73 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 73 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearPresupuesto' on page 73 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearPresupuesto' on page 73 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULcrearLineaPresupuesto' on page 73 undefined on input line 24.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1894,13 +3868,40 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.51 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[72])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/buscarAvanzadoPresupuestos.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 73 undefined on input line 32.
+
+[73])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/buscarAvanzadoPresupuestos.tex
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 74 undefined on input line 29.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 74 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 74 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 74 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 74 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 74 undefined on input line 8.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1915,26 +3916,91 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
  [] [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
-[73])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/modificarPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/modificarPresupuesto.tex
+
+LaTeX Warning: Reference `CULmodificarPresupuesto' on page 74 undefined on input line 46.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 74 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarPresupuesto' on page 74 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 74 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarPresupuesto' on page 74 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarPresupuesto' on page 74 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 74 undefined on input line 20.
+
+
+LaTeX Warning: Reference `CULlistarLineasPresupuesto' on page 74 undefined on input line 24.
+
+
+LaTeX Warning: Reference `CULmodificarLineaPresupuesto' on page 74 undefined on input line 24.
+
+
+LaTeX Warning: Reference `CULborrarLineaPresupuesto' on page 74 undefined on input line 24.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
 
+LaTeX Warning: Reference `ch:capitulo4' on page 74 undefined on input line 26.
+
+[74]
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.53 on input line 32.
+
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[74])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/borrarPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 75 undefined on input line 32.
+
+[75])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/borrarPresupuesto.tex
+
+LaTeX Warning: Reference `CULborrarPresupuesto' on page 76 undefined on input line 27.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 76 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarPresupuesto' on page 76 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 76 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarPresupuesto' on page 76 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarPresupuesto' on page 76 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 76 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1951,8 +4017,59 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[75])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/transformarPresupuestoEnVenta.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 76 undefined on input line 32.
+
+[76])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/transformarPresupuestoEnVenta.tex
+
+LaTeX Warning: Reference `CULtransformarPresupuestoEnVenta' on page 77 undefined on input line 35.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 77 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULtransformarPresupuestoEnVenta' on page 77 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 77 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULtransformarPresupuestoEnVenta' on page 77 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULtransformarPresupuestoEnVenta' on page 77 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 77 undefined on input line 20.
+
+
+LaTeX Warning: Reference `CULlistarLineasPresupuesto' on page 77 undefined on input line 24.
+
+/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex:24: Undefined control sequence.
+\@sharp ...cionado, ejecuta el \CUcrearLineaVenta 
+                                                  \ (Crear linea de venta) c...
+l.24 Escenario principal: \caseUseScene
+                                        \hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex:24: Undefined control sequence.
+\@sharp ...ativo se ejecuta el \CUcrearLineaVenta 
+                                                  \ (Crear linea de venta) y...
+l.24 Escenario principal: \caseUseScene
+                                        \hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -1962,13 +4079,44 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[76])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/generarPresupuestoPDF.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Reference `ch:capitulo4' on page 77 undefined on input line 32.
+
+[77]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.55 on input line 32.
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/generarPresupuestoPDF.tex
+
+LaTeX Warning: Reference `CULgenerarPresupuestoPDF' on page 78 undefined on input line 23.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 78 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULgenerarPresupuestoPDF' on page 78 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 78 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULgenerarPresupuestoPDF' on page 78 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULgenerarPresupuestoPDF' on page 78 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 78 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1978,7 +4126,33 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/enviarPresupuestoEmail.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/enviarPresupuestoEmail.tex
+
+LaTeX Warning: Reference `CULenviarPresupuestoEmail' on page 78 undefined on input line 28.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 78 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULenviarPresupuestoEmail' on page 78 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 78 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULenviarPresupuestoEmail' on page 78 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULenviarPresupuestoEmail' on page 78 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 78 undefined on input line 20.
+
+
+LaTeX Warning: Reference `CULgenerarPresupuestoPDF' on page 78 undefined on input line 24.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1988,14 +4162,40 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--30
  [] [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 30.
-LaTeX Info: Redefining \% on input line 30.
-[77]
+
 Overfull \hbox (37.59996pt too wide) in alignment at lines 30--32
  [] [] [] 
  []
 
-)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/listarLineasPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+
+LaTeX Warning: Reference `ch:capitulo4' on page 78 undefined on input line 32.
+
+[78])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/listarLineasPresupuesto.tex
+
+LaTeX Warning: Reference `CULlistarLineasPresupuesto' on page 79 undefined on input line 27.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 79 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarLineasPresupuesto' on page 79 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 79 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarLineasPresupuesto' on page 79 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULlistarLineasPresupuesto' on page 79 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 79 undefined on input line 20.
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -2012,8 +4212,37 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[78])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasPresupuesto/crearLineaPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+
+LaTeX Warning: Reference `ch:capitulo4' on page 79 undefined on input line 32.
+
+[79])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasPresupuesto/crearLineaPresupuesto.tex
+
+LaTeX Warning: Reference `CULcrearLineaPresupuesto' on page 80 undefined on input line 37.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 80 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearLineaPresupuesto' on page 80 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 80 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearLineaPresupuesto' on page 80 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULcrearLineaPresupuesto' on page 80 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULbuscarAvanzadoPresupuestos' on page 80 undefined on input line 20.
+
+
+LaTeX Warning: Reference `CULcrearProductoFinal' on page 80 undefined on input line 22.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
@@ -2023,47 +4252,130 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
-[79])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasPresupuesto/modificarLineaPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
- [] [] [] 
- []
 
+LaTeX Warning: Reference `ch:capitulo4' on page 80 undefined on input line 32.
 
-Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
- []
-
-
-Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
- [] [] [] 
- []
-
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
 [80]
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
- [81])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasPresupuesto/borrarLineaPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.59 on input line 32.
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasPresupuesto/modificarLineaPresupuesto.tex
+
+LaTeX Warning: Reference `CULmodificarLineaPresupuesto' on page 81 undefined on input line 46.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 81 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarLineaPresupuesto' on page 81 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 81 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarLineaPresupuesto' on page 81 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULmodificarLineaPresupuesto' on page 81 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarLineasPresupuesto' on page 81 undefined on input line 20.
+
+
+LaTeX Warning: Reference `CULcrearProductoFinal' on page 81 undefined on input line 22.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
+
+
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
-Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
+Overfull \hbox (121.02219pt too wide) in alignment at lines 26--32
  [] [] [] 
  []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+
+LaTeX Warning: Reference `ch:capitulo4' on page 81 undefined on input line 32.
+
+[81]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.60 on input line 32.
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasPresupuesto/borrarLineaPresupuesto.tex
+
+LaTeX Warning: Reference `CULborrarLineaPresupuesto' on page 82 undefined on input line 34.
+
+(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 82 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarLineaPresupuesto' on page 82 undefined on input line 3.
+
+
+LaTeX Warning: Hyper reference `sec:listadoCasoUso' on page 82 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarLineaPresupuesto' on page 82 undefined on input line 3.
+
+
+LaTeX Warning: Reference `CULborrarLineaPresupuesto' on page 82 undefined on input line 8.
+
+
+LaTeX Warning: Reference `CULlistarLineasPresupuesto' on page 82 undefined on input line 20.
+
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 2--28
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+
+Overfull \hbox (121.02219pt too wide) in alignment at lines 28--32
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+
+LaTeX Warning: Reference `ch:capitulo4' on page 82 undefined on input line 32.
+
+[82]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.61 on input line 32.
 
 ))))
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
 LaTeX Info: Redefining \. on input line 146.
 LaTeX Info: Redefining \% on input line 146.
- [82]
+
+LaTeX Warning: Reference `ch:capitulo4' on page 83 undefined on input line 146.
+
+[83]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
  (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.aux
 LaTeX Info: Redefining \. on input line 23.
@@ -2071,27 +4383,36 @@ LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
-Package rerunfilecheck Info: File `Documentacion.out' has not changed.
-(rerunfilecheck)             Checksum: F8BD291F198C135BED4DB1663F4B1C1B;4926.
 
+
+Package rerunfilecheck Warning: File `Documentacion.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Documentacion.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  C78D572E565471659B4405BD03749395;4926.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 14852 strings out of 492616
- 256498 string characters out of 6129481
- 333793 words of memory out of 5000000
- 17847 multiletter control sequences out of 15000+600000
- 16464 words of font info for 31 fonts, out of 8000000 for 9000
+ 14832 strings out of 492616
+ 256202 string characters out of 6129481
+ 321471 words of memory out of 5000000
+ 17824 multiletter control sequences out of 15000+600000
+ 16462 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,11n,53p,1110b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on "/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.pdf" (82 pages, 2139134 bytes).
+ 40i,11n,49p,1110b,714s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
+Output written on "/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.pdf" (83 pages, 2139740 bytes).
 PDF statistics:
- 1535 PDF objects out of 1728 (max. 8388607)
- 1278 compressed objects within 13 object streams
- 396 named destinations out of 1000 (max. 500000)
- 334 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 848 PDF objects out of 1000 (max. 8388607)
+ 715 compressed objects within 8 object streams
+ 400 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

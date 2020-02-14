@@ -7,7 +7,7 @@
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion crear una venta para un cliente existente.} %Resumen
 \renewcommand{\caseUsePeople}{Vendedores: quiere crear una venta para un cliente existente.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistemay tener el permiso necesario para realizar esta función.} %Precondiciones
+	\caseUseRow{Haber iniciado sesión en el sistema y tener el permiso necesario para realizar esta función.} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
@@ -18,7 +18,7 @@
     \addCaseUseStep{El vendedor selecciona un cliente.}%3
     \addCaseUseStep{ZMGestion crea una venta en estado de "En revisión" para el cliente seleccionado.}%4
     \addCaseUseStep{ZMGestion pregunta si desea agregar una nueva linea de venta.}%5
-    \addCaseUseStep{En caso afirmativo se ejecuta el \CUcrearLineaVenta (Crear linea de venta) y se vuelve a realizar la pregunta. En caso contrario ZMGestión verifica que las lineas de ventas creadas tengan el precio actual del producto, en caso de que todas las lineas de venta tengan el precio actual para el producto y tela seleccionados, la venta se pasa al estado "En edición", el estado de las lineas de presupuesto que se utilizaron se pasan a "Utilizadas" y las que no se utilizaron al estado "No utilizadas".} %REVISAR ESTADO DE LAS LINEAS DE VENTA. SIGUEN EN EDICION... SE DEBERIA CAMBIAR A ALGUN OTRO ESTADO? EL ESTADO DE LA VENTA SE DETERMINA A PARTIR DEL ESTADO DE LAS LINEAS DE VENTA Y CREAR UNA VENTA NO SIGNIFICA QUE HAYA HECHO UN PAGO...
+    \addCaseUseStep{En caso afirmativo se ejecuta el \CUcrearLineaVenta (Crear linea de venta) y se vuelve a realizar la pregunta. En caso contrario ZMGestión verifica que las lineas de ventas creadas tengan el precio actual del producto, en caso de que todas las lineas de venta tengan el precio actual para el producto y tela seleccionados, la venta se pasa al estado "En edición", el estado de las lineas de presupuesto que se utilizaron se pasan a "Utilizadas" y las que no se utilizaron al estado "No utilizadas".} %REVISAR ESTADO DE LAS LINEAS DE VENTA. SIGUEN EN EDICION... SE DEBERIA CAMBIAR A ALGUN OTRO ESTADO? EL ESTADO DE LA VENTA SE DETERMINA A PARTIR DEL ESTADO DE LAS LINEAS DE VENTA Y CREAR UNA VENTA NO SIGNIFICA QUE HAYA HECHO UN PAGO... 
     \addCaseUseStep{ZMGestión muestra un mensaje indicando el éxito de la operacion y vuelve al punto 5 del escenario principal.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
