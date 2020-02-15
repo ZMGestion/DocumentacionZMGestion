@@ -93,9 +93,10 @@
 				\paragraph\indent
 				Los posibles estados de una venta son los siguientes:
 				\begin{itemize}
-					\item \textbf{En edición:} Cuando se está creando la venta o bien cuando todavía no se registró ningún pago y esta permitido borrar la venta.
-					\item \item \textbf{En revisión:} Cuando se necesita que un administrador revise una venta antes de continuar.
-					\item \textbf{Pendiente:} Cuando al menos una linea de producto se encuentra en estado distinto de cancelada o entregada.
+					\item \textbf{En creación:} Cuando no tiene lineas de producto o todas las lineas de producto se encuentran en creación.
+					\item \textbf{Congelada:} Cuando se quita la posibilidad de modificar o borrar la venta para esperar la adhesión de un pago.
+					\item \textbf{En revisión:} Cuando se necesita que un administrador revise una venta ya que una linea de producto perteneciente a la venta no tiene el precio actual.
+					\item \textbf{Pendiente:} Cuando al menos una linea de producto se encuentra en estado distinto de en creación, cancelada o entregada.
 					\item \textbf{Cancelada:} Cuando todas las líneas de producto se encuentran en estado cancelada. El/Los presupuesto/s y sus respectivas líneas vuelven al estado en que se encontraban antes de realizar la venta. Además se dará de baja todas las facturas y recibos asociados, y se realizará una nota de crédito de ser necesario.
 					\item \textbf{Entregada:} Cuando todas las líneas de producto no canceladas estén en estado entregadas.
 				\end{itemize}
@@ -107,11 +108,13 @@
 				\paragraph\indent
 				Los posibles estados de una linea de producto son:
 				\begin{itemize}
-					\item \textbf{En edición:} Cuando una linea de producto se está creando para agregarse a una venta.
+					\item \textbf{En creación:} Cuando una linea de producto se está creando.
 					\item \textbf{Pendiente:} Cuando la linea de producto fue creada y se debe determinar si es necesario asignarlo a una orden de producción.
 					\item \textbf{Cancelada:} Cuando un cliente solicita una cancelación de la linea de producto.
-					\item \textbf{En producción:} Cuando un administrador selecciona una o más líneas de producto de productos que posean proceso de producción y genera la orden de producción para los mismos.
+					\item \textbf{Pendiente de producción:} Cuando un administrador seleccionó la linea para ser producida.
+					\item \textbf{En producción:} Cuando una linea de producto se encuentra en producción.
 					\item \textbf{Finalizado:} Cuando una linea de producto que fue llevada a producción, ha sido marcada como finalizada por un usuario, pero no ha sido verificada por otro usuario que cuente con los permisos necesarios para hacerlo.
+					\item \textbf{Entregada:} Cuando una linea de producto fue entregada.
 					\item \textbf{Verificado:} Cuando un producto ya está listo para ser entregado (haya pasado, o no, por un proceso de producción). El/Los productos podrán ser entregados si el credito es superior al total de dicha linea de producto. Se debe tener en cuenta que:
 				\end{itemize}
 				\begin{center}
