@@ -8,5 +8,6 @@ repeat while (La tela ya se encuentra en el estado de Alta)
 |ZMGestion|
 :Da de alta la tela y muesta un mensaje indicando el 
 éxito de la operación;
+|Administrador|
 end
 @enduml

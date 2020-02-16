@@ -7,6 +7,7 @@ repeat
 repeat while(El presupuesto no posee lineas de presupuesto) is (V)
 |ZMGestion|
 :Lista las lineas de presupuesto;
+|Vendedor|
 end
 
 @enduml

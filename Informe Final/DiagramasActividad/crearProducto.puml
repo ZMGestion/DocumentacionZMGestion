@@ -20,5 +20,6 @@ repeat while(El precio ingresado sea menor o igual a cero)
 repeat while(La cantidad de tela necesaria ingresada sea menor a cero)
 :Crea el producto con los campos ingresados por el usuario y 
  muestra un mensaje indicando el éxito de la operación;
+|Administrador|
 end
 @enduml

@@ -14,6 +14,7 @@ son obligatorios;
 repeat while(Alguno de los campos obligatorios se encuentra vacio)
 repeat while(El nombre ingresado ya esta en uso)
 :Crea el rol y muestra un mensaje indicando el éxito de la operación;
+|Administrador|
 end
 
 @enduml

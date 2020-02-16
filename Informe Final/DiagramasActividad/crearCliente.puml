@@ -16,5 +16,6 @@ repeat while(El vendedor ha dejado un campo obligatorio vacio)
 repeat while(El correo electrónico ingresado ya esta en uso)
 repeat while(El tipo y número de documento ingresado ya existe)
 :Crea el cliente y muestra un mensaje indicando el éxito de la operación;
+|Vendedor|
 end
 @enduml

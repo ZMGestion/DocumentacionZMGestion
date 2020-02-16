@@ -7,5 +7,6 @@ repeat
 repeat while(El presupuesto se encuentra en estado "Vendido") is (V)
 |ZMGestion|
 :Borra el presupuesto y muestra un mensaje indicando el éxito de la operación;
+|Administrador|
 end
 @enduml

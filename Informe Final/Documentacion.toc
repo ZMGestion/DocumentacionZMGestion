@@ -87,7 +87,7 @@
 \contentsline {paragraph}{\indent }{12}{paragraph*.87}% 
 \contentsline {paragraph}{\indent }{12}{paragraph*.88}% 
 \contentsline {section}{\numberline {2.3}Requisitos de usuario y tecnol\IeC {\'o}gicos}{12}{section.89}% 
-\contentsline {section}{\numberline {2.4}Requisitos de interfaces externas}{13}{section.90}% 
+\contentsline {section}{\numberline {2.4}Requisitos de interfaces externas}{12}{section.90}% 
 \contentsline {section}{\numberline {2.5}Requisitos de rendimiento}{13}{section.91}% 
 \contentsline {section}{\numberline {2.6}Requisitos de desarrollo}{13}{section.92}% 
 \contentsline {section}{\numberline {2.7}Restricciones de dise\IeC {\~n}o}{13}{section.93}% 

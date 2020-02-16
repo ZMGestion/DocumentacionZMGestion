@@ -17,5 +17,6 @@ repeat while(El precio ingresado es menor o igual a cero)
 repeat while(Al menos un campo requerido está vacio)
 :Modifica la tela y muestra un mensaje indicando
 el éxito de la operación;
+|Administrador|
 end
 @enduml

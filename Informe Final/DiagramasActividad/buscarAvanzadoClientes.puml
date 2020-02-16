@@ -10,5 +10,6 @@ seleccione el tipo de persona y decida si desea buscar clientes dados de baja;
 |ZMGestion|
 repeat while(No se econtro ningun resultado para la busqueda)
 :Lista las coincidencias encontradas;
+|Vendedor|
 end
 @enduml

@@ -8,5 +8,6 @@ if(Existe alguna tela en el sistema) then (Si)
 else (No)
 :Muestra un mensaje indicando que no existe ninguna tela;
 endif
+|Vendedor|
 end
 @enduml
