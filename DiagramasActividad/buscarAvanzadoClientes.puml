@@ -8,7 +8,7 @@ seleccione el tipo de persona y decida si desea buscar clientes dados de baja;
 |Vendedor|
 :Completa el formulario;
 |ZMGestion|
-repeat while(No se econtro ningun resultado para la busqueda)
+repeat while(No se econtro ningun resultado para la busqueda) is (V)
 :Lista las coincidencias encontradas;
 |Vendedor|
 end

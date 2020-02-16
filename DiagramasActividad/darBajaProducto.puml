@@ -4,7 +4,7 @@ start
 :Ha ejecutado con éxito el CU BuscarAvanzadoProductos;
 repeat
 :Selecciona el producto que desea dar de baja;
-repeat while(El producto ya se encuentra en estado de baja)
+repeat while(El producto ya se encuentra en estado de baja) is (V)
 |ZMGestion|
 :Da de baja el producto y muestra un mensaje indicando el éxito de la operación;
 |Administrador|

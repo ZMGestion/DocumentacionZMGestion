@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \babel@toc {spanish}{}
 \contentsline {chapter}{Agradecimientos}{2}{chapter*.1}% 
 \contentsline {paragraph}{\indent }{2}{paragraph*.2}% 
@@ -106,3 +107,5 @@
 \contentsline {subsection}{\numberline {4.1.4}Listado de casos de uso}{17}{subsection.108}% 
 \contentsline {subsection}{\numberline {4.1.5}Diagrama de casos de uso}{19}{subsection.178}% 
 \contentsline {subsection}{\numberline {4.1.6}Descripci\IeC {\'o}n textual de los casos de uso}{31}{subsection.202}% 
+=======
+>>>>>>> master

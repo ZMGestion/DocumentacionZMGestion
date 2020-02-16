@@ -12,9 +12,9 @@ ambos campos son obligatorios;
 |Administrador|
 :Completa los campos requeridos;
 |ZMGestion|
-repeat while(Alguno de los campos obligatorios se encuentra vacio)
-repeat while(El nombre ingresado ya se encuentra en uso)
-repeat while(El precio ingresado sea menor o igual que cero)
+repeat while(Alguno de los campos obligatorios se encuentra vacio) is (V)
+repeat while(El nombre ingresado ya se encuentra en uso) is (V)
+repeat while(El precio ingresado sea menor o igual que cero) is (V)
 :Crea la tela y muestra un mensaje 
 indicando el éxito de la operación;
 |Administrador|
