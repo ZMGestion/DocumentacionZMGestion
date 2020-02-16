@@ -1,4 +1,4 @@
-@startuml crearPresuesto
+@startuml crearPresupuesto
 |Vendedor|
 start
 :Accede a la pantalla para crear presupuestos;

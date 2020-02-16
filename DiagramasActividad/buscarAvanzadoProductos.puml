@@ -11,7 +11,7 @@ buscar prodcutos dados de baja;
 :Completa los campos solicitados;
 |ZMGestion| 
 :Busca por nombre de producto, grupo y categoría y estado;
-repeat while(No se encontraron coincidencias)
+repeat while(No se encontraron coincidencias) is (V)
 :Lista las coincidencias encontradas;
 |Vendedor|
 end

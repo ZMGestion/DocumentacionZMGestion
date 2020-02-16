@@ -4,7 +4,7 @@ start
 :Ha ejecutado con éxito el CU Listar telas;
 repeat
 :Indica la tela que quiere dar de alta;
-repeat while (La tela ya se encuentra en el estado de Alta)
+repeat while (La tela ya se encuentra en el estado de Alta) is (V)
 |ZMGestion|
 :Da de alta la tela y muesta un mensaje indicando el 
 éxito de la operación;

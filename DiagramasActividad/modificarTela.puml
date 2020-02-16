@@ -12,9 +12,9 @@ Indicando que ambos campos son obligatorios;
 |Administrador|
 :Modifica los campos que desea cambiar;
 |ZMGestion|
-repeat while(El nombre de la tela se encuentra en uso)
-repeat while(El precio ingresado es menor o igual a cero)
-repeat while(Al menos un campo requerido está vacio)
+repeat while(El nombre de la tela se encuentra en uso) is (V)
+repeat while(El precio ingresado es menor o igual a cero) is (V)
+repeat while(Al menos un campo requerido está vacio) is (V)
 :Modifica la tela y muestra un mensaje indicando
 el éxito de la operación;
 |Administrador|

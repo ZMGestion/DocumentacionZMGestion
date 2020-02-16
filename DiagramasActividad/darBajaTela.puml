@@ -4,7 +4,7 @@ start
 :Ha ejecutado con exito el CU Listar telas;
 repeat
 :Indica la tela que desea dar de baja;
-repeat while(La tela ya se encuentra en estado Baja)
+repeat while(La tela ya se encuentra en estado Baja) is (V)
 |ZMGestion|
 :Da de baja la tela y muestra un mensaje indicando que
 la operación se realizo con éxito;

@@ -15,9 +15,9 @@ el producto;
 :Completa el formulario y selecciona de las listas desplegables
 el grupo y categoría a la cual pertenece el producto;
 |ZMGestion|
-repeat while(El nombre ingresado ya existe para el grupo y categoria)
-repeat while(El precio ingresado sea menor o igual a cero)
-repeat while(La cantidad de tela necesaria ingresada sea menor a cero)
+repeat while(El nombre ingresado ya existe para el grupo y categoria) is (V)
+repeat while(El precio ingresado sea menor o igual a cero) is (V)
+repeat while(La cantidad de tela necesaria ingresada sea menor a cero) is (V)
 :Crea el producto con los campos ingresados por el usuario y 
  muestra un mensaje indicando el éxito de la operación;
 |Administrador|
