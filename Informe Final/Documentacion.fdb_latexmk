@@ -1,4 +1,5 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["pdflatex"] 1581885810 "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.tex" "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.pdf" "Documentacion" 1581885812
   "Agradecimientos.tex" 1578783143 867 418db77e57ec8ae1640ebdc956f1505b ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecbx0500.tfm" 993061946 3212 70507fcf14da26e9fa78c7f84562ff74 ""
@@ -215,3 +216,11 @@
   "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.pdf"
   "Documentacion.toc"
   "Documentacion.log"
+=======
+["pdflatex"] 0 "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.tex" "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.pdf" "Documentacion" 0
+  "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.aux" 1581882153 9 a94a2480d3289e625eea47cd1b285758 ""
+  "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.tex" 0 -1 0 ""
+  (generated)
+  "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.log"
+  "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.pdf"
+>>>>>>> master
