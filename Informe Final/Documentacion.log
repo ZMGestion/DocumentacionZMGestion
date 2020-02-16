@@ -590,6 +590,7 @@ LaTeX Info: Redefining \% on input line 88.
 
 LaTeX Warning: Hyper reference `tabla:modificarUbicacion' on page 18 undefined on input line 92.
 
+<<<<<<< HEAD
 
 LaTeX Warning: Reference `tabla:modificarUbicacion' on page 18 undefined on input line 92.
 
@@ -750,8 +751,12 @@ LaTeX Info: Redefining \% on input line 352.
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
+=======
+>>>>>>> master
 
+LaTeX Warning: Reference `tabla:modificarUbicacion' on page 18 undefined on input line 92.
 
+<<<<<<< HEAD
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -759,20 +764,197 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
  [] [] [] 
+=======
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
+[18]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png, id=650, 494.84875pt x 382.42876pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png  used on input line 216.
+(pdftex.def)             Requested size: 271.93358pt x 210.15556pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png, id=651, 1165.35374pt x 375.4025pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png  used on input line 222.
+(pdftex.def)             Requested size: 417.1087pt x 134.36575pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png, id=652, 998.73125pt x 219.82124pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png  used on input line 228.
+(pdftex.def)             Requested size: 417.1174pt x 91.80774pt.
+LaTeX Info: Redefining \. on input line 231.
+LaTeX Info: Redefining \% on input line 231.
+ [19 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png, id=664, 653.44125pt x 324.21124pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png  used on input line 234.
+(pdftex.def)             Requested size: 417.11417pt x 206.95525pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png, id=665, 1156.32pt x 691.58376pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png  used on input line 240.
+(pdftex.def)             Requested size: 417.10416pt x 249.46593pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png, id=666, 1014.79124pt x 672.5125pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png  used on input line 246.
+(pdftex.def)             Requested size: 417.12004pt x 276.4297pt.
+LaTeX Info: Redefining \. on input line 249.
+LaTeX Info: Redefining \% on input line 249.
+ [20 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png, id=674, 1108.14pt x 550.055pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png  used on input line 252.
+(pdftex.def)             Requested size: 417.10709pt x 207.04228pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png, id=675, 1209.51875pt x 595.22375pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png  used on input line 258.
+(pdftex.def)             Requested size: 417.11832pt x 205.27068pt.
+LaTeX Info: Redefining \. on input line 261.
+LaTeX Info: Redefining \% on input line 261.
+ [21 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png, id=682, 441.65pt x 270.00874pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png  used on input line 264.
+(pdftex.def)             Requested size: 417.13905pt x 255.02364pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png, id=683, 1097.09875pt x 677.53125pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png  used on input line 270.
+(pdftex.def)             Requested size: 417.10275pt x 257.58861pt.
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
+ [22 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png, id=690, 946.53625pt x 386.44376pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png  used on input line 276.
+(pdftex.def)             Requested size: 417.11273pt x 170.29523pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png, id=691, 946.53625pt x 473.77pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png  used on input line 282.
+(pdftex.def)             Requested size: 417.11273pt x 208.77753pt.
+LaTeX Info: Redefining \. on input line 285.
+LaTeX Info: Redefining \% on input line 285.
+ [23 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png, id=698, 546.04pt x 721.69624pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png  used on input line 288.
+(pdftex.def)             Requested size: 417.11934pt x 551.30296pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png, id=699, 1656.1875pt x 682.55pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png  used on input line 294.
+(pdftex.def)             Requested size: 417.1037pt x 171.89728pt.
+LaTeX Info: Redefining \. on input line 297.
+LaTeX Info: Redefining \% on input line 297.
+ [24 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png, id=706, 755.82375pt x 312.16624pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png  used on input line 300.
+(pdftex.def)             Requested size: 417.11136pt x 172.27307pt.
+LaTeX Info: Redefining \. on input line 303.
+LaTeX Info: Redefining \% on input line 303.
+ [25 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png, id=713, 1746.525pt x 465.74pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png  used on input line 306.
+(pdftex.def)             Requested size: 417.09589pt x 111.22556pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png, id=714, 709.65125pt x 286.06876pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png  used on input line 312.
+(pdftex.def)             Requested size: 417.13132pt x 168.15053pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png, id=715, 952.55875pt x 561.09625pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png  used on input line 318.
+(pdftex.def)             Requested size: 417.12134pt x 245.7016pt.
+LaTeX Info: Redefining \. on input line 321.
+LaTeX Info: Redefining \% on input line 321.
+ [26 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png, id=723, 942.52126pt x 473.77pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png  used on input line 324.
+(pdftex.def)             Requested size: 417.11238pt x 209.6667pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png, id=724, 1057.9525pt x 488.82625pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png  used on input line 330.
+(pdftex.def)             Requested size: 417.11986pt x 192.72995pt.
+LaTeX Info: Redefining \. on input line 333.
+LaTeX Info: Redefining \% on input line 333.
+ [27 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png, id=731, 1845.89626pt x 1053.9375pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png  used on input line 336.
+(pdftex.def)             Requested size: 417.11137pt x 238.15494pt.
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png, id=732, 884.30376pt x 911.405pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png  used on input line 342.
+(pdftex.def)             Requested size: 417.12059pt x 429.90407pt.
+LaTeX Info: Redefining \. on input line 345.
+LaTeX Info: Redefining \% on input line 345.
+ [28 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito.png (PNG copy)>]
+<Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png, id=739, 678.535pt x 220.825pt>
+File: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png Graphic file (type png)
+<use Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png>
+Package pdftex.def Info: Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png  used on input line 348.
+(pdftex.def)             Requested size: 417.11536pt x 135.74759pt.
+LaTeX Info: Redefining \. on input line 351.
+LaTeX Info: Redefining \% on input line 351.
+ [29 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 352.
+LaTeX Info: Redefining \% on input line 352.
+ [30 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png (PNG copy)> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png (PNG copy)>] (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/Sesiones/iniciarSesion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [31
 
+<<<<<<< HEAD
 ])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/Sesiones/cerrarSesion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+ [] [] [] 
+>>>>>>> master
  []
 
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[31
 
+<<<<<<< HEAD
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
  [] [] [] 
+=======
+])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/Sesiones/cerrarSesion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/crearEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
@@ -780,6 +962,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
+<<<<<<< HEAD
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
@@ -799,14 +982,48 @@ LaTeX Info: Redefining \% on input line 32.
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
+ [] [] [] 
+ []
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/crearEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
 
 
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+>>>>>>> master
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+ [] [] [] 
+ []
+
+<<<<<<< HEAD
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--29
  [] [] [] 
  []
 
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
+=======
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[32]
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+ [33])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/buscarAvanzadoEmpleados.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--29
+>>>>>>> master
  [] [] [] 
  []
 
@@ -815,6 +1032,7 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
+<<<<<<< HEAD
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
  [] [] [] 
@@ -831,10 +1049,37 @@ LaTeX Info: Redefining \% on input line 32.
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
+ [] [] [] 
+ []
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/darBajaEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
 
 
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
+ [] [] [] 
+ []
+
+>>>>>>> master
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
+ [] [] [] 
+ []
+
+<<<<<<< HEAD
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
  [] [] [] 
+=======
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[34])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/darAltaEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 LaTeX Info: Redefining \. on input line 32.
@@ -844,6 +1089,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
+<<<<<<< HEAD
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
@@ -865,8 +1111,35 @@ LaTeX Info: Redefining \% on input line 32.
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[35])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/modificarEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
 
 
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--29
+ [] [] [] 
+ []
+
+>>>>>>> master
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
+ [] [] [] 
+ []
+
+<<<<<<< HEAD
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -874,6 +1147,18 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
  [] [] [] 
+=======
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[36])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/borrarEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 LaTeX Info: Redefining \. on input line 32.
@@ -883,6 +1168,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
+<<<<<<< HEAD
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
@@ -899,10 +1185,39 @@ LaTeX Info: Redefining \% on input line 32.
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[37])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/crearRol.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
 
 
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+>>>>>>> master
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+ [] [] [] 
+ []
+
+<<<<<<< HEAD
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
  [] [] [] 
+=======
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[38])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/listarRoles.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 LaTeX Info: Redefining \. on input line 32.
@@ -912,6 +1227,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
+<<<<<<< HEAD
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
@@ -928,14 +1244,47 @@ LaTeX Info: Redefining \% on input line 32.
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[39])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/modificarRol.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
 
 
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+>>>>>>> master
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+ [] [] [] 
+ []
+
+<<<<<<< HEAD
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
  [] [] [] 
  []
 
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
+=======
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[40])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/borrarRol.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
+>>>>>>> master
  [] [] [] 
  []
 
@@ -944,6 +1293,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
+<<<<<<< HEAD
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
@@ -963,8 +1313,28 @@ LaTeX Info: Redefining \% on input line 32.
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--28
  [] [] [] 
  []
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
+ [] [] [] 
+ []
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/crearProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
 
 
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+>>>>>>> master
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+ [] [] [] 
+ []
+
+<<<<<<< HEAD
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -972,6 +1342,21 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 28--32
  [] [] [] 
+=======
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[41]
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+ [42])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/buscarAvanzadoProductos.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--28
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/darBajaProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
@@ -979,6 +1364,7 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
+<<<<<<< HEAD
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
  [] [] [] 
@@ -995,8 +1381,28 @@ LaTeX Info: Redefining \% on input line 32.
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 28--32
+ [] [] [] 
+ []
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/darBajaProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
 
 
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
+ [] [] [] 
+ []
+
+>>>>>>> master
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
+ [] [] [] 
+ []
+
+<<<<<<< HEAD
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
  [] [] [] 
  []
@@ -1033,6 +1439,13 @@ LaTeX Info: Redefining \% on input line 32.
 [45])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/borrarProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[43])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/darAltaProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1047,6 +1460,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
+<<<<<<< HEAD
 [46])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/crearTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
  [] [] [] 
@@ -1071,12 +1485,35 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
 
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
+=======
+[44])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/modificarProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--29
+ [] [] [] 
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
+>>>>>>> master
  [] [] [] 
  []
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
+<<<<<<< HEAD
 [48])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/darBajaTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+=======
+[45])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/borrarProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+>>>>>>> master
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
@@ -1091,12 +1528,96 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
  [] [] [] 
  []
 
+<<<<<<< HEAD
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/darAltaTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+=======
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[46])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/crearTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[47])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/listarTelas.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+>>>>>>> master
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
+ [] [] [] 
+ []
+
+<<<<<<< HEAD
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
+ [] [] [] 
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[49])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/modificarTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
+
+
+=======
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[48])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/darBajaTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
+ [] [] [] 
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
+ [] [] [] 
+ []
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/darAltaTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+>>>>>>> master
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
+<<<<<<< HEAD
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[50])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/borrarTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
  [] [] [] 
  []
@@ -1115,7 +1636,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1127,7 +1648,8 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [50])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/borrarTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1164,7 +1686,11 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--28
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1244,6 +1770,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [56])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/crearGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
@@ -1252,11 +1779,16 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--29
  [] [] [] 
  []
 
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+>>>>>>> master
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
  [] [] [] 
  []
 
+<<<<<<< HEAD
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarGruposProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
@@ -1270,11 +1802,24 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [57])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darBajaGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--29
+ [] [] [] 
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 29--32
+ [] [] [] 
+ []
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarGruposProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+>>>>>>> master
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
  [] [] [] 
  []
@@ -1299,6 +1844,34 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
  [] [] [] 
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[57])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darBajaGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
+ [] [] [] 
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[58])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darAltaGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 LaTeX Info: Redefining \. on input line 32.
@@ -1308,11 +1881,18 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
+<<<<<<< HEAD
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
+ [] [] [] 
+ []
+>>>>>>> master
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
+<<<<<<< HEAD
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
  [] [] [] 
@@ -1322,8 +1902,25 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
+ [] [] [] 
+ []
 
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[59])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/modificarGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
 
+>>>>>>> master
+
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+<<<<<<< HEAD
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
  [] [] [] 
  []
@@ -1336,11 +1933,20 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
  []
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarProductosGrupo.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+=======
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+ [] [] [] 
+ []
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/borrarGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+>>>>>>> master
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
  [] [] [] 
  []
@@ -1360,6 +1966,39 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
  [] [] [] 
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
+[60]
+Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
+ [] [] [] 
+ []
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarProductosGrupo.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[61])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/modificarPreciosGrupo.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 LaTeX Info: Redefining \. on input line 32.
@@ -1369,6 +2008,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
  [] [] [] 
  []
 
+<<<<<<< HEAD
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
@@ -1385,10 +2025,39 @@ LaTeX Info: Redefining \% on input line 32.
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[62])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/crearUbicacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
+ [] [] [] 
+ []
 
 
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+>>>>>>> master
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
+ [] [] [] 
+ []
+
+<<<<<<< HEAD
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
  [] [] [] 
+=======
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[63])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/listarUbicaciones.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darBajaUbicacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
@@ -1396,6 +2065,7 @@ Underfull \hbox (badness 2173) in paragraph at lines 29--29
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
+<<<<<<< HEAD
 
 Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
  [] [] [] 
@@ -1404,12 +2074,31 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 4.40 on input line 32.
+=======
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
+ [] [] [] 
+ []
+
+)) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darBajaUbicacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
+Underfull \hbox (badness 2173) in paragraph at lines 29--29
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
+ [] [] [] 
+ []
+>>>>>>> master
 
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [64])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darAltaUbicacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1438,7 +2127,11 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [66])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/borrarUbicacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1460,7 +2153,11 @@ LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 [67]
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1472,7 +2169,11 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [68])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/buscarAvanzadoClientes.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1504,7 +2205,11 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [69])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/darAltaCliente.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1526,7 +2231,11 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1543,7 +2252,11 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1572,7 +2285,11 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [73])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/buscarAvanzadoPresupuestos.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1594,7 +2311,11 @@ LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 [74]
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1606,7 +2327,11 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [75])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/borrarPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1628,7 +2353,11 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1694,7 +2423,11 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1728,7 +2461,11 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--28
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1745,7 +2482,11 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1757,7 +2498,11 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [83])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionVentas/buscarAvanzadoVentas.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1774,7 +2519,11 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [84])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionVentas/listarLineasVenta.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1808,7 +2557,11 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [86])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionVentas/borrarVenta.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1830,7 +2583,11 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
@@ -1862,7 +2619,11 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [89])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasVenta/borrarLineaVenta.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
+<<<<<<< HEAD
 \T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+=======
+\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+>>>>>>> master
  []
 
 
