@@ -1,0 +1,472 @@
+@startuml borrarPresupuesto
+|Administrador|
+start 
+:Ha ejecutado con éxito el CU Buscar avanzado presupuestos;
+repeat
+:Seleccionado el presupuesto que desea borrar;
+repeat while(El presupuesto se encuentra en estado "Vendido") is (V)
+|ZMGestion|
+:Borra el presupuesto y muestra un mensaje indicando el éxito de la operación;
+|Administrador|
+end
+@enduml
+
+@startuml borrarProducto
+|Administrador|
+start
+:Ha ejecutado con exito el CU Buscar productos avanzado;
+repeat
+:Indica el producto que quiere borrar;
+repeat while(El producto fue utilizado para crear un producto final) is (V)
+|ZMGestion|
+:Borra el producto y muestra un mensaje indicando el éxito de la 
+operación;
+|Administrador|
+end
+@enduml
+
+@startuml borrarTela
+|Administrador|
+:Ha ejecutado con éxito el CU Listar telas;
+repeat
+:Indica la tela que desea borrar;
+repeat while(La tela fue utilizada para crear al menos un producto final) is (V)
+|ZMGestion|
+:Borra la tela y muestra un mensaje indicando el éxito de la operación;
+|Administrador|
+end
+@enduml
+
+@startuml buscarAvanzadoClientes
+|Vendedor|
+:Accede a la pantalla para buscar clientes;
+|ZMGestion|
+repeat
+:Muestra un formulario para que el vendedor ingrese la cadena de busqueda,
+seleccione el tipo de persona y decida si desea buscar clientes dados de baja;
+|Vendedor|
+:Completa el formulario;
+|ZMGestion|
+repeat while(No se econtro ningun resultado para la busqueda) is (V)
+:Lista las coincidencias encontradas;
+|Vendedor|
+end
+@enduml
+
+@startuml buscarAvanzadoPresupuestos
+|Vendedor|
+start
+:Accede a la pantalla para buscar presupuestos;
+|ZMGestion|
+repeat
+:Muestra un formulario para que el vendedor seleccione un cliente, producto, tela,
+lustre y estado del presupuesto. Siendo todos los campos opcionales;
+|Vendedor|
+:Completa los campos seleccionados;
+|ZMGestion|
+:Busca por cliente, producto, tela, lustre y estado del presupuesto;
+repeat while(Hay al menos una coincidencia) is (F)
+:Lista las coincidencias encontradas;
+|Vendedor|
+end
+@enduml
+
+@startuml buscarAvanzadoProductos
+|Vendedor|
+start
+:Accede a la pantalla para buscar productos;
+|ZMGestion|
+repeat
+:Muestra un formulario para que el vendedor ingrese la cadena de busqueda,
+elegir grupo y categoría de producto y si se desea 
+buscar prodcutos dados de baja;
+|Vendedor|
+:Completa los campos solicitados;
+|ZMGestion| 
+:Busca por nombre de producto, grupo y categoría y estado;
+repeat while(No se encontraron coincidencias) is (V)
+:Lista las coincidencias encontradas;
+|Vendedor|
+end
+@enduml
+
+@startuml crearCliente
+|Vendedor|
+start
+:Accede a la pantalla para crear clientes;
+|ZMGestion|
+repeat
+repeat
+repeat
+:Muestra un formulario para que el vendedor ingrese el tipo de persona (física o jurídica),
+nombre y apellido (o razón social), tipo y número de docuemento, correo electrónico, número de
+telefono y nacionalidad;
+|Vendedor|
+:Completa el formulario;
+|ZMGestion|
+repeat while(El vendedor ha dejado un campo obligatorio vacio) is (V)
+repeat while(El correo electrónico ingresado ya esta en uso) is (V)
+repeat while(El tipo y número de documento ingresado ya existe) is (V)
+:Crea el cliente y muestra un mensaje indicando el éxito de la operación;
+|Vendedor|
+end
+@enduml
+
+@startuml crearPresupuesto
+|Vendedor|
+start
+:Accede a la pantalla para crear presupuestos;
+|ZMGestion|
+repeat
+:Muestra un formulario para que el vendedor seleccione un cliente;
+|Vendedor|
+:Selecciona un cliente;
+|ZMGestion|
+repeat while(Ha seleccionado un cliente) is (F)
+:Crea un presupuesto en estado de "En creación";
+repeat
+while(Desea agregar una nueva linea de presupuesto) is (V)
+|Vendedor|
+:Ejecuta el CU059 Crear linea de presupuesto|
+end while
+|ZMGestion|
+repeat while(Ha ingresado al menos una linea de presupuesto) is (F)
+:Cambia el estado del presupuesto a "Creado";
+|Vendedor|
+end
+@enduml
+
+@startuml crearProducto
+|Administrador|
+start
+:Ingresa a la pantalla para crear productos;
+|ZMGestion|
+repeat
+repeat
+repeat
+:Muestra un formulario para ingresar el nombre del 
+producto, el precio, la cantidad de tela necesaria para
+producirlo en caso de ser necesario y dos listas desplegables
+para seleccionar la categoría y el grupo al cual pertenece
+el producto;
+|Administrador|
+:Completa el formulario y selecciona de las listas desplegables
+el grupo y categoría a la cual pertenece el producto;
+|ZMGestion|
+repeat while(El nombre ingresado ya existe para el grupo y categoria) is (V)
+repeat while(El precio ingresado sea menor o igual a cero) is (V)
+repeat while(La cantidad de tela necesaria ingresada sea menor a cero) is (V)
+:Crea el producto con los campos ingresados por el usuario y 
+ muestra un mensaje indicando el éxito de la operación;
+|Administrador|
+end
+@enduml
+
+@startuml crearProductoFinal
+|Vendedor|
+start
+:Ingresa a la pantalla para crear productos finales;
+|ZMGestion|
+repeat
+:Muestra un formulario para seleccionar el producto,
+tipo de producto, tela y lustre;
+|Vendedor|
+:Selecciona el producto, tipo de producto, tela y lustre;
+|ZMGestion|
+repeat while(Un producto final ya existe con dicho producto, tipo de producto, tela y lustre.) is (V)
+:Crea el producto final con los campos ingresados por el vendedor y 
+ muestra un mensaje indicando el éxito de la operación;
+|Vendedor|
+end
+@enduml
+
+@startuml crearRol
+|Administrador|
+start
+:Accede la la pantalla para crear roles;
+|ZMGestion|
+repeat
+repeat
+:Muestra un formulario para que el administador ingrese el nombre del rol
+y seleccione los permisos que desea otorgarle. Indicando que ambos campos
+son obligatorios;
+|Administrador|
+:Completa los campos requeridos;
+|ZMGestion|
+repeat while(Alguno de los campos obligatorios se encuentra vacio) is (V)
+repeat while(El nombre ingresado ya esta en uso) is (V)
+:Crea el rol y muestra un mensaje indicando el éxito de la operación;
+|Administrador|
+end
+@enduml
+
+@startuml crearTela
+|Administrador|
+start 
+:Accede a la pantalla para crear telas;
+|ZMGestion|
+repeat
+repeat
+repeat
+:Muestra un formulario para que el usuario ingrese
+el nombre y el precio por metro de tela. Indicando que
+ambos campos son obligatorios;
+|Administrador|
+:Completa los campos requeridos;
+|ZMGestion|
+repeat while(Alguno de los campos obligatorios se encuentra vacio) is (V)
+repeat while(El nombre ingresado ya se encuentra en uso) is (V)
+repeat while(El precio ingresado sea menor o igual que cero) is (V)
+:Crea la tela y muestra un mensaje 
+indicando el éxito de la operación;
+|Administrador|
+end
+@enduml
+
+@startuml crearVenta
+|Vendendor|
+start
+:Accede a la pantalla para crear ventas;
+|ZMGestion|
+:Muestra un formulario para que el vendendor seleccione un cliente;
+|Vendendor|
+:Selecciona un cliente;
+|ZMGestion|
+while(Desea agregar una nueva linea de venta) is (V)
+:CU Crear linea venta|
+end while
+:Crea la venta y muestra la opción de modificarla;
+|Vendendor|
+end
+@enduml
+
+@startuml darAltaTela
+|Administrador|
+start
+:Ha ejecutado con éxito el CU Listar telas;
+repeat
+:Indica la tela que quiere dar de alta;
+repeat while (La tela ya se encuentra en el estado de Alta) is (V)
+|ZMGestion|
+:Da de alta la tela y muesta un mensaje indicando el 
+éxito de la operación;
+|Administrador|
+end
+@enduml
+
+@startuml darAltaProducto
+|Administrador|
+start
+:Ha ejecutado con exito el CU Buscar avanzado productos;
+repeat
+:Indica el producto que quiere dar de alta;
+repeat while(El producto ya se encuentra en estado de Alta) is (V)
+|ZMGestion|
+:Da de alta el producto indicado y muestra un mensaje 
+indicando el éxito de la operación;
+|Administrador|
+@enduml
+
+@startuml darBajaTela
+|Administrador|
+start 
+:Ha ejecutado con exito el CU Listar telas;
+repeat
+:Indica la tela que desea dar de baja;
+repeat while(La tela ya se encuentra en estado Baja) is (V)
+|ZMGestion|
+:Da de baja la tela y muestra un mensaje indicando que
+la operación se realizo con éxito;
+|Administrador|
+end
+@enduml
+
+@startuml darBajaProducto
+|Administrador|
+start
+:Ha ejecutado con éxito el CU BuscarAvanzadoProductos;
+repeat
+:Selecciona el producto que desea dar de baja;
+repeat while(El producto ya se encuentra en estado de baja) is (V)
+|ZMGestion|
+:Da de baja el producto y muestra un mensaje indicando el éxito de la operación;
+|Administrador|
+end
+@enduml
+
+@startuml enviarPresupuestoEmail
+|Vendedor|
+:Ha ejecutado con éxito el CU Buscar avanzado presupuestos;
+repeat
+:Selecciona el presupuesto que desea enviar por correo electrónico;
+|ZMGestion|
+:Genera en formato PDF el presupuesto;
+repeat while(Ël cliente no posee un correo electrónico) is (V)
+:Envia el presupuesto por correo electrónico al correo del cliente asociado al presupuesto;
+|Vendedor|
+end
+@enduml
+
+@startuml generarPresupuestoPDF
+|Vendedor|
+start
+:Ha ejecutado con éxito el CU Buscar avanzado presupuestos;
+:Selecciona el presupuesto para generarlo en formato PDF;
+|ZMGestion|
+:Genera un achivo con formato PDF con los datos del presupuesto;
+|Vendedor|
+end
+@enduml
+
+@startuml iniciarSesion
+|Usuario|
+start
+:Ingresa la dirección de la aplicación en un dispositivo
+conectado a Internet;
+|ZMGestion|
+repeat
+repeat
+repeat
+:Muestra un formulario para que el usuario ingrese su
+nombre de usuario y contraseña;
+|Usuario|
+:El usuario introduce su nombre de usuario y contraseña;
+|ZMGestion|
+repeat while(El nombre de usuario ingresado existe) is (F)
+repeat while(El usuario se encuentra activo) is (F)
+repeat while(La contraseña ingresada es incorrecta 
+y no supero el limite de intentos permitidos) is (V)
+if(La contraseña ingresada es incorrecta 
+y supero el limite de intentos permitidos ) then (V)
+:Bloquea al usuario;
+else (F)
+:Genera el token de sesión y lo almacena;
+:Trae los permisos del usuario y le muestra sus opciones;
+endif
+|Usuario|
+end
+@enduml
+
+@startuml listarLineasPresupuesto
+|Vendedor|
+start
+:He ejecutado con éxito el CU Buscar avanzado presupuesto;
+repeat
+:Indica el presupuesto del cual desea listar las lineas de presupuesto;
+repeat while(El presupuesto no posee lineas de presupuesto) is (V)
+|ZMGestion|
+:Lista las lineas de presupuesto;
+|Vendedor|
+end
+@enduml
+
+@startuml listarTelas
+|Vendedor|
+start
+:Accede a la pantalla para listar las telas;
+|ZMGestion|
+if(Existe alguna tela en el sistema) then (V)
+:Muestra una lista con las telas existentes;
+else (F)
+:Muestra un mensaje indicando que no existe ninguna tela;
+endif
+|Vendedor|
+end
+@enduml
+
+@startuml modificarPresupuesto
+|Vendedor|
+start 
+:Ha ejecutado con éxito el CU Buscar avanzado presupuestos;
+:Selecciona el presupuesto que desea modificar;
+|ZMGestion|
+:Lista todas las lineas de presupuesto mostrando las opciones de modificar y borrar;
+repeat
+repeat
+:Mustra un formulario autocmpletado con el cliente y el periodo de validez;
+|Vendedor|
+:Borra o modifica las lineas que desea cambiar del presupuesto;
+if(Tiene permisos de cambio de periodo de validez) then (V)
+:Modifica el periodo de validez;
+endif
+|ZMGestion|
+:Modifica el cliente;
+repeat while(El cliente y/o el periodo de validez están vacios) is (V)
+repeat while(El presupuesto está en estado "Vendido") is (V)
+:Modifica el presupuesto y muestra un mensaje indicando el éxito de la operación;
+|Vendedor|
+end
+@enduml
+
+@startuml modificarProducto
+|Administrador|
+start
+:Ha ejecutado el CU BuscarAvanzadoProducto con éxito;
+:Selecciona el producto que desea modificar;
+|ZMGestion|
+repeat
+repeat
+repeat
+repeat
+:Muestra un formulario autocompletado con los datos del producto
+seleccionado;
+|Administrador|
+:Modifica los campos que desea cambiar;
+|ZMGestion|
+repeat while(El nombre, grupo y categoría ingresados ya estan en uso)
+repeat while(El precio es menor o igual que cero)
+repeat while(La cantidad de tela necesaria es menor que cero)
+repeat while(Alguno de los campos requeridos está vacio)
+:Modifica el producto con los datos ingresados y muestra un mensaje de éxito;
+|Administrador|
+end
+@enduml
+
+@startuml modificarTela
+|Administrador|
+:Ha ejecutado con éxito el CU Listar telas;
+:Indica la tela que desea modificar;
+|ZMGestion|
+repeat
+repeat
+repeat
+:Muestra un formulario autocompletado con los datos de la tela seleccionada
+para que el administrador modifique: nombre y precio por metro de la tela.
+Indicando que ambos campos son obligatorios;
+|Administrador|
+:Modifica los campos que desea cambiar;
+|ZMGestion|
+repeat while(El nombre de la tela se encuentra en uso) is (V)
+repeat while(El precio ingresado es menor o igual a cero) is (V)
+repeat while(Al menos un campo requerido está vacio) is (V)
+:Modifica la tela y muestra un mensaje indicando
+el éxito de la operación;
+|Administrador|
+end
+@enduml
+
+@startuml transformarPresupuestoEnVenta
+|Vendedor|
+start
+:Ha ejecutado con éxito el CU Buscar avanzado presupuestos;
+repeat
+:Selecciona el/los presupuesto/s a partir de los cuales desea generar la venta;
+repeat while(Al menos un presupuesto seleccionado se encuentra en estado de "Vendido") is (V)
+|ZMGestion|
+repeat
+:Muestra un formulario para que el vendedor seleccione
+el cliente y muestra todas las lineas de presupuesto 
+de los presupuestos seleccionados, permitiendo agrear nuevas lineas
+y borrar o modificar alguna de las existentes;
+|Vendedor|
+:Selecciona el cliente y agrega, modifica y borra lineas de presupuesto;
+|ZMGestion|
+repeat while(No ha seleccionado un cliente válido) is (V)
+:Crea un venta para el cliente seleccionado en estado de "En Edición"
+y crea una linea de venta por cada linea de presupuesto con los mismos datos;
+:Modifica los presupuestos seleccionados al estado de "Vendidos" 
+y a cada linea de presupuesto utilizada le cambia el estado a "Utilizada"
+y a las descartadas a "No Utilizadas";
+|Vendedor|
+end
+@enduml
