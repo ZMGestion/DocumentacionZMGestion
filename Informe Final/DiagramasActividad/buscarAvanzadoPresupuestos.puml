@@ -12,5 +12,6 @@ lustre y estado del presupuesto. Siendo todos los campos opcionales;
 :Busca por cliente, producto, tela, lustre y estado del presupuesto;
 repeat while(Hay al menos una coincidencia) is (F)
 :Lista las coincidencias encontradas;
+|Vendedor|
 end
 @enduml

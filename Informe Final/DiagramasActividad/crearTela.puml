@@ -17,5 +17,6 @@ repeat while(El nombre ingresado ya se encuentra en uso)
 repeat while(El precio ingresado sea menor o igual que cero)
 :Crea la tela y muestra un mensaje 
 indicando el éxito de la operación;
+|Administrador|
 end
 @enduml

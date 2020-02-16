@@ -12,5 +12,6 @@ tipo de producto, tela y lustre;
 repeat while(Un producto final ya existe con dicho producto, tipo de producto, tela y lustre.)
 :Crea el producto final con los campos ingresados por el vendedor y 
  muestra un mensaje indicando el éxito de la operación;
+|Vendedor|
 end
 @enduml

@@ -20,5 +20,6 @@ y crea una linea de venta por cada linea de presupuesto con los mismos datos;
 :Modifica los presupuestos seleccionados al estado de "Vendidos" 
 y a cada linea de presupuesto utilizada le cambia el estado a "Utilizada"
 y a las descartadas a "No Utilizadas";
+|Vendedor|
 end
 @enduml

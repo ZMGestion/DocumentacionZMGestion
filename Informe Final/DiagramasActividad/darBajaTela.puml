@@ -8,5 +8,6 @@ repeat while(La tela ya se encuentra en estado Baja)
 |ZMGestion|
 :Da de baja la tela y muestra un mensaje indicando que
 la operación se realizo con éxito;
+|Administrador|
 end
 @enduml

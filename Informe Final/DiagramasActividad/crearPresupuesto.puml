@@ -18,5 +18,6 @@ end while
 |ZMGestion|
 repeat while(Ha ingresado al menos una linea de presupuesto) is (F)
 :Cambia el estado del presupuesto a "Creado";
+|Vendedor|
 end
 @enduml

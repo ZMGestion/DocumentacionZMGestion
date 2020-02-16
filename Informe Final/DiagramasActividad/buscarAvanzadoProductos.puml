@@ -13,5 +13,6 @@ buscar prodcutos dados de baja;
 :Busca por nombre de producto, grupo y categoría y estado;
 repeat while(No se encontraron coincidencias)
 :Lista las coincidencias encontradas;
+|Vendedor|
 end
 @enduml

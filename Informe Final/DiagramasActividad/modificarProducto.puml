@@ -18,6 +18,6 @@ repeat while(El precio es menor o igual que cero)
 repeat while(La cantidad de tela necesaria es menor que cero)
 repeat while(Alguno de los campos requeridos está vacio)
 :Modifica el producto con los datos ingresados y muestra un mensaje de éxito;
+|Administrador|
 end
-
 @enduml

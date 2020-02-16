@@ -7,5 +7,6 @@ repeat
 :Genera en formato PDF el presupuesto;
 repeat while(Ël cliente no posee un correo electrónico) is (V)
 :Envia el presupuesto por correo electrónico al correo del cliente asociado al presupuesto;
+|Vendedor|
 end
 @enduml

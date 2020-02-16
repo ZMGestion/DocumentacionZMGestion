@@ -8,5 +8,6 @@ repeat while(El producto fue utilizado para crear un producto final)
 |ZMGestion|
 :Borra el producto y muestra un mensaje indicando el éxito de la 
 operación;
+|Administrador|
 end
 @enduml

@@ -18,5 +18,6 @@ endif
 repeat while(El cliente y/o el periodo de validez están vacios) is (V)
 repeat while(El presupuesto está en estado "Vendido") is (V)
 :Modifica el presupuesto y muestra un mensaje indicando el éxito de la operación;
+|Vendedor|
 end
 @enduml
