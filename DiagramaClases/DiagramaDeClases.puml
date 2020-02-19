@@ -1,0 +1,46 @@
+@startuml DiagramaDeClases
+!include Clases.puml
+
+left to right direction
+Personas <|-- Usuarios
+Personas <|-- Clientes
+TiposDocumento "1"--"0..*" Personas
+Paises "1"--"1..*" Provincias
+Provincias "1"--"1..*" Ciudades
+Paises "1"--"0..*" Clientes
+Domicilios "0..*"--"0..1" Clientes
+Roles "1"  -- "1..*" PermisosRol
+Permisos "1"  -- "1..*" PermisosRol
+Usuarios "0..*" -- "1" Roles
+Ubicaciones "0..1"--"1" Domicilios
+Productos "0..*" -- "1" GruposProducto
+Productos "0..*" -- "1" CategoriasProducto
+Productos  "1"-- "1..*" Precios
+Telas  "1"-- "1..*" Precios
+ProductosFinales "0..*"--"1" Productos
+ProductosFinales "0..*"--"0..1" Telas
+ProductosFinales "0..*"--"0..1" Lustres
+ProductosFinales "0..*"--"1" TiposProducto
+ProductosFinales "1"-- "1..*" MovimientosStock
+Ubicaciones "1"-- "1..*" MovimientosStock
+Ventas "0..*" -- "1" Usuarios
+Ventas "0..*" -- "1" Clientes
+Ventas "0..*" -- "0..1" Domicilios
+Ventas "0..*" -- "1" Ubicaciones
+Ventas "0..1" -- "0..*" Presupuestos
+Ventas "0..1" -- "0..1" OrdenesProduccion
+LineasProducto "0..*"--"0..1" Usuarios
+LineasProducto "0..*"--"0..1" Usuarios
+LineasProducto "0..*"--o Ventas
+LineasProducto "0..*"--o OrdenesProduccion
+LineasProducto "0..*"--o Presupuestos
+Observaciones "0..*"--o LineasProducto
+LineasProducto "0..*"--"1" ProductosFinales
+top to bottom direction
+Presupuestos "0..*"--"1" Clientes
+Presupuestos "0..*"--"1" Usuarios
+Remitos "0..1"--"0..*" LineasProducto
+Remitos "0..*"--"1" Domicilios
+MediosPago "1"--"0..*" Recibos
+
+@enduml

@@ -1,0 +1,221 @@
+@startuml Clases
+class Personas{
+   documento: string
+   telefono: string
+   nombres: string
+   apellidos: string
+   estado: string
+   email: string
+   +idTipoDocumento: int
+}
+
+class Usuarios {
+   +idUsuario : int
+   token: string
+   fechaFin: DateTime
+   fechaNacimiento: DateTime
+   fechaInicio: DateTime
+   estadoCivil: string
+   cantidadHijos: int
+   usuario: string
+   password: string
+}
+
+class TiposDocumento{
+   +idTipoDocumento: int
+   tipoDocumento: string
+   estado: string
+}
+
+class Roles{
+    +idRol: int
+    rol: string
+}
+
+class Permisos{
+    +idPermiso: int
+    permiso: string
+}
+
+class PermisosRol{
+    +idRol: int
+    +idPermiso: int
+}
+
+class Clientes{
+    +idCliente: int
+    tipo: string
+    razonSocial: string 
+    +idPais: int
+}
+
+class Paises{
+    +idPais: int
+    pais: string
+}
+
+class Provincias{
+    +idProvincia: int
+    provincia: string
+    +idPais: int
+}
+
+class Ciudades{
+    +idCiudad: int
+    ciudad: string
+    +idPais: int
+    +idProvincia: int
+}
+
+class Domicilios{
+    +idDomicilio: int
+    domicilio: string
+    codigoPostal: string
+    +idCliente: int
+    +idCiudad: int
+    +idProvincia: int
+    +idPais: int
+}
+
+class Ubicaciones{
+    +idUbicacion: int
+    ubicacion: string
+    estado: string
+    +idDomicilio: int
+}
+
+class Productos{
+    +idProducto: int
+    producto: string
+    longitudTela: float
+    +idPrecio: int
+    +idCategoriaProducto: int
+    +idGrupoProducto: int
+}
+
+class CategoriasProducto{
+    +idCategoriaProducto: int
+    categoria: string
+}
+
+class GruposProducto{
+    +idGrupoProducto: int
+    grupo: string
+    estado: string
+}
+
+class Precios{
+    +idPrecio: int
+    precio: float
+    estado: string
+    fechaAlta: DateTime
+}
+
+class Telas{
+    +idTela: int
+    tela: string
+    +idPrecio: int
+    estado: string
+}
+
+class Lustres{
+    +idLustre: int
+    lustre: string
+}
+
+class ProductosFinales{
+    +idProductoFinal: int
+    estado: string    
+    +idProducto: int
+    +idLustre: int
+    +idTela: int
+    +idTipoProducto: int
+}
+
+class TiposProducto{
+    +idTipoProducto: int
+    tipoProducto: string
+}
+
+class MovimientosStock{
+    +idUbicacion: int
+    +idProductoFinal: int
+    +idReferencia: int
+    tipo: string
+    cantidad: int
+}
+
+class Ventas{
+    +idVenta: int
+    fechaAlta: DateTime
+    estado: string
+    +idCliente: int
+    +idDomicilio: int
+    +idUbicacion: int
+    +idUsuario: int
+}
+
+class LineasProducto{
+    +idLineaProducto: int
+    +idReferencia: int
+    estado: string
+    tipo: string
+    precioUnitario: float
+    cantidad: int
+    +idRemito: int
+    +idUsuarioFabricante: int
+    +idUsuarioRevisor: int
+    +idProductoFinal: int
+}
+
+class Observaciones{
+    +idObservacion: int
+    observacion: string
+    +idLineaProducto: int
+}
+
+class OrdenesProduccion{
+    +idOrdenProduccion: int
+    fechaAlta: DateTime
+    fechaFinalizacion: DateTime
+    estado: string
+    +idUsuario: int
+    +idVenta: int
+}
+
+class Presupuestos{
+    +idPresupuesto: int
+    fechaAlta: DateTime
+    estado: string
+    periodoValidez: int
+    +idCliente: int
+    +idCliente: int
+    +idUsuario: int
+}
+
+class Facturas{
+    +idFactura: int
+    fechaAlta: DateTime
+    numeroFactura: int
+}
+
+class Recibos{
+    +idRecibo: int
+    fechaAlta: DateTime
+    numeroRecibo: int
+}
+
+class Remitos{
+    +idRemito: int
+    fechaAlta: DateTime
+    fechaEntrega: DateTime
+    +idVenta: int
+    +idDomicilio: int
+}
+
+class MediosPago{
+    +idMedioPago: int
+    medioPago: string
+}
+
+@enduml
