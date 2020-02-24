@@ -24,6 +24,40 @@ rectangle ZMGestion{
     rectangle Sesiones{
     }
     rectangle GestionEmpleados{
+        
+    }
+    rectangle GestionArticulosVenta{
+        
+    }
+    rectangle GestionOperaciones{
+        
+    }
+    rectangle GestionStock{
+        
+    }
+    
+    rectangle GestionClientes{
+    }
+
+    Usuarios  ..|> Sesiones
+    Administradores ..|> GestionEmpleados
+    Usuarios ..|> GestionOperaciones
+    Vendedores  ..|> GestionStock
+    Vendedores  ..|> GestionArticulosVenta
+    Vendedores ..|> GestionClientes
+}
+
+@enduml
+
+@startuml DiagramaSubsistemaDetallado
+!include ../Actors/Actors.wsd
+
+left to right direction
+
+rectangle ZMGestion{
+    rectangle Sesiones{
+    }
+    rectangle GestionEmpleados{
         rectangle GestionRoles{
         }
     }
@@ -544,36 +578,34 @@ rectangle GestionNotasCredito{
 
 rectangle GestionOrdenesProduccion{
     UseCase "CU095 - Crear orden de producción" as C
-    UseCase "CU906 - Buscar avanzado órdenes de producción " as BA
+    UseCase "CU096 - Buscar avanzado órdenes de producción " as BA
     UseCase "CU097 - Modificar orden de producción" as M
     UseCase "CU098 - Listar lineas de orden de producción" as ListarLineas
     UseCase "CU099 - Borrar orden de producción" as B
-    UseCase "CU100 - Finalizar orden de producción" as Finalizar
-    UseCase "CU101 - Verificar orden de producción" as Verificar
-    UseCase "CU102 - Producir orden de producción" as Producir
-    UseCase "CU103 - Cancelar orden de producción" as Cancelar
-    UseCase "CU104 - Listar observaciones de línea de orden de producción" as ListarObservaciones
+    UseCase "CU100 - Cancelar orden de producción" as Cancelar
+    UseCase "CU101 - Listar observaciones de línea de orden de producción" as ListarObservaciones
+    UseCase "CU102 - Listar tareas de línea de orden de producción" as ListarTareas
     package GestionLineasOrdenProduccion{
     }
     package GestionObservaciones{
+    }
+    package GestionTareas{
     }
 
     BA <|.. M : <<Extends>>
     BA <|.. B : <<Extends>>
     BA <|.. ListarLineas : <<Extends>>
-    BA <|.. Finalizar : <<Extends>>
-    BA <|.. Verificar : <<Extends>>
     BA <|.. Cancelar : <<Extends>>
-    BA <|.. Producir : <<Extends>>
     ListarLineas <|.. ListarObservaciones : <<Extends>>
+    ListarLineas <|.. ListarTareas : <<Extends>>
     C <|.. GestionLineasOrdenProduccion : <<Extends>>
     M <|.. GestionLineasOrdenProduccion : <<Extends>>
     BA <|.. GestionLineasOrdenProduccion : <<Extends>>
     ListarLineas <|.. GestionObservaciones : <<Extends>>
+    ListarLineas <|.. GestionTareas : <<Extends>>
 }
     Administradores -- C
     Fabricantes -- BA
-    Administradores -- Verificar
     Administradores -- M
     Administradores -- B
 
@@ -584,25 +616,17 @@ rectangle GestionOrdenesProduccion{
  left to right direction
 
 rectangle GestionLineasOrdenesProduccion{
-    UseCase "CU105 - Crear linea de orden de producción" as C
-    UseCase "CU106 - Modificar linea de orden de producción" as M
-    UseCase "CU107 - Borrar linea de orden de producción" as B
-    UseCase "CU108 - Finalizar linea de orden de producción" as Finalizar
-    UseCase "CU109 - Verificar linea de orden de producción" as Verificar
-    /'Designar fabricante'/
-    UseCase "CU110 - Asignar fabricante a linea de orden de producción" as Asignar 
-    /'Fabricantes anuncia que comienzan a producir'/
-    UseCase "CU111 - Producir linea de orden de producción" as Producir 
-    UseCase "CU112 - Cancelar linea de orden de producción" as Cancelar
+    UseCase "CU103 - Crear linea de orden de producción" as C
+    UseCase "CU104 - Modificar linea de orden de producción" as M
+    UseCase "CU105 - Borrar linea de orden de producción" as B
+    UseCase "CU106 - Verificar linea de orden de producción" as Verificar
+    UseCase "CU107 - Cancelar linea de orden de producción" as Cancelar
 }
     Administradores -- C
     Administradores -- Verificar
     Administradores -- Cancelar
-    Administradores -- Asignar
     Administradores -- B
     Administradores -- M
-    Fabricantes -- Producir
-    Fabricantes -- Finalizar
     
 @enduml
 
@@ -611,11 +635,35 @@ rectangle GestionLineasOrdenesProduccion{
  left to right direction
 
 rectangle GestionObservaciones{
-    UseCase "CU113 - Crear observación" as C
-    UseCase "CU114 - Borrar observación" as B
+    UseCase "CU108 - Crear observación" as C
+    UseCase "CU109 - Borrar observación" as B
 }
     Administradores -- C
     Administradores -- B
+@enduml
+
+@startuml GestionTareas
+!include ../Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionTareas{
+    UseCase "CU110 - Crear tarea" as C
+    UseCase "CU111 - Borrar tarea" as B
+    UseCase "CU112 - Finalizar tarea" as Finalizar
+    UseCase "CU113 - Verificar tarea" as Verificar
+    UseCase "CU114 - Pausar tarea" as Pausar
+    UseCase "CU115 - Reanudar tarea" as Reanudar
+    UseCase "CU116 - Cancelar tarea" as Cancelar
+}
+    Administradores -- C
+    Administradores -- B
+    Administradores -- Verificar
+    Administradores -- Pausar
+    Administradores -- Reanudar
+    Fabricantes -- Finalizar
+    Administradores -- Cancelar
+    
+
 @enduml
 
 

@@ -77,9 +77,6 @@
 				\paragraph\indent\textbf{Ubicaciones y Stock:}
 				\paragraph\indent	
 				Los productos tendran asociado una o mas ubicaciones geograficas. De las ubicaciones se desea saber: nombre y dirección. Las ubicaciones podran tener almacenados cero o mas productos. Las ubicaciones se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes.. Por cada producto se desea saber: cantidad por ubicación a una fecha dada y observaciones.
-				\paragraph\indent\textbf{Historial de Stock:}
-				\paragraph\indent	
-				Se llevará a cabo un historial de las actualizaciones del stock, para ello se guardará: fecha, usuario interviniente, motivo (pudiendo ser: venta, reposición u otro) y descripción.
 				\paragraph\indent\textbf{Lista de precios:}
 				\paragraph\indent	
 				Cada producto tendrá asociado uno o más precios con su respectiva fecha de establecimiento. El precio vigente será el ultimo que se haya establecido. La actualización de precios se podrá realizar a todos los productos pertenecientes a un determinado grupo en igual proporción (incremento o decremento) respecto del precio vigente de cada producto. La lista de precio se podrá generar en formato PDF.
@@ -111,9 +108,8 @@
 					\item \textbf{En creación:} Cuando una linea de producto se está creando.
 					\item \textbf{Pendiente:} Cuando la linea de producto fue creada y se debe determinar si es necesario asignarlo a una orden de producción.
 					\item \textbf{Cancelada:} Cuando un cliente solicita una cancelación de la linea de producto.
-					\item \textbf{Pendiente de producción:} Cuando un administrador seleccionó la linea para ser producida.
-					\item \textbf{En producción:} Cuando una linea de producto se encuentra en producción.
-					\item \textbf{Finalizado:} Cuando una linea de producto que fue llevada a producción, ha sido marcada como finalizada por un usuario, pero no ha sido verificada por otro usuario que cuente con los permisos necesarios para hacerlo.
+					\item \textbf{Pendiente de producción:} Cuando un administrador seleccionó la linea para ser producida pero aún no se está realizando ninguna de sus tareas de producción.
+					\item \textbf{En producción:} Cuando se están realizando las tareas de producción asignadas para su producción.
 					\item \textbf{Entregada:} Cuando una linea de producto fue entregada.
 					\item \textbf{Verificado:} Cuando un producto ya está listo para ser entregado (haya pasado, o no, por un proceso de producción). El/Los productos podrán ser entregados si el credito es superior al total de dicha linea de producto. Se debe tener en cuenta que:
 				\end{itemize}
@@ -122,6 +118,18 @@
 
 					DEUDA = MONTO TOTAL - SUMA DE RECIBOS
 				\end{center}
+				\paragraph\indent\textbf{Tareas de producción:}
+				\paragraph\indent	
+				Al momento de producir una linea de producto se deben realizar una serie de tareas. Las tareas pueden tener encadenada una tarea a realizarse posterior a que se ha verificado su finalización o no. Las tareas son asignadas a un fabricante y deben ser verificadas por un administrador. Los posibles estados de las tareas son:
+				\begin{itemize}
+					\item \textbf{Pendiente:} Cuando se creo y asigno a un fabricante una tarea.
+					\item \textbf{En proceso:} Cuando el fabricante indica que ha comenzado a realizar la tarea.
+					\item \textbf{Cancelada:} Cuando un administrador desea cancelar la ejecución de la tarea.
+					\item \textbf{Pausada:} Cuando un administrador desea pausar la ejecución de una tarea.
+					\item \textbf{Finalizada:} Cuando el fabricante indica que ha finalizado su tarea.
+					\item \textbf{Verificada:} Cuando un administrador verifica que la tarea se ha finalizado de forma correcta.
+				\end{itemize}
+
 				\paragraph\indent\textbf{Facturas:}
 				\paragraph\indent	
 				Una venta tendrá una o más facturas asociadas, de las facturas se desea saber: número de factura, venta asociada, fecha en la que se realizó, uno o más recibos, cero o más notas de crédito y estado (pudiendo ser: alta o baja). Si una venta se encuentra en estado pendiente o entregada, deberá tener una factura en estado activo. Las facturas se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con los permisos necesarios.
@@ -142,12 +150,11 @@
 				\paragraph\indent
 				Los estados de una orden de producción pueden ser:
 				\begin{itemize}
-					\item \textbf{En edición:} Cuando se estan agregando líneas de producto a la orden de producción.
-					\item \textbf{Pendiente:} Cuando las lineas de producto de la orden de producción se encuentran en estado pendiente.
+					\item \textbf{En creación:} Cuando se estan agregando líneas de producto a la orden de producción.
+					\item \textbf{Pendiente:} Cuando las lineas de producto no canceladas, no verificadas y no entregadas de la orden de producción se encuentran en estado pendiente de producción.
 					\item \textbf{En producción:} Cuando al menos una linea de producto de la orden de producción se encuentran en estado de en producción.
 					\item \textbf{Cancelada:} Cuando todas las líneas de producto de la orden de producción se encuentran en estado cancelada.
-					\item \textbf{Finalizada:} Cuando todas las líneas de producto de la orden de producción que no hayan sido canceladas se encuentran en estado finalizada.
-					\item \textbf{Verificada:} Cuando un usuario con permisos suficientes verifica que efectivamente la orden de produccion se encuentre en estado de finalizada. Caso contrario modificara el estado de las líneas de producto que no se encuentren finalizadas, asignándole el estado de en producción, por lo que el estado de la orden de produccion volvera a ser en producción.
+					\item \textbf{Verificada:} Cuando todas las lineas de productos no canceladas se encuentran verificadas o entregadas.
 				\end{itemize}
 				\paragraph\indent
 				Una orden de producción puede ser creada a partir de una venta existente o no. En el caso de que sea creada a partir de una venta, no se podrán agregar nuevas líneas de producto para producir.
@@ -158,9 +165,7 @@
 				Un remito tendrá una fecha y dirección de entrega, una o más líneas de producto y una venta asociada, por cada linea de producto, se podrá seleccionar la ubicación de la cual se extraerá. Al generarse el remito se deberá cambiar el estado de la línea de producto de la venta a entregado.  Además se decrementará el stock correspondiente.
 				\paragraph\indent\textbf{Órdenes de reposición:}
 				\paragraph\indent	
-				Los productos pertenecientes a un stock determinado se podrán mover de una ubibación a otraa, para ello se deberá generar una orden de reposición en la cual se indicará la cantidad de productos a mover, ubicación origen y ubicación destino. Decrementando el stock en la ubicación origen e incrementando el stock en la ubicación destino.
-				
-
+				Los productos existentes se podrán mover de una ubibación a otra, para ello se deberá generar una orden de reposición en la cual se indicará la cantidad de productos a mover, ubicación origen y ubicación destino. Decrementando el stock en la ubicación origen e incrementando el stock en la ubicación destino.
 		
 \section{Suposiciones y dependencias}
 \paragraph\indent 	

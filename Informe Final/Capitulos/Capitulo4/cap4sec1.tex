@@ -14,11 +14,17 @@
 		\caption{Diagrama de contexto}
 	\label{fig:DiagramaContexto}
 	\end{figure}
-    \subsection{Diagrama de subsistema}
+	\subsection{Diagrama de subsistema}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistema}
-		\caption{Diagrama de subsistema}
+		\caption{Diagrama de subsistema }
+	\label{fig:DiagramaSubsistema}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistemaDetallado}
+		\caption{Diagrama de subsistema detallado}
 	\label{fig:DiagramaSubsistema}
 	\end{figure}
 	\subsection{Listado de casos de uso}
@@ -196,18 +202,18 @@
 			%\itemCaseUse{crearLineaOrdenProduccion}{Crear línea de orden de producción}
 			%\itemCaseUse{modificarLineaOrdenProduccion}{Modificar línea de orden de producción}
 			%\itemCaseUse{borrarLineaOrdenProduccion}{Borrar línea de orden de producción}
-			%\itemCaseUse{finalizarLineaOrdenProduccion}{Finalizar línea de orden de producción}
-			%\itemCaseUse{verificarLineaOrdenProduccion}{Verificar línea de orden de producción}
-			%\itemCaseUse{asignarFabricanteLineaOrdenProduccion}{Asignar fabricante a línea de orden de producción}
-			%\itemCaseUse{producirLineaOrdenProduccion}{Producir línea de orden de producción}
 			%\itemCaseUse{cancelarLineaOrdenProduccion}{Cancelar línea de orden de producción}		
-			
 		\end{itemize}
 		\item Gestión observaciones
 		\begin{itemize}
 			\item Quitar esto cuando se descomente alguna línea de abajo
 			%\itemCaseUse{crearObservacion}{Crear observación}
 			%\itemCaseUse{borrarObservacion}{Borrar observación}
+		\end{itemize}
+		\item Gestión tareas
+		\begin{itemize}
+			\item Quitar esto cuando se descomente alguna línea de abajo
+			
 		\end{itemize}
 	\end{itemize}	
 	\subsection{Diagrama de casos de uso}
@@ -349,6 +355,12 @@
 		\caption{Diagrama de casos de uso para la gestión de observaciones}
 	\label{fig:GestionObservaciones}
 	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTareas}
+		\caption{Diagrama de casos de uso para la gestión de tareas}
+	\label{fig:GestionObservaciones}
+	\end{figure}
 	\clearpage %salto de pagina
 	\subsection{Descripción textual de los casos de uso y diagramas de actividad}
 		\begin{enumerate}
@@ -487,25 +499,29 @@
 			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/modificarOrdenProduccion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/listarLineasOrdenProduccion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/borrarOrdenProduccion.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/finalizarOrdenProduccion.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/verificarOrdenProduccion.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/producirOrdenProduccion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/cancelarOrdenProduccion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/listarObservacionesLineaOrdenProduccion.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/listarTareasLineaOrdenProduccion.tex}
 
 			%GestionLineasOrdenesProduccion
 			%\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/crearLineaOrdenProduccion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/modificarLineaOrdenProduccion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/borrarLineaOrdenProduccion.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/finalizarLineaOrdenProduccion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/verificarLineaOrdenProduccion.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/asignarFabricanteLineaOrdenProduccion.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/producirLineaOrdenProduccion.tex}
 			%\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/cancelarLineaOrdenProduccion.tex}
 
 			%GestionObservaciones
 			%\input{Capitulos/Capitulo4/CasosUso/GestionObservaciones/crearObservacion.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionObservaciones/borrarObservacion.tex}	
+			%\input{Capitulos/Capitulo4/CasosUso/GestionObservaciones/borrarObservacion.tex}
+			
+			%GestionTareas
+			%\input{Capitulos/Capitulo4/CasosUso/GestionTareas/crearTarea.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionTareas/borrarTarea.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionTareas/finalizarTarea.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionTareas/verificarTarea.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionTareas/pausarTarea.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionTareas/reanudarTarea.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionTareas/cancelarTarea.tex}
 
 		\end{enumerate}
 	
