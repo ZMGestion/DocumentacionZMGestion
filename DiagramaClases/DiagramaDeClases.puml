@@ -1,6 +1,5 @@
 @startuml DiagramaDeClases
 !include Clases.puml
-
 left to right direction
 Personas <|-- Usuarios
 Personas <|-- Clientes
@@ -21,26 +20,25 @@ ProductosFinales "0..*"--"1" Productos
 ProductosFinales "0..*"--"0..1" Telas
 ProductosFinales "0..*"--"0..1" Lustres
 ProductosFinales "0..*"--"1" TiposProducto
-ProductosFinales "1"-- "1..*" MovimientosStock
-Ubicaciones "1"-- "1..*" MovimientosStock
 Ventas "0..*" -- "1" Usuarios
 Ventas "0..*" -- "1" Clientes
 Ventas "0..*" -- "0..1" Domicilios
 Ventas "0..*" -- "1" Ubicaciones
 Ventas "0..1" -- "0..*" Presupuestos
 Ventas "0..1" -- "0..1" OrdenesProduccion
-LineasProducto "0..*"--"0..1" Usuarios
-LineasProducto "0..*"--"0..1" Usuarios
 LineasProducto "0..*"--o Ventas
 LineasProducto "0..*"--o OrdenesProduccion
 LineasProducto "0..*"--o Presupuestos
 Observaciones "0..*"--o LineasProducto
 LineasProducto "0..*"--"1" ProductosFinales
-top to bottom direction
 Presupuestos "0..*"--"1" Clientes
 Presupuestos "0..*"--"1" Usuarios
 Remitos "0..1"--"0..*" LineasProducto
 Remitos "0..*"--"1" Domicilios
 MediosPago "1"--"0..*" Recibos
-
+Ubicaciones "1"--"0..*" Remitos
+Tareas "0..*"--"1" Usuarios
+Tareas "0..*"--"0..1" Usuarios
+Tareas "0..*"--"1" LineasProducto
+Tareas "1"--"0..1" Tareas
 @enduml

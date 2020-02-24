@@ -91,6 +91,9 @@ class Productos{
     +idPrecio: int
     +idCategoriaProducto: int
     +idGrupoProducto: int
+    minimoAProducir: int
+    cantidadPartida: int
+    umbralCantidad: int
 }
 
 class CategoriasProducto{
@@ -137,14 +140,6 @@ class TiposProducto{
     tipoProducto: string
 }
 
-class MovimientosStock{
-    +idUbicacion: int
-    +idProductoFinal: int
-    +idReferencia: int
-    tipo: string
-    cantidad: int
-}
-
 class Ventas{
     +idVenta: int
     fechaAlta: DateTime
@@ -163,9 +158,20 @@ class LineasProducto{
     precioUnitario: float
     cantidad: int
     +idRemito: int
+    +idProductoFinal: int
+}
+
+class Tareas{
+    +idTarea: int
+    +idLineaProducto: int
     +idUsuarioFabricante: int
     +idUsuarioRevisor: int
-    +idProductoFinal: int
+    estado: string
+    fechaAlta: DateTime
+    fechaFinalizacion: DateTime
+    fechaRevision: DateTime
+    tarea: string
+    observaciones: string
 }
 
 class Observaciones{
@@ -207,15 +213,19 @@ class Recibos{
 
 class Remitos{
     +idRemito: int
+    +idUbicacion: int
     fechaAlta: DateTime
     fechaEntrega: DateTime
-    +idVenta: int
     +idDomicilio: int
+    tipo: string
+
 }
 
 class MediosPago{
     +idMedioPago: int
     medioPago: string
 }
+
+
 
 @enduml
