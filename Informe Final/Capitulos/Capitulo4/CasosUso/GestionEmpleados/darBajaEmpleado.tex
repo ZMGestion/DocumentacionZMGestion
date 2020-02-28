@@ -11,12 +11,12 @@
 	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoEmpleados (Buscar avanzado empleados).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
-	\caseUseRow{Se cierra la sesión del empleado que se está dando de baja eliminando el token de sesión del mismo.} %Postcondiciones
+	\caseUseRow{Se cierra la sesión del empleado que se está dando de baja.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El administrador indica el usuario que desea dar de baja.}
     \addCaseUseStep{ZMGestión da de baja al empleado indicado y muestra un mensaje informando que la operación se realizó con éxito.}
-    \addCaseUseStep{ZMGestión cierra la sesión del usuario que se dió de baja eliminando su token de sesión.}
+    \addCaseUseStep{ZMGestión cierra la sesión del usuario que se dió de baja.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: El usuario ya se encuentra en estado Baja.}{1} %Flujo alternativo A1.

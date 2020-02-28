@@ -8,19 +8,18 @@
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion crear un presupuesto para un determinado cliente.} %Resumen
 \renewcommand{\caseUsePeople}{Vendedores: quiere crear un presupuesto.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistemay tener el permiso necesario para realizar esta función.} %Precondiciones
+	\caseUseRow{Haber iniciado sesión en el sistema y tener el permiso necesario para realizar esta función.} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El vendedor accede a la pantalla para crear presupuestos.}
-    \addCaseUseStep{ZMGestion le muestra un formulario para que el vendedor seleccione un cliente. Además se muestra un campo autocompletado con el periodo de validez. Si el vendedor cuenta con los permisos necesarios para modificar el periodo de validez el campo se muestra habilitado, caso contrario el campo se le muestra deshabilitado.}
+    \addCaseUseStep{ZMGestion le muestra un formulario para que el vendedor seleccione un cliente. Además se muestra un campo autocompletado con el periodo de validez, si tiene permisos puede modificarlo. }
     \addCaseUseStep{El vendedor selecciona un cliente y modifica el periodo de validez.}%3
-    \addCaseUseStep{ZMGestion crea un presupuesto en estado de "En creación" para el cliente con el periodo de validez ingresado por el vendedor.}%4
-    \addCaseUseStep{ZMGestion pregunta si desea agregar una nueva linea de presupuesto.}%5
-    \addCaseUseStep{En caso afirmativo se ejecuta el \CUcrearLineaPresupuesto (Crear linea de presupuesto) y se vuelve a realizar la pregunta. En caso contrario ZMGestión pasa el estado del presupuesto a "Creado".}
-    \addCaseUseStep{ZMGestión muestra un mensaje indicando el éxito de la operacion y vuelve al punto 5 del escenario principal.
+    \addCaseUseStep{ZMGestion crea un presupuesto en estado de `En creación' para el cliente con el periodo de validez ingresado por el vendedor.}%4
+    \addCaseUseStep{El vendedor desea agregar una linea de presupuesto y ejecuta el \CUcrearLineaPresupuesto (Crear linea de presupuesto).}%5
+    \addCaseUseStep{ZMGestión pasa el estado del presupuesto a `Creado' y muestra un mensaje indicando el éxito de la operacion.
     }
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
@@ -29,8 +28,8 @@
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe seleccionar un cliente.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
-	\newAlternative{A2: No ha agregado ninguna linea de presupuesto.}{6} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto 6 del escenario principal.}%¡Indicar número paso!
+	\newAlternative{A2: No ha agregado ninguna linea de presupuesto.}{5} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A2 comienza luego del punto 5 del escenario principal.}%¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe agregar al menos una linea de presupuesto.}
     \caseUseRow{El escenario vuelve al punto 5.}
     \caseUseRow{}

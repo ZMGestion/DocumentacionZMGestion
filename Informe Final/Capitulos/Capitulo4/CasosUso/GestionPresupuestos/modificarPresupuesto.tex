@@ -15,14 +15,14 @@
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El vendedor indica el presupuesto que desea modificar.}
-    \addCaseUseStep{Se ejecuta el \CUlistarLineasPresupuesto\ (Listar lineas de presupuesto) para el presupuesto seleccionado, mostrando las opciones de modificar y borrar en cada linea de presupuesto.}
-    \addCaseUseStep{Si el vendedor elije la opción modificar se ejecuta el \CUmodificarLineaPresupuesto\ (Modificar linea presupuesto). Si elije la opción borrar se ejecuta el \CUborrarLineaPresupuesto\ (Borrar linea presupuesto).}
-    \addCaseUseStep{ZMGestion muestra un formulario autocompletado para que el usuario modifique el cliente y/o el periodo de validez. Si el vendedor cuenta con los permisos necesarios para modificar el periodo de validez dicho campo se le muestra habilitado, caso contrario, deshabilitado.}
+    \addCaseUseStep{ZMGestion muestra un formulario autocompletado para que el usuario modifique el cliente y/o el periodo de validez. Si el vendedor cuenta con los permisos necesarios podrá modificar el periodo de validez.}
     \addCaseUseStep{El vendedor modifica el cliente y periodo de validez.}
-    \addCaseUseStep{ZMGestion modifica el cliente y el periodo de validez del presupuesto seleccionado.}
+    \addCaseUseStep{Se ejecuta el \CUlistarLineasPresupuesto\ (Listar lineas de presupuesto) para el presupuesto seleccionado.}
+    \addCaseUseStep{Si el vendedor desea modificar una linea, ejecuta el \CUmodificarLineaPresupuesto\ (Modificar linea de presupuesto), si desea borrar una linea ejecuta el \CUborrarLineaPresupuesto\ (Borrar linea de presupuesto) y si desea agregar una nueva linea ejecuta el \CUcrearLineaPresupuesto\ (Crear linea de presupuesto).}
+    \addCaseUseStep{ZMGestion modifica el presupuesto seleccionado y muestra un mensaje indicando el éxito de la operación.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: El presupuesto se encuentra en estado "Vendido".}{5} %Flujo alternativo A1.
+	\newAlternative{A1: El presupuesto se encuentra en estado `Vendido'.}{5} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje indicando que no se puede modificar el presupuesto ya que se encuentra en estado "Vendido".}
     \caseUseRow{El escenario vuelve al punto 4.}

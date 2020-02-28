@@ -265,6 +265,7 @@ repeat while(El producto ya se encuentra en estado de Alta) is (V)
 :Da de alta el producto indicado y muestra un mensaje 
 indicando el éxito de la operación;
 |Administrador|
+end
 @enduml
 
 @startuml darBajaTela
