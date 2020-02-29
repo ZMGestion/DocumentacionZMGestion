@@ -22,25 +22,25 @@
     \addCaseUseStep{ZMGestion modifica el presupuesto seleccionado y muestra un mensaje indicando el éxito de la operación.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: El presupuesto se encuentra en estado `Vendido'.}{5} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+	\newAlternative{A1: El presupuesto se encuentra en estado `Vendido'.}{1} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje indicando que no se puede modificar el presupuesto ya que se encuentra en estado "Vendido".}
     \caseUseRow{El escenario vuelve al punto 1.}
     \caseUseRow{}
-    \newAlternative{A2: El vendedor modificó el periodo de validez y no cuenta con los permisos necesarios para hacerlo.}{5} %Flujo alternativo A2.
-	\caseUseRow{La secuencia A2 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+    \newAlternative{A2: El vendedor modificó el periodo de validez y no cuenta con los permisos necesarios para hacerlo.}{3} %Flujo alternativo A2.
+	\caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje indicando que no cuenta con los permisos necesarios para modificar el periodo de validez.}
     \caseUseRow{El escenario vuelve al punto 4.}
     \caseUseRow{}
-    \newAlternative{A3: El vendedor ha dejado el campo de cliente o periodo de validez vacío.}{5} %Flujo alternativo A2.
-	\caseUseRow{La secuencia A3 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+    \newAlternative{A3: El vendedor ha dejado el campo de cliente o periodo de validez vacío.}{3} %Flujo alternativo A2.
+	\caseUseRow{La secuencia A3 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje indicando que los campos son requeridos.}
-    \caseUseRow{El escenario vuelve al punto 4.}
+    \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
-    \newAlternative{A4: El vendedor que creó el presupuesto no es el mismo que el que quiere modificarlo y no es un administrador.}{5} %Flujo alternativo A4.
-	\caseUseRow{La secuencia A4 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+    \newAlternative{A4: El vendedor que creó el presupuesto no es el mismo que el que quiere modificarlo y no es un administrador.}{1} %Flujo alternativo A4.
+	\caseUseRow{La secuencia A4 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje informando que no puede modificar el presupuesto de otro vendedor.}
-    \caseUseRow{El escenario vuelve al punto 4.}
+    \caseUseRow{El escenario vuelve al punto 1.}
     \caseUseRow{}
 }
 \item Caso de uso \caseUseName

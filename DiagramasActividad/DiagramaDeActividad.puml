@@ -231,14 +231,26 @@ end
 start
 :Accede a la pantalla para crear ventas;
 |ZMGestion|
+repeat
 :Muestra un formulario para que el vendendor seleccione un cliente;
 |Vendendor|
 :Selecciona un cliente;
 |ZMGestion|
-while(Desea agregar una nueva linea de venta) is (V)
-:CU Crear linea venta|
-end while
-:Crea la venta y muestra la opción de modificarla;
+repeat while(No se ha seleccionado ningún cliente) is (V)
+:Crea la venta en estado 'En creación' para el cliente seleccionado;
+|Vendendor|
+repeat
+if(Desea agregar una linea de venta) then (V)
+:Ejecuta el CU067(Crear linea de venta)|
+else 
+endif
+repeat while(No se ha agregado ninguna linea de venta) is (V)
+|ZMGestion|
+if(Todas las lineas de venta tienen el precio actual de los productos) then (V)
+:Pasa el estado de la venta a 'Pendiente';
+else (F)
+:Pasa el estado de la venta a 'En revisión';
+endif
 |Vendendor|
 end
 @enduml
@@ -385,6 +397,9 @@ start
 repeat
 repeat
 :Selecciona el presupuesto que desea modificar;
+repeat while(El presupuesto se encuentra en estado "Vendido")
+repeat while (El vendedor que esta intentando modificar el presupuesto no es administrador 
+y el presupuesto no le pertenece)
 |ZMGestion|
 repeat
 repeat
@@ -404,9 +419,6 @@ else if  (Desea modificar una linea de presupuesto) then (V)
 else if (Desea borrar una linea de presupuesto) then (V)
 :Ejecuta el CU061(Borrar linea de presupuesto)|
 endif
-repeat while(El presupuesto se encuentra en estado "Vendido")
-repeat while (El vendedor que esta intentando modificar el presupuesto no es administrador 
-y el presupuesto no le pertenece)
 |ZMGestion|
 :Modifica el presupuesto seleccionado y muestra un mensaje indicando el éxito de la operación;
 |Vendedor|
@@ -457,6 +469,38 @@ repeat while(Al menos un campo requerido está vacio) is (V)
 :Modifica la tela y muestra un mensaje indicando
 el éxito de la operación;
 |Administrador|
+end
+@enduml
+
+@startuml modificarVenta
+|Vendedor|
+start 
+:Ha ejecutado con éxito el CU052(Buscar avanzado presupuestos);
+repeat
+repeat
+:Selecciona la venta que desea modificar;
+repeat while(La venta no se encuentra en estado `En creación')
+repeat while (El vendedor que esta intentando modificar la venta no es administrador 
+y la venta no le pertenece)
+|ZMGestion|
+repeat
+:Muestra un formulario autocompletado con el cliente.;
+|Vendedor|
+:Modifica el cliente;
+|ZMGestion|
+repeat while(El vendedor ha dejado el cliente vacio) is (V)
+:Ejecuta el CU064(Listar lineas de venta) para la venta seleccionada|
+|Vendedor|
+if(Desdea agregar una linea de venta) then (V)
+:Ejecuta el CU067(Crear linea de venta)|
+else if  (Desea modificar una linea de venta) then (V)
+:Ejecuta el CU068(Modificar linea de venta)|
+else if (Desea borrar una linea de venta) then (V)
+:Ejecuta el CU069(Borrar linea de venta)|
+endif
+|ZMGestion|
+:Modifica la venta seleccionada y muestra un mensaje indicando el éxito de la operación;
+|Vendedor|
 end
 @enduml
 

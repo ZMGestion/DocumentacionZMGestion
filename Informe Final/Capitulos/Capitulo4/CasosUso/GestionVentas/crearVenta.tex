@@ -1,7 +1,7 @@
 \renewcommand{\caseUseShortName}{crearVenta} %cammelCase name
 
 \renewcommand{\caseUseCreated}{08/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{08/02/2020} %Fecha modificación
+\renewcommand{\caseUseModified}{29/02/2020} %Fecha modificación
 \renewcommand{\caseUseName}{\CUcrearVenta - Crear venta} %{\CUcammelCase - Title}
 
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion crear una venta para un cliente existente.} %Resumen
@@ -16,10 +16,10 @@
     \addCaseUseStep{El vendedor accede a la pantalla para crear ventas.}
     \addCaseUseStep{ZMGestion le muestra un formulario para que el vendedor seleccione un cliente.}
     \addCaseUseStep{El vendedor selecciona un cliente.}%3
-    \addCaseUseStep{ZMGestion crea una venta en estado de "En creación" para el cliente seleccionado.}%4
-    \addCaseUseStep{ZMGestion pregunta si desea agregar una nueva linea de venta.}%5
-    \addCaseUseStep{En caso afirmativo se ejecuta el \CUcrearLineaVenta (Crear linea de venta) y se vuelve a realizar la pregunta. En caso contrario ZMGestión verifica que las lineas de ventas creadas tengan el precio actual del producto, en caso de que todas las lineas de venta tengan el precio actual para el producto y tela seleccionados, la venta se pasa al estado "En edición", el estado de las lineas de presupuesto que se utilizaron se pasan a "Utilizadas" y las que no se utilizaron al estado "No utilizadas".} %REVISAR ESTADO DE LAS LINEAS DE VENTA. SIGUEN EN EDICION... SE DEBERIA CAMBIAR A ALGUN OTRO ESTADO? EL ESTADO DE LA VENTA SE DETERMINA A PARTIR DEL ESTADO DE LAS LINEAS DE VENTA Y CREAR UNA VENTA NO SIGNIFICA QUE HAYA HECHO UN PAGO... 
-    \addCaseUseStep{ZMGestión muestra un mensaje indicando el éxito de la operacion y vuelve al punto 5 del escenario principal.}
+    \addCaseUseStep{ZMGestion crea una venta en estado de `En creación' para el cliente seleccionado.}%4
+    \addCaseUseStep{El vendendor desea agreagr una linea de venta y ejecuta el \CUcrearLineaVenta\ (Crear linea de venta) .}%5
+    \addCaseUseStep{ZMGestion verifica que todas las lineas de venta tengan el precio actual del producto a vender.}%6
+    \addCaseUseStep{ZMGestion pasa el estado de la venta a `Pendiente' y muestra un mensaje indicnado el éxito de la operación.}%7
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: No ha seleccionado ningún cliente.}{3} %Flujo alternativo A1.
@@ -27,10 +27,14 @@
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe seleccionar un cliente.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
-	\newAlternative{A2: No ha agregado ninguna linea de venta.}{6} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto 6 del escenario principal.}%¡Indicar número paso!
+	\newAlternative{A2: No ha agregado ninguna linea de venta.}{5} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A2 comienza luego del punto 5 del escenario principal.}%¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe agregar al menos una linea de venta.}
     \caseUseRow{El escenario vuelve al punto 5.}
+    \caseUseRow{}
+    \newAlternative{A3: Alguna de las lineas de venta tiene un precio diferente al actual para el producto indicado.}{6} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A2 comienza luego del punto 6 del escenario principal.}%¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje indicando que un administrador debe revisar la venta y pasa la venta al estado de `En revisión'.}
     \caseUseRow{}
 }
 
