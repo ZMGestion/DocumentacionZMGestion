@@ -118,19 +118,22 @@ start
 :Accede a la pantalla para crear presupuestos;
 |ZMGestion|
 repeat
-:Muestra un formulario para que el vendedor seleccione un cliente;
+:Muestra un formulario para que el vendedor seleccione un cliente y un campo autocompletado
+con el perido de validez, que podrá modificar si cuenta con los permisos.;
 |Vendedor|
-:Selecciona un cliente;
+:Selecciona un cliente y modifica el periodo de validez;
 |ZMGestion|
 repeat while(Ha seleccionado un cliente) is (F)
 :Crea un presupuesto en estado de "En creación";
 repeat
-while(Desea agregar una nueva linea de presupuesto) is (V)
 |Vendedor|
+if (Desea agregar una nueva linea de presupuesto) then (V)
 :Ejecuta el CU059 Crear linea de presupuesto|
-end while
-|ZMGestion|
+else (F)
+endif
 repeat while(Ha ingresado al menos una linea de presupuesto) is (F)
+|ZMGestion|
+
 :Cambia el estado del presupuesto a "Creado";
 |Vendedor|
 end
@@ -379,22 +382,33 @@ end
 |Vendedor|
 start 
 :Ha ejecutado con éxito el CU Buscar avanzado presupuestos;
+repeat
+repeat
 :Selecciona el presupuesto que desea modificar;
 |ZMGestion|
-:Lista todas las lineas de presupuesto mostrando las opciones de modificar y borrar;
 repeat
 repeat
-:Mustra un formulario autocmpletado con el cliente y el periodo de validez;
+:Muestra un formulario autocompletado con el cliente y periodo de validez del presupuesto,
+si cuenta con los permisos podra modifica el periodo de validez;
 |Vendedor|
-:Borra o modifica las lineas que desea cambiar del presupuesto;
-if(Tiene permisos de cambio de periodo de validez) then (V)
-:Modifica el periodo de validez;
-endif
+:Modifica el cliente y periodo de validez;
 |ZMGestion|
-:Modifica el cliente;
-repeat while(El cliente y/o el periodo de validez están vacios) is (V)
-repeat while(El presupuesto está en estado "Vendido") is (V)
-:Modifica el presupuesto y muestra un mensaje indicando el éxito de la operación;
+repeat while(El vendedor ha dejado alguno de los campos vacios) is (V)
+repeat while(El vendedor ha modificado el periodo de validez y no tiene permisos) is (V)
+:Ejecuta el CU058(Listar lineas de presupuesto) para el presupuesto seleccionado|
+|Vendedor|
+if(Desdea agregar una linea de presupuesto) then (V)
+:Ejecuta el CU059(Crear linea de presupuesto)|
+else if  (Desea modificar una linea de presupuesto) then (V)
+:Ejecuta el CU060(Modificar linea de presupuesto)|
+else if (Desea borrar una linea de presupuesto) then (V)
+:Ejecuta el CU061(Borrar linea de presupuesto)|
+endif
+repeat while(El presupuesto se encuentra en estado "Vendido")
+repeat while (El vendedor que esta intentando modificar el presupuesto no es administrador 
+y el presupuesto no le pertenece)
+|ZMGestion|
+:Modifica el presupuesto seleccionado y muestra un mensaje indicando el éxito de la operación;
 |Vendedor|
 end
 @enduml
