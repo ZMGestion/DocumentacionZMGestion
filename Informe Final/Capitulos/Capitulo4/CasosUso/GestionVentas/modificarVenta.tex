@@ -14,28 +14,28 @@
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{El vendedor indica la venta que desea modificar.}
-    \addCaseUseStep{Se ejecuta el \CUlistarLineasVenta\ (Listar lineas de venta) para la venta seleccionada, mostrando las opciones de modificar y borrar en cada linea de venta.}
-    \addCaseUseStep{Si el vendedor elije la opción modificar se ejecuta el \CUmodificarLineaVenta\ (Modificar linea de venta). Si elije la opción borrar se ejecuta el \CUborrarLineaVenta\ (Borrar linea de venta).}
-    \addCaseUseStep{ZMGestion muestra un formulario autocompletado para que el usuario modifique el cliente.}
-    \addCaseUseStep{El vendedor modifica el cliente.}
-    \addCaseUseStep{ZMGestion modifica el cliente.}
+    \addCaseUseStep{El vendedor indica la venta que desea modificar.}%1
+    \addCaseUseStep{ZMGestion muestra un formulario autocompletado para que el usuario modifique el cliente.}%2
+    \addCaseUseStep{El vendedor modifica el cliente.}%3
+    \addCaseUseStep{Se ejecuta el \CUlistarLineasVenta\ (Listar lineas de venta) para la venta seleccionada.}%4
+    \addCaseUseStep{Si el vendedor desea modificar una linea, ejecuta el \CUmodificarLineaVenta\ (Modificar linea de venta), si desea borrar una linea ejecuta el \CUborrarLineaVenta\ (Borrar linea de venta) y si desea agrear una linea ejecuta el \CUcrearLineaVenta\ (Crear linea de venta).}%5
+    \addCaseUseStep{ZMGestion la venta y muestra un mensaje indicando el éxito de la operacioón.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: La venta seleccionada no se encuentra en estado "En edición".}{5} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{ZMGestion muestra un mensaje indicando que no se puede modificar la venta ya que no se encuentra en estado "En edición".}
-    \caseUseRow{El escenario vuelve al punto 4.}
+	\newAlternative{A1: La venta seleccionada no se encuentra en estado `En creación'.}{1} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje indicando que no se puede modificar la venta ya que no se encuentra en estado `En creación'.}
+    \caseUseRow{El escenario vuelve al punto 1.}
     \caseUseRow{}
-    \newAlternative{A2: El vendedor ha dejado el campo de cliente vacío.}{5} %Flujo alternativo A2.
-	\caseUseRow{La secuencia A2 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+    \newAlternative{A2: El vendedor ha dejado el campo de cliente vacío.}{3} %Flujo alternativo A2.
+	\caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje indicando que el campo cliente es requerido.}
-    \caseUseRow{El escenario vuelve al punto 4.}
+    \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
-    \newAlternative{A3: El vendedor que creó la venta no es el mismo que el que quiere modificarla y no es un administrador.}{5} %Flujo alternativo A3.
-	\caseUseRow{La secuencia A3 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+    \newAlternative{A3: El vendedor que creó la venta no es el mismo que el que quiere modificarla y no es un administrador.}{1} %Flujo alternativo A3.
+	\caseUseRow{La secuencia A3 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje informando que no puede modificar la venta de otro vendedor.}
-    \caseUseRow{El escenario vuelve al punto 4.}
+    \caseUseRow{El escenario vuelve al punto 1.}
     \caseUseRow{}
 }
 \item Caso de uso \caseUseName
@@ -43,4 +43,4 @@
 
 %DIAGRAMA DE ACTIVIDAD
 %\lineabreak[0]
-%\activityDiagram{\caseUseShortName}{Diagrama de actividad - \caseUseName}
+\activityDiagram{\caseUseShortName}{Diagrama de actividad - \caseUseName}

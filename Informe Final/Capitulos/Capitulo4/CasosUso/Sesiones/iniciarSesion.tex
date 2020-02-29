@@ -8,13 +8,12 @@
 	\caseUseRow{El usuario se encuentra creado y activo en ZMGestion.}
 }
 \renewcommand{\caseUsePostconditions}{
-	\caseUseRow{Se valida al usuario, se genera el token de sesión y se le muestra al usuario las opciones personales disponibles.}
+	\caseUseRow{Se valida al usuario y se le muestra al usuario las opciones personales disponibles.}
 }
 \renewcommand{\caseUseScene}{
 	\addCaseUseStep{El usuario ingresa la dirección de la aplicación en un dispositivo conectado a Internet.}
 	\addCaseUseStep{ZMGestion muestra un formulario para que el usuario ingrese su nombre de usuario y contraseña.}
 	\addCaseUseStep{El usuario introduce su nombre de usuario y contraseña.}
-	\addCaseUseStep{ZMGestion genera el token correspondiente y lo registra en su sesión.} %4
 	\addCaseUseStep{ZMGestion trae los permisos del usuario y le muestra sus opciones.}
 	
 }
@@ -39,7 +38,7 @@
 
 	\newAlternative{A4: La contraseña ingresada es incorrecta y el número de intentos supero el limite permitido.}{3}
 	\caseUseRow{La secuencia A4 comienza luego del punto 3 del escenario principal.}
-	\alternativeRow{ZMGestion informa al usuario que la contraseña es incorrecta, que el usuario ha sido bloqueado y que debe comunicarse con un administrador.}
+	\alternativeRow{ZMGestion informa al usuario que la contraseña es incorrecta, que el usuario ha sido ha sido dado de baja y que debe comunicarse con un administrador.}
 	\caseUseRow{El escenario vuelve al punto 2.}
 	\caseUseRow{}	
 }
