@@ -1,12 +1,64 @@
 @startuml empleados
+Alta: Estado = "A"
+Baja: Estado = "B"
 
-[*] --> State1
-State1 --> [*]
-State1 : this is a string
-State1 : this is another string
+[*] --> Alta
+Baja --> [*]
+Alta --> Baja
+Baja --> Alta
 
-State1 -> State2
-State2 --> [*]
+@enduml
+
+@startuml tareas
+Pendiente: Estado = "P"
+EnProceso: Estado = "E"
+Finalizada: Estado = "F"
+Pausada: Estado = "S"
+Cancelada: Estado = "C"
+Verificada: Estado = "V"
+
+[*] --> Pendiente
+Pendiente --> [*]
+Pendiente --> EnProceso
+EnProceso --> Cancelada
+EnProceso --> Finalizada
+EnProceso --> Pausada
+Finalizada --> EnProceso
+Pausada --> EnProceso
+Finalizada --> Verificada
+Verificada --> EnProceso
+
+@enduml
+
+@startuml lineasDeProducto
+EnCreacion: Estado = "E"
+Pendiente: Estado = "P"
+Cancelada: Estado = "C"
+NoUtilizada: Estado = "N"
+Utilizada: Estado = "U"
+PendienteDeProduccion: Estado = "F "
+PendienteDeProduccion:(No tiene tareas | Sus tareas estan pendientes)
+EnProduccion: Estado = "F"
+EnProduccion: Tiene tareas y no estan pendientes
+Verificada: Estado = "V"
+Entregada: Estado = "D"
+
+[*] --> EnCreacion
+EnCreacion --> [*]
+EnCreacion --> Pendiente
+Pendiente --> Utilizada
+Utilizada --> Pendiente
+Pendiente --> NoUtilizada
+NoUtilizada --> Pendiente
+Pendiente --> Cancelada
+Pendiente --> PendienteDeProduccion
+Pendiente --> Verificada
+PendienteDeProduccion --> Cancelada
+PendienteDeProduccion --> EnProduccion
+EnProduccion --> Cancelada
+EnProduccion --> Verificada
+Verificada --> Entregada
+
 
 @enduml
 
@@ -23,25 +75,48 @@ State2 --> [*]
 @enduml
 
 @startuml ventas
+left to right direction
 
-[*] --> State1
-State1 --> [*]
-State1 : this is a string
-State1 : this is another string
+EnCreacion: Estado = "E"
+EnRevision: Estado = "R"
+Cancelada: Estado = "P"
+Cancelada: Todas las lineas estan canceladas
+Pendiente: Estado = "P"
+Entregada: Estado = "P"
+Entregada: Todas las lineas no canceladas estan entregadas
 
-State1 -> State2
-State2 --> [*]
+[*] --> EnCreacion: Desde Ventas
+[*] --> EnCreacion: Desde Presupuestos
+EnCreacion --> [*]
+EnCreacion -> EnRevision
+EnCreacion --> Pendiente
+EnCreacion --> Cancelada
+EnRevision --> Cancelada
+EnRevision --> Pendiente
+Pendiente --> Cancelada
+Pendiente --> Entregada
 
 @enduml
 
 @startuml ordenesProduccion
+ 
+EnCreacion: Estado = "C"
+EnCreacion: No tiene lineas de orden de produccion
+Pendiente: Estado = "C"
+Pendiente: Todas las lineas de producto no canceladas, no verificadas y no entregadas estan pendiente de produccion
+EnProduccion: Estado = "C"
+EnProduccion: Al menos una linea esta en produccion
+Verificada: Estado = "C"
+Verificada: Todas las lineas de producto no canceladas estan verificadas o entregadas
+Cancelada: Estado = "C"
+Cancelada: Todas las lineas de producto se encuentran canceladas
 
-[*] --> State1
-State1 --> [*]
-State1 : this is a string
-State1 : this is another string
-
-State1 -> State2
-State2 --> [*]
-
+[*]--> EnCreacion: Desde Ventas
+[*]--> EnCreacion: Desde Ordenes de Produccion
+EnCreacion --> [*]
+EnCreacion -->Pendiente
+Pendiente --> EnProduccion
+Pendiente --> Cancelada
+EnProduccion --> Verificada
 @enduml
+
