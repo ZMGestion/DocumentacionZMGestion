@@ -199,17 +199,16 @@ class Presupuestos{
     +idUsuario: int
 }
 
-class Facturas{
-    +idFactura: int
+class Comprobantes{
+    +idComprobante: int
     fechaAlta: DateTime
-    numeroFactura: int
+    numeroComprobante: int
+    estado: string
+    monto: double
+    tipo: string
+    +idVenta: int
 }
 
-class Recibos{
-    +idRecibo: int
-    fechaAlta: DateTime
-    numeroRecibo: int
-}
 
 class Remitos{
     +idRemito: int
@@ -220,12 +219,6 @@ class Remitos{
     tipo: string
 
 }
-
-class MediosPago{
-    +idMedioPago: int
-    medioPago: string
-}
-
 
 
 @enduml

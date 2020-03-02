@@ -31,7 +31,6 @@ Verificada --> EnProceso
 @enduml
 
 @startuml lineasProducto
-EnCreacion: Estado = "E"
 Pendiente: Estado = "P"
 Cancelada: Estado = "C"
 NoUtilizada: Estado = "N"
@@ -43,9 +42,11 @@ EnProduccion: Tiene tareas y no estan pendientes
 Verificada: Estado = "V"
 Entregada: Estado = "D"
 
-[*] --> EnCreacion
-EnCreacion --> [*]
-EnCreacion --> Pendiente
+left to right direction
+[*] --> Pendiente
+Pendiente --> [*]
+[*] --> PendienteDeProduccion
+PendienteDeProduccion --> [*]
 Pendiente --> Utilizada
 Utilizada --> Pendiente
 Pendiente --> NoUtilizada
@@ -100,8 +101,7 @@ Pendiente --> Entregada
 
 @startuml ordenesProduccion
  
-EnCreacion: Estado = "C"
-EnCreacion: No tiene lineas de orden de produccion
+EnCreacion: Estado = "E"
 Pendiente: Estado = "C"
 Pendiente: Todas las lineas de producto no canceladas, no verificadas y no entregadas estan pendiente de produccion
 EnProduccion: Estado = "C"
