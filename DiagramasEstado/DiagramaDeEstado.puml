@@ -30,7 +30,7 @@ Verificada --> EnProceso
 
 @enduml
 
-@startuml lineasDeProducto
+@startuml lineasProducto
 EnCreacion: Estado = "E"
 Pendiente: Estado = "P"
 Cancelada: Estado = "C"
