@@ -8,7 +8,7 @@
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor crear una linea de venta para una venta determinada.} %Resumen
 \renewcommand{\caseUsePeople}{Vendedores: quiere crear una linea de venta.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber ejecutado con éxito el \CUbuscarAvanzadoVentas (Buscar avanzado ventas)} %Precondiciones
+	\caseUseRow{Estar ejecutando el \CUcrearVenta (Crear venta) o el \CUmodificarVenta (Modificar venta).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Si el producto, tela y lustre no pertenece a ningún producto final existente se ejecuta el \CUcrearProductoFinal\ (Crear producto final) con el producto, tela y lustre seleccionados.} %Postcondiciones
@@ -19,12 +19,17 @@
     \addCaseUseStep{El vendedor selecciona producto, tela, lustre y la cantidad solicitada.}
     \addCaseUseStep{ZMGestion autocompleta el campo precio unitario con el precio actual del producto seleccionado con la tela solicitada. Si el vendedor cuenta con los permisos necesario para modificar este campo se le permite la edición, caso contrario se le muestra el campo deshabilitado con el precio.}
     \addCaseUseStep{El vendedor cuenta con los permisos necesarios y modifica el precio.}
-    \addCaseUseStep{ZMGestion crea la linea de venta en estado "En edición" y la asocia al presupuesto seleccionado.}
+    \addCaseUseStep{ZMGestion crea la linea de venta en estado "Pendiente" y la asocia a la venta seleccionada.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
     \newAlternative{A1: La cantidad solicitada es menor o igual a cero.}{3} %Flujo alternativo A1.
     \caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe ingresar una cantidad mayor a cero.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
+    \newAlternative{A2: El producto, tela y lustre indicado ya se encuentra en la venta.}{5} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A2 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que no se pueden agregar dos lineas idénticas a la venta.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 }

@@ -18,9 +18,8 @@
     \addCaseUseStep{ZMGestion le muestra un formulario para que el vendedor seleccione un cliente. Además se muestra un campo autocompletado con el periodo de validez, si tiene permisos puede modificarlo. }
     \addCaseUseStep{El vendedor selecciona un cliente y modifica el periodo de validez.}%3
     \addCaseUseStep{ZMGestion crea un presupuesto en estado de `En creación' para el cliente con el periodo de validez ingresado por el vendedor.}%4
-    \addCaseUseStep{El vendedor desea agregar una linea de presupuesto y ejecuta el \CUcrearLineaPresupuesto (Crear linea de presupuesto).}%5
-    \addCaseUseStep{ZMGestión pasa el estado del presupuesto a `Creado' y muestra un mensaje indicando el éxito de la operacion.
-    }
+    \addCaseUseStep{Si el vendedor desea agregar una linea de presupuesto se ejecuta el \CUcrearLineaPresupuesto (Crear linea de presupuesto). Si el vendedor desea borrar una linea de presupuesto se ejecuta el \CUborrarLineaPresupuesto (Borrar linea de presupuesto). Si el vendedor desea modificar una linea de presupuesto se ejecuta el \CUmodificarLineaPresupuesto (Modificar linea de presupuesto).}%5
+    \addCaseUseStep{ZMGestión pasa el estado del presupuesto a `Creado' y muestra un mensaje indicando el éxito de la operacion.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: No ha seleccionado ningún cliente.}{3} %Flujo alternativo A1.

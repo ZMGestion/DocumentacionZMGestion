@@ -1,55 +1,35 @@
+\renewcommand{\caseUseShortName}{crearLineaOrdenProduccion} %cammelCase name
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseCreated}{02/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{02/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUcrearLineaOrdenProduccion\ - Crear linea de orden de producción.} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
-
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador crear una linea de orden de producción para una determinada orden de producción.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere crear una linea de orden de producción.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Estar ejecutando el \CUcrearOrdenProduccion (Crear orden de producción) o el \CUmodificarOrdenProduccion (Modificar orden de producción).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
-	\caseUseRow{Ninguna.} %Postcondiciones
+	\caseUseRow{Si el producto, tela y lustre no pertenece a ningun producto final existente se ejecuta el \CUcrearProductoFinal\ (Crear producto final) con el producto, tela y lustre seleccionados.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El administrador desea agregar una linea de orden de producción a una determinada orden de producción.}
+    \addCaseUseStep{ZMGestion le muestra un formulario para que el administrador seleccione un producto, tela, lustre e indique la cantidad a producir de dicho producto.}
+    \addCaseUseStep{El administrador selecciona producto, tela, lustre y la cantidad que desea producir.}
+    \addCaseUseStep{ZMGestion crea la linea de orden de producción en estado `Pendiente de producción' y la asocia a la orden de producción correspondiente.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
+    \newAlternative{A1: La cantidad indicada es menor o igual a cero.}{3} %Flujo alternativo A1.
+    \caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe ingresar una cantidad mayor a cero.}
+    \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
-
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+    \newAlternative{A2: El producto, tela y lustre indicado ya se encuentra en la orden de producción.}{3} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe ingresar una cantidad mayor a cero.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
