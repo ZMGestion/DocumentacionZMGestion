@@ -288,12 +288,14 @@ start
 :Desea agregar una linea de orden de producción;
 |ZMGestion|
 repeat
+repeat
 :Muestra un formulario para que el administrador seleccione el producto, tela y lustre
 junto con la cantidad que desea producir del mismo;
 |Administrador|
 :Selecciona el producto, tela, lustre y cantidad a producir;
 |ZMGestion|
 repeat while (La cantidad ingresada es menor o igual que cero) is (V)
+repeat while (El producto, tela y lustre indicado ya se encuentra en la orden de producción)
 if(Si la combinacion de producto, tela y lustre no existe) then (V)
 :Ejecuta el CU025(Crear producto final) para el producto, tela y lustre seleccionado|
 endif
