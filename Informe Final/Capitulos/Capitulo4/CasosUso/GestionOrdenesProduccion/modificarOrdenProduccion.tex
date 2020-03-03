@@ -1,48 +1,35 @@
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseShortName}{modificarOrdenProduccion} %cammelCase name
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
+\renewcommand{\caseUseCreated}{03/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{03/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUmodificarOrdenProduccion - Modificar orden de producción} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion modificar una orden de producción} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere modificar una orden de producción.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoOrdenesProduccion\ (Buscar avanzado órdenes de producción).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El administrador indica la orden de producción que desea modificar.}%1
+    \addCaseUseStep{Se ejecuta el \CUlistarLineasOrdenProduccion (Listar lineas de orden de producción) para la orden de producción indicada.}%2
+    \addCaseUseStep{Si el administrador desea agregar una linea de orden de producción ejecuta el \CUcrearLineaOrdenProduccion (Crear linea de orden de producción). Si el vendedor desea borrar una linea de orden de producción se ejecuta el \CUborrarLineaOrdenProduccion (Borrar linea de orden de producción). Si el administrador desea modificar una linea de orden de producción se ejecuta el \CUmodificarLineaOrdenProduccion (Modificar linea de orden de producción).}%3
+    \addCaseUseStep{ZMGestion modifica la orden de producción y muestra un mensaje indicando el éxito de la operación.}%4
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
+	\newAlternative{A1: La orden de producción indicada no se encuentra en estado `En creación'.}{1} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que la orden de producción seleccionada no se puede modificar porque no se encuentra en estado `En creación'.}
+    \caseUseRow{El escenario vuelve al punto 1.}
     \caseUseRow{}
 
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+	\newAlternative{A2: La orden de producción no tiene ninguna linea de orden de producción.}{3} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que la orden de producción debe tener al menos una linea de orden de producción.}
+    \caseUseRow{El escenario vuelve al punto 3.}
 }
 \renewcommand{\caseUseRequirementsGUI}{
 	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario

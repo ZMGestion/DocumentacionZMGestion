@@ -19,7 +19,7 @@
     \addCaseUseStep{El vendedor modifica el cliente.}%3
     \addCaseUseStep{Se ejecuta el \CUlistarLineasVenta\ (Listar lineas de venta) para la venta seleccionada.}%4
     \addCaseUseStep{Si el vendedor desea modificar una linea, ejecuta el \CUmodificarLineaVenta\ (Modificar linea de venta), si desea borrar una linea ejecuta el \CUborrarLineaVenta\ (Borrar linea de venta) y si desea agrear una linea ejecuta el \CUcrearLineaVenta\ (Crear linea de venta).}%5
-    \addCaseUseStep{ZMGestion la venta y muestra un mensaje indicando el éxito de la operacioón.}
+    \addCaseUseStep{ZMGestion modifica la venta y muestra un mensaje indicando el éxito de la operación.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: La venta seleccionada no se encuentra en estado `En creación'.}{1} %Flujo alternativo A1.
@@ -36,6 +36,11 @@
 	\caseUseRow{La secuencia A3 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje informando que no puede modificar la venta de otro vendedor.}
     \caseUseRow{El escenario vuelve al punto 1.}
+    \caseUseRow{}
+    \newAlternative{A4: La venta no posee ningúna linea de venta.}{4} %Flujo alternativo A3.
+	\caseUseRow{La secuencia A4 comienza luego del punto 4 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que la venta debe tener al menos una linea de venta.}
+    \caseUseRow{El escenario vuelve al punto 5.}
     \caseUseRow{}
 }
 \item Caso de uso \caseUseName

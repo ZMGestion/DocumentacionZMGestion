@@ -1,21 +1,20 @@
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseShortName}{borrarOrdenProduccion} %cammelCase name
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
+\renewcommand{\caseUseCreated}{03/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{03/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUborrarOrdenProduccion - Borrar orden de producción} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
-\renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion borrar una orden de producción.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere borrar una orden de producción.} %Actor: Meta
+\renewcommand{\caseUsePreconditions}{\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoOrdenesProduccion\ (Buscar avanzado órdenes de producción).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El administrador indica la orden de producción que desea borrar.}
+    \addCaseUseStep{ZMGestion borra la orden de producción y muestra un mensaje indicando el éxito de la operación.}
     \addCaseUseStep{}
     \addCaseUseStep{}
     \addCaseUseStep{}
@@ -24,25 +23,12 @@
     \addCaseUseStep{}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
+	\newAlternative{A1: La orden de producción no se encuentra en estado `En creación'.}{1} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que la orden de producción no se encuentra en estado `En creación' y por lo tanto no puede ser borrada.}
+    \caseUseRow{El escenario vuelve al punto 1.}
     \caseUseRow{}
 
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
 }
 \renewcommand{\caseUseRequirementsGUI}{
 	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
