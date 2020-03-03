@@ -21,12 +21,12 @@
 
     %VER QUE A1 TAMBIEN SE PUEDE HACER REVISANDO ALGUN ESTADO DE LA LINEA
 
-	\newAlternative{A1: La venta a la cual pertenece la linea no se encuentra en estado "En edición".}{1} %Flujo alternativo A1.
+	\newAlternative{A1: La venta a la cual pertenece la linea no se encuentra en estado `En creación'.}{1} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{ZMGestion muestra un mensaje de error indicando que no se puede borrar la linea de venta ya que la venta no se encuentra en estado "En edición".}
-    \newAlternative{A2: El vendedor que creo la venta no es el mismo que el que quiere borrar la linea de venta y no es un administrador.}{1} %Flujo alternativo A2.
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que no se puede borrar la linea de venta ya que la venta no se encuentra en estado `En creación'.}
+    \newAlternative{A2: El vendedor que creó la venta no es el mismo que el que quiere borrar la linea de venta y no es un administrador.}{1} %Flujo alternativo A2.
 	\caseUseRow{La secuencia A2 comienza luego del punto 1 del escenario principal.} 
-    \alternativeRow{ZMGestion muestra un mensaje de error indicando que puede borrar la linea de venta de otro vendedor si no es un administrador.}
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que puede borrar la linea de venta de otro vendedor.}
     \caseUseRow{El escenario vuelve al punto 1.}
 }
 

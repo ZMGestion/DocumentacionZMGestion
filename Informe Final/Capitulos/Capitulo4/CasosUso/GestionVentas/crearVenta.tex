@@ -17,9 +17,9 @@
     \addCaseUseStep{ZMGestion le muestra un formulario para que el vendedor seleccione un cliente.}
     \addCaseUseStep{El vendedor selecciona un cliente.}%3
     \addCaseUseStep{ZMGestion crea una venta en estado de `En creación' para el cliente seleccionado.}%4
-    \addCaseUseStep{El vendendor desea agreagr una linea de venta y ejecuta el \CUcrearLineaVenta\ (Crear linea de venta) .}%5
+    \addCaseUseStep{Si el vendedor desea agregar una linea de venta se ejecuta el \CUcrearLineaVenta\ (Crear linea de venta). Si el vendedor desea quitar una linea de venta ejecuta el \CUborrarLineaVenta\ (Borrar linea de venta). Si el vendedor desea modificar una linea de venta se ejecuta el \CUmodificarLineaVenta\ (Modificar linea de venta)}%5
     \addCaseUseStep{ZMGestion verifica que todas las lineas de venta tengan el precio actual del producto a vender.}%6
-    \addCaseUseStep{ZMGestion pasa el estado de la venta a `Pendiente' y muestra un mensaje indicnado el éxito de la operación.}%7
+    \addCaseUseStep{ZMGestion pasa el estado de la venta a `Pendiente' y muestra un mensaje indicando el éxito de la operación.}%7
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: No ha seleccionado ningún cliente.}{3} %Flujo alternativo A1.

@@ -1,55 +1,31 @@
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseShortName}{borrarLineaOrdenProduccion} %cammelCase name
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
+\renewcommand{\caseUseCreated}{02/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{02/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUborrarLineaOrdenProduccion\ - Borrar linea de orden de producción.} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador borrar una linea de orden de producción de una orden de producción determinada.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere borrar una linea de orden de producción.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasOrdenProduccion (Listar lineas de orden de producción).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El vendedor indica la linea de orden de producción que desea borrar.}
+    \addCaseUseStep{ZMGestion borra la linea de orden de producción.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
-    \caseUseRow{}
 
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+    %VER QUE A1 TAMBIEN SE PUEDE HACER REVISANDO SI LA LINEA ESTA UTILIZADA O NO
+
+	\newAlternative{A1: La linea seleccionada tiene un estado distinto de `Pendiente de producción'.}{1} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que no se puede borrar la linea de orden de producción.}
+    \caseUseRow{El escenario vuelve al punto 1.}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
