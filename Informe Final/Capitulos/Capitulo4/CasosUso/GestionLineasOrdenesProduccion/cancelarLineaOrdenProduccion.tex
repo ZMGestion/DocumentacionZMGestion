@@ -1,48 +1,29 @@
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseShortName}{cancelarLineaOrdenProduccion} %cammelCase name
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
+\renewcommand{\caseUseCreated}{04/04/2020} %Fecha creación
+\renewcommand{\caseUseModified}{04/04/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUcancelarLineaOrdenProduccion - Cancelar línea de orden de producción} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion cancelar una línea de orden de producción.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere cancelar una línea de orden de producción.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasOrdenProduccion (Listar lineas de orden de producción).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El administrador indica la línea de orden de producción que desea cancelar.}
+    \addCaseUseStep{ZMGestion pasa la línea de orden de producción al estado de `Cancelada' y muestra un mensaje indicando el éxito de la operación.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
+	\newAlternative{A1: La línea de orden de producción no se encuentra en estado de `Pendiente de producción' o `En producción'.}{1} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que la línea de orden de producción no puede cancelarse.}
+    \caseUseRow{el escenario vuelve al punto 1.}
     \caseUseRow{}
 
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
 }
 \renewcommand{\caseUseRequirementsGUI}{
 	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
