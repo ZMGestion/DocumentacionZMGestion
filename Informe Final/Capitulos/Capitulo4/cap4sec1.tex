@@ -151,37 +151,16 @@
 			\itemCaseUse{modificarLineaVenta}{Modificar línea de venta}
 			\itemCaseUse{borrarLineaVenta}{Borrar línea de venta}
 		\end{itemize}
-		\item Gestión facturas
+		\item Gestión comprobantes
 		\begin{itemize}
 			\item Quitar esto cuando se descomente alguna línea de abajo
-			%\itemCaseUse{crearFactura}{Crear factura}
-			%\itemCaseUse{buscarAvanzadoFacturas}{Buscar avanzado facturas}
-			%\itemCaseUse{darBajaFactura}{Dar de baja factura}
-			%\itemCaseUse{darAltaFactura}{Dar de alta factura}
-			%\itemCaseUse{modificarFactura}{Modificar factura}
-			%\itemCaseUse{borrarFactura}{Borrar factura}
+			%\itemCaseUse{crearComprobante}{Crear comprobante}
+			%\itemCaseUse{buscarAvanzadoComprobantes}{Buscar avanzado comprobantes}
+			%\itemCaseUse{darBajaComprobante}{Dar de baja comprobante}
+			%\itemCaseUse{darAltaComprobante}{Dar de alta comprobante}
+			%\itemCaseUse{modificarComprobante}{Modificar comprobante}
+			%\itemCaseUse{borrarComprobante}{Borrar comprobante}
 		\end{itemize}
-		\item Gestión recibos
-		\begin{itemize}
-			\item Quitar esto cuando se descomente alguna línea de abajo
-			%\itemCaseUse{crearRecibo}{Crear recibo}
-			%\itemCaseUse{buscarAvanzadoRecibos}{Buscar avanzado recibos}
-			%\itemCaseUse{darBajaRecibo}{Dar de baja recibo}
-			%\itemCaseUse{darAltaRecibo}{Dar de alta recibo}
-			%\itemCaseUse{modificarRecibo}{Modificar recibo}
-			%\itemCaseUse{borrarRecibo}{Borrar recibo}
-		\end{itemize}
-		\item Gestión notas de crédito
-		\begin{itemize}
-			\item Quitar esto cuando se descomente alguna línea de abajo
-			%\itemCaseUse{crearNotaCredito}{Crear nota de crédito}
-			%\itemCaseUse{buscarAvanzadoNotasCredito}{Buscar avanzado notas de crédito}
-			%\itemCaseUse{darBajaNotaCredito}{Dar de baja nota de crédito}
-			%\itemCaseUse{darAltaNotaCredito}{Dar de alta nota de crédito}
-			%\itemCaseUse{modificarNotaCredito}{Modificar nota de crédito}
-			%\itemCaseUse{borrarNotaCredito}{Borrar nota de crédito}
-		\end{itemize}
-
 		\item Gestión órdenes de producción
 		\begin{itemize}
 			\item Quitar esto cuando se descomente alguna línea de abajo
@@ -190,11 +169,9 @@
 			%\itemCaseUse{modificarOrdenProduccion}{Modificar orden de producción}
 			%\itemCaseUse{listarLineasOrdenProduccion}Listar lineas de orden de producción}
 			%\itemCaseUse{borrarOrdenProduccion}{Borrar orden de producción}
-			%\itemCaseUse{finalizarOrdenProduccion}{Finalizar orden de producción}
-			%\itemCaseUse{verificarOrdenProduccion}{Verificar orden de producción}
-			%\itemCaseUse{producirOrdenProduccion}{Producir orden de producción}
 			%\itemCaseUse{cancelarOrdenProduccion}{Cancelar orden de producción}
 			%\itemCaseUse{listarObservacionesLineaOrdenProduccion}{Listar observaciones de línea de orden de producción}
+			%\itemCaseUse{listarTareasOrdenProduccion}{Listar tareas de línea de orden de producción}
 		\end{itemize}
 		\item Gestión líneas de órdenes de producción
 		\begin{itemize}
@@ -202,6 +179,7 @@
 			%\itemCaseUse{crearLineaOrdenProduccion}{Crear línea de orden de producción}
 			%\itemCaseUse{modificarLineaOrdenProduccion}{Modificar línea de orden de producción}
 			%\itemCaseUse{borrarLineaOrdenProduccion}{Borrar línea de orden de producción}
+			%\itemCaseUse{verificarLineaOrdenProduccion}{Verificar línea de orden de producción}
 			%\itemCaseUse{cancelarLineaOrdenProduccion}{Cancelar línea de orden de producción}		
 		\end{itemize}
 		\item Gestión observaciones
@@ -213,7 +191,13 @@
 		\item Gestión tareas
 		\begin{itemize}
 			\item Quitar esto cuando se descomente alguna línea de abajo
-			
+			%\itemCaseUse{crearTarea}{Crear tarea}
+			%\itemCaseUse{borrarTarea}{Borrar tarea}
+			%\itemCaseUse{finalizarTarea}{Finalizar tarea}
+			%\itemCaseUse{verificarTarea}{Verificar tarea}
+			%\itemCaseUse{pausarTarea}{Pausar tarea}
+			%\itemCaseUse{reanudarTarea}{Reanudar tarea}
+			%\itemCaseUse{cancelarTarea}{Cancelar tarea}
 		\end{itemize}
 	\end{itemize}	
 	\subsection{Diagrama de casos de uso}
@@ -321,21 +305,9 @@
     \end{figure}
     \begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionFacturas}
-		\caption{Diagrama de casos de uso para la gestión de facturas}
-	\label{fig:GestionFacturas}
-    \end{figure}
-    \begin{figure}[H]
-		\centering
-		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRecibos}
-		\caption{Diagrama de casos de uso para la gestión de recibos}
-	\label{fig:GestionRecibos}
-    \end{figure}
-    \begin{figure}[H]
-		\centering
-		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionNotasCredito}
-		\caption{Diagrama de casos de uso para la gestión de notas de crédito}
-	\label{fig:GestionNotasCredito}
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionComprobantes}
+		\caption{Diagrama de casos de uso para la gestión de comprobantes}
+	\label{fig:GestionComprobantes}
     \end{figure}
     \begin{figure}[H]
 		\centering
@@ -468,30 +440,13 @@
 			\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/modificarLineaVenta.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/borrarLineaVenta.tex}
 
-			%GestionFacturas
-			%\input{Capitulos/Capitulo4/CasosUso/GestionFacturas/crearFactura.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionFacturas/buscarAvanzadoFacturas.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionFacturas/darBajaFactura.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionFacturas/darAltaFactura.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionFacturas/modificarFactura.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionFacturas/borrarFactura.tex}
-
-			%GestionRecibos
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRecibos/crearRecibo.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRecibos/buscarAvanzadoRecibos.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRecibos/darBajaRecibo.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRecibos/darAltaRecibo.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRecibos/modificarRecibo.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRecibos/borrarRecibo.tex}
-
-			%GestionNotasCredito
-			%\input{Capitulos/Capitulo4/CasosUso/GestionNotasCredito/crearNotaCredito.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionNotasCredito/buscarAvanzadoNotasCredito.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionNotasCredito/darBajaNotaCredito.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionNotasCredito/darAltaNotaCredito.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionNotasCredito/modificarNotaCredito.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionNotasCredito/borrarNotaCredito.tex}
-
+			%GestionComprobantes
+			%\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/crearComprobante.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/buscarAvanzadoComprobantes.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/darBajaComprobante.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/darAltaComprobante.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/modificarComprobante.tex}
+			%\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/borrarComprobante.tex}
 			
 			%GestionOrdenesProduccion
 			%\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/crearOrdenProduccion.tex}
