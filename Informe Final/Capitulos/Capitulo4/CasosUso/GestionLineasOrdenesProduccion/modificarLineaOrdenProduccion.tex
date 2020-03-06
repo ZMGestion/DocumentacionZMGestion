@@ -25,7 +25,6 @@
 	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMgestion muestra un mensaje de error indicando que la línea de orden de producción no puede modificarse.}
     \caseUseRow{El escenario vuelve al punto 1.}
-    
     \caseUseRow{}
 
 	\newAlternative{A2: La cantidad a producirse es menor o igual que cero.}{3} %Flujo alternativo A2.
@@ -39,13 +38,13 @@
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que ya existe una línea de orden de producción identica en la orden de producción.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
+
+    \newAlternative{A4: El tipo de producto seleccionado no es del tipo `Producible'.}{3} %Flujo alternativo A4.
+    \caseUseRow{La secuencia A4 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que el producto seleccionado no puede ser asignado a una orden de producción.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}

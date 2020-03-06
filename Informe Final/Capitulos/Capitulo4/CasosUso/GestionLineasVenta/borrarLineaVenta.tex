@@ -5,7 +5,7 @@
 \renewcommand{\caseUseModified}{13/02/2020} %Fecha modificación
 \renewcommand{\caseUseName}{\CUborrarLineaVenta\ - Borrar linea de venta} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor borrar una linea de venta.} %Resumen
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion borrar una linea de venta.} %Resumen
 \renewcommand{\caseUsePeople}{Vendedores: quiere borrar una linea de venta.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasVenta (Listar lineas de venta)} %Precondiciones
@@ -18,9 +18,6 @@
     \addCaseUseStep{ZMGestion borra la linea de venta.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-
-    %VER QUE A1 TAMBIEN SE PUEDE HACER REVISANDO ALGUN ESTADO DE LA LINEA
-
 	\newAlternative{A1: La venta a la cual pertenece la linea no se encuentra en estado `En creación'.}{1} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que no se puede borrar la linea de venta ya que la venta no se encuentra en estado `En creación'.}

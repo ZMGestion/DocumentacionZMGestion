@@ -15,7 +15,7 @@
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El administrador accede a la pantalla para crear productos. }
-    \addCaseUseStep{ZMGestion muestra un formulario para que el administrador ingrese el nombre del producto, la cantidad de metros de tela que deben utilizarse para producirlo, el precio unitario y dos listas desplegables para seleccionar el grupo y categoría de productos a los cuales pertenece el mismo. Indicando que todos los campos menos la cantidad de metros de tela son requeridos.}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el administrador ingrese el nombre del producto, el precio unitario, la cantidad de metros de tela que deben utilizarse para producirlo, tipo de producto y dos listas desplegables para seleccionar el grupo y categoría de productos a los cuales pertenece el mismo. Indicando que todos los campos menos la cantidad de metros de tela son requeridos.}
     \addCaseUseStep{El administrador completa los campos del formulario.}
     \addCaseUseStep{ZMGestion crea al producto con los campos ingresados por el usuario y muestra un mensaje indicando el éxito de la operación. }
 }
@@ -26,7 +26,7 @@
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 
-    \newAlternative{A2: El administrador ha dejado un campo obligatorio vacio.}{3} %Flujo alternativo A1.
+    \newAlternative{A2: El administrador ha dejado un campo obligatorio vacío.}{3} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que dicho campo es requerido.}
     \caseUseRow{El escenario vuelve al punto 2.}

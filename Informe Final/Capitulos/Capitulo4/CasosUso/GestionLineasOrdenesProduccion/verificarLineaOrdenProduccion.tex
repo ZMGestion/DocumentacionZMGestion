@@ -1,12 +1,12 @@
 
 \renewcommand{\caseUseShortName}{verificarLineaOrdenProduccion} %cammelCase name
 
-\renewcommand{\caseUseCreated}{04/04/2020} %Fecha creación
-\renewcommand{\caseUseModified}{04/04/2020} %Fecha modificación
+\renewcommand{\caseUseCreated}{04/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{04/03/2020} %Fecha modificación
 \renewcommand{\caseUseName}{\CUverificarLineaOrdenProduccion - Verificar línea de orden de producción} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion verificar que una línea de producción se encuentra finalizada.} %Resumen
-\renewcommand{\caseUsePeople}{Administradores: quiere verificar que una línea de orden de producción esta finalizada.} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion verificar que una línea de orden de producción (cuyas tareas se encuentran finalizadas) efectivamente se ha finalizado.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere verificar que una línea de orden de producción está finalizada.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasOrdenProduccion (Listar lineas de orden de producción).} %Precondiciones
 }
@@ -18,20 +18,12 @@
     \addCaseUseStep{ZMGestion pasa la línea de orden de producción al estado `Verificada' y muestra un mensaje indicando el éxito de la operación.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: La línea de orden de producción no se encuentra en estado `En producción'.}{1} %Flujo alternativo A1.
+	\newAlternative{A1: La línea de orden de producción no se encuentra en estado `En producción' y sus tareas no están todas finalizadas.}{1} %Flujo alternativoA1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que la línea de orden de producción no puede ser verificada.}
     \caseUseRow{El escenario vuelve al punto 1.}    
     \caseUseRow{}
-
-
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}

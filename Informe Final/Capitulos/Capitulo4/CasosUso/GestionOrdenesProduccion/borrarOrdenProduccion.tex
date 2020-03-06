@@ -15,12 +15,6 @@
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El administrador indica la orden de producción que desea borrar.}
     \addCaseUseStep{ZMGestion borra la orden de producción y muestra un mensaje indicando el éxito de la operación.}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: La orden de producción no se encuentra en estado `En creación'.}{1} %Flujo alternativo A1.
@@ -30,12 +24,6 @@
     \caseUseRow{}
 
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}

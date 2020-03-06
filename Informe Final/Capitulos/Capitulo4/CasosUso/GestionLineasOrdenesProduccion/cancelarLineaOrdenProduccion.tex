@@ -1,11 +1,12 @@
 
 \renewcommand{\caseUseShortName}{cancelarLineaOrdenProduccion} %cammelCase name
 
-\renewcommand{\caseUseCreated}{04/04/2020} %Fecha creación
-\renewcommand{\caseUseModified}{04/04/2020} %Fecha modificación
+\renewcommand{\caseUseCreated}{04/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{04/03/2020} %Fecha modificación
 \renewcommand{\caseUseName}{\CUcancelarLineaOrdenProduccion - Cancelar línea de orden de producción} %{\CUcammelCase - Title}
 
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion cancelar una línea de orden de producción.} %Resumen
+
 \renewcommand{\caseUsePeople}{Administradores: quiere cancelar una línea de orden de producción.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasOrdenProduccion (Listar lineas de orden de producción).} %Precondiciones
@@ -25,13 +26,6 @@
     \caseUseRow{}
 
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
-
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 
