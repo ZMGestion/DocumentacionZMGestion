@@ -561,10 +561,12 @@ rectangle GestionLineasOrdenesProduccion{
     UseCase "CU093 - Borrar linea de orden de producción" as B
     UseCase "CU094 - Verificar linea de orden de producción" as Verificar
     UseCase "CU095 - Cancelar linea de orden de producción" as Cancelar
+    UseCase "CU096 - Reanudar linea de orden de producción" as Reanudar
 }
     Administradores -- C
     Administradores -- Verificar
     Administradores -- Cancelar
+    Administradores -- Reanudar
     Administradores -- B
     Administradores -- M
     
@@ -575,8 +577,8 @@ rectangle GestionLineasOrdenesProduccion{
  left to right direction
 
 rectangle GestionObservaciones{
-    UseCase "CU096 - Crear observación" as C
-    UseCase "CU097 - Borrar observación" as B
+    UseCase "CU097 - Crear observación" as C
+    UseCase "CU098 - Borrar observación" as B
 }
     Administradores -- C
     Administradores -- B
@@ -587,13 +589,14 @@ rectangle GestionObservaciones{
  left to right direction
 
 rectangle GestionTareas{
-    UseCase "CU098 - Crear tarea" as C
-    UseCase "CU099 - Borrar tarea" as B
-    UseCase "CU100 - Finalizar tarea" as Finalizar
-    UseCase "CU101 - Verificar tarea" as Verificar
-    UseCase "CU102 - Pausar tarea" as Pausar
-    UseCase "CU103 - Reanudar tarea" as Reanudar
-    UseCase "CU104 - Cancelar tarea" as Cancelar
+    UseCase "CU099 - Crear tarea" as C
+    UseCase "CU100 - Borrar tarea" as B
+    UseCase "CU101 - Finalizar tarea" as Finalizar
+    UseCase "CU102 - Verificar tarea" as Verificar
+    UseCase "CU103 - Pausar tarea" as Pausar
+    UseCase "CU104 - Reanudar tarea" as Reanudar
+    UseCase "CU105 - Cancelar tarea" as Cancelar
+    UseCase "CU106 - Ejecutar tarea" as Ejecutar
 }
     Administradores -- C
     Administradores -- B
@@ -601,6 +604,7 @@ rectangle GestionTareas{
     Administradores -- Pausar
     Administradores -- Reanudar
     Fabricantes -- Finalizar
+    Fabricantes -- Ejecutar
     Administradores -- Cancelar
     
 

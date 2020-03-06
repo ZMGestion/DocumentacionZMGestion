@@ -1,0 +1,37 @@
+\renewcommand{\caseUseShortName}{ejecutarTarea} %cammelCase name
+
+\renewcommand{\caseUseCreated}{05/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{05/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUejecutarTarea - Ejecutar tarea} %{\CUcammelCase - Title}
+
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un fabricante de ZMGestion indicar que se está por iniciar la ejecución de una tarea que se le asignó en una línea de orden de producción.} %Resumen
+\renewcommand{\caseUsePeople}{Fabricantes: quiere indicar que iniciará la ejecución de una tarea que se le asignó en una línea de orden de producción.} %Actor: Meta
+\renewcommand{\caseUsePreconditions}{
+	\caseUseRow{Haber ejecutado con éxito el \CUlistarTareasLineaOrdenProduccion (Listar tareas de línea de orden de producción).} %Precondiciones
+}
+\renewcommand{\caseUsePostconditions}{
+	\caseUseRow{Ninguna.} %Postcondiciones
+}
+\renewcommand{\caseUseScene}{ %Escenario principal
+    \addCaseUseStep{El fabricante indica la tarea que iniciará, de una línea de orden de producción.}
+    \addCaseUseStep{ZMGestion pasa el estado de la tarea seleccionada a `En proceso'.}
+}
+\renewcommand{\alternativeCaseUse}{ %Flujos alternativos
+	\newAlternative{A1: La tarea no se encuentra en estado `Pendiente'.}{1} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que la tarea ya se inició previamente.}
+    \caseUseRow{El escenario vuelve al punto 1.}    
+    \caseUseRow{}
+    \newAlternative{A2: La tarea indicada no se le asignó al fabricante que está intentando ejecutarla.}{1} %Flujo alternativo A2.
+	\caseUseRow{La secuencia A2 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que la tarea no se le asignó a el.}
+    \caseUseRow{El escenario vuelve al punto 1.}    
+    \caseUseRow{}
+}
+
+\item Caso de uso \caseUseName
+\input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
+
+%DIAGRAMA DE ACTIVIDAD
+%\lineabreak[0]
+%\activityDiagram{\caseUseShortName}{Diagrama de actividad - \caseUseName}

@@ -1,12 +1,12 @@
 
 \renewcommand{\caseUseShortName}{revisarVenta} %cammelCase name
 
-\renewcommand{\caseUseCreated}{13/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{13/02/2020} %Fecha modificación
+\renewcommand{\caseUseCreated}{05/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{05/03/2020} %Fecha modificación
 \renewcommand{\caseUseName}{\CUrevisarVenta - Revisar venta} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion revisar una venta en estado "En revisión".} %Resumen
-\renewcommand{\caseUsePeople}{Administradores: quiere revisar una venta existente.} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion revisar una venta en donde una de las lineas tiene el precio desactualizado para aceptar o rechazar su creación.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere aceptar o rechazar la creación de una venta con precio desactualizado.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoVentas\ (Buscar avanzado ventas).} %Precondiciones
 }
@@ -14,42 +14,19 @@
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{El administrador selecciona una venta para revisar.}
-    \addCaseUseStep{ZMGestion muestra el cliente al cual pertenece la venta.}
-    \addCaseUseStep{Se ejecuta el \CUlistarLineasVenta para la venta seleccionada.}
-    \addCaseUseStep{ZMGestion indica las lineas de venta que tengan precio unitario distinto del precio actual para el producto y tela de dicha linea de venta. Además se muestra dos opciones para aceptar o rechazar la revisión.}
-    \addCaseUseStep{Si el administrador acepta la revisión se pasa la venta a estado "En edición"}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El administrador selecciona una venta que desea revisar.}
+    \addCaseUseStep{ZMGestion muestra el cliente al cual pertenece la venta y se ejecuta el \CUlistarLineasVenta para la venta seleccionada.}
+    \addCaseUseStep{ZMGestion indica las lineas de venta que tienen el precio desactualizado.}
+    \addCaseUseStep{Si el administrador desea aceptar la venta se pasa la venta a estado `Pendiente'. Si el administrador desea rechazar la venta se pasa la venta a estado `Cancelada'.}
+    \addCaseUseStep{ZMGestion muestra un mensaje indicando el éxito de la operación.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
+	\newAlternative{A1: La venta seleccionada no se encuentra en estado `En revisión'.}{1} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que la venta seleccionada no se encuentra disponible para revisar.}
     \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
     \caseUseRow{}
-
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}

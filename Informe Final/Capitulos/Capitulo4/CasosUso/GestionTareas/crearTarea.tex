@@ -1,55 +1,33 @@
+\renewcommand{\caseUseShortName}{crearTarea} %cammelCase name
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseCreated}{05/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{05/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUcrearTarea - Crear tarea} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
-
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion crear una tarea para una línea de orden de producción existente.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere crear una tarea para una línea de orden de producción.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasOrdenProduccion (Listar líneas de orden de producción).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El administrador indica la línea de orden de producción a la cual le desea agregar una tarea.}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el administrador indique fabricante al cual se le asigna la tarea, nombre de la tarea, y tarea que se realizará una vez que se verifique que se haya finalizado la misma. Siendo requerido el nombre de la tarea y fabricante encargado de la misma.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
+	\newAlternative{A1: Uno de los campos requeridos está vacío.}{1} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe completar todos los campos requeridos.}
+    \caseUseRow{El escenario vuelve al punto 1.}    
     \caseUseRow{}
-
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+    \newAlternative{A2: La tarea siguiente asignada no está en estado `Pendiente'.}{1} %Flujo alternativo A2.
+	\caseUseRow{La secuencia A2 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe completar todos los campos requeridos.}
+    \caseUseRow{El escenario vuelve al punto 1.}    
+    \caseUseRow{}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
