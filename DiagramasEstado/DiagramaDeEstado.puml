@@ -87,10 +87,10 @@ left to right direction
 
 EnCreacion: Estado = "E"
 EnRevision: Estado = "R"
-Cancelada: Estado = "P"
+Cancelada: Estado = "C"
 Cancelada: Todas las lineas estan canceladas
-Pendiente: Estado = "P"
-Entregada: Estado = "P"
+Pendiente: Estado = "C"
+Entregada: Estado = "C"
 Entregada: Todas las lineas no canceladas estan entregadas
 
 [*] --> EnCreacion: Desde Ventas
