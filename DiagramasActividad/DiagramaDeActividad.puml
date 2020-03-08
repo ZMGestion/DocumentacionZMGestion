@@ -1,7 +1,7 @@
 @startuml borrarPresupuesto
 |Administrador|
 start 
-:Ha ejecutado con éxito el CU Buscar avanzado presupuestos;
+:Ha ejecutado con éxito el CU057(Buscar avanzado presupuestos);
 repeat
 :Seleccionado el presupuesto que desea borrar;
 repeat while(El presupuesto se encuentra en estado "Vendido") is (V)
@@ -14,7 +14,7 @@ end
 @startuml borrarProducto
 |Administrador|
 start
-:Ha ejecutado con exito el CU Buscar productos avanzado;
+:Ha ejecutado con exito el CU(Buscar productos avanzado);
 repeat
 :Indica el producto que quiere borrar;
 repeat while(El producto fue utilizado para crear un producto final) is (V)
@@ -27,7 +27,7 @@ end
 
 @startuml borrarTela
 |Administrador|
-:Ha ejecutado con éxito el CU Listar telas;
+:Ha ejecutado con éxito el CU(Listar telas);
 repeat
 :Indica la tela que desea borrar;
 repeat while(La tela fue utilizada para crear al menos un producto final) is (V)
@@ -65,7 +65,7 @@ lustre y estado del presupuesto. Siendo todos los campos opcionales;
 :Completa los campos seleccionados;
 |ZMGestion|
 :Busca por cliente, producto, tela, lustre y estado del presupuesto;
-repeat while(Hay al menos una coincidencia) is (F)
+repeat while(No se encontraron coincidencias) is (V)
 :Lista las coincidencias encontradas;
 |Vendedor|
 end
@@ -78,15 +78,50 @@ start
 |ZMGestion|
 repeat
 :Muestra un formulario para que el vendedor ingrese la cadena de busqueda,
-elegir grupo y categoría de producto y si se desea 
-buscar prodcutos dados de baja;
+elija grupo, categoría y tipo de producto y si se desea 
+buscar productos dados de baja;
 |Vendedor|
 :Completa los campos solicitados;
 |ZMGestion| 
-:Busca por nombre de producto, grupo y categoría y estado;
+:Busca por nombre de producto, grupo, categoría y tipo de producto y estado;
 repeat while(No se encontraron coincidencias) is (V)
 :Lista las coincidencias encontradas;
 |Vendedor|
+end
+@enduml
+
+
+
+@startuml buscarAvanzadoOrdenesProduccion
+|Fabricantes|
+start
+:Accede a la pantalla para buscar órdenes de producción;
+|ZMGestion|
+repeat
+:Muestra un formulario para que el fabricante ingrese un producto, tela,
+lustre y estado de la orden de producción. Siendo todos los campos opcionales;
+|Fabricantes|
+:Completa los campos seleccionados;
+|ZMGestion|
+:Busca por producto, tela, lustre y estado de la orden de producción;
+repeat while(No se encontraron coincidencias) is (V)
+:Lista las coincidencias encontradas;
+|Fabricantes|
+end
+@enduml
+
+@startuml cancelarOrdenProduccion
+|Administrador|
+start
+:Ja ejecutado con exito el CU084(Buscar avanzado órdenes de producción);
+repeat
+:Indica la orden de producción que desea cancelar;
+repeat while(La orden de producción seleccionada no se encuentra en estado 'Pendiente' o 'En producción') is (V)
+|ZMGestion|
+:Ejecuta el CU(Cancelar línea de orden de producción) 
+para cada linea de la orden de producción que se encuentre
+en estado 'Pendiente de producción' o 'En producción'|
+|Administrador|
 end
 @enduml
 
@@ -104,7 +139,7 @@ telefono y nacionalidad;
 |Vendedor|
 :Completa el formulario;
 |ZMGestion|
-repeat while(El vendedor ha dejado un campo obligatorio vacio) is (V)
+repeat while(El vendedor ha dejado un campo obligatorio vacío) is (V)
 repeat while(El correo electrónico ingresado ya esta en uso) is (V)
 repeat while(El tipo y número de documento ingresado ya existe) is (V)
 :Crea el cliente y muestra un mensaje indicando el éxito de la operación;
@@ -127,14 +162,14 @@ repeat while(Ha seleccionado un cliente) is (F)
 :Crea un presupuesto en estado de "En creación";
 repeat
 |Vendedor|
-if(Desea agregar una linea de presupuesto) then (V)
-:Ejecuta el CU064(Crear linea de presupuesto)|
-else if (Desea modificar una linea de presupuesto) then (V)
-:Ejecuta el CU065(Modificar linea de presupuesto)|
-else if (Desea quitar una linea de presupuesto) then (V)
-:Ejecuta el CU066(Modificar linea de presupuesto)|
+if(Desea agregar una línea de presupuesto) then (V)
+:Ejecuta el CU064(Crear línea de presupuesto)|
+else if (Desea modificar una línea de presupuesto) then (V)
+:Ejecuta el CU065(Modificar línea de presupuesto)|
+else if (Desea quitar una línea de presupuesto) then (V)
+:Ejecuta el CU066(Modificar línea de presupuesto)|
 endif
-repeat while(Ha ingresado al menos una linea de presupuesto) is (F)
+repeat while(Ha ingresado al menos una línea de presupuesto) is (F)
 |ZMGestion|
 :Cambia el estado del presupuesto a "Creado";
 |Vendedor|
@@ -149,18 +184,20 @@ start
 repeat
 repeat
 repeat
+repeat
 :Muestra un formulario para ingresar el nombre del 
 producto, el precio, la cantidad de tela necesaria para
-producirlo en caso de ser necesario y dos listas desplegables
+producirlo en caso de ser necesario, el tipo de producto y dos listas desplegables
 para seleccionar la categoría y el grupo al cual pertenece
-el producto;
+el producto. Indicando que todos los campos son requeridos, excepto por la cantidad de tela;
 |Administrador|
 :Completa el formulario y selecciona de las listas desplegables
 el grupo y categoría a la cual pertenece el producto;
 |ZMGestion|
-repeat while(El nombre ingresado ya existe para el grupo y categoria) is (V)
-repeat while(El precio ingresado sea menor o igual a cero) is (V)
-repeat while(La cantidad de tela necesaria ingresada sea menor a cero) is (V)
+repeat while (El administrador ha dejado un campo obligatorio vacío) is (V)
+repeat while(El nombre ingresado ya existe para el grupo y categoria seleccionadas) is (V)
+repeat while(El precio ingresado sea menor o igual que cero) is (V)
+repeat while(La cantidad de tela necesaria ingresada sea menor que cero) is (V)
 :Crea el producto con los campos ingresados por el usuario y 
  muestra un mensaje indicando el éxito de la operación;
 |Administrador|
@@ -198,7 +235,7 @@ son obligatorios;
 |Administrador|
 :Completa los campos requeridos;
 |ZMGestion|
-repeat while(Alguno de los campos obligatorios se encuentra vacio) is (V)
+repeat while(Alguno de los campos obligatorios se encuentra vacío) is (V)
 repeat while(El nombre ingresado ya esta en uso) is (V)
 :Crea el rol y muestra un mensaje indicando el éxito de la operación;
 |Administrador|
@@ -219,7 +256,7 @@ ambos campos son obligatorios;
 |Administrador|
 :Completa los campos requeridos;
 |ZMGestion|
-repeat while(Alguno de los campos obligatorios se encuentra vacio) is (V)
+repeat while(Alguno de los campos obligatorios se encuentra vacío) is (V)
 repeat while(El nombre ingresado ya se encuentra en uso) is (V)
 repeat while(El precio ingresado sea menor o igual que cero) is (V)
 :Crea la tela y muestra un mensaje 
@@ -242,14 +279,14 @@ repeat while(No se ha seleccionado ningún cliente) is (V)
 :Crea la venta en estado 'En creación' para el cliente seleccionado;
 |Vendendor|
 repeat
-if(Desea agregar una linea de venta) then (V)
-:Ejecuta el CU074(Crear linea de venta)|
-else if (Desea quitar una linea de venta) then (V)
-:Ejecuta el CU075(Modificar linea de venta)|
-else if (Desea quitar una linea de venta) then (V)
-:Ejecuta el CU076(Borrar linea de venta)|
+if(Desea agregar una línea de venta) then (V)
+:Ejecuta el CU074(Crear línea de venta)|
+else if (Desea quitar una línea de venta) then (V)
+:Ejecuta el CU075(Modificar línea de venta)|
+else if (Desea quitar una línea de venta) then (V)
+:Ejecuta el CU076(Borrar línea de venta)|
 endif
-repeat while(No se ha agregado ninguna linea de venta) is (V)
+repeat while(No se ha agregado ninguna línea de venta) is (V)
 |ZMGestion|
 if(Todas las lineas de venta tienen el precio actual de los productos) then (V)
 :Pasa el estado de la venta a 'Pendiente';
@@ -267,15 +304,15 @@ start
 |ZMGestion|
 :Crea una orden de producción en estado de `En creación';
 |Administrador|
-if(Desea agregar una linea de orden de producción) then (V)
-:Ejecuta el CU103(Crear linea de orden de producción)|
-else if (Desea quitar una linea de orden de producción) then (V)
-:Ejecuta el CU104(Modificar linea de orden de producción)|
-else if (Desea quitar una linea de orden de producción) then (V)
-:Ejecuta el CU105(Borrar linea de orden de producción)|
+if(Desea agregar una línea de orden de producción) then (V)
+:Ejecuta el CU103(Crear línea de orden de producción)|
+else if (Desea quitar una línea de orden de producción) then (V)
+:Ejecuta el CU104(Modificar línea de orden de producción)|
+else if (Desea quitar una línea de orden de producción) then (V)
+:Ejecuta el CU105(Borrar línea de orden de producción)|
 endif
 |ZMGestion|
-if (Se agrego al menos una linea de orden de producción) then (V)
+if (Se agrego al menos una línea de orden de producción) then (V)
 :Crea el estado de la orden de producción a `Pendiente';
 endif
 |Administrador|
@@ -289,6 +326,7 @@ start
 |ZMGestion|
 repeat
 repeat
+repeat
 :Muestra un formulario para que el administrador seleccione el producto, tela y lustre
 junto con la cantidad que desea producir del mismo;
 |Administrador|
@@ -296,6 +334,7 @@ junto con la cantidad que desea producir del mismo;
 |ZMGestion|
 repeat while (La cantidad ingresada es menor o igual que cero) is (V)
 repeat while (El producto, tela y lustre indicado ya se encuentra en la orden de producción)
+repeat while (El producto indicado no es del tipo producible)
 if(Si la combinacion de producto, tela y lustre no existe) then (V)
 :Ejecuta el CU025(Crear producto final) para el producto, tela y lustre seleccionado|
 endif
@@ -363,7 +402,7 @@ end
 
 @startuml enviarPresupuestoEmail
 |Vendedor|
-:Ha ejecutado con éxito el CU Buscar avanzado presupuestos;
+:Ha ejecutado con éxito el CU057(Buscar avanzado presupuestos);
 repeat
 :Selecciona el presupuesto que desea enviar por correo electrónico;
 |ZMGestion|
@@ -377,11 +416,42 @@ end
 @startuml generarPresupuestoPDF
 |Vendedor|
 start
-:Ha ejecutado con éxito el CU Buscar avanzado presupuestos;
+:Ha ejecutado con éxito el CU057(Buscar avanzado presupuestos);
 :Selecciona el presupuesto para generarlo en formato PDF;
 |ZMGestion|
 :Genera un achivo con formato PDF con los datos del presupuesto;
 |Vendedor|
+end
+@enduml
+
+@startuml generarOrdenProduccionDesdeVenta
+|Administrador|
+start
+:Ha ejecutado con éxito el CU068(Buscar avanzado ventas);
+:Selecciona la venta a partir de la cual desea generar la orden de producción;
+|ZMGestion|
+:Ejecuta el CU069 Listar lineas de venta para la venta seleccionada|
+|Administrador|
+repeat
+:Selecciona las lineas de venta que desea agregar a la orden de producción;
+repeat while (Selecciona una línea de venta cuyo producto no es del tipo producible) is (V)
+|ZMGestion|
+:Crea una orden de producción en estado 'En creación';
+:Ejecuta el CU091(Crear línea de orden de producción) con los valores de producto, tela, lustre y cantidad de las
+lineas de venta seleccionadas;
+|Administrador|
+repeat
+if (Desea modificar una línea de orden de producción) then (V)
+:Ejecuta el CU092(Modificar línea de orden de producción)|
+else if (Desdea agregar una línea de orden de producción) then (V)
+:Ejecuta el CU091(Crear línea de orden de producción)|
+else if (Desea quitar alguna línea de orden de producción agregada) then (V)
+:Ejecuta el CU093(Borrar línea de orden de producción)|
+endif
+repeat while (La orden de producción no tiene ninguna línea de orden de producción asignada)
+|ZMGestion|
+:Pasa el estado de la orden de producción a `Pendiente';
+|Administrador|
 end
 @enduml
 
@@ -417,7 +487,7 @@ end
 @startuml listarLineasPresupuesto
 |Vendedor|
 start
-:He ejecutado con éxito el CU Buscar avanzado presupuesto;
+:He ejecutado con éxito el CU057(Buscar avanzado presupuesto);
 repeat
 :Indica el presupuesto del cual desea listar las lineas de presupuesto;
 repeat while(El presupuesto no posee lineas de presupuesto) is (V)
@@ -441,10 +511,36 @@ endif
 end
 @enduml
 
+@startuml listarLineasOrdenProduccion
+|Fabricante|
+start
+:He ejecutado con éxito el CU084(Buscar avanzado ordenes de producción);
+repeat
+:Indica la orden de producción del cual desea listar las lineas de presupuesto;
+repeat while(La orden de producción no posee lineas de orden de producción) is (V)
+|ZMGestion|
+:Lista las lineas de orden de producción;
+|Fabricante|
+end
+@enduml
+
+@startuml listarObservacionesLineaOrdenProduccion
+|Fabricante|
+start
+:He ejecutado con éxito el CU084(Listar lineas de orden de producción);
+repeat
+:Indica la línea de orden de producción de la cual desea listar las observaciones;
+repeat while(La línea de orden de producción no posee observaciones) is (V)
+|ZMGestion|
+:Lista las obseravaciones de la línea de orden de producción;
+|Fabricante|
+end
+@enduml
+
 @startuml modificarPresupuesto
 |Vendedor|
 start 
-:Ha ejecutado con éxito el CU Buscar avanzado presupuestos;
+:Ha ejecutado con éxito el CU057(Buscar avanzado presupuestos);
 repeat
 repeat
 :Selecciona el presupuesto que desea modificar;
@@ -463,12 +559,12 @@ repeat while(El vendedor ha dejado alguno de los campos vacios) is (V)
 repeat while(El vendedor ha modificado el periodo de validez y no tiene permisos) is (V)
 :Ejecuta el CU058(Listar lineas de presupuesto) para el presupuesto seleccionado|
 |Vendedor|
-if(Desdea agregar una linea de presupuesto) then (V)
-:Ejecuta el CU059(Crear linea de presupuesto)|
-else if  (Desea modificar una linea de presupuesto) then (V)
-:Ejecuta el CU060(Modificar linea de presupuesto)|
-else if (Desea borrar una linea de presupuesto) then (V)
-:Ejecuta el CU061(Borrar linea de presupuesto)|
+if(Desdea agregar una línea de presupuesto) then (V)
+:Ejecuta el CU059(Crear línea de presupuesto)|
+else if  (Desea modificar una línea de presupuesto) then (V)
+:Ejecuta el CU060(Modificar línea de presupuesto)|
+else if (Desea borrar una línea de presupuesto) then (V)
+:Ejecuta el CU061(Borrar línea de presupuesto)|
 endif
 |ZMGestion|
 :Modifica el presupuesto seleccionado y muestra un mensaje indicando el éxito de la operación;
@@ -479,7 +575,7 @@ end
 @startuml modificarProducto
 |Administrador|
 start
-:Ha ejecutado el CU BuscarAvanzadoProducto con éxito;
+:Ha ejecutado el CU014(Buscar avanzado producto) con éxito;
 :Selecciona el producto que desea modificar;
 |ZMGestion|
 repeat
@@ -487,22 +583,24 @@ repeat
 repeat
 repeat
 :Muestra un formulario autocompletado con los datos del producto
-seleccionado;
+seleccionado para que el administrador modifique nombre, tipo de producto, categoría, grupo,
+cantidad de tela necesaria y precio. Indicando que todos los campos son obligatorios, exceptuando por la
+cantidad de tela necesaria;
 |Administrador|
 :Modifica los campos que desea cambiar;
 |ZMGestion|
+repeat while(Alguno de los campos requeridos se encuentra vacío)
 repeat while(El nombre, grupo y categoría ingresados ya estan en uso)
 repeat while(El precio es menor o igual que cero)
 repeat while(La cantidad de tela necesaria es menor que cero)
-repeat while(Alguno de los campos requeridos está vacio)
-:Modifica el producto con los datos ingresados y muestra un mensaje de éxito;
+:Modifica el producto con los datos ingresados y muestra un mensaje idnicando el éxito de la operación;
 |Administrador|
 end
 @enduml
 
 @startuml modificarTela
 |Administrador|
-:Ha ejecutado con éxito el CU Listar telas;
+:Ha ejecutado con éxito el CU (Listar telas);
 :Indica la tela que desea modificar;
 |ZMGestion|
 repeat
@@ -516,7 +614,7 @@ Indicando que ambos campos son obligatorios;
 |ZMGestion|
 repeat while(El nombre de la tela se encuentra en uso) is (V)
 repeat while(El precio ingresado es menor o igual a cero) is (V)
-repeat while(Al menos un campo requerido está vacio) is (V)
+repeat while(Al menos un campo requerido está vacío) is (V)
 :Modifica la tela y muestra un mensaje indicando
 el éxito de la operación;
 |Administrador|
@@ -539,15 +637,15 @@ repeat
 |Vendedor|
 :Modifica el cliente;
 |ZMGestion|
-repeat while(El vendedor ha dejado el cliente vacio) is (V)
-:Ejecuta el CU064(Listar lineas de venta) para la venta seleccionada|
+repeat while(El vendedor ha dejado el cliente vacío) is (V)
+:Ejecuta el CU064(Listar líneas de venta) para la venta seleccionada|
 |Vendedor|
-if(Desdea agregar una linea de venta) then (V)
-:Ejecuta el CU067(Crear linea de venta)|
-else if  (Desea modificar una linea de venta) then (V)
-:Ejecuta el CU068(Modificar linea de venta)|
-else if (Desea borrar una linea de venta) then (V)
-:Ejecuta el CU069(Borrar linea de venta)|
+if(Desdea agregar una línea de venta) then (V)
+:Ejecuta el CU067(Crear línea de venta)|
+else if  (Desea modificar una línea de venta) then (V)
+:Ejecuta el CU068(Modificar línea de venta)|
+else if (Desea borrar una línea de venta) then (V)
+:Ejecuta el CU069(Borrar línea de venta)|
 endif
 |ZMGestion|
 :Modifica la venta seleccionada y muestra un mensaje indicando el éxito de la operación;
@@ -555,10 +653,37 @@ endif
 end
 @enduml
 
+@startuml revisarVenta
+|Administrador|
+start
+:Ha ejecutado con éxito el CU068(Buscar avanzado ventas);
+repeat
+:Selecciona la venta la cual desea revisar;
+repeat while(La venta seleccionada no se encuentra en estado 'En revisión')
+|ZMGestion|
+:Muestra el cliente al cual pertenece la venta y ejecuta el CU069(Listar lineas de venta)
+para la venta seleccionada;
+:Indica las lineas de venta que poseen el precio desactualizado;
+|Administrador|
+if(Desea aceptar la venta) then (V)
+|ZMGestion|
+:Pasa la venta al estado de 'Pendiente;
+|Administrador|
+else (F)
+|ZMGestion|
+:Pasa la venta al estado de 'Cancelada';
+endif
+:Muestra un mensaje indicando el éxito de la operación;
+|Administrador|
+end
+
+@enduml
+
+
 @startuml transformarPresupuestoEnVenta
 |Vendedor|
 start
-:Ha ejecutado con éxito el CU052(Buscar avanzado presupuestos);
+:Ha ejecutado con éxito el CU057(Buscar avanzado presupuestos);
 repeat
 :Selecciona el/los presupuesto/s a partir de los cuales desea generar la venta;
 repeat while(Al menos un presupuesto seleccionado se encuentra en estado de "Vendido") is (V)
@@ -567,24 +692,24 @@ repeat
 :Muestra un formulario para que el vendedor seleccione
 el cliente y ejecuta el CU058(Listar lineas de presupuesto)
 para cada presupuesto seleccionado, mostrando una opción por
-cada linea si desea añadirla a la venta ;
+cada línea si desea añadirla a la venta ;
 |Vendedor|
 :Selecciona el cliente y elige las lineas de presupuesto que desea agregar;
 |ZMGestion|
-repeat while(El vendedor ha dejado el cliente vacio) is (V)
+repeat while(El vendedor ha dejado el cliente vacío) is (V)
 :Crea un venta para el cliente seleccionado en estado de "En creación"
-y ejecuta el CU067(Crear linea de venta) con los valores de producto, cantidad 
-y precio de cada linea de presupuesto seleccionada;
+y ejecuta el CU067(Crear línea de venta) con los valores de producto, cantidad 
+y precio de cada línea de presupuesto seleccionada;
 |Vendedor|
 repeat
-if (Desea modificar una linea de venta) then (V)
-:Ejecuta el CU075(Modificar linea de venta)|
-else if (Desdea agregar una linea de venta) then (V)
-:Ejecuta el CU074(Crear linea de venta)|
-else if (Desea quitar alguna linea de venta agregada) then (V)
-:Ejecuta el CU076(Borrar linea de venta)|
+if (Desea modificar una línea de venta) then (V)
+:Ejecuta el CU075(Modificar línea de venta)|
+else if (Desdea agregar una línea de venta) then (V)
+:Ejecuta el CU074(Crear línea de venta)|
+else if (Desea quitar alguna línea de venta agregada) then (V)
+:Ejecuta el CU076(Borrar línea de venta)|
 endif
-repeat while(La venta no tiene ninguna linea de venta asociada) is (V)
+repeat while(La venta no tiene ninguna línea de venta asociada) is (V)
 |ZMGestion|
 if(Todas las lineas de venta tienen el precio actual de los productos) then (V)
 :Pasa el estado de la venta a 'Pendiente';
