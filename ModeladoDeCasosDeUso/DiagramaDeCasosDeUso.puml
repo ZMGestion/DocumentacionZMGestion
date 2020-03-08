@@ -505,6 +505,7 @@ rectangle GestionComprobantes{
 }
     Vendedores -- BA
     Administradores -- B
+    Administradores -- M
 
 @enduml
 
