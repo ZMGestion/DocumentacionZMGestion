@@ -1,55 +1,37 @@
 
-\renewcommand{\caseUseShortName}{} %cammelCase name
+\renewcommand{\caseUseShortName}{crearComrpobante} %cammelCase name
 
-\renewcommand{\caseUseCreated}{15/02/2020} %Fecha creación
-\renewcommand{\caseUseModified}{15/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CU - } %{\CUcammelCase - Title}
+\renewcommand{\caseUseCreated}{06/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{06/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUcrearComprobante - Crear comprobante } %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{} %Resumen
-\renewcommand{\caseUsePeople}{} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion crear un comprobante.} %Resumen
+\renewcommand{\caseUsePeople}{Vendedores: desea crear un comprobante} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber iniciado sesión en el sistema.} %Precondiciones
+	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoVentas\ (Buscar avanzado ventas).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
-    \addCaseUseStep{}
+    \addCaseUseStep{El vendedor selecciona la venta a la cual desea agregarle un comprobante.}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor ingrese, el tipo y número de comprobante y el monto total. Indicando que todos los campos son obligatorios. }
+    \addCaseUseStep{El vendedor completa el formulario.}
+    \addCaseUseStep{ZMGestion crea el formulario y lo asocia a la venta indicada.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: Error al .}{NUMERO} %Flujo alternativo A1.
-	\caseUseRow{La secuencia A1 comienza luego del punto NUMERO del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    
+	\newAlternative{A1: El número y tipo de comporbante ingresado ya existe.}{2} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 2 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que el tipo y número de comprobante ingresado ya existe.}
+    \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 
-	\newAlternative{A2: Error al .}{NUMERO} %Flujo alternativo A2.
-    \caseUseRow{La secuencia A2 comienza luego del punto NUMERO del escenario principal.}%¡Indicar número paso!
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
-    \alternativeRow{}
+    \newAlternative{A2: El monto ingresado es menor o igual que cero.}{2} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A2 comienza luego del punto 2 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que el monto debe ser mayor que cero.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
 }
-\renewcommand{\caseUseRequirementsGUI}{
-	\caseUseRow{Teclado, Mouse y Pantalla} %Requisitos interfaz de usuario
-}
-\renewcommand{\caseUseResponseTime}{La interfaz debe responder dentro de un tiempo máximo de 10 segundos.} %Requisitos funcionales: Tiempo de respuesta
-\renewcommand{\caseUseConcurrence}{} %Requisitos funcionales: Concurrencia
-\renewcommand{\caseUseAvailability}{} %Requisitos funcionales: Disponibilidad
 
 \item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}

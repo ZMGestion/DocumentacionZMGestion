@@ -26,6 +26,7 @@ Ventas "0..*" -- "0..1" Domicilios
 Ventas "0..*" -- "1" Ubicaciones
 Ventas "0..1" -- "0..*" Presupuestos
 Ventas "0..1" -- "0..1" OrdenesProduccion
+Ventas "1" -- "0..*" Comprobantes
 LineasProducto "0..*"--o Ventas
 LineasProducto "0..*"--o OrdenesProduccion
 LineasProducto "0..*"--o Presupuestos
