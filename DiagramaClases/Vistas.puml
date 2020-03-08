@@ -1,0 +1,32 @@
+@startuml vistaProductos
+!include Clases.puml
+Productos "0..*" -- "1" CategoriasProducto
+Productos "0..*" -- "1" GruposProducto
+Productos "1"-- "1..*" Precios
+Productos "0..*" -- "1" TiposProducto
+Telas "1"-- "1..*" Precios
+ProductosFinales "0..*"--"1" Productos
+ProductosFinales "0..*"--"0..1" Telas
+ProductosFinales "0..*"--"0..1" Lustres
+@enduml
+
+@startuml vistaSistema
+!include Clases.puml
+Personas <|-- Clientes
+Paises "1"--"1..*" Provincias
+Provincias "1"--"1..*" Ciudades
+Paises "1"--"0..*" Clientes
+Domicilios "0..*"--"0..1" Clientes
+TiposDocumento "1"--"0..*" Personas
+Ubicaciones "0..1"--"1" Domicilios
+Domicilios "0..*" -- "1" Ciudades
+@enduml
+
+@startuml vistaPresupuestosVentas
+!include Clases.puml
+Ventas "0..*" -- "1" Clientes
+Presupuestos "0..*"--"1" Clientes
+Ventas "0..1" -- "0..*" Presupuestos
+LineasProducto "0..*"--"1" ProductosFinales
+Ventas "1" -- "0..*" Comprobantes
+@enduml

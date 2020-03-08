@@ -1,24 +1,24 @@
 @startuml Clases
 class Personas{
-   documento: string
-   telefono: string
    nombres: string
    apellidos: string
-   estado: string
+   telefono: string
    email: string
    +idTipoDocumento: int
+   documento: string
+   estado: string
 }
 
 class Usuarios {
    +idUsuario : int
-   token: string
-   fechaFin: DateTime
-   fechaNacimiento: DateTime
-   fechaInicio: DateTime
-   estadoCivil: string
-   cantidadHijos: int
    usuario: string
    password: string
+   token: string
+   fechaNacimiento: DateTime
+   fechaInicio: DateTime
+   fechaFin: DateTime
+   estadoCivil: string
+   cantidadHijos: int
 }
 
 class TiposDocumento{
@@ -56,15 +56,16 @@ class Paises{
 
 class Provincias{
     +idProvincia: int
-    provincia: string
     +idPais: int
+    provincia: string
 }
 
 class Ciudades{
     +idCiudad: int
-    ciudad: string
     +idPais: int
     +idProvincia: int
+    ciudad: string
+    
 }
 
 class Domicilios{
@@ -79,9 +80,9 @@ class Domicilios{
 
 class Ubicaciones{
     +idUbicacion: int
+    +idDomicilio: int
     ubicacion: string
     estado: string
-    +idDomicilio: int
 }
 
 class Productos{
@@ -91,9 +92,7 @@ class Productos{
     +idPrecio: int
     +idCategoriaProducto: int
     +idGrupoProducto: int
-    minimoAProducir: int
-    cantidadPartida: int
-    umbralCantidad: int
+    +idTipoProducto: int
 }
 
 class CategoriasProducto{
@@ -127,12 +126,11 @@ class Lustres{
 }
 
 class ProductosFinales{
-    +idProductoFinal: int
-    estado: string    
+    +idProductoFinal: int   
     +idProducto: int
     +idLustre: int
     +idTela: int
-    +idTipoProducto: int
+    estado: string  
 }
 
 class TiposProducto{
@@ -142,23 +140,23 @@ class TiposProducto{
 
 class Ventas{
     +idVenta: int
-    fechaAlta: DateTime
-    estado: string
     +idCliente: int
     +idDomicilio: int
     +idUbicacion: int
     +idUsuario: int
+    fechaAlta: DateTime
+    estado: string
 }
 
 class LineasProducto{
     +idLineaProducto: int
     +idReferencia: int
-    estado: string
     tipo: string
-    precioUnitario: float
-    cantidad: int
     +idRemito: int
     +idProductoFinal: int
+    precioUnitario: float
+    cantidad: int
+    estado: string
 }
 
 class Tareas{
@@ -166,58 +164,57 @@ class Tareas{
     +idLineaProducto: int
     +idUsuarioFabricante: int
     +idUsuarioRevisor: int
-    estado: string
+    tarea: string
     fechaAlta: DateTime
     fechaFinalizacion: DateTime
     fechaRevision: DateTime
-    tarea: string
+    estado: string
     observaciones: string
 }
 
 class Observaciones{
+    +idLineaProducto: int
     +idObservacion: int
     observacion: string
-    +idLineaProducto: int
 }
 
 class OrdenesProduccion{
     +idOrdenProduccion: int
+    +idUsuario: int
+    +idVenta: int
     fechaAlta: DateTime
     fechaFinalizacion: DateTime
     estado: string
-    +idUsuario: int
-    +idVenta: int
 }
 
 class Presupuestos{
     +idPresupuesto: int
-    fechaAlta: DateTime
-    estado: string
-    periodoValidez: int
     +idCliente: int
     +idCliente: int
     +idUsuario: int
+    fechaAlta: DateTime
+    periodoValidez: int
+    estado: string
 }
 
 class Comprobantes{
     +idComprobante: int
-    fechaAlta: DateTime
-    numeroComprobante: int
-    estado: string
-    monto: double
-    tipo: string
     +idVenta: int
+    tipo: string
+    numeroComprobante: int
+    monto: double
+    fechaAlta: DateTime
+    estado: string
 }
 
 
 class Remitos{
     +idRemito: int
     +idUbicacion: int
-    fechaAlta: DateTime
-    fechaEntrega: DateTime
     +idDomicilio: int
     tipo: string
-
+    fechaAlta: DateTime
+    fechaEntrega: DateTime
 }
 
 
