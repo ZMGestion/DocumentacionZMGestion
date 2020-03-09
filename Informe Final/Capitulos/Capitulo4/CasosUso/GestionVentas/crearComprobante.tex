@@ -1,5 +1,5 @@
 
-\renewcommand{\caseUseShortName}{crearComrpobante} %cammelCase name
+\renewcommand{\caseUseShortName}{crearComprobante} %cammelCase name
 
 \renewcommand{\caseUseCreated}{06/03/2020} %Fecha creación
 \renewcommand{\caseUseModified}{06/03/2020} %Fecha modificación
@@ -20,13 +20,13 @@
     \addCaseUseStep{ZMGestion crea el formulario y lo asocia a la venta indicada.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: El número y tipo de comporbante ingresado ya existe.}{2} %Flujo alternativo A1.
+	\newAlternative{A1: El número y tipo de comprobante ingresado ya existe.}{2} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 2 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que el tipo y número de comprobante ingresado ya existe.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 
-    \newAlternative{A2: El monto ingresado es menor o igual que cero.}{2} %Flujo alternativo A1.
+    \newAlternative{A2: El monto ingresado es menor o igual a cero.}{2} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A2 comienza luego del punto 2 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que el monto debe ser mayor que cero.}
     \caseUseRow{El escenario vuelve al punto 2.}
