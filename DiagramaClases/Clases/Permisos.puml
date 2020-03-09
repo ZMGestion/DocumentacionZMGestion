@@ -1,0 +1,6 @@
+@startuml Permisos
+class Permisos{
+    +idPermiso: int
+    permiso: string
+}
+@enduml

@@ -1,0 +1,11 @@
+@startuml Ventas
+class Ventas{
+    +idVenta: int
+    +idCliente: int
+    +idDomicilio: int
+    +idUbicacion: int
+    +idUsuario: int
+    fechaAlta: DateTime
+    estado: string
+}
+@enduml

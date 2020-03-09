@@ -1,0 +1,6 @@
+@startuml Paises
+class Paises{
+    +idPais: int
+    pais: string
+}
+@enduml

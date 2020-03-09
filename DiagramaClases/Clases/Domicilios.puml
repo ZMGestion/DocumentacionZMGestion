@@ -1,0 +1,11 @@
+@startuml Domicilios
+class Domicilios{
+    +idDomicilio: int
+    domicilio: string
+    codigoPostal: string
+    +idCliente: int
+    +idCiudad: int
+    +idProvincia: int
+    +idPais: int
+}
+@enduml

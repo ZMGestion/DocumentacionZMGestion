@@ -1,0 +1,14 @@
+@startuml Tareas
+class Tareas{
+    +idTarea: int
+    +idLineaProducto: int
+    +idUsuarioFabricante: int
+    +idUsuarioRevisor: int
+    tarea: string
+    fechaAlta: DateTime
+    fechaFinalizacion: DateTime
+    fechaRevision: DateTime
+    estado: string
+    observaciones: string
+}
+@enduml

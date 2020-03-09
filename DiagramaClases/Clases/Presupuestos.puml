@@ -1,0 +1,11 @@
+@startuml Presupuestos
+class Presupuestos{
+    +idPresupuesto: int
+    +idCliente: int
+    +idCliente: int
+    +idUsuario: int
+    fechaAlta: DateTime
+    periodoValidez: int
+    estado: string
+}
+@enduml

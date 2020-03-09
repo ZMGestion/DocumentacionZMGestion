@@ -1,0 +1,6 @@
+@startuml PermisosRol
+class PermisosRol{
+    +idRol: int
+    +idPermiso: int
+}
+@enduml

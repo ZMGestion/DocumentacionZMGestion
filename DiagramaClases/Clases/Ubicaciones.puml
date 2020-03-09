@@ -1,0 +1,8 @@
+@startuml Ubicaciones
+class Ubicaciones{
+    +idUbicacion: int
+    +idDomicilio: int
+    ubicacion: string
+    estado: string
+}
+@enduml

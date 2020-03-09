@@ -1,0 +1,7 @@
+@startuml GruposProducto
+class GruposProducto{
+    +idGrupoProducto: int
+    grupo: string
+    estado: string
+}
+@enduml

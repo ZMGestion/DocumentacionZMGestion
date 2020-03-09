@@ -1,0 +1,8 @@
+@startuml Clientes
+class Clientes{
+    +idCliente: int
+    tipo: string
+    razonSocial: string 
+    +idPais: int
+}
+@enduml

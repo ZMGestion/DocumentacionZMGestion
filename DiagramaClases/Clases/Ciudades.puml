@@ -1,0 +1,8 @@
+@startuml Ciudades
+class Ciudades{
+    +idCiudad: int
+    +idPais: int
+    +idProvincia: int
+    ciudad: string  
+}
+@enduml

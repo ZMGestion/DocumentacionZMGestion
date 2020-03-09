@@ -1,0 +1,9 @@
+@startuml ProductosFinales
+class ProductosFinales{
+    +idProductoFinal: int   
+    +idProducto: int
+    +idLustre: int
+    +idTela: int
+    estado: string  
+}
+@enduml

@@ -1,0 +1,6 @@
+@startuml TiposProducto
+class TiposProducto{
+    +idTipoProducto: int
+    tipoProducto: string
+}
+@enduml

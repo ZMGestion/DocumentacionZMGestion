@@ -1,0 +1,8 @@
+@startuml Telas
+class Telas{
+    +idTela: int
+    tela: string
+    +idPrecio: int
+    estado: string
+}
+@enduml

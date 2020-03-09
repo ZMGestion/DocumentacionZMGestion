@@ -1,0 +1,7 @@
+@startuml Observaciones
+class Observaciones{
+    +idLineaProducto: int
+    +idObservacion: int
+    observacion: string
+}
+@enduml
