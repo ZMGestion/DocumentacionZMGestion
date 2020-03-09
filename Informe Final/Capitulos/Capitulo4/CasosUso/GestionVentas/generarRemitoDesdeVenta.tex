@@ -17,8 +17,8 @@
     \addCaseUseStep{El administrador selecciona una venta a partir de la cual desea generar el remito.}
     \addCaseUseStep{ZMGestion ejecuta el \CUlistarLineasVenta\ (Listar líneas de venta) para la venta seleccionada, mostrando una opción por cada línea para indicar si desea añadirla a el remito.}
     \addCaseUseStep{El administrador selecciona las líneas de ventas que desea agregar a el remito.}
-    \addCaseUseStep{ZMGestion crea un remito en estado "En creación" y ejecuta el \CUcrearLineaRemito\ (Crear línea de remito) con los valores de producto, tela, lustre y cantidad de la línea de venta seleccionada.}
-    \addCaseUseStep{Si el administrador desea modificar alguna de las líneas de orden de producción agregadas ejecuta el \CUmodificarLineaRemito\ (Modificar línea de remito). Si el administrador desea quitar alguna línea de orden de producción agregada se ejecuta el \CUborrarLineaOrdenProduccion\ (Borrar línea de remito). Si el administrador desea agregar una nueva línea de remito se ejecuta el \CUcrearLineaRemito\ (Crear línea de remito).}
+    \addCaseUseStep{ZMGestion crea un remito en estado `En creación' y ejecuta el \CUcrearLineaRemito\ (Crear línea de remito) con los valores de producto, tela, lustre y cantidad de la línea de venta seleccionada.}
+    \addCaseUseStep{Si el administrador desea quitar alguna línea de remito agregada se ejecuta el \CUborrarLineaRemito\ (Borrar línea de remito).}
     \addCaseUseStep{ZMGestión pasa el estado de el remito a `Creado'.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos

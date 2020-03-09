@@ -44,9 +44,18 @@ PendienteDeProduccion:(No tiene tareas | Sus tareas estan pendientes)
 EnProduccion: Estado = "F"
 EnProduccion: Tiene tareas y no estan pendientes
 Verificada: Estado = "V"
-Entregada: Estado = "D"
+Verificada: Venta tiene saldo
+Pagada: Estado = "V"
+Pagada: Venta sin saldo 
+Pagada: IdRemito = null
+PendienteDeEntrega: Estado = "V"
+PendienteDeEntrega: (IdRemito != null && \n Venta sin saldo) || Sin Venta 
+'Hicimos que estado = D para simplicidad en la busqueda.
+Entregada: Estado = "D" 
 
-left to right direction
+
+
+top to bottom direction
 [*] --> Pendiente
 Pendiente --> [*]
 [*] --> PendienteDeProduccion
@@ -62,8 +71,10 @@ PendienteDeProduccion --> Cancelada
 PendienteDeProduccion --> EnProduccion
 EnProduccion --> Cancelada
 EnProduccion --> Verificada
-Verificada --> Entregada
-
+Verificada --> Pagada
+Pagada --> PendienteDeEntrega
+PendienteDeEntrega --> Entregada
+Entregada --> Cancelada : Cancelar linea de venta
 
 @enduml
 
@@ -72,10 +83,13 @@ Verificada --> Entregada
 EnCreacion: Estado = "E"
 Creado: Estado = "C"
 Vendido: Estado = "V"
+Expirado: Estado = "C"
+Expirado: FechaAlta + Perido de validez > Hoy
 
 [*] --> EnCreacion
 EnCreacion --> Creado
 Creado --> Vendido
+Creado --> Expirado
 Vendido --> Creado
 EnCreacion --> [*]
 Creado --> [*]
@@ -126,3 +140,20 @@ Pendiente --> Cancelada
 EnProduccion --> Verificada
 @enduml
 
+@startuml remitos
+
+EnCreacion: Estado = "E"
+Creado: Estado = "C"
+Entregado: Estado = "C"
+Entregado: FechaEntrega != null
+Cancelado: Estado = "B"
+
+[*] --> EnCreacion
+EnCreacion --> Creado
+Creado --> Entregado
+Cancelado --> Creado
+Creado --> Cancelado
+EnCreacion --> [*]
+Creado --> [*]
+
+@enduml

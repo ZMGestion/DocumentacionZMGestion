@@ -66,7 +66,7 @@ LineasProducto "0..*"--"1" ProductosFinales
 Presupuestos "0..*"--"1" Clientes
 Presupuestos "0..*"--"1" Usuarios
 Remitos "0..1"--"0..*" LineasProducto
-Remitos "0..*"--"1" Domicilios
+Remitos "0..*"--"0..1" Domicilios
 Ubicaciones "1"--"0..*" Remitos
 Tareas "0..*"--"1" Usuarios
 Tareas "0..*"--"0..1" Usuarios
