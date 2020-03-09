@@ -1,0 +1,37 @@
+
+\renewcommand{\caseUseShortName}{generarRemitoDesdeVenta} %cammelCase name
+
+\renewcommand{\caseUseCreated}{08/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{08/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUgenerarRemitoDesdeVenta - Generar remito a partir de venta} %{\CUcammelCase - Title}
+
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion crear un remito a partir de una venta existente.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere crear un remito a partir de una venta.} %Actor: Meta
+\renewcommand{\caseUsePreconditions}{
+	\caseUseRow{Haber ejecutado con éxito el \CUbuscarAvanzadoVentas (Buscar avanzado ventas).} %Precondiciones
+}
+\renewcommand{\caseUsePostconditions}{
+	\caseUseRow{Ninguna.} %Postcondiciones
+}
+\renewcommand{\caseUseScene}{ %Escenario principal
+    \addCaseUseStep{El administrador selecciona una venta a partir de la cual desea generar el remito.}
+    \addCaseUseStep{ZMGestion ejecuta el \CUlistarLineasVenta\ (Listar líneas de venta) para la venta seleccionada, mostrando una opción por cada línea para indicar si desea añadirla a el remito.}
+    \addCaseUseStep{El administrador selecciona las líneas de ventas que desea agregar a el remito.}
+    \addCaseUseStep{ZMGestion crea un remito en estado "En creación" y ejecuta el \CUcrearLineaRemito\ (Crear línea de remito) con los valores de producto, tela, lustre y cantidad de la línea de venta seleccionada.}
+    \addCaseUseStep{Si el administrador desea modificar alguna de las líneas de orden de producción agregadas ejecuta el \CUmodificarLineaRemito\ (Modificar línea de remito). Si el administrador desea quitar alguna línea de orden de producción agregada se ejecuta el \CUborrarLineaOrdenProduccion\ (Borrar línea de remito). Si el administrador desea agregar una nueva línea de remito se ejecuta el \CUcrearLineaRemito\ (Crear línea de remito).}
+    \addCaseUseStep{ZMGestión pasa el estado de el remito a `Creado'.}
+}
+\renewcommand{\alternativeCaseUse}{ %Flujos alternativos
+	\newAlternative{A1: No se agregó ninguna línea de remito.}{5} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 5 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe ingresar al menos una linea de remito.}
+    \caseUseRow{El escenario vuelve al punto 5.}
+    \caseUseRow{}
+}
+
+\item Caso de uso \caseUseName
+\input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
+
+%DIAGRAMA DE ACTIVIDAD
+%\lineabreak[0]
+%\activityDiagram{\caseUseShortName}{Diagrama de actividad - \caseUseName}

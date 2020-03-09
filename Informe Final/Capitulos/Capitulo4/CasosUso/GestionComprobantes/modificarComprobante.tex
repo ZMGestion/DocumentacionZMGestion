@@ -4,8 +4,8 @@
 \renewcommand{\caseUseModified}{07/03/2020} %Fecha modificación
 \renewcommand{\caseUseName}{\CUmodificarComprobante - Modificar comprobante} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor modificar un comprobante existente.} %Resumen
-\renewcommand{\caseUsePeople}{Vendedores: quiere modificar un comprobante existente.} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador modificar un comprobante existente.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere modificar un comprobante existente.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoComprobantes\ (Buscar avanzado comprobantes).} %Precondiciones
 }
@@ -13,13 +13,13 @@
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{El vendedor indica el comprobante que desea modificar.}%1
+    \addCaseUseStep{El administrador indica el comprobante que desea modificar.}%1
     \addCaseUseStep{ZMGestion muestra un formulario autocompletado con el número de comprobante, tipo de comprobante y monto. Siendo requeridos todos los campos.}%2
-    \addCaseUseStep{El vendedor modifica el número de comprobante, tipo de comprobante y monto.}%3
-    \addCaseUseStep{ZMGestion modifica el comprobante con los nuevos valores ingresados por el vendedor.}
+    \addCaseUseStep{El administrador modifica el número de comprobante, tipo de comprobante y monto.}%3
+    \addCaseUseStep{ZMGestion modifica el comprobante con los nuevos valores ingresados por el administrador.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: El número de comprobante y tipo de comprobante ingresados ya existe.}{3} %Flujo alternativo A1.
+	\newAlternative{A1: El número y tipo de comprobante ingresado ya existe.}{3} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje indicando que el comprobante ingresado ya existe.}
     \caseUseRow{El escenario vuelve al punto 2.}
@@ -40,4 +40,4 @@
 
 %DIAGRAMA DE ACTIVIDAD
 %\lineabreak[0]
-\activityDiagram{\caseUseShortName}{Diagrama de actividad - \caseUseName}
+%\activityDiagram{\caseUseShortName}{Diagrama de actividad - \caseUseName}

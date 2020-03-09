@@ -143,7 +143,8 @@
 			\itemCaseUse{modificarVenta}{Modificar venta}
 			\itemCaseUse{borrarVenta}{Borrar venta}
 			\itemCaseUse{generarOrdenProduccionDesdeVenta}{Generar orden de producción a partir de venta}
-			%\itemCaseUse{crearComprobante}{Crear comprobante} 
+			\itemCaseUse{generarRemitoDesdeVenta}{Generar remito a partir de venta}
+			\itemCaseUse{crearComprobante}{Crear comprobante} 
 			\itemCaseUse{revisarVenta}{Revisar venta}
 		\end{itemize}
 		\item Gestión líneas de venta
@@ -154,10 +155,9 @@
 		\end{itemize}
 		\item Gestión comprobantes
 		\begin{itemize}
-			\item Quitar esto cuando se descomente alguna línea de abajo
-			%\itemCaseUse{buscarAvanzadoComprobantes}{Buscar avanzado comprobantes}
-			%\itemCaseUse{modificarComprobante}{Modificar comprobante}
-			%\itemCaseUse{borrarComprobante}{Borrar comprobante}
+			\itemCaseUse{buscarAvanzadoComprobantes}{Buscar avanzado comprobantes}
+			\itemCaseUse{modificarComprobante}{Modificar comprobante}
+			\itemCaseUse{borrarComprobante}{Borrar comprobante}
 		\end{itemize}
 		\item Gestión órdenes de producción
 		\begin{itemize}
@@ -429,7 +429,8 @@
 			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/modificarVenta.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/borrarVenta.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/generarOrdenProduccionDesdeVenta.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionVentas/crearComprobante.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/generarRemitoDesdeVenta.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/crearComprobante.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/revisarVenta.tex}
 
 			%GestionLineasVenta
@@ -438,9 +439,9 @@
 			\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/borrarLineaVenta.tex}
 
 			%GestionComprobantes
-			%\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/buscarAvanzadoComprobantes.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/modificarComprobante.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/borrarComprobante.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/buscarAvanzadoComprobantes.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/modificarComprobante.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/borrarComprobante.tex}
 			
 			%GestionOrdenesProduccion
 			\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/crearOrdenProduccion.tex}
