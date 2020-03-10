@@ -1,0 +1,44 @@
+\renewcommand{\caseUseShortName}{crearLineaRemito} %cammelCase name
+
+\renewcommand{\caseUseCreated}{10/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{10/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUcrearLineaRemito\ - Crear linea de remito.} %{\CUcammelCase - Title}
+
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion crear una linea de remito para un determinado remito.} %Resumen
+\renewcommand{\caseUsePeople}{Vendedores: quiere crear una linea de remito.} %Actor: Meta
+\renewcommand{\caseUsePreconditions}{
+	\caseUseRow{Estar ejecutando el \CUcrearRemito (Crear remito).} %Precondiciones
+}
+\renewcommand{\caseUsePostconditions}{
+	\caseUseRow{Ningúna.} %Postcondiciones
+}
+\renewcommand{\caseUseScene}{ %Escenario principal
+    \addCaseUseStep{El vendedor desea agregar una linea de remito a un determinado remito.}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor seleccione un producto, tela, lustre e indique la cantidad del mismo. Indicando que el producto y la cantidad son obligatorios.}
+    \addCaseUseStep{El vendedor selecciona producto, tela, lustre y la cantidad que desea producir.}
+    \addCaseUseStep{ZMGestion crea la linea de remito en estado `Pendiente de entrega' y la asocia al remito correspondiente.}
+}
+\renewcommand{\alternativeCaseUse}{ %Flujos alternativos
+    \newAlternative{A1: La cantidad indicada es menor o igual a cero.}{3} %Flujo alternativo A1.
+    \caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe ingresar una cantidad mayor a cero.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
+    \newAlternative{A2: El producto, tela y lustre indicado ya se encuentra en el remito.}{3} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que la combinación de producto, tela y lustre ya se encuentra en el remito.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
+    \newAlternative{A3: El vendedor ha dejado un campo obligatorio vacio.}{3} %Flujo alternativo A2.
+    \caseUseRow{La secuencia A3 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que dicho campo es requerido.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
+}
+
+\item Caso de uso \caseUseName
+\input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
+
+%DIAGRAMA DE ACTIVIDAD
+%\lineabreak[0]
+%\activityDiagram{\caseUseShortName}{Diagrama de actividad - \caseUseName}
