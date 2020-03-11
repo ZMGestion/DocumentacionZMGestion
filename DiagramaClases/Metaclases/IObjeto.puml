@@ -1,0 +1,7 @@
+@startuml IObjeto
+interface IObjeto{
+    +Dame()
+    +DarAlta()
+    +DarBaja()
+}
+@enduml

@@ -1,0 +1,6 @@
+@startuml GestorVentas
+class GestorVentas{
+    
+}
+
+@enduml

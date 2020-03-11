@@ -1,0 +1,6 @@
+@startuml GestorTelas
+class GestorTelas{
+    
+}
+
+@enduml

@@ -1,0 +1,6 @@
+@startuml GestorUbicaciones
+class GestorUbicaciones{
+    
+}
+
+@enduml

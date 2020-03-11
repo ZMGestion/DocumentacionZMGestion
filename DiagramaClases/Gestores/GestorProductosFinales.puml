@@ -1,0 +1,6 @@
+@startuml GestorProductosFinales
+class GestorProductosFinales{
+    
+}
+
+@enduml
