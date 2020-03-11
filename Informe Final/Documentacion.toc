@@ -104,6 +104,6 @@
 \contentsline {subsection}{\numberline {4.1.2}Diagrama de contexto}{15}{subsection.104}% 
 \contentsline {subsection}{\numberline {4.1.3}Diagrama de subsistema}{16}{subsection.106}% 
 \contentsline {subsection}{\numberline {4.1.4}Listado de casos de uso}{17}{subsection.109}% 
-\contentsline {subsection}{\numberline {4.1.5}Diagrama de casos de uso}{21}{subsection.209}% 
-\contentsline {subsection}{\numberline {4.1.6}Descripci\IeC {\'o}n textual de los casos de uso y diagramas de actividad}{32}{subsection.232}% 
-\contentsline {subsection}{\numberline {4.1.7}Diagramas de estado}{129}{subsection.457}% 
+\contentsline {subsection}{\numberline {4.1.5}Diagrama de casos de uso}{21}{subsection.221}% 
+\contentsline {subsection}{\numberline {4.1.6}Descripci\IeC {\'o}n textual de los casos de uso y diagramas de actividad}{32}{subsection.245}% 
+\contentsline {subsection}{\numberline {4.1.7}Diagramas de estado}{138}{subsection.494}% 
