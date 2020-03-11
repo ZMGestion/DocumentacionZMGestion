@@ -1,0 +1,34 @@
+\renewcommand{\caseUseShortName}{borrarLineaRemito} %cammelCase name
+
+\renewcommand{\caseUseCreated}{10/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{10/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUborrarLineaRemito\ - Borrar linea de remito.} %{\CUcammelCase - Title}
+
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion borrar una linea de remito de un remito determinad.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere borrar una linea de remito.} %Actor: Meta
+\renewcommand{\caseUsePreconditions}{
+	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasReito (Listar lineas de remito).} %Precondiciones
+}
+\renewcommand{\caseUsePostconditions}{
+	\caseUseRow{Ninguna.} %Postcondiciones
+}
+\renewcommand{\caseUseScene}{ %Escenario principal
+    \addCaseUseStep{El vendedor indica la linea de remito que desea borrar.}
+    \addCaseUseStep{ZMGestion borra la linea de remito.}
+}
+\renewcommand{\alternativeCaseUse}{ %Flujos alternativos
+
+    %VER QUE A1 TAMBIEN SE PUEDE HACER REVISANDO SI LA LINEA ESTA UTILIZADA O NO
+
+	\newAlternative{A1: La linea seleccionada tiene un estado distinto de `Pendiente de entrega'.}{1} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que no se puede borrar la linea de remito.}
+    \caseUseRow{El escenario vuelve al punto 1.}
+}
+
+\item Caso de uso \caseUseName
+\input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
+
+%DIAGRAMA DE ACTIVIDAD
+%\lineabreak[0]
+%\activityDiagram{\caseUseShortName}{Diagrama de actividad - \caseUseName}

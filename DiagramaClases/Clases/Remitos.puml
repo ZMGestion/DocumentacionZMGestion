@@ -1,0 +1,10 @@
+@startuml Remitos
+class Remitos{
+    +idRemito: int
+    +idUbicacion: int
+    +idDomicilio: int
+    tipo: string
+    fechaAlta: DateTime
+    fechaEntrega: DateTime
+}
+@enduml

@@ -1,0 +1,8 @@
+@startuml Precios
+class Precios{
+    +idPrecio: int
+    precio: float
+    estado: string
+    fechaAlta: DateTime
+}
+@enduml

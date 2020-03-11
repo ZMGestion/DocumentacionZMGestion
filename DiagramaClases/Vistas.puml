@@ -1,5 +1,14 @@
 @startuml vistaProductos
-!include Clases.puml
+!include ./Clases/Productos.puml
+!include ./Clases/CategoriasProducto.puml
+!include ./Clases/GruposProducto.puml
+!include ./Clases/Telas.puml
+!include ./Clases/Lustres.puml
+!include ./Clases/Precios.puml
+!include ./Clases/ProductosFinales.puml
+!include ./Clases/TiposProducto.puml
+
+left to right direction
 Productos "0..*" -- "1" CategoriasProducto
 Productos "0..*" -- "1" GruposProducto
 Productos "1"-- "1..*" Precios
@@ -11,22 +20,116 @@ ProductosFinales "0..*"--"0..1" Lustres
 @enduml
 
 @startuml vistaSistema
-!include Clases.puml
-Personas <|-- Clientes
-Paises "1"--"1..*" Provincias
-Provincias "1"--"1..*" Ciudades
-Paises "1"--"0..*" Clientes
-Domicilios "0..*"--"0..1" Clientes
+!include ./Clases/Personas.puml
+!include ./Clases/Usuarios.puml
+!include ./Clases/TiposDocumento.puml
+!include ./Clases/Permisos.puml
+!include ./Clases/Roles.puml
+!include ./Clases/PermisosRol.puml
+
+left to right direction
+Personas <|-- Usuarios
 TiposDocumento "1"--"0..*" Personas
-Ubicaciones "0..1"--"1" Domicilios
-Domicilios "0..*" -- "1" Ciudades
+Roles "1"  -- "1..*" PermisosRol
+Permisos "1"  -- "1..*" PermisosRol
+Usuarios "0..*" -- "1" Roles
+
 @enduml
 
 @startuml vistaPresupuestosVentas
-!include Clases.puml
+!include ./Clases/ProductosFinales.puml
+!include ./Clases/LineasProducto.puml
+!include ./Clases/Ventas.puml
+!include ./Clases/Presupuestos.puml
+!include ./Clases/Comprobantes.puml
+
+left to right direction
 Ventas "0..*" -- "1" Clientes
 Presupuestos "0..*"--"1" Clientes
 Ventas "0..1" -- "0..*" Presupuestos
 LineasProducto "0..*"--"1" ProductosFinales
 Ventas "1" -- "0..*" Comprobantes
+@enduml
+
+@startuml vistaClientes
+!include ./Clases/Personas.puml
+!include ./Clases/Clientes.puml
+!include ./Clases/TiposDocumento.puml
+!include ./Clases/Paises.puml
+!include ./Clases/Provincias.puml
+!include ./Clases/Ciudades.puml
+!include ./Clases/Domicilios.puml
+
+left to right direction
+Personas <|-- Clientes
+Paises  *-- "1..*" Provincias
+Provincias  *-- "1..*" Ciudades
+Paises "1"--"0..*" Clientes
+Domicilios "0..*"--"0..1" Clientes
+TiposDocumento "1"--"0..*" Personas
+Domicilios "0..*" -- "1" Ciudades
+@enduml
+
+@startuml vistaProduccion
+!include ./Clases/Usuarios.puml
+!include ./Clases/Tareas.puml
+!include ./Clases/OrdenesProduccion.puml
+!include ./Clases/ProductosFinales.puml
+!include ./Clases/Observaciones.puml
+!include ./Clases/LineasProducto.puml
+
+left to right direction
+Tareas "0..*"--"1" Usuarios
+Tareas "0..*"--"0..1" Usuarios
+Tareas "0..*"--"1" LineasProducto
+Tareas "1"--"0..1" Tareas
+Observaciones "0..*"--o LineasProducto
+LineasProducto "0..*"--"1" ProductosFinales
+OrdenesProduccion "0..*" -- "1" Usuarios
+@enduml
+
+@startuml vistaEntregas
+!include ./Clases/Ubicaciones.puml
+!include ./Clases/Domicilios.puml
+!include ./Clases/LineasProducto.puml
+!include ./Clases/Remitos.puml
+
+Ubicaciones "0..1"--"1" Domicilios
+'Deberia ser 0..1 domicilios con remitos
+Remitos "0..*"--"1" Domicilios 
+Ubicaciones "1"--"0..*" Remitos 
+Remitos "0..1"--"0..*" LineasProducto
+@enduml
+
+@startuml fichaTecnicaClases
+!include ./Clases/Personas.puml
+!include ./Clases/Usuarios.puml
+!include ./Clases/TiposDocumento.puml
+!include ./Clases/Roles.puml
+!include ./Clases/Permisos.puml
+!include ./Clases/PermisosRol.puml
+!include ./Clases/Clientes.puml
+!include ./Clases/Paises.puml
+!include ./Clases/Provincias.puml
+!include ./Clases/Ciudades.puml
+!include ./Clases/Domicilios.puml
+!include ./Clases/Productos.puml
+!include ./Clases/CategoriasProducto.puml
+!include ./Clases/GruposProducto.puml
+!include ./Clases/TiposProducto.puml
+!include ./Clases/Lustres.puml
+!include ./Clases/Precios.puml
+!include ./Clases/Telas.puml
+!include ./Clases/ProductosFinales.puml
+!include ./Clases/Presupuestos.puml
+!include ./Clases/Ventas.puml
+ !include ./Clases/Comprobantes.puml
+ !include ./Clases/Domicilios.puml
+ !include ./Clases/OrdenesProduccion.puml
+ !include ./Clases/LineasProducto.puml
+ !include ./Clases/Observaciones.puml
+ !include ./Clases/Remitos.puml
+ !include ./Clases/Ubicaciones.puml
+ !include ./Clases/Tareas.puml
+ 
 @enduml

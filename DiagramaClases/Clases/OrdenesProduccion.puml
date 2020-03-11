@@ -1,0 +1,10 @@
+@startuml OrdenesProduccion
+class OrdenesProduccion{
+    +idOrdenProduccion: int
+    +idUsuario: int
+    +idVenta: int
+    fechaAlta: DateTime
+    fechaFinalizacion: DateTime
+    estado: string
+}
+@enduml

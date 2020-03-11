@@ -1,0 +1,13 @@
+@startuml Usuarios
+class Usuarios {
+   +idUsuario : int
+   usuario: string
+   password: string
+   token: string
+   fechaNacimiento: DateTime
+   fechaInicio: DateTime
+   fechaFin: DateTime
+   estadoCivil: string
+   cantidadHijos: int
+}
+@enduml

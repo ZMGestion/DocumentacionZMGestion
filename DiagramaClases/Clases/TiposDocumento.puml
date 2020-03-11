@@ -1,0 +1,7 @@
+@startuml TiposDocumento
+class TiposDocumento{
+   +idTipoDocumento: int
+   tipoDocumento: string
+   estado: string
+}
+@enduml

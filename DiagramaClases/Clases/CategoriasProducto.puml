@@ -1,0 +1,6 @@
+@startuml CategoriasProducto
+class CategoriasProducto{
+    +idCategoriaProducto: int
+    categoria: string
+}
+@enduml

@@ -1,0 +1,11 @@
+@startuml Comprobantes
+class Comprobantes{
+    +idComprobante: int
+    +idVenta: int
+    tipo: string
+    numeroComprobante: int
+    monto: double
+    fechaAlta: DateTime
+    estado: string
+}
+@enduml

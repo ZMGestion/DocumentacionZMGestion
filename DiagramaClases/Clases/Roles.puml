@@ -1,0 +1,6 @@
+@startuml Roles
+class Roles{
+    +idRol: int
+    rol: string
+}
+@enduml

@@ -1,0 +1,11 @@
+@startuml Personas
+class Personas{
+   nombres: string
+   apellidos: string
+   telefono: string
+   email: string
+   +idTipoDocumento: int
+   documento: string
+   estado: string
+}
+@enduml

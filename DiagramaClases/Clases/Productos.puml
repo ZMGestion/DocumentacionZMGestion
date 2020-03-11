@@ -1,0 +1,11 @@
+@startuml Productos
+class Productos{
+    +idProducto: int
+    producto: string
+    longitudTela: float
+    +idPrecio: int
+    +idCategoriaProducto: int
+    +idGrupoProducto: int
+    +idTipoProducto: int
+}
+@enduml

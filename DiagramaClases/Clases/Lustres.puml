@@ -1,0 +1,6 @@
+@startuml Lustres
+class Lustres{
+    +idLustre: int
+    lustre: string
+}
+@enduml
