@@ -1,0 +1,43 @@
+@startuml Implementaciones
+!include ../Gestores/GestorClientes.puml
+!include ../Gestores/GestorUsuarios.puml
+!include ../Gestores/GestorGruposProducto.puml
+!include ../Gestores/GestorOrdenesProduccion.puml
+!include ../Gestores/GestorPresupuestos.puml
+!include ../Gestores/GestorProductos.puml
+!include ../Gestores/GestorProductosFinales.puml
+!include ../Gestores/GestorRemitos.puml
+!include ../Gestores/GestorRoles.puml
+!include ../Gestores/GestorTelas.puml
+!include ../Gestores/GestorUbicaciones.puml
+!include ../Gestores/GestorVentas.puml
+!include ./Usuarios.puml
+!include ./Roles.puml
+!include ./Clientes.puml
+!include ./Productos.puml
+!include ./GruposProducto.puml
+!include ./Telas.puml
+!include ./ProductosFinales.puml
+!include ./Presupuestos.puml
+!include ./Ventas.puml
+ !include ./OrdenesProduccion.puml
+ !include ./Remitos.puml
+ !include ./Ubicaciones.puml
+
+left to right direction
+Clientes <..GestorClientes: <<Use>>
+Usuarios <.. GestorUsuarios: <<Use>>
+GruposProducto <.. GestorGruposProducto: <<Use>>
+OrdenesProduccion <.. GestorOrdenesProduccion: <<Use>>
+Presupuestos <.. GestorPresupuestos: <<Use>>
+Productos <.. GestorProductos: <<Use>>
+ProductosFinales <.. GestorProductosFinales: <<Use>>
+Remitos <.. GestorRemitos: <<Use>>
+Roles <.. GestorRoles: <<Use>>
+Telas <.. GestorTelas: <<Use>>
+Ubicaciones <.. GestorUbicaciones: <<Use>>
+Ventas <.. GestorVentas: <<Use>>
+
+
+
+@enduml

@@ -27,6 +27,11 @@
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe ingresar al menos una linea de remito.}
     \caseUseRow{El escenario vuelve al punto 5.}
     \caseUseRow{}
+    \newAlternative{A2: Al menos una línea de venta seleccionada no se encuentra en estado `Pagada'.}{3} %Flujo alternativo A1.
+	\caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que no se puede crear una línea de remito a partir de la línea seleccionada.}
+    \caseUseRow{El escenario vuelve al punto 5.}
+    \caseUseRow{}
 }
 
 \item Caso de uso \caseUseName

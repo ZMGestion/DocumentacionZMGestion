@@ -1,0 +1,32 @@
+@startuml Implementaciones
+!include ../Metaclases/IGestor.puml
+!include ./GestorClientes.puml
+!include ./GestorUsuarios.puml
+!include ./GestorGruposProducto.puml
+!include ./GestorOrdenesProduccion.puml
+!include ./GestorPresupuestos.puml
+!include ./GestorProductos.puml
+!include ./GestorProductosFinales.puml
+!include ./GestorRemitos.puml
+!include ./GestorRoles.puml
+!include ./GestorTelas.puml
+!include ./GestorUbicaciones.puml
+!include ./GestorVentas.puml
+
+left to right direction
+GestorClientes ..|> IGestor
+GestorUsuarios ..|> IGestor
+GestorGruposProducto ..|> IGestor
+GestorOrdenesProduccion ..|> IGestor
+GestorPresupuestos ..|> IGestor
+GestorProductos ..|> IGestor
+GestorProductosFinales ..|> IGestor
+GestorRemitos ..|> IGestor
+GestorRoles ..|> IGestor
+GestorTelas ..|> IGestor
+GestorUbicaciones ..|> IGestor
+GestorVentas ..|> IGestor
+
+
+
+@enduml

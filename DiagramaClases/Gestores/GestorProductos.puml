@@ -1,0 +1,6 @@
+@startuml GestorProductos
+class GestorProductos{
+    
+}
+
+@enduml

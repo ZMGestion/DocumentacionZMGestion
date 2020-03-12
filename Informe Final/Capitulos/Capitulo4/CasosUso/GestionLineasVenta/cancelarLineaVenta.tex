@@ -1,0 +1,31 @@
+\renewcommand{\caseUseShortName}{cancelarLineaVenta} %cammelCase name
+
+\renewcommand{\caseUseCreated}{11/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{11/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUcancelarLineaVenta\ - Cancelar línea de venta} %{\CUcammelCase - Title}
+
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion cancelar una línea de venta.} %Resumen
+\renewcommand{\caseUsePeople}{Administradores: quiere cancelar una línea de venta.} %Actor: Meta
+\renewcommand{\caseUsePreconditions}{
+    \caseUseRow{Haber ejecutado con éxito el \CUlistarLineasVenta (Listar líneas de venta)} %Precondiciones
+}
+\renewcommand{\caseUsePostconditions}{
+\caseUseRow{Ninguna.} %Postcondiciones
+}
+\renewcommand{\caseUseScene}{ %Escenario principal
+    \addCaseUseStep{El administrador indica la línea de venta que desea cancelar.}
+    \addCaseUseStep{Si la línea de venta seleccionada posee un remito que no ha sido marcado como entregado, se ejecuta el \CUcancelarRemito\ (Cancelar remito).}
+    \addCaseUseStep{ZMGestion pasa la línea de venta a `Cancelada'.}
+}
+\renewcommand{\alternativeCaseUse}{ %Flujos alternativos
+    \caseUseRow{Ninguna.}
+}
+
+%Si la linea de vventa que se esta cancelando tiene un remito no entregado, se lo cancela
+
+\item Caso de uso \caseUseName
+\input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
+
+%DIAGRAMA DE ACTIVIDAD
+%\lineabreak[0]
+%\activityDiagram{\caseUseShortName}{Diagrama de actividad - \caseUseName}

@@ -17,9 +17,9 @@
     \addCaseUseStep{ZMGestion borra el remito y muestra un mensaje indicando el éxito de la operación.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-    \newAlternative{A1: El remito indicado se encuentra asociado a una venta.}{1} %Flujo alternativo A1.
+    \newAlternative{A1: El remito se encuentra en estado `Entregado' o `Cancelado'.}{1} %Flujo alternativo A1.
     \caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{ZMGestion muestra un mensaje de error informando que la venta no puede borrarse.}
+    \alternativeRow{ZMGestion muestra un mensaje de error informando que no puede borrarse el remito.}
     \caseUseRow{El escenario vuelve al punto 1.}
     \caseUseRow{}
 }

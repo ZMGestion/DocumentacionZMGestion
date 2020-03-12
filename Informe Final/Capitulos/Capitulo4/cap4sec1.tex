@@ -87,7 +87,7 @@
 			\itemCaseUse{modificarGrupoProducto}{Modificar grupo de producto}
 			\itemCaseUse{borrarGrupoProducto}{Borrar grupo de producto}
 			\itemCaseUse{listarProductosGrupo}{Listar productos por grupo}
-			\itemCaseUse{modificarPreciosGrupo}{Modificar precios grupo}
+			\itemCaseUse{modificarPreciosGrupo}{Modificar precios de producto por grupo}
 		\end{itemize}
 		\item Gestión ubicaciones
 		\begin{itemize}
@@ -100,12 +100,19 @@
 		\end{itemize}
 		\item Gestión remitos
 		\begin{itemize}
-			\item Quitar esto cuando se descomente alguna línea de abajo
-			%\itemCaseUse{crearRemito}{Crear remito}
-			%\itemCaseUse{buscarAvanzadoRemitos}{Buscar avanzado remitos}
-			%\itemCaseUse{darBajaRemito}{Dar de baja remito}
-			%\itemCaseUse{darAltaRemito}{Dar de alta remito}
-			%\itemCaseUse{borrarRemito}{Borrar remito}
+			\itemCaseUse{crearRemito}{Crear remito}
+			\itemCaseUse{buscarAvanzadoRemitos}{Buscar avanzado remitos}
+			\itemCaseUse{cancelarRemito}{Cancelar remito}
+			\itemCaseUse{descancelarRemito}{Descancelar remito}
+			\itemCaseUse{entregarRemito}{Entregar remito}
+			\itemCaseUse{borrarRemito}{Borrar remito}
+			\itemCaseUse{listarLineasRemito}{Listar líneas de remito}
+		\end{itemize}
+		\item Gestión líneas de remito
+		\begin{itemize}
+			\itemCaseUse{crearLineaRemito}{Crear línea remito}
+			\itemCaseUse{modificarLineaRemito}{Modificar línea de remito}
+			\itemCaseUse{borrarLineaRemito}{Borrar línea de remito}
 		\end{itemize}
 		\item Gestión clientes
 		\begin{itemize}
@@ -126,8 +133,6 @@
 			\itemCaseUse{generarPresupuestoPDF}{Generar presupuesto en formato PDF}
 			\itemCaseUse{enviarPresupuestoEmail}{Enviar presupuesto por correo electrónico}
 			\itemCaseUse{listarLineasPresupuesto}{Listar líneas de presupuesto}
-			
-			
 		\end{itemize}
 		\item Gestión líneas de presupuesto
 		\begin{itemize}
@@ -143,7 +148,7 @@
 			\itemCaseUse{modificarVenta}{Modificar venta}
 			\itemCaseUse{borrarVenta}{Borrar venta}
 			\itemCaseUse{generarOrdenProduccionDesdeVenta}{Generar orden de producción a partir de venta}
-			%\itemCaseUse{generarRemitoDesdeVenta}{Generar remito a partir de venta}
+			\itemCaseUse{generarRemitoDesdeVenta}{Generar remito a partir de venta}
 			\itemCaseUse{crearComprobante}{Crear comprobante} 
 			\itemCaseUse{revisarVenta}{Revisar venta}
 		\end{itemize}
@@ -152,6 +157,7 @@
 			\itemCaseUse{crearLineaVenta}{Crear línea de venta}
 			\itemCaseUse{modificarLineaVenta}{Modificar línea de venta}
 			\itemCaseUse{borrarLineaVenta}{Borrar línea de venta}
+			\itemCaseUse{cancelarLineaVenta}{Cancelar línea de venta}
 		\end{itemize}
 		\item Gestión comprobantes
 		\begin{itemize}
@@ -262,6 +268,12 @@
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos}
 		\caption{Diagrama de casos de uso para la gestión de remitos}
 	\label{fig:GestionRemitos}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasRemito}
+		\caption{Diagrama de casos de uso para la gestión de líneas de remito}
+	\label{fig:GestionLineasRemito}
     \end{figure}
     \begin{figure}[H]
 		\centering
@@ -393,12 +405,19 @@
 			\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/borrarUbicacion.tex}
 
 			%GestionRemitos
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/crearRemito.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/buscarAvanzadoRemitos.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/darBajaRemito.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/darAltaRemito.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/borrarRemito.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/crearRemito.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/buscarAvanzadoRemitos.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/cancelarRemito.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/descancelarRemito.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/entregarRemito.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/borrarRemito.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/listarLineasRemito.tex}
 
+			%GestionLineasRemito
+			\input{Capitulos/Capitulo4/CasosUso/GestionLineasRemito/crearLineaRemito.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionLineasRemito/modificarLineaRemito.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionLineasRemito/borrarLineaRemito.tex}
+		
 			%GestionClientes
 			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/crearCliente.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/buscarAvanzadoClientes.tex}
@@ -429,7 +448,7 @@
 			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/modificarVenta.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/borrarVenta.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/generarOrdenProduccionDesdeVenta.tex}
-			%\input{Capitulos/Capitulo4/CasosUso/GestionVentas/generarRemitoDesdeVenta.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/generarRemitoDesdeVenta.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/crearComprobante.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/revisarVenta.tex}
 
@@ -437,6 +456,7 @@
 			\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/crearLineaVenta.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/modificarLineaVenta.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/borrarLineaVenta.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/cancelarLineaVenta.tex}
 
 			%GestionComprobantes
 			\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/buscarAvanzadoComprobantes.tex}
@@ -475,16 +495,68 @@
 			\input{Capitulos/Capitulo4/CasosUso/GestionTareas/cancelarTarea.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionTareas/ejecutarTarea.tex}
 		\end{enumerate}
-	
-	\subsection{Diagramas de estado}
-	Solo se especificarán los diagramas de estado más relevantes del sistema.
 
-	\stateDiagram{empleados}{Diagrama de estado - Empleados}
-	\stateDiagram{tareas}{Diagrama de estado - Tareas}
-	\stateDiagram{lineasProducto}{Diagrama de estado - Lineas de producto}
-	\stateDiagram{presupuestos}{Diagrama de estado - Presupuestos}
-	\stateDiagram{ventas}{Diagrama de estado - Ventas}
-	\stateDiagram{ordenesProduccion}{Diagrama de estado - Órdenes de producción}
+	\subsection{Diagramas de clases}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{DiagramaClases/Vistas/diagramaClases}
+		\caption{Diagrama de clases}
+	\label{fig:Diagrama de clases}
+	\end{figure}
+	\clearpage %salto de pagina
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{DiagramaClases/Vistas/vistaSistema}
+		\caption{Diagrama de clases - Vista sistema}
+	\label{fig:Diagrama de clases - Vista sistema}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{DiagramaClases/Vistas/vistaClientes}
+		\caption{Diagrama de clases - Vista clientes}
+	\label{fig:Diagrama de clases - Vista clientes}
+    \end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{DiagramaClases/Vistas/vistaProductos}
+		\caption{Diagrama de clases - Vista productos}
+	\label{fig:Diagrama de clases - Vista productos}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{DiagramaClases/Vistas/vistaPresupuestosVentas}
+		\caption{Diagrama de clases - Vista presupuestos y ventas}
+	\label{fig:Diagrama de clases - Vista presupuestos y ventas}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{DiagramaClases/Vistas/vistaProduccion}
+		\caption{Diagrama de clases - Vista producción}
+	\label{fig:Diagrama de clases - Vista producción}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.60\textheight,keepaspectratio]{DiagramaClases/Vistas/vistaEntregas}
+		\caption{Diagrama de clases - Vista entregas}
+	\label{fig:Diagrama de clases - Vista entregas}
+	\end{figure}
+
+	\clearpage %salto de pagina
+	\subsection{Diagramas de transición de estados}
+	Solo se especificarán los diagramas de transición de estados más relevantes del sistema.
+	\stateDiagram{empleados}{Diagrama de transición de estados - Empleados}
+	\stateDiagram{tareas}{Diagrama de transición de estados - Tareas}
+	\stateDiagram{lineasProducto}{Diagrama de transición de estados - Lineas de producto}
+	\stateDiagram{presupuestos}{Diagrama de transición de estados - Presupuestos}
+	\stateDiagram{ventas}{Diagrama de transición de estados - Ventas}
+	\stateDiagram{ordenesProduccion}{Diagrama de transición de estados - Órdenes de producción}
+	\stateDiagram{remitos}{Diagrama de transición de estados - Remitos}
+	
 		
 	
     

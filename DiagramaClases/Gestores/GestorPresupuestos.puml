@@ -1,0 +1,6 @@
+@startuml GestorPresupuestos
+class GestorPresupuestos{
+    
+}
+
+@enduml

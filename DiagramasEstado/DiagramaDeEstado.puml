@@ -49,11 +49,9 @@ Pagada: Estado = "V"
 Pagada: Venta sin saldo 
 Pagada: IdRemito = null
 PendienteDeEntrega: Estado = "V"
-PendienteDeEntrega: (IdRemito != null && \n Venta sin saldo) || Sin Venta 
+PendienteDeEntrega: (IdRemito != null && \n Venta sin saldo && Remito no cancelado) || Sin Venta 
 'Hicimos que estado = D para simplicidad en la busqueda.
 Entregada: Estado = "D" 
-
-
 
 top to bottom direction
 [*] --> Pendiente
@@ -70,10 +68,13 @@ Pendiente --> Verificada
 PendienteDeProduccion --> Cancelada
 PendienteDeProduccion --> EnProduccion
 EnProduccion --> Cancelada
+Verificada --> Cancelada
+Pagada --> Cancelada
 EnProduccion --> Verificada
 Verificada --> Pagada
 Pagada --> PendienteDeEntrega
 PendienteDeEntrega --> Entregada
+PendienteDeEntrega --> [*]
 Entregada --> Cancelada : Cancelar linea de venta
 
 @enduml
@@ -148,7 +149,8 @@ Entregado: Estado = "C"
 Entregado: FechaEntrega != null
 Cancelado: Estado = "B"
 
-[*] --> EnCreacion
+[*] --> EnCreacion: Desde Remitos
+[*] --> EnCreacion: Desde Ventas
 EnCreacion --> Creado
 Creado --> Entregado
 Cancelado --> Creado

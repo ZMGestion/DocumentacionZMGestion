@@ -1,0 +1,6 @@
+@startuml GestorRemitos
+class GestorRemitos{
+    
+}
+
+@enduml
