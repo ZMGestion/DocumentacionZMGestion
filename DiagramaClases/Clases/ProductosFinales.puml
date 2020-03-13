@@ -4,6 +4,8 @@ class ProductosFinales{
     +idProducto: int
     +idLustre: int
     +idTela: int
-    estado: string  
+    estado: string
+
+    listarLustres(): List<Lustres>
 }
 @enduml

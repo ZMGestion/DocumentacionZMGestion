@@ -21,18 +21,27 @@
 !include ./Clases/ProductosFinales.puml
 !include ./Clases/Presupuestos.puml
 !include ./Clases/Ventas.puml
- !include ./Clases/Comprobantes.puml
- !include ./Clases/Domicilios.puml
- !include ./Clases/OrdenesProduccion.puml
- !include ./Clases/LineasProducto.puml
- !include ./Clases/Observaciones.puml
- !include ./Clases/Remitos.puml
- !include ./Clases/Ubicaciones.puml
- !include ./Clases/Tareas.puml
+!include ./Clases/Comprobantes.puml
+!include ./Clases/Domicilios.puml
+!include ./Clases/OrdenesProduccion.puml
+!include ./Clases/LineasProducto.puml
+!include ./Clases/Observaciones.puml
+!include ./Clases/Remitos.puml
+!include ./Clases/Ubicaciones.puml
+!include ./Clases/Tareas.puml
+!include ./Clases/LineasPresupuesto.puml
+!include ./Clases/LineasVenta.puml
+!include ./Clases/LineasOrdenProduccion.puml
+!include ./Clases/LineasRemito.puml
+  
 
 left to right direction
 Personas <|-- Usuarios
 Personas <|-- Clientes
+LineasProducto <|-- LineasPresupuesto
+LineasProducto <|-- LineasVenta
+LineasProducto <|-- LineasOrdenProduccion
+LineasProducto <|-- LineasRemito
 TiposDocumento "1"--"0..*" Personas
 Paises  *-- "1..*" Provincias
 Provincias  *-- "1..*" Ciudades
@@ -59,19 +68,19 @@ Ventas "0..*" -- "1" Ubicaciones
 Ventas "0..1" -- "0..*" Presupuestos
 Ventas "0..1" -- "0..1" OrdenesProduccion
 Ventas "1" -- "0..*" Comprobantes
-' LineasProducto "0..*"--o Ventas
-' LineasProducto "0..*"--o OrdenesProduccion
-' LineasProducto "0..*"--o Presupuestos
-Observaciones "0..*"--o LineasProducto
+LineasVenta "0..*"--o Ventas
+LineasOrdenProduccion "0..*"--o OrdenesProduccion
+LineasPresupuesto "0..*"--o Presupuestos
+Observaciones "0..*"--o LineasOrdenProduccion
+Remitos "0..*"--o LineasRemito
 LineasProducto "0..*"--"1" ProductosFinales
 Presupuestos "0..*"--"1" Clientes
 Presupuestos "0..*"--"1" Usuarios
-Remitos "0..1"--"0..*" LineasProducto
 Remitos "0..*"--"0..1" Domicilios
 Ubicaciones "1"--"0..*" Remitos
 Tareas "0..*"--"1" Usuarios
 Tareas "0..*"--"0..1" Usuarios
-Tareas "0..*"--"1" LineasProducto
+Tareas "0..*"--"1" LineasOrdenProduccion
 Tareas "1"--"0..1" Tareas
 @enduml
 
@@ -118,11 +127,17 @@ Usuarios "0..*" -- "1" Roles
 @startuml vistaPresupuestosVentas
 !include ./Clases/ProductosFinales.puml
 !include ./Clases/LineasProducto.puml
+!include ./Clases/LineasVenta.puml
+!include ./Clases/LineasPresupuesto.puml
 !include ./Clases/Ventas.puml
 !include ./Clases/Presupuestos.puml
 !include ./Clases/Comprobantes.puml
 
 left to right direction
+LineasProducto <|-- LineasVenta
+LineasProducto <|-- LineasPresupuesto
+LineasVenta "0..*"--o Ventas
+LineasPresupuesto "0..*"--o Presupuestos
 Ventas "0..*" -- "1" Clientes
 Presupuestos "0..*"--"1" Clientes
 Ventas "0..1" -- "0..*" Presupuestos
@@ -156,13 +171,17 @@ Domicilios "0..*" -- "1" Ciudades
 !include ./Clases/ProductosFinales.puml
 !include ./Clases/Observaciones.puml
 !include ./Clases/LineasProducto.puml
+!include ./Clases/LineasOrdenProduccion.puml
+
 
 left to right direction
+LineasProducto <|-- LineasOrdenProduccion
+LineasOrdenProduccion "0..*"--o OrdenesProduccion
 Tareas "0..*"--"1" Usuarios
 Tareas "0..*"--"0..1" Usuarios
-Tareas "0..*"--"1" LineasProducto
+Tareas "0..*"--"1" LineasOrdenProduccion
 Tareas "1"--"0..1" Tareas
-Observaciones "0..*"--o LineasProducto
+Observaciones "0..*"--o LineasOrdenProduccion
 LineasProducto "0..*"--"1" ProductosFinales
 OrdenesProduccion "0..*" -- "1" Usuarios
 @enduml
@@ -171,13 +190,14 @@ OrdenesProduccion "0..*" -- "1" Usuarios
 !include ./Clases/Ubicaciones.puml
 !include ./Clases/Domicilios.puml
 !include ./Clases/LineasProducto.puml
+!include ./Clases/LineasRemito.puml
 !include ./Clases/Remitos.puml
 
+LineasProducto <|-- LineasRemito
+LineasRemito "0..*"--o Remitos
 Ubicaciones "0..1"--"1" Domicilios
-'Deberia ser 0..1 domicilios con remitos
-Remitos "0..*"--"1" Domicilios 
-Ubicaciones "1"--"0..*" Remitos 
-Remitos "0..1"--"0..*" LineasProducto
+Remitos "0..*"--"0..1" Domicilios 
+Ubicaciones "1"--"0..*" Remitos
 @enduml
 
 @startuml fichaTecnicaClases
@@ -206,6 +226,10 @@ Remitos "0..1"--"0..*" LineasProducto
 !include ./Clases/Domicilios.puml
 !include ./Clases/OrdenesProduccion.puml
 !include ./Clases/LineasProducto.puml
+!include ./Clases/LineasRemito.puml
+!include ./Clases/LineasPresupuesto.puml
+!include ./Clases/LineasVenta.puml
+!include ./Clases/LineasOrdenProduccion.puml
 !include ./Clases/Observaciones.puml
 !include ./Clases/Remitos.puml
 !include ./Clases/Ubicaciones.puml
@@ -222,6 +246,7 @@ Remitos "0..1"--"0..*" LineasProducto
 !include ./Gestores/GestorUbicaciones.puml
 !include ./Gestores/GestorUsuarios.puml
 !include ./Gestores/GestorVentas.puml
+!include ./Gestores/GestorComprobantes.puml
 @enduml
 
 @startuml vistaCanonica

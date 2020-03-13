@@ -1,6 +1,6 @@
 @startuml GestorRemitos
 class GestorRemitos{
-    
+    generarStockTotal(): Map<Productos, int>
 }
 
 @enduml

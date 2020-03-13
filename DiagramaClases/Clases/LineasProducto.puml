@@ -1,8 +1,6 @@
 @startuml LineasProducto
 class LineasProducto{
     +idLineaProducto: int
-    +idReferencia: int
-    tipo: string
     +idRemito: int
     +idProductoFinal: int
     precioUnitario: float

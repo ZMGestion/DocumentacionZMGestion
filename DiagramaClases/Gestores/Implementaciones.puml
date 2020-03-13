@@ -12,6 +12,7 @@
 !include ./GestorTelas.puml
 !include ./GestorUbicaciones.puml
 !include ./GestorVentas.puml
+!include ./GestorComprobantes.puml
 
 left to right direction
 GestorClientes ..|> IGestor
@@ -26,7 +27,7 @@ GestorRoles ..|> IGestor
 GestorTelas ..|> IGestor
 GestorUbicaciones ..|> IGestor
 GestorVentas ..|> IGestor
-
+GestorComprobantes ..|> IGestor
 
 
 @enduml

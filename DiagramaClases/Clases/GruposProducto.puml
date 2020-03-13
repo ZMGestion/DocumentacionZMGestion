@@ -3,5 +3,8 @@ class GruposProducto{
     +idGrupoProducto: int
     grupo: string
     estado: string
+
+    listarProductos(): List<Productos>
+    modificarPreciosProductos(porcentaje float): string
 }
 @enduml

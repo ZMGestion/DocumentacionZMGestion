@@ -1,6 +1,6 @@
 @startuml GestorUbicaciones
 class GestorUbicaciones{
-    
+    listarUbicaciones(): List<Ubicaciones>
 }
 
 @enduml

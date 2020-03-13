@@ -1,0 +1,7 @@
+@startuml LineasVenta
+class LineasVenta{
+    +idVenta: int
+
+    cancelarLineaVenta(): string
+}
+@enduml
