@@ -680,7 +680,7 @@ end
 @enduml
 
 
-@startuml transformarPresupuestoEnVenta
+@startuml transformarPresupuestosEnVenta
 |Vendedor|
 start
 :Ha ejecutado con éxito el CU057(Buscar avanzado presupuestos);
