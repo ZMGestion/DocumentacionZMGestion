@@ -515,7 +515,7 @@ rectangle GestionLineasVenta{
     UseCase "CU084 - Cancelar linea de venta" as Cancelar
 }
     Vendedores -- C
-    Administradores -- B
+    Vendedores -- B
     Vendedores -- M
     Administradores -- Cancelar
 

@@ -2,6 +2,7 @@
 Alta: Estado = "A"
 Baja: Estado = "B"
 
+left to right direction
 [*] --> Alta
 Baja --> [*]
 Alta --> Baja
