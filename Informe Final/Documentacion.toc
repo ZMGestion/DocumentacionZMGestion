@@ -107,13 +107,13 @@
 \contentsline {subsection}{\numberline {4.1.5}Diagrama de casos de uso}{21}{subsection.221}% 
 \contentsline {subsection}{\numberline {4.1.6}Descripci\IeC {\'o}n textual de los casos de uso y diagramas de actividad}{32}{subsection.245}% 
 \contentsline {subsection}{\numberline {4.1.7}Diagrama de clases}{140}{subsection.494}% 
-\contentsline {subsection}{\numberline {4.1.8}Vista can\IeC {\'o}nica}{146}{subsection.502}% 
-\contentsline {subsection}{\numberline {4.1.9}Ficha t\IeC {\'e}cnica de clases}{147}{subsection.504}% 
-\contentsline {subsection}{\numberline {4.1.10}Diagramas de transici\IeC {\'o}n de estados}{148}{subsection.506}% 
-\contentsline {section}{\numberline {4.2}Identificaci\IeC {\'o}n de roles, sus funciones y restricciones:}{152}{section.514}% 
-\contentsline {subsection}{\numberline {4.2.1}Roles}{152}{subsection.515}% 
-\contentsline {subsection}{\numberline {4.2.2}Funciones de los usuarios por rol}{152}{subsection.516}% 
-\contentsline {subsection}{\numberline {4.2.3}Restricciones de datos}{156}{subsection.517}% 
-\contentsline {chapter}{\numberline {5}Especificaci\IeC {\'o}n D}{157}{chapter.518}% 
-\contentsline {section}{\numberline {5.1}Dise\IeC {\~n}o del modelo l\IeC {\'o}gico y f\IeC {\'\i }sico de datos del sistema}{157}{section.519}% 
-\contentsline {subsection}{\numberline {5.1.1}Modelo relacional}{157}{subsection.520}% 
+\contentsline {subsection}{\numberline {4.1.8}Vista can\IeC {\'o}nica}{145}{subsection.502}% 
+\contentsline {subsection}{\numberline {4.1.9}Ficha t\IeC {\'e}cnica de clases}{146}{subsection.504}% 
+\contentsline {subsection}{\numberline {4.1.10}Diagramas de transici\IeC {\'o}n de estados}{147}{subsection.506}% 
+\contentsline {section}{\numberline {4.2}Identificaci\IeC {\'o}n de roles, sus funciones y restricciones:}{151}{section.514}% 
+\contentsline {subsection}{\numberline {4.2.1}Roles}{151}{subsection.515}% 
+\contentsline {subsection}{\numberline {4.2.2}Funciones de los usuarios por rol}{151}{subsection.516}% 
+\contentsline {subsection}{\numberline {4.2.3}Restricciones de datos}{155}{subsection.517}% 
+\contentsline {chapter}{\numberline {5}Especificaci\IeC {\'o}n D}{156}{chapter.518}% 
+\contentsline {section}{\numberline {5.1}Dise\IeC {\~n}o del modelo l\IeC {\'o}gico y f\IeC {\'\i }sico de datos del sistema}{156}{section.519}% 
+\contentsline {subsection}{\numberline {5.1.1}Modelo relacional}{156}{subsection.520}% 

@@ -6,5 +6,11 @@ class OrdenesProduccion{
     fechaAlta: DateTime
     fechaFinalizacion: DateTime
     estado: string
+
+    cancelar(): string
+    crearLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): string
+    modificarLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): string
+    borrarLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): string
+    listarLineasOrdenProduccion(): List<LineasOrdenProduccion>
 }
 @enduml

@@ -7,5 +7,9 @@ class Personas{
    +idTipoDocumento: int
    documento: string
    estado: string
+
+   listarTiposDocumento(): List<TiposDocumento>
+   listarPresupuestos(): List<Presupuestos>
+   listarVentas(): List<Ventas>
 }
 @enduml

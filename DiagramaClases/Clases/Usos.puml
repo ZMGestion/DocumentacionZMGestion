@@ -10,6 +10,7 @@
 !include ../Gestores/GestorRoles.puml
 !include ../Gestores/GestorTelas.puml
 !include ../Gestores/GestorUbicaciones.puml
+!include ../Gestores/GestorComprobantes.puml
 !include ../Gestores/GestorVentas.puml
 !include ./Usuarios.puml
 !include ./Roles.puml
@@ -23,6 +24,7 @@
  !include ./OrdenesProduccion.puml
  !include ./Remitos.puml
  !include ./Ubicaciones.puml
+  !include ./Comprobantes.puml
 
 left to right direction
 Clientes <..GestorClientes: <<Use>>
@@ -37,6 +39,7 @@ Roles <.. GestorRoles: <<Use>>
 Telas <.. GestorTelas: <<Use>>
 Ubicaciones <.. GestorUbicaciones: <<Use>>
 Ventas <.. GestorVentas: <<Use>>
+Comprobantes <.. GestorComprobantes: <<Use>>
 
 
 

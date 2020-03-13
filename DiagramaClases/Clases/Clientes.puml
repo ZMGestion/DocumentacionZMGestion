@@ -4,5 +4,9 @@ class Clientes{
     tipo: string
     razonSocial: string 
     +idPais: int
+
+    listarDomicilios(): List<Domicilios>
+    listarVentas(): List<Ventas>
+    listarPresupuestos(): List<Presupuestos>
 }
 @enduml

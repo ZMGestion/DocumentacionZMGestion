@@ -1,8 +1,8 @@
 @startuml IGestor
 interface IGestor{
-    + Crear(o IObjeto): string
-    + Buscar(cadena string, incluyeBaja boolean)
-    + Modificar(o IObjeto): string
-    + Borrar(o IObjeto)
+    + crear(o IObjeto): string
+    + buscar(cadena string, incluyeBaja boolean)
+    + modificar(o IObjeto): string
+    + borrar(o IObjeto)
 }
 @enduml

@@ -1,6 +1,6 @@
 @startuml GestorRoles
 class GestorRoles{
-    
+    listarRoles(): List<Roles>
 }
 
 @enduml

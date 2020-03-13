@@ -1,0 +1,4 @@
+@startuml GestorComprobantes
+class GestorComprobantes{
+}
+@enduml
