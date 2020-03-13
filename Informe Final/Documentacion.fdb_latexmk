@@ -1,5 +1,9 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["pdflatex"] 1584141764 "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.tex" "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.pdf" "Documentacion" 1584141768
+=======
+["pdflatex"] 1584072092 "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.tex" "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.pdf" "Documentacion" 1584072098
+>>>>>>> master
   "Agradecimientos.tex" 1578783143 867 418db77e57ec8ae1640ebdc956f1505b ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecbx1000.tfm" 993061956 3200 328792ff19833a39406f06fa0555a6dc ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecbx1200.tfm" 993061958 3200 b8d69bc738e5ef3e08cefeef3109ff56 ""
@@ -113,10 +117,17 @@
   "Capitulos/Capitulo4/CasosUso/GestionComprobantes/modificarComprobante.tex" 1583711037 2702 c87df2f04542a48d4b382fb352401d29 ""
   "Capitulos/Capitulo4/CasosUso/GestionEmpleados/borrarEmpleado.tex" 1581887216 2764 80b4162bb964985a1d21e0a4fac9254e ""
   "Capitulos/Capitulo4/CasosUso/GestionEmpleados/buscarAvanzadoEmpleados.tex" 1583181855 2073 28b7d4e3dca3fb50c463ec1af8b61bc0 ""
+<<<<<<< HEAD
   "Capitulos/Capitulo4/CasosUso/GestionEmpleados/crearEmpleado.tex" 1584141740 3395 882cbaa2f7e89ff682a6c3c49c1715ac ""
   "Capitulos/Capitulo4/CasosUso/GestionEmpleados/darAltaEmpleado.tex" 1581887216 1704 88a2dcf468c214b441abc61d955c443c ""
   "Capitulos/Capitulo4/CasosUso/GestionEmpleados/darBajaEmpleado.tex" 1583181855 1845 4c844a19d2a962d887e5a889831f0416 ""
   "Capitulos/Capitulo4/CasosUso/GestionEmpleados/modificarEmpleado.tex" 1584141740 3823 d6f6e3cb82eb4b15c08d547159bb818f ""
+=======
+  "Capitulos/Capitulo4/CasosUso/GestionEmpleados/crearEmpleado.tex" 1581887216 3347 24d029e04c9235dd8fbc60f569f32da2 ""
+  "Capitulos/Capitulo4/CasosUso/GestionEmpleados/darAltaEmpleado.tex" 1581887216 1704 88a2dcf468c214b441abc61d955c443c ""
+  "Capitulos/Capitulo4/CasosUso/GestionEmpleados/darBajaEmpleado.tex" 1583181855 1845 4c844a19d2a962d887e5a889831f0416 ""
+  "Capitulos/Capitulo4/CasosUso/GestionEmpleados/modificarEmpleado.tex" 1581887216 3782 a1482b5e554dde687a90d3efe2835af4 ""
+>>>>>>> master
   "Capitulos/Capitulo4/CasosUso/GestionGruposProducto/borrarGrupoProducto.tex" 1581887216 1697 c823df587462e7081ef5d0f927b45309 ""
   "Capitulos/Capitulo4/CasosUso/GestionGruposProducto/crearGrupoProducto.tex" 1581887216 1969 d5b7e05ea1acb88df98552b21fa1875e ""
   "Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darAltaGrupoProducto.tex" 1581887216 1806 662eb317b38886eed3bc02e5b411f78b ""
@@ -158,7 +169,11 @@
   "Capitulos/Capitulo4/CasosUso/GestionPresupuestos/generarPresupuestoPDF.tex" 1581887960 1343 ef3f1ca5142a30ac949522ae38be51c7 ""
   "Capitulos/Capitulo4/CasosUso/GestionPresupuestos/listarLineasPresupuesto.tex" 1584059582 1791 f084c752d0dbd59295b2d5df1a072a19 ""
   "Capitulos/Capitulo4/CasosUso/GestionPresupuestos/modificarPresupuesto.tex" 1583181855 3800 fff65cbd6f110ff8c512468227a2d2d6 ""
+<<<<<<< HEAD
   "Capitulos/Capitulo4/CasosUso/GestionPresupuestos/transformarPresupuestosEnVenta.tex" 1584141740 4004 61d0c0ebb5f481a61f37a52ec46156c6 ""
+=======
+  "Capitulos/Capitulo4/CasosUso/GestionPresupuestos/transformarPresupuestoEnVenta.tex" 1583184333 4001 62c171c7cecb962ce2910c832b62e675 ""
+>>>>>>> master
   "Capitulos/Capitulo4/CasosUso/GestionProductos/borrarProducto.tex" 1581887736 1639 b63d4ee657d5bd292ceb5e8a584c56f2 ""
   "Capitulos/Capitulo4/CasosUso/GestionProductos/buscarAvanzadoProductos.tex" 1583442434 2067 c6549bb00d5b189c68fe3d3276f4f717 ""
   "Capitulos/Capitulo4/CasosUso/GestionProductos/crearProducto.tex" 1583442004 3481 6076e4bb7dfec630d4d403779568fba4 ""
@@ -196,7 +211,11 @@
   "Capitulos/Capitulo4/CasosUso/GestionTelas/darBajaTela.tex" 1581887936 1643 7ef0f7a9f277c5eb16e5727df5e07fd2 ""
   "Capitulos/Capitulo4/CasosUso/GestionTelas/listarTelas.tex" 1581887997 1522 ad989f7ee6ea1533c2210efdc9a2d8d5 ""
   "Capitulos/Capitulo4/CasosUso/GestionTelas/modificarTela.tex" 1581888040 2721 6513ab5c98b3589383fce9d621d5ac70 ""
+<<<<<<< HEAD
   "Capitulos/Capitulo4/CasosUso/GestionUbicaciones/borrarUbicacion.tex" 1584141740 2157 b1b7eddcfb387d5c9fd6b80a49f136e6 ""
+=======
+  "Capitulos/Capitulo4/CasosUso/GestionUbicaciones/borrarUbicacion.tex" 1581887216 1699 de754ab125878914f8b4e0d5afdeefa1 ""
+>>>>>>> master
   "Capitulos/Capitulo4/CasosUso/GestionUbicaciones/crearUbicacion.tex" 1581887216 2819 15ada03b92556d983243f5a2a2a67259 ""
   "Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darAltaUbicacion.tex" 1581887216 1676 ddb06359c7e4a26f6afc14d8651aa1bf ""
   "Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darBajaUbicacion.tex" 1581887216 1678 006cd673412e833df1267c049e5f3d2c ""
@@ -214,6 +233,7 @@
   "Capitulos/Capitulo4/CasosUso/Sesiones/cerrarSesion.tex" 1583181855 1144 b1aacfc460129fb8759c55e404bdd7d2 ""
   "Capitulos/Capitulo4/CasosUso/Sesiones/iniciarSesion.tex" 1583181855 2736 6b7c82fe263b5367f20cfa7df56bf399 ""
   "Capitulos/Capitulo4/CasosUso/generalTable.tex" 1583612506 1670 85a4f1aaf8f05cd2e7e6804767326e84 ""
+<<<<<<< HEAD
   "Capitulos/Capitulo4/cap4sec1.tex" 1584141740 29437 42b7fb406d95054af1cf8a330b6bbde9 ""
   "Capitulos/Capitulo5/cap5modeloRelacional.tex" 1584062663 2295 fdbf878ef49d4eb356be07d28697858a ""
   "Dedicatorias.tex" 1578783143 305 973ff76ae39bc92d0f32637925926aed ""
@@ -230,6 +250,24 @@
   "Imagenes/DiagramaClases/Vistas/vistaProduccion.png" 1584141741 33460 c601c567a12582b05eb3427f3307fcc2 ""
   "Imagenes/DiagramaClases/Vistas/vistaProductos.png" 1584141741 36878 47b501ca0f203540d19b34c52458073a ""
   "Imagenes/DiagramaClases/Vistas/vistaSistema.png" 1584141741 27737 43c34ed14733c7fca8e8b7823ebd1139 ""
+=======
+  "Capitulos/Capitulo4/cap4sec1.tex" 1584064682 29435 d277d1745487ad707b731b79521f382a ""
+  "Capitulos/Capitulo5/cap5modeloRelacional.tex" 1584062663 2295 fdbf878ef49d4eb356be07d28697858a ""
+  "Dedicatorias.tex" 1578783143 305 973ff76ae39bc92d0f32637925926aed ""
+  "Documentacion.aux" 1584072097 98268 27f3b01e0f1fad3fd19937566eae881c "pdflatex"
+  "Documentacion.out" 1584072097 7321 9323758fa4076b0ad0fd48b20f8268ee "pdflatex"
+  "Documentacion.tex" 1584064402 5072 3e94055268b8a241582d411ff1b66ec4 ""
+  "Documentacion.toc" 1584072097 8421 911c5ea2d5aefc80c16e68e9d4e92adc "pdflatex"
+  "Imagenes/DiagramaClases/Vistas/diagramaClases.png" 1584059582 255473 83e6f7274364607d284ddef9285e55a3 ""
+  "Imagenes/DiagramaClases/Vistas/fichaTecnicaClases.png" 1584059582 127316 5196740c00ca03b327d1b7ad9d0ec065 ""
+  "Imagenes/DiagramaClases/Vistas/vistaCanonica.png" 1584059582 160356 89acb0b85bfa84b9a6be831cf0b5d1f0 ""
+  "Imagenes/DiagramaClases/Vistas/vistaClientes.png" 1584059582 41912 dfb0095d07c40f1a9de300d9bceab838 ""
+  "Imagenes/DiagramaClases/Vistas/vistaEntregas.png" 1584059582 28321 60f571eec12347f71dd3beeb347ce55b ""
+  "Imagenes/DiagramaClases/Vistas/vistaPresupuestosVentas.png" 1584059582 38134 30b1dc68a5c33c5ae35b3e263182f3db ""
+  "Imagenes/DiagramaClases/Vistas/vistaProduccion.png" 1584059582 43905 bb1d35a4e64c640e32b31a38fbb4ca6d ""
+  "Imagenes/DiagramaClases/Vistas/vistaProductos.png" 1584059582 42657 24bc3181f8684e21b9f82d3f1f2becac ""
+  "Imagenes/DiagramaClases/Vistas/vistaSistema.png" 1584059582 33846 c19c9713ad224458bfe754df67da1c8a ""
+>>>>>>> master
   "Imagenes/DiagramasActividad/DiagramaDeActividad/borrarPresupuesto.png" 1581890192 25970 0127bb03825b30dd489e08183eb8ad9d ""
   "Imagenes/DiagramasActividad/DiagramaDeActividad/borrarProducto.png" 1581890192 25769 5e812a437884bedf2443a74eb15c9156 ""
   "Imagenes/DiagramasActividad/DiagramaDeActividad/borrarTela.png" 1581890192 23557 12c6d4699a7925bf9b0bbb0c2b68d193 ""
@@ -255,7 +293,11 @@
   "Imagenes/DiagramasActividad/DiagramaDeActividad/modificarProducto.png" 1581890192 53216 7212d7d5b273bc7879f850bb94e77e1d ""
   "Imagenes/DiagramasActividad/DiagramaDeActividad/modificarTela.png" 1581890192 48731 d645bd25d31f8a7d9902723cac55c9b5 ""
   "Imagenes/DiagramasActividad/DiagramaDeActividad/modificarVenta.png" 1583436449 67486 45bfb3d91b18095148ec169f87600579 ""
+<<<<<<< HEAD
   "Imagenes/DiagramasActividad/DiagramaDeActividad/transformarPresupuestosEnVenta.png" 1584141740 96248 c310af3febe38e200967c3ae30b81cd1 ""
+=======
+  "Imagenes/DiagramasActividad/DiagramaDeActividad/transformarPresupuestoEnVenta.png" 1581890192 60670 3e6019b4fd27c8dfd21f85b49e98a5aa ""
+>>>>>>> master
   "Imagenes/DiagramasEstado/DiagramaDeEstado/empleados.png" 1584062774 5245 a515ecfb27b68ff5f2c8cff5b57eb827 ""
   "Imagenes/DiagramasEstado/DiagramaDeEstado/lineasProducto.png" 1584062774 80500 6489bcf1928513aac2a0760b696a68b8 ""
   "Imagenes/DiagramasEstado/DiagramaDeEstado/ordenesProduccion.png" 1584062774 29405 f429b5f9f11d73330e13f3fd68669be3 ""
@@ -263,6 +305,7 @@
   "Imagenes/DiagramasEstado/DiagramaDeEstado/remitos.png" 1584062775 19664 42f061205f778fa20b6ef44cddac01c2 ""
   "Imagenes/DiagramasEstado/DiagramaDeEstado/tareas.png" 1584062775 27532 88e97e4ef005c7cdac9912a09b2505f7 ""
   "Imagenes/DiagramasEstado/DiagramaDeEstado/ventas.png" 1584062776 24785 c47db9c5a202daa34593c59086048588 ""
+<<<<<<< HEAD
   "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaContexto.png" 1584072225 16041 232c0852280cf614c4bb281219cec371 ""
   "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistema.png" 1584072225 27835 e538431a13ac856fb55a8650761010a4 ""
   "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistemaDetallado.png" 1584072226 64428 36fb959ac31fdf8d5dcd7d7394e55fc9 ""
@@ -289,6 +332,34 @@
   "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png" 1584072232 61139 6df844a24fc2e09d2e6916be3f7926d6 ""
   "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png" 1584072232 91653 2053e0c328846db5c7f05851dec5bfec ""
   "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png" 1584072232 24331 3a24a51dd448501e5144b16009940f40 ""
+=======
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaContexto.png" 1584059582 20439 da76431cfd83736685b1bccbcb77b1b6 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistema.png" 1584059582 38419 de44ba1413e555d2bf827db701ddddc1 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistemaDetallado.png" 1584059582 93195 fd9d227dfafc762737f4f8722c9ced57 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionArticulosVenta.png" 1584059582 28200 daff3e4b4a5cc66922f1dde102b391a6 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionClientes.png" 1584059582 67580 6b2c1e2225a9d95e8c4bec39797ad077 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionComprobantes.png" 1584059582 48001 0d15a169229ccbca19b2f4d06f817f35 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionEmpleados.png" 1584059582 68077 145e05477f9902ffb82a76b91e5f854f ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionGruposProducto.png" 1584059582 95817 013310ac5cf3c2d7488652d50c33fa2e ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasOrdenesProduccion.png" 1584059582 79661 4e774837068abb0f03d628e710539ba2 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasPresupuesto.png" 1584059582 40625 55f0b32f9f60b2ffe4b639af793d8278 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasRemito.png" 1584059582 37814 00e1e4930a29553c8d88b4cd4629037b ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionLineasVenta.png" 1584059582 45251 eaad997d0ac1c6c43ad9004688052552 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionObservaciones.png" 1584059582 28640 5059ab43656f8c852c1372d1bfe59997 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones.png" 1584059582 43743 ca07f746339f909727e75ab5881d69fe ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOrdenesProduccion.png" 1584059582 142111 11417e44f338638782da8fe18e007357 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionPresupuestos.png" 1584059582 122421 2e1d93aee8358423375d8f304181d0a3 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductos.png" 1584059582 92009 f6ff5cbbdb60061e869920825cb902e1 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionProductosFinales.png" 1584059582 88834 07523d7ac6dea43b76e16cdf7e4e7cb1 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRemitos.png" 1584059582 98248 453bb101ca22565c98eccf69a315c1df ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionRoles.png" 1584059582 36038 861b6a017a7922505db07efb7e7642ac ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionStock.png" 1584059582 19260 794445227519fb2bc16b309db29c6295 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTareas.png" 1584059582 69375 f9e81db5d71a65cbcd255cdb302eca59 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTelas.png" 1584059582 79180 4cdbd5e86da1795b3698a7ce7e692b01 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionUbicaciones.png" 1584059582 88336 b4808ec0e07eb29fa37243e7cb3da599 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionVentas.png" 1584059582 116205 5e45107c4ad48fca8715190fc9ea1185 ""
+  "Imagenes/ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/Sesiones.png" 1584059582 30658 95ee09c0e133f8074fe99c075d5fb10e ""
+>>>>>>> master
   "Imagenes/ModeloRelacional/modeloRelacional.jpg" 1584062494 1397989 89d416bc066f684b32cd9b723ffe47f8 ""
   "Imagenes/ModeloRelacional/vistaClientes.jpg" 1583953776 267941 554d24634c0337fa54f316cd49de6f50 ""
   "Imagenes/ModeloRelacional/vistaEntregas.jpg" 1583953742 216047 077c7a7199f0675e65b042588bc2a726 ""
@@ -298,6 +369,7 @@
   "Imagenes/ModeloRelacional/vistaSistema.jpg" 1583953772 222608 15a0b95a774a19c40359426fe8dc4a42 ""
   "capitulos/capitulo4/cap4sec2.tex" 1584072083 11626 4a6e68cee654cfd758664e4bae6ac61c ""
   "comandos.tex" 1584062886 8624 57a7870e7d45a4376ea6d118ed59a564 ""
+<<<<<<< HEAD
   "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.aux" 1584141768 98279 100c3defe411d51a059db44ba905ff34 ""
   "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.tex" 1584064402 5072 3e94055268b8a241582d411ff1b66ec4 ""
   (generated)
@@ -306,5 +378,15 @@
   "Documentacion.toc"
   "Documentacion.pdf"
   "Documentacion.log"
+=======
+  "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.aux" 1584072097 98268 27f3b01e0f1fad3fd19937566eae881c ""
+  "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.tex" 1584064402 5072 3e94055268b8a241582d411ff1b66ec4 ""
+  (generated)
+  "Documentacion.pdf"
+  "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.log"
+  "Documentacion.log"
+  "Documentacion.toc"
+  "Documentacion.out"
+>>>>>>> master
   "Documentacion.aux"
   "d:/Nicolas/Facultad/Trabajo de graduacion/DocumentacionZMGestion/Informe Final/Documentacion.pdf"

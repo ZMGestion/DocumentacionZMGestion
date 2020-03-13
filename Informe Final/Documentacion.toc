@@ -106,7 +106,11 @@
 \contentsline {subsection}{\numberline {4.1.4}Listado de casos de uso}{18}{subsection.109}% 
 \contentsline {subsection}{\numberline {4.1.5}Diagrama de casos de uso}{21}{subsection.221}% 
 \contentsline {subsection}{\numberline {4.1.6}Descripci\IeC {\'o}n textual de los casos de uso y diagramas de actividad}{32}{subsection.245}% 
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {4.1.7}Diagrama de clases}{140}{subsection.494}% 
+=======
+\contentsline {subsection}{\numberline {4.1.7}Diagrama de clases}{139}{subsection.494}% 
+>>>>>>> master
 \contentsline {subsection}{\numberline {4.1.8}Vista can\IeC {\'o}nica}{145}{subsection.502}% 
 \contentsline {subsection}{\numberline {4.1.9}Ficha t\IeC {\'e}cnica de clases}{146}{subsection.504}% 
 \contentsline {subsection}{\numberline {4.1.10}Diagramas de transici\IeC {\'o}n de estados}{147}{subsection.506}% 
