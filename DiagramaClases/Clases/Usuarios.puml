@@ -1,6 +1,7 @@
 @startuml Usuarios
 class Usuarios {
    +idUsuario : int
+   +idUbicacion: int
    usuario: string
    password: string
    token: string
@@ -9,5 +10,10 @@ class Usuarios {
    fechaFin: DateTime
    estadoCivil: string
    cantidadHijos: int
+
+   iniciarSesion(): string
+   cerrarSesion(): string
+   listarOrdenesProduccion(): List<OrdenesProduccion>
+   listarTareas(): List<Tareas>
 }
 @enduml

@@ -7,5 +7,14 @@ class Ventas{
     +idUsuario: int
     fechaAlta: DateTime
     estado: string
+
+    generarOrdenProduccion(): string
+    generarRemito(): string
+    revisar(): string
+    crearComprobante(comprobante Comprobantes): string
+    crearLineaVenta(lineaVenta LineasVenta): string
+    modificarLineaVenta(lineaVenta LineasVenta): string
+    borrarLineaVenta(lineaVenta LineasVenta): string
+    listarLineasVenta(): List<LineasVenta>
 }
 @enduml

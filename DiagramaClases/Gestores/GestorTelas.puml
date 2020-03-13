@@ -1,6 +1,6 @@
 @startuml GestorTelas
 class GestorTelas{
-    
+    listarTelas: List<Telas>
 }
 
 @enduml

@@ -2,5 +2,7 @@
 class TiposProducto{
     +idTipoProducto: int
     tipoProducto: string
+
+    listarProductos(): List<Productos>
 }
 @enduml

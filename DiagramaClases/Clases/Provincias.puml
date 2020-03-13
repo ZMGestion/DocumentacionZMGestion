@@ -3,5 +3,7 @@ class Provincias{
     +idProvincia: int
     +idPais: int
     provincia: string
+
+    listarCiudades(): List<Ciudades>
 }
 @enduml

@@ -1,0 +1,5 @@
+@startuml LineasPresupuesto
+class LineasPresupuesto{
+    +idPresupuesto: int
+}
+@enduml

@@ -2,5 +2,7 @@
 class Paises{
     +idPais: int
     pais: string
+
+    listarProvincias(): List<Provincias>
 }
 @enduml

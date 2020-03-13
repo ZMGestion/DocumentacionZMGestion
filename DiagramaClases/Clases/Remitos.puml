@@ -6,5 +6,13 @@ class Remitos{
     tipo: string
     fechaAlta: DateTime
     fechaEntrega: DateTime
+    cancelar(): string
+    descancelar(): string
+    entregar(): string
+
+    crearLineaRemito(lineaRemito LineasRemito): string
+    modificarLineaRemito(lineaRemito LineasRemito): string
+    borrarLineaRemito(lineaRemito LineasRemito): string
+    listarLineasRemito(): List<LineasRemito>
 }
 @enduml

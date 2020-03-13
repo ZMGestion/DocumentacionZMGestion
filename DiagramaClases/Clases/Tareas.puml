@@ -10,5 +10,12 @@ class Tareas{
     fechaRevision: DateTime
     estado: string
     observaciones: string
+
+    ejecutar(): string
+    cancelar(): string
+    reanudar(): string
+    pausar(): string
+    finalizar(): string
+    verificar(): string
 }
 @enduml

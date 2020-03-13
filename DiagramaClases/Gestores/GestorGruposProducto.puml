@@ -1,6 +1,6 @@
 @startuml GestorGruposProducto
 class GestorGruposProducto{
-    
+    listarGruposProducto(): List<GruposProducto>
 }
 
 @enduml

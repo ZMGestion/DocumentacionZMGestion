@@ -1,6 +1,6 @@
 @startuml GestorPresupuestos
 class GestorPresupuestos{
-    
+    transformarPresupuestosEnVenta(): string
+    enviarPresupuestoEmail(): string
 }
-
 @enduml

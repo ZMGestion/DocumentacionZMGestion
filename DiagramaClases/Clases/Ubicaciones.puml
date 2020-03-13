@@ -4,5 +4,12 @@ class Ubicaciones{
     +idDomicilio: int
     ubicacion: string
     estado: string
+
+    listarPresupuestos(): List<Presupuestos>
+    listarVentas(): List<Ventas>
+    listarRemitos(): List<Remitos>
+    listarUsuarios(): List<Usuarios>
+    generarStock(): Map<Productos, int>
+    dameDomicilio(): Domicilios
 }
 @enduml

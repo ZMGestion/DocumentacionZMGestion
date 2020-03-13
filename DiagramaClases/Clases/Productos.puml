@@ -7,5 +7,11 @@ class Productos{
     +idCategoriaProducto: int
     +idGrupoProducto: int
     +idTipoProducto: int
+
+    listarTiposProducto(): List<TiposProducto>
+    listarPrecios(): List<Precios>
+    damePrecioActual(): Precios
+    dameTipoProducto(): TiposProducto
+    dameCategoriaProducto(): Categorias
 }
 @enduml
