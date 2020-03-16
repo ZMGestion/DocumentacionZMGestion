@@ -9,5 +9,7 @@ class LineasOrdenProduccion{
     reanudar(): string
     crearObservacion(observacion Observaciones): string
     borrarObservacion(observacion Observaciones): string
+    crearTarea(tarea Tareas): string
+    borrarTarea(tarea Tareas): string
 }
 @enduml
