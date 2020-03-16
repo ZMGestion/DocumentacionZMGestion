@@ -6,6 +6,7 @@ class Remitos{
     tipo: string
     fechaAlta: DateTime
     fechaEntrega: DateTime
+    
     cancelar(): string
     descancelar(): string
     entregar(): string

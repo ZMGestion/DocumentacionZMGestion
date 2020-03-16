@@ -2,11 +2,11 @@
 Alta: Estado = "A"
 Baja: Estado = "B"
 
-left to right direction
-[*] --> Alta
-Baja --> [*]
-Alta --> Baja
-Baja --> Alta
+top to bottom direction
+[*] --> Alta: GestorEmpleados.crearEmpleado(empleado Empleados)
+Baja --> [*]: GestorEmpleados.borrarEmpleado(empleado Empleados)
+Alta --> Baja: Empleados.darAlta()
+Baja --> Alta: Empleados.darBaja()
 
 @enduml
 
@@ -18,20 +18,21 @@ Pausada: Estado = "S"
 Cancelada: Estado = "C"
 Verificada: Estado = "V"
 
-[*] --> Pendiente
-Pendiente --> [*]
-Cancelada --> [*]
-Pendiente --> EnProceso
-EnProceso --> Cancelada
-EnProceso --> Finalizada
-EnProceso --> Pausada
-Finalizada --> EnProceso
-Pausada --> EnProceso
-Pausada --> Cancelada
-Cancelada --> EnProceso
-Finalizada --> Cancelada
-Finalizada --> Verificada
-Verificada --> EnProceso
+
+[*] --> Pendiente: LineasOrdenProduccion.crearTarea(tarea Tareas)
+Pendiente --> [*]: LineasOrdenProduccion.borrarTarea(tarea Tareas)
+Cancelada --> [*]: LineaOrdenProduccion.borrarTarea(tarea Tareas)
+Pendiente --> EnProceso: Tareas.ejecutar()
+EnProceso --> Cancelada: Tareas.cancelar()
+EnProceso --> Finalizada: Tareas.finalizar()
+EnProceso --> Pausada: Tareas.pausar()
+Finalizada --> EnProceso: Tareas.reanudar()
+Pausada --> EnProceso: Tareas.reanudar()
+Pausada --> Cancelada: Tareas.cancelar()
+Cancelada --> EnProceso: Tareas.reanudar()
+Finalizada --> Cancelada: Tareas.cancelar()
+Finalizada --> Verificada: Tareas.verificar()
+Verificada --> EnProceso: Tareas.reanudar()
 
 @enduml
 
@@ -55,10 +56,11 @@ PendienteDeEntrega: (IdRemito != null && \n Venta sin saldo && Remito no cancela
 Entregada: Estado = "D" 
 
 top to bottom direction
-[*] --> Pendiente
+[*] --> Pendiente: Presupuestos.crearLineaPresupuesto(lp LineaPresupuesto)
+[*] --> Pendiente: Ventas.crearLineaVenta(lv LineasVenta)
 Pendiente --> [*]
-[*] --> PendienteDeProduccion
-PendienteDeProduccion --> [*]
+[*] --> PendienteDeProduccion: OrdenesProduccion.crearLineaOrdenProduccion(lOP LineasOrdenProduccion)
+PendienteDeProduccion --> [*]: OrdenesProduccion.borrarLineaOrdenProduccion(lOP LineasOrdenProduccion)
 Pendiente --> Utilizada
 Utilizada --> Pendiente
 Pendiente --> NoUtilizada
@@ -88,18 +90,18 @@ Vendido: Estado = "V"
 Expirado: Estado = "C"
 Expirado: FechaAlta + Perido de validez > Hoy
 
-[*] --> EnCreacion
+[*] --> EnCreacion: GestorPresupuestos.crearPresupuesto(p Presupuestos)
 EnCreacion --> Creado
 Creado --> Vendido
 Creado --> Expirado
 Vendido --> Creado
-EnCreacion --> [*]
-Creado --> [*]
+EnCreacion --> [*]: GestorPresupuestos.borrarPresupuesto(p Presupuestos)
+Creado --> [*]: GestorPresupuestos.borrarPresupuesto(p Presupuestos)
 
 @enduml
 
 @startuml ventas
-left to right direction
+top to bottom direction
 
 EnCreacion: Estado = "E"
 EnRevision: Estado = "R"
@@ -109,9 +111,9 @@ Pendiente: Estado = "C"
 Entregada: Estado = "C"
 Entregada: Todas las lineas no canceladas estan entregadas
 
-[*] --> EnCreacion: Desde Ventas
-[*] --> EnCreacion: Desde Presupuestos
-EnCreacion --> [*]
+[*] --> EnCreacion: GestorVentas.crearVenta(venta Ventas)
+[*] --> EnCreacion: GestorPresupuestos.transformarPresupuestosEnVenta(presupuestos List<Presupuestos>)
+EnCreacion --> [*]: GestorPresupuestos.borrarPresupuesto(p Presupuestos)
 EnCreacion -> EnRevision
 EnCreacion --> Pendiente
 EnCreacion --> Cancelada
@@ -134,8 +136,8 @@ Cancelada: Estado = "C"
 Cancelada: Todas las lineas de producto se encuentran canceladas
 
 [*]--> EnCreacion: Desde Ventas
-[*]--> EnCreacion: Desde Ordenes de Produccion
-EnCreacion --> [*]
+[*]--> EnCreacion: GestorOrdenesProduccion.crearOrdenProduccion(op OrdenesProduccion)
+EnCreacion --> [*]: GestorOrdenesProduccion.borrarOrdenProduccion(op OrdenesProduccion)
 EnCreacion -->Pendiente
 Pendiente --> EnProduccion
 Pendiente --> Cancelada
@@ -143,6 +145,7 @@ EnProduccion --> Verificada
 @enduml
 
 @startuml remitos
+left to right direction
 
 EnCreacion: Estado = "E"
 Creado: Estado = "C"
@@ -150,13 +153,13 @@ Entregado: Estado = "C"
 Entregado: FechaEntrega != null
 Cancelado: Estado = "B"
 
-[*] --> EnCreacion: Desde Remitos
-[*] --> EnCreacion: Desde Ventas
+[*] --> EnCreacion: GestorRemitos.crearRemito(remito Remitos)
+[*] --> EnCreacion: Ventas.generarRemito()
 EnCreacion --> Creado
-Creado --> Entregado
-Cancelado --> Creado
-Creado --> Cancelado
-EnCreacion --> [*]
-Creado --> [*]
+Creado --> Entregado: Remitos.entregar()
+Cancelado --> Creado: Remitos.descancelar()
+Creado --> Cancelado: Remitos.cancelar()
+EnCreacion --> [*]: GestorRemitos.borrarRemito(remito Remitos)
+Creado --> [*]: GestorRemitos.borrarRemito(remito Remitos)
 
 @enduml

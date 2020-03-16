@@ -17,5 +17,6 @@ class Tareas{
     pausar(): string
     finalizar(): string
     verificar(): string
+    
 }
 @enduml
