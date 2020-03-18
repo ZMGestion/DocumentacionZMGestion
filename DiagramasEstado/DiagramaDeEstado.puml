@@ -121,10 +121,10 @@ Entregada: this.todasLineasNoCanceladasEntregadas()
 EnCreacion --> [*]: GestorPresupuestos.\nborrarPresupuesto\n(p Presupuestos)
 EnCreacion -> EnRevision: this.\nchequearPrecios()
 EnCreacion --> Pendiente: this.\nchequearPrecios()
-EnRevision --> Cancelada
+EnRevision --> Cancelada: LineasVenta.\ncancelar()
 EnRevision --> Pendiente: this.\nrevisar()
-Pendiente --> Cancelada
-Pendiente --> Entregada
+Pendiente --> Cancelada: LineasVenta.\ncancelar()
+Pendiente --> Entregada: LineasRemito.\nentregar()
 
 @enduml
 
