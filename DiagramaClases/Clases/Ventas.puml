@@ -8,13 +8,18 @@ class Ventas{
     fechaAlta: DateTime
     estado: string
 
-    generarOrdenProduccion(): string
-    generarRemito(): string
+    generarOrdenProduccion(lv List<LineasVenta>): string
+    generarRemito(lv List<LineasVenta>): string
     revisar(): string
     crearComprobante(comprobante Comprobantes): string
     crearLineaVenta(lineaVenta LineasVenta): string
     modificarLineaVenta(lineaVenta LineasVenta): string
     borrarLineaVenta(lineaVenta LineasVenta): string
     listarLineasVenta(): List<LineasVenta>
+    obtenerSaldo(): float
+    chequearPrecios(): bool
+    todasLineasCanceladas(): bool
+    todasLineasNoCanceladasEntregadas(): bool
+
 }
 @enduml

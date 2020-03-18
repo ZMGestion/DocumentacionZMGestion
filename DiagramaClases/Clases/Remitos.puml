@@ -15,5 +15,7 @@ class Remitos{
     modificarLineaRemito(lineaRemito LineasRemito): string
     borrarLineaRemito(lineaRemito LineasRemito): string
     listarLineasRemito(): List<LineasRemito>
+    estaCancelado(): bool
+    asociadoAVenta(): bool
 }
 @enduml

@@ -42,6 +42,7 @@ LineasProducto <|-- LineasPresupuesto
 LineasProducto <|-- LineasVenta
 LineasProducto <|-- LineasOrdenProduccion
 LineasProducto <|-- LineasRemito
+LineasProducto "1" -- "0..1" LineasProducto
 TiposDocumento "1"--"0..*" Personas
 Paises  *-- "1..*" Provincias
 Provincias  *-- "1..*" Ciudades
@@ -68,11 +69,11 @@ Ventas "0..*" -- "1" Ubicaciones
 Ventas "0..1" -- "0..*" Presupuestos
 Ventas "0..1" -- "0..1" OrdenesProduccion
 Ventas "1" -- "0..*" Comprobantes
-LineasVenta "0..*"--o Ventas
-LineasOrdenProduccion "0..*"--o OrdenesProduccion
-LineasPresupuesto "0..*"--o Presupuestos
-Observaciones "0..*"--o LineasOrdenProduccion
-Remitos "0..*"--o LineasRemito
+LineasVenta "0..*"--* Ventas
+LineasOrdenProduccion "0..*"--* OrdenesProduccion
+LineasPresupuesto "0..*"--* Presupuestos
+Observaciones "0..*"--* LineasOrdenProduccion
+LineasRemito "0..*"--* Remitos
 LineasProducto "0..*"--"1" ProductosFinales
 Presupuestos "0..*"--"1" Clientes
 Presupuestos "0..*"--"1" Usuarios
@@ -80,7 +81,7 @@ Remitos "0..*"--"0..1" Domicilios
 Ubicaciones "1"--"0..*" Remitos
 Tareas "0..*"--"1" Usuarios
 Tareas "0..*"--"0..1" Usuarios
-Tareas "0..*"--"1" LineasOrdenProduccion
+Tareas "0..*"--* LineasOrdenProduccion
 Tareas "1"--"0..1" Tareas
 @enduml
 
@@ -136,8 +137,9 @@ Usuarios "0..*" -- "1" Roles
 left to right direction
 LineasProducto <|-- LineasVenta
 LineasProducto <|-- LineasPresupuesto
-LineasVenta "0..*"--o Ventas
-LineasPresupuesto "0..*"--o Presupuestos
+LineasProducto "1" -- "0..1" LineasProducto
+LineasVenta "0..*"--* Ventas
+LineasPresupuesto "0..*"--* Presupuestos
 Ventas "0..*" -- "1" Clientes
 Presupuestos "0..*"--"1" Clientes
 Ventas "0..1" -- "0..*" Presupuestos
@@ -175,13 +177,14 @@ Domicilios "0..*" -- "1" Ciudades
 
 
 left to right direction
+LineasProducto "1" -- "0..1" LineasProducto
 LineasProducto <|-- LineasOrdenProduccion
-LineasOrdenProduccion "0..*"--o OrdenesProduccion
+LineasOrdenProduccion "0..*"--* OrdenesProduccion
 Tareas "0..*"--"1" Usuarios
 Tareas "0..*"--"0..1" Usuarios
-Tareas "0..*"--"1" LineasOrdenProduccion
+Tareas "0..*"--* LineasOrdenProduccion
 Tareas "1"--"0..1" Tareas
-Observaciones "0..*"--o LineasOrdenProduccion
+Observaciones "0..*"--* LineasOrdenProduccion
 LineasProducto "0..*"--"1" ProductosFinales
 OrdenesProduccion "0..*" -- "1" Usuarios
 @enduml
@@ -193,8 +196,9 @@ OrdenesProduccion "0..*" -- "1" Usuarios
 !include ./Clases/LineasRemito.puml
 !include ./Clases/Remitos.puml
 
+LineasProducto "1" -- "0..1" LineasProducto
 LineasProducto <|-- LineasRemito
-LineasRemito "0..*"--o Remitos
+LineasRemito "0..*"--* Remitos
 Ubicaciones "0..1"--"1" Domicilios
 Remitos "0..*"--"0..1" Domicilios 
 Ubicaciones "1"--"0..*" Remitos

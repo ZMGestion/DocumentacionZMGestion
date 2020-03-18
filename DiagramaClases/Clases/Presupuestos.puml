@@ -12,5 +12,7 @@ class Presupuestos{
     modificarLineaPresupuesto(lineaPresupuesto LineasPresupuesto): string
     borrarLineaPresupuesto(lineaPresupuesto LineasPresupuesto): string
     listarLineasPresupuesto(): List<LineasPresupuesto>
+    pasarACreado(): string
+    estaExpirado(): bool
 }
-@enduml
+@endumls
