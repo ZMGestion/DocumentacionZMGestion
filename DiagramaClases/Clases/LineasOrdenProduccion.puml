@@ -2,8 +2,15 @@
 class LineasOrdenProduccion{
     +idOrdenProduccion: int
 
-    cancelar(): string
     reanudar(): string
+    listarObservaciones(): List<Observaciones>
+    listarTareas(): List<Tareas>
+    crearObservacion(observacion Observaciones): string
+    borrarObservacion(observacion Observaciones): string
+    crearTarea(tarea Tareas): string
+    borrarTarea(tarea Tareas): string
+    todasTareasPendientes(): bool
+    tieneTareas(): bool
 
 }
 @enduml

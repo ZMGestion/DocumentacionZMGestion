@@ -12,5 +12,6 @@ class OrdenesProduccion{
     modificarLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): string
     borrarLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): string
     listarLineasOrdenProduccion(): List<LineasOrdenProduccion>
+    pasarAPendiente():string
 }
 @enduml

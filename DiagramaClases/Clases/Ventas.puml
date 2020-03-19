@@ -16,6 +16,7 @@ class Ventas{
     modificarLineaVenta(lineaVenta LineasVenta): string
     borrarLineaVenta(lineaVenta LineasVenta): string
     listarLineasVenta(): List<LineasVenta>
+    desvincularRemito(lv LineasVenta)
     obtenerSaldo(): float
     chequearPrecios(): bool
     todasLineasCanceladas(): bool
