@@ -15,6 +15,7 @@ class Remitos{
     modificarLineaRemito(lineaRemito LineasRemito): string
     borrarLineaRemito(lineaRemito LineasRemito): string
     listarLineasRemito(): List<LineasRemito>
+    pasarACreado(): string
     estaCancelado(): bool
     asociadoAVenta(): bool
 }
