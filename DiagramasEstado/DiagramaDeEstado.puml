@@ -3,11 +3,11 @@ Alta: Estado = "A"
 Baja: Estado = "B"
 
 top to bottom direction
-[*] --> Alta: GestorEmpleados.crearEmpleado(empleado Empleados)
-Alta --> [*]: GestorEmpleados.borrarEmpleado(empleado Empleados)
-Baja --> [*]: GestorEmpleados.borrarEmpleado(empleado Empleados)
-Alta --> Baja: Empleados.darBaja()
-Baja --> Alta: Empleados.darAlta()
+[*] --> Alta: GestorEmpleados.\ncrear\n(empleado Empleados)
+Alta --> [*]: GestorEmpleados.\nborrar\n(empleado Empleados)
+Baja --> [*]: GestorEmpleados.\nborrar\n(empleado Empleados)
+Alta --> Baja: Empleados.\ndarBaja()
+Baja --> Alta: Empleados.\ndarAlta()
 
 @enduml
 
@@ -20,20 +20,20 @@ Cancelada: Estado = "C"
 Verificada: Estado = "V"
 
 
-[*] --> Pendiente: LineasProducto.crearTarea(tarea Tareas)
-Pendiente --> [*]: LineasProducto.borrarTarea(tarea Tareas)
-Cancelada --> [*]: LineasProducto.borrarTarea(tarea Tareas)
-Pendiente --> EnProceso: Tareas.ejecutar()
-EnProceso --> Cancelada: Tareas.cancelar()
-EnProceso --> Finalizada: Tareas.finalizar()
-EnProceso --> Pausada: Tareas.pausar()
-Finalizada --> EnProceso: Tareas.reanudar()
-Pausada --> EnProceso: Tareas.reanudar()
-Pausada --> Cancelada: Tareas.cancelar()
-Cancelada --> EnProceso: Tareas.reanudar()
-Finalizada --> Cancelada: Tareas.cancelar()
-Finalizada --> Verificada: Tareas.verificar()
-Verificada --> EnProceso: Tareas.reanudar()
+[*] --> Pendiente: LineasProducto.\ncrearTarea\n(tarea Tareas)
+Pendiente --> [*]: LineasProducto.\nborrarTarea\n(tarea Tareas)
+Cancelada --> [*]: LineasProducto.\nborrarTarea\n(tarea Tareas)
+Pendiente --> EnProceso: Tareas.\nejecutar()
+EnProceso --> Cancelada: Tareas.\ncancelar()
+EnProceso --> Finalizada: Tareas.\nfinalizar()
+EnProceso --> Pausada: Tareas.\npausar()
+Finalizada --> EnProceso: Tareas.\nreanudar()
+Pausada --> EnProceso: Tareas.\nreanudar()
+Pausada --> Cancelada: Tareas.\ncancelar()
+Cancelada --> EnProceso: Tareas.\nreanudar()
+Finalizada --> Cancelada: Tareas.\ncancelar()
+Finalizada --> Verificada: Tareas.\nverificar()
+Verificada --> EnProceso: Tareas.\nreanudar()
 
 @enduml
 
@@ -43,7 +43,7 @@ Cancelada: Estado = "C"
 NoUtilizada: Estado = "N"
 Utilizada: Estado = "U"
 PendienteDeProduccion: Estado = "F " AND
-PendienteDeProduccion:(this.\ntieneTareas() OR\n this.\ntodasTareasPendientes())
+PendienteDeProduccion:(NOT this.\ntieneTareas() OR\n this.\ntodasTareasPendientes())
 EnProduccion: Estado = "F" AND
 EnProduccion: NOT this.\ntodasTareasPendientes()
 Verificada: Estado = "V"
@@ -55,21 +55,21 @@ PendienteDeEntrega: (IdRemito != null AND\n LineasVenta.dameVenta().obtenerSaldo
 Entregada: Estado = "D" 
 
 top to bottom direction
-[*] --> Pendiente: Presupuestos.\ncrearLineaPresupuesto(lp LineaPresupuesto)
-[*] --> Pendiente: Ventas.\ncrearLineaVenta(lv LineasVenta)
-[*] --> PendienteDeEntrega: Remitos.\ncrearLineaRemito(lr LineasRemito)
-Pendiente --> [*]: Ventas.\nborrarLineaVenta(lv LineasVenta)
-Pendiente --> [*]: Presupuestos.\nborrarLineaPresupuesto(lp LineaPresupuesto)
-[*] --> PendienteDeProduccion: OrdenesProduccion.\ncrearLineaOrdenProduccion(lOP LineasOrdenProduccion)
-PendienteDeProduccion --> [*]: OrdenesProduccion.\nborrarLineaOrdenProduccion(lOP LineasOrdenProduccion)
-Pendiente --> Utilizada: GestorPresupuestos.\ntransformarPresupuestosEnVenta(presupuestos List<Presupuestos>)
-Utilizada --> Pendiente: GestorVentas.\nborrarVenta(venta Ventas)
-Pendiente --> NoUtilizada: GestorPresupuestos.\ntransformarPresupuestosEnVenta(presupuestos List<Presupuestos>)
-NoUtilizada --> Pendiente: GestorVentas.\nborrarVenta(venta Ventas)
-Utilizada --> NoUtilizada: Ventas.\nborrarLineaVenta(lv LineasVenta)
+[*] --> Pendiente: Presupuestos.\ncrearLineaPresupuesto\n(lp LineaPresupuesto)
+[*] --> Pendiente: Ventas.\ncrearLineaVenta\n(lv LineasVenta)
+[*] --> PendienteDeEntrega: Remitos.\ncrearLineaRemito\n(lr LineasRemito)
+Pendiente --> [*]: Ventas.\nborrarLineaVenta\n(lv LineasVenta)
+Pendiente --> [*]: Presupuestos.\nborrarLineaPresupuesto\n(lp LineaPresupuesto)
+[*] --> PendienteDeProduccion: OrdenesProduccion.\ncrearLineaOrdenProduccion\n(lOP LineasOrdenProduccion)
+PendienteDeProduccion --> [*]: OrdenesProduccion.\nborrarLineaOrdenProduccion\n(lOP LineasOrdenProduccion)
+Pendiente --> Utilizada: GestorPresupuestos.\ntransformarPresupuestosEnVenta\n(presupuestos List<Presupuestos>)
+Utilizada --> Pendiente: GestorVentas.\nborrar\n(venta Ventas)
+Pendiente --> NoUtilizada: GestorPresupuestos.\ntransformarPresupuestosEnVenta\n(presupuestos List<Presupuestos>)
+NoUtilizada --> Pendiente: GestorVentas.\nborrar\n(venta Ventas)
+Utilizada --> NoUtilizada: Ventas.\nborrarLineaVenta\n(lv LineasVenta)
 Pendiente --> Cancelada: LineasVenta.\ncancelar()
-Pendiente --> PendienteDeProduccion: Ventas.\ngenerarOrdenProduccion(lv List<LineasVenta>)
-Pendiente --> Reservada: Ventas.\ngenerarRemito(lv List<LineasVenta>)
+Pendiente --> PendienteDeProduccion: Ventas.\ngenerarOrdenProduccion\n(lv List<LineasVenta>)
+Pendiente --> Reservada: Ventas.\ngenerarRemito\n(lv List<LineasVenta>)
 Reservada --> Pendiente: Remitos.\ncancelar()
 PendienteDeProduccion --> Cancelada: LineaOrdenProduccion.\ncancelar()
 PendienteDeProduccion --> Cancelada: LineasVenta.\ncancelar()
@@ -82,7 +82,7 @@ EnProduccion --> Reservada: LineasProducto.\nverificar()
 EnProduccion --> Verificada: LineasProducto.\nverificar()
 Reservada --> PendienteDeEntrega: Ventas.\ncrearComprobante()
 PendienteDeEntrega --> Entregada: Remitos.\nentregar()
-PendienteDeEntrega --> [*]: Remitos.\nborrarLineaRemito(lr LineasRemito)
+PendienteDeEntrega --> [*]: Remitos.\nborrarLineaRemito\n(lr LineasRemito)
 Entregada --> Cancelada: LineasVenta.\ncancelar()
 
 @enduml
@@ -95,13 +95,13 @@ Vendido: Estado = "V"
 Expirado: Estado = "C" AND
 Expirado: this.estaExpirado()
 
-[*] --> EnCreacion: GestorPresupuestos.\ncrearPresupuesto\n(p Presupuestos)
+[*] --> EnCreacion: GestorPresupuestos.\ncrear\n(p Presupuestos)
 EnCreacion --> Creado: this.\npasarACreado()
 Creado --> Vendido: GestorPresupuestos.\ntransformarPresupuestosEnVenta\n(presupuestos List<Presupuestos>)
 Creado --> Expirado
-Vendido --> Creado: GestorVentas.\nborrarVenta\n(venta Ventas)
-EnCreacion --> [*]: GestorPresupuestos.\nborrarPresupuesto\n(p Presupuestos)
-Creado --> [*]: GestorPresupuestos.\nborrarPresupuesto\n(p Presupuestos)
+Vendido --> Creado: GestorVentas.\nborrar\n(venta Ventas)
+EnCreacion --> [*]: GestorPresupuestos.\nborrar\n(p Presupuestos)
+Creado --> [*]: GestorPresupuestos.\nborrar\n(p Presupuestos)
 
 @enduml
 
@@ -116,9 +116,9 @@ Pendiente: Estado = "C"
 Entregada: Estado = "C" AND
 Entregada: this.todasLineasNoCanceladasEntregadas()
 
-[*] --> EnCreacion: GestorVentas.\ncrearVenta\n(venta Ventas)
+[*] --> EnCreacion: GestorVentas.\ncrear\n(venta Ventas)
 [*] --> EnCreacion: GestorPresupuestos.\ntransformarPresupuestosEnVenta\n(presupuestos List<Presupuestos>)
-EnCreacion --> [*]: GestorPresupuestos.\nborrarPresupuesto\n(p Presupuestos)
+EnCreacion --> [*]: GestorPresupuestos.\nborrar\n(p Presupuestos)
 EnCreacion -> EnRevision: this.\nchequearPrecios()
 EnCreacion --> Pendiente: this.\nchequearPrecios()
 EnRevision --> Cancelada: LineasVenta.\ncancelar()
@@ -140,16 +140,30 @@ Cancelada: Estado = "C"
 Cancelada: Todas las lineas de producto se encuentran canceladas
 
 [*]--> EnCreacion: Desde Ventas
-[*]--> EnCreacion: GestorOrdenesProduccion.crearOrdenProduccion(op OrdenesProduccion)
-EnCreacion --> [*]: GestorOrdenesProduccion.borrarOrdenProduccion(op OrdenesProduccion)
-EnCreacion -->Pendiente
-Pendiente --> EnProduccion
-Pendiente --> Cancelada
-EnProduccion --> Verificada
+[*]--> EnCreacion: GestorOrdenesProduccion.\ncrear\n(op OrdenesProduccion)
+EnCreacion --> [*]: GestorOrdenesProduccion.\nborrar\n(op OrdenesProduccion)
+EnCreacion -->Pendiente: LineasOrdenProduccion.\ncancelar()
+EnCreacion -->Pendiente: LineasProducto.\nverificar()
+EnCreacion -->Pendiente: Remitos.\nentregar()
+EnCreacion -->Pendiente: LineasProducto.\ncrearTarea()
+EnProduccion -->Pendiente: LineasOrdenProduccion.\ncancelar()
+EnProduccion -->Pendiente: LineasProducto.\nverificar()
+EnProduccion -->Pendiente: Remitos.\nentregar()
+EnProduccion -->Pendiente: LineasProducto.\ncrearTarea()
+Pendiente --> EnProduccion: Tareas.\nejecutar()
+Cancelada --> Pendiente: LineasOrdenProduccion.\nreanudar()
+Cancelada --> EnProduccion: LineasOrdenProduccion.\nreanudar()
+Pendiente --> Cancelada: LineasOrdenProduccion.\ncancelar()
+EnProduccion --> Verificada: LineasProducto.\nverificar()
+EnProduccion --> Verificada: LineasProducto.\ncancelar()
+EnProduccion --> Verificada: Remitos.\nentregar()
+
+'Revisar si hay vueltas desde Verificada a otro estado...
+
 @enduml
 
 @startuml remitos
-left to right direction
+top to bottom direction
 
 EnCreacion: Estado = "E"
 Creado: Estado = "C"
@@ -157,13 +171,12 @@ Entregado: Estado = "C"
 Entregado: FechaEntrega != null
 Cancelado: Estado = "B"
 
-[*] --> EnCreacion: GestorRemitos.crearRemito(remito Remitos)
-[*] --> EnCreacion: Ventas.generarRemito()
-EnCreacion --> Creado
-Creado --> Entregado: Remitos.entregar()
-Cancelado --> Creado: Remitos.descancelar()
-Creado --> Cancelado: Remitos.cancelar()
-EnCreacion --> [*]: GestorRemitos.borrarRemito(remito Remitos)
-Creado --> [*]: GestorRemitos.borrarRemito(remito Remitos)
-
+[*] --> EnCreacion: GestorRemitos.\ncrear\n(remito Remitos)
+[*] --> EnCreacion: Ventas.\ngenerarRemito()
+EnCreacion --> Creado: this.\npasarACreado()
+Creado --> Entregado: Remitos.\nentregar()
+Cancelado --> Creado: Remitos.\ndescancelar()
+Creado --> Cancelado: Remitos.\ncancelar()
+EnCreacion --> [*]: GestorRemitos.\nborrar\n(remito Remitos)
+Creado --> [*]: GestorRemitos.\nborrar\n(remito Remitos)
 @enduml

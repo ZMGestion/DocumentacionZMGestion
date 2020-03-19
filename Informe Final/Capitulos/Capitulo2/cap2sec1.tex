@@ -64,7 +64,15 @@
 				Al momento de presentarse un cliente solicitando un presupuesto se comprobará si está activo para ello se preguntará el tipo y número de documento y se verificará el resto de los datos. En caso de no existir se procederá a crearlo. Un presupuesto tiene un código de identificación, fecha en la que se realiza, periodo de validez (previamente asignado por los administradores), cliente asociado, una o más líneas de presupuesto y estado (pudiendo ser: en creacion, incompleto, creado,  vendido y expirado). Los presupuestos se podrán gestionar (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios. No se podrán borrar presupuestos que hayan sido utilizados para realizar una venta. Los presupuestos serán enviados por correo electrónico siempre y cuando el cliente haya proporcionado dicha información.
 				\paragraph\indent\textbf{Líneas de presupuesto:}
 				\paragraph\indent	
-				Una línea de presupuesto está formada por un producto, la cantidad solicitada de dicho producto, el importe unitario, el importe total para dicha cantidad y un estado (pudiendo ser: pendiente, utilizado o no utilizado). Las líneas de presupuestos tendrán como estado utilizado o no utilizado, cuando el presupuesto se encuentre en estado vendido. Si un presupuesto no se encuentra en estado vendido, las líneas de presupuestos deberán estar en estado pendiente. Las líneas de presupuesto se podrán gestionar (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios. Además algunos usuarios contarán con un permiso que les permitirá modificar el importe unitario o total de una línea de presupuesto.
+				Una línea de presupuesto está formada por un producto, la cantidad solicitada de dicho producto, el importe unitario, el importe total para dicha cantidad y un estado (pudiendo ser: pendiente, utilizada o no utilizada).
+				\paragraph\indent
+				Los posibles estados de una línea de presupuesto son:
+				\begin{itemize}
+					\item \textbf{Pendiente:} Cuando se ha creado una línea de presupuesto.
+					\item \textbf{Utilizada:} Cuando la línea de presupuesto ha sido utilizada para crear una venta.
+					\item \textbf{No utilizada:} Cuando la línea de presupuesto ha sido descartada al momento de crear una venta a partir del presupuesto al cual pertenece.
+				\end{itemize}
+				Las líneas de presupuesto se podrán gestionar (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios. Además algunos usuarios contarán con un permiso que les permitirá modificar el importe unitario o total de una línea de presupuesto.
 				\paragraph\indent\textbf{Productos:}
 				\paragraph\indent	
 				Un producto tiene nombre, código identificador (único para cada producto), tipo de producto ( con proceso de producción, sin proceso de producción o a medida), lustre y tela. Además cada producto pertenecerá a una categoría y grupo. Todos los datos de los productos son obligatorios excepto la tela y/o lustre para aquellos sin proceso de producción. Los usuarios que cuenten con los permisos necesarios podrán gestionar productos (crear, modificar, borrar, dar de alta y dar de baja). No se podrán borrar productos que hayan sido utilizados en algún presupuesto, venta, orden de producción u orden de resposición.
@@ -90,37 +98,38 @@
 				\paragraph\indent
 				Los posibles estados de una venta son los siguientes:
 				\begin{itemize}
-					\item \textbf{En creación:} Cuando no tiene lineas de producto o todas las lineas de producto se encuentran en creación.
-					\item \textbf{Congelada:} Cuando se quita la posibilidad de modificar o borrar la venta para esperar la adhesión de un pago.
-					\item \textbf{En revisión:} Cuando se necesita que un administrador revise una venta ya que una linea de producto perteneciente a la venta no tiene el precio actual.
-					\item \textbf{Pendiente:} Cuando al menos una linea de producto se encuentra en estado distinto de en creación, cancelada o entregada.
+					\item \textbf{En creación:} Cuando no tiene líneas de producto o todas las líneas de producto se encuentran en creación.
+					\item \textbf{En revisión:} Cuando se necesita que un administrador revise una venta ya que una línea de producto perteneciente a la venta no tiene el precio actual.
+					\item \textbf{Pendiente:} Cuando al menos una línea de producto se encuentra en estado distinto de en creación, cancelada o entregada.
 					\item \textbf{Cancelada:} Cuando todas las líneas de producto se encuentran en estado cancelada. El/Los presupuesto/s y sus respectivas líneas vuelven al estado en que se encontraban antes de realizar la venta. Además se dará de baja todas las facturas y recibos asociados, y se realizará una nota de crédito de ser necesario.
 					\item \textbf{Entregada:} Cuando todas las líneas de producto no canceladas estén en estado entregadas.
 				\end{itemize}
 				\paragraph\indent
 				Cuando todas las líneas de producto no canceladas de una venta se encuentren en estado verificada se enviará un correo electrónico al cliente (en caso de haberlo proporcionado) notificándole su deuda en caso de existir e informándole que los productos que compró ya están disponibles.
-				\paragraph\indent\textbf{Lineas de producto:}
+				\paragraph\indent\textbf{Líneas de producto:}
 				\paragraph\indent	
-				Una venta tiene una o mas líneas de producto. Una linea de producto está compuesta por: un producto, la cantidad solicitada de dicho producto, cero o más observaciones, el precio por la cantidad solicitada y estado. Siendo de caracter obligatorio producto, cantidad y estado.
+				Una venta tiene una o mas líneas de producto. Una línea de producto está compuesta por: un producto, la cantidad solicitada de dicho producto, cero o más observaciones, el precio por la cantidad solicitada y estado. Siendo de caracter obligatorio producto, cantidad y estado.
 				\paragraph\indent
-				Los posibles estados de una linea de producto son:
+				Los posibles estados de una línea de producto son:
 				\begin{itemize}
-					\item \textbf{En creación:} Cuando una linea de producto se está creando.
-					\item \textbf{Pendiente:} Cuando la linea de producto fue creada y se debe determinar si es necesario asignarlo a una orden de producción.
-					\item \textbf{Cancelada:} Cuando un cliente solicita una cancelación de la linea de producto.
-					\item \textbf{Pendiente de producción:} Cuando un administrador seleccionó la linea para ser producida pero aún no se está realizando ninguna de sus tareas de producción.
-					\item \textbf{En producción:} Cuando se están realizando las tareas de producción asignadas para su producción.
-					\item \textbf{Entregada:} Cuando una linea de producto fue entregada.
-					\item \textbf{Verificado:} Cuando un producto ya está listo para ser entregado (haya pasado, o no, por un proceso de producción). El/Los productos podrán ser entregados si el credito es superior al total de dicha linea de producto. Se debe tener en cuenta que:
+					\item \textbf{En creación:} Cuando una línea de producto se está creando.
+					\item \textbf{Pendiente:} Cuando la línea de producto fue creada y se debe determinar si es necesario generar una orden de producción o se utilizará productos en stock.
+					\item \textbf{Cancelada:} Cuando un cliente solicita una cancelación de la línea de producto.
+					\item \textbf{Pendiente de producción:} Cuando un administrador seleccionó la línea para ser producida pero aún no se está realizando ninguna de sus tareas de producción.
+					\item \textbf{En producción:} Cuando se están realizando al menos una de sus tareas de producción asignadas.
+					\item \textbf{Reservada:} Cuando los productos se reservaron para el cliente.
+					\item \textbf{Pendiente de entrega:} Cuando la línea de producto ha sido reservada y el credito es superior al total de dicha línea de producto. Se debe tener en cuenta que:
+					\begin{center}
+						CREDITO = MONTO TOTAL DE VENTA - (TOTAL EN PRODUCTOS ENTREGADO + DEUDA)
+	
+						DEUDA = MONTO TOTAL - SUMA DE RECIBOS
+					\end{center}
+					\item \textbf{Entregada:} Cuando una línea de producto fue entregada.
+					\item \textbf{Verificada:} Cuando la línea de producto se encontraba en producción y un administrador ha verificado que su producción ha finalizado.
 				\end{itemize}
-				\begin{center}
-					CREDITO = MONTO TOTAL DE VENTA - (TOTAL EN PRODUCTOS ENTREGADO + DEUDA)
-
-					DEUDA = MONTO TOTAL - SUMA DE RECIBOS
-				\end{center}
 				\paragraph\indent\textbf{Tareas de producción:}
 				\paragraph\indent	
-				Al momento de producir una linea de producto se deben realizar una serie de tareas. Las tareas pueden tener encadenada una tarea a realizarse posterior a que se ha verificado su finalización o no. Las tareas son asignadas a un fabricante y deben ser verificadas por un administrador. Los posibles estados de las tareas son:
+				Al momento de producir una línea de producto se deben realizar una serie de tareas. Las tareas pueden tener encadenada una tarea a realizarse posterior a que se ha verificado su finalización o no. Las tareas son asignadas a un fabricante y deben ser verificadas por un administrador. Los posibles estados de las tareas son:
 				\begin{itemize}
 					\item \textbf{Pendiente:} Cuando se creo y asigno a un fabricante una tarea.
 					\item \textbf{En proceso:} Cuando el fabricante indica que ha comenzado a realizar la tarea.
@@ -129,7 +138,6 @@
 					\item \textbf{Finalizada:} Cuando el fabricante indica que ha finalizado su tarea.
 					\item \textbf{Verificada:} Cuando un administrador verifica que la tarea se ha finalizado de forma correcta.
 				\end{itemize}
-
 				\paragraph\indent\textbf{Facturas:}
 				\paragraph\indent	
 				Una venta tendrá una o más facturas asociadas, de las facturas se desea saber: número de factura, venta asociada, fecha en la que se realizó, uno o más recibos, cero o más notas de crédito y estado (pudiendo ser: alta o baja). Si una venta se encuentra en estado pendiente o entregada, deberá tener una factura en estado activo. Las facturas se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con los permisos necesarios.
@@ -151,10 +159,10 @@
 				Los estados de una orden de producción pueden ser:
 				\begin{itemize}
 					\item \textbf{En creación:} Cuando se estan agregando líneas de producto a la orden de producción.
-					\item \textbf{Pendiente:} Cuando las lineas de producto no canceladas, no verificadas y no entregadas de la orden de producción se encuentran en estado pendiente de producción.
-					\item \textbf{En producción:} Cuando al menos una linea de producto de la orden de producción se encuentran en estado de en producción.
+					\item \textbf{Pendiente:} Cuando las líneas de producto no canceladas, no verificadas y no entregadas de la orden de producción se encuentran en estado pendiente de producción.
+					\item \textbf{En producción:} Cuando al menos una línea de producto de la orden de producción se encuentran en estado de en producción.
 					\item \textbf{Cancelada:} Cuando todas las líneas de producto de la orden de producción se encuentran en estado cancelada.
-					\item \textbf{Verificada:} Cuando todas las lineas de productos no canceladas se encuentran verificadas o entregadas.
+					\item \textbf{Verificada:} Cuando todas las líneas de productos no canceladas se encuentran verificadas o entregadas.
 				\end{itemize}
 				\paragraph\indent
 				Una orden de producción puede ser creada a partir de una venta existente o no. En el caso de que sea creada a partir de una venta, no se podrán agregar nuevas líneas de producto para producir.
@@ -162,7 +170,7 @@
 				Cuando una orden de producción pase al estado de verificada se deberá asignar una ubicación, de manera que todos las líneas de producto producidas se agregarán al stock correspondiente.
 				\paragraph\indent\textbf{Remitos:}
 				\paragraph\indent	
-				Un remito tendrá una fecha y dirección de entrega, una o más líneas de producto y una venta asociada, por cada linea de producto, se podrá seleccionar la ubicación de la cual se extraerá. Al generarse el remito se deberá cambiar el estado de la línea de producto de la venta a entregado.  Además se decrementará el stock correspondiente.
+				Un remito tendrá una fecha y dirección de entrega, una o más líneas de producto y una venta asociada, por cada línea de producto, se podrá seleccionar la ubicación de la cual se extraerá. Al generarse el remito se deberá cambiar el estado de la línea de producto de la venta a entregado.  Además se decrementará el stock correspondiente.
 				\paragraph\indent\textbf{Órdenes de reposición:}
 				\paragraph\indent	
 				Los productos existentes se podrán mover de una ubibación a otra, para ello se deberá generar una orden de reposición en la cual se indicará la cantidad de productos a mover, ubicación origen y ubicación destino. Decrementando el stock en la ubicación origen e incrementando el stock en la ubicación destino.
