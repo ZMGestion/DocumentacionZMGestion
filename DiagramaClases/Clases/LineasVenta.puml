@@ -3,6 +3,8 @@ class LineasVenta{
     +idVenta: int
 
     cancelarFabricacion():string
+    puedeRetirar(): bool
+    
     
 }
 @enduml

@@ -11,5 +11,6 @@ class LineasProducto{
     dameRemito():Remitos
     cancelar():string
     damePadre(): IObjeto
+    precioTotal(): float
 }
 @enduml
