@@ -50,7 +50,7 @@ Verificada: Estado = "V"
 Reservada: Estado = "R"
 Reservada: Venta tiene saldo
 PendienteDeEntrega: Estado = "R"
-PendienteDeEntrega: (IdRemito != null AND\n LineasVenta.dameVenta().obtenerSaldo() == 0 AND\n NOT this.dameRemito().estaCancelado()) OR\n NOT this.dameRemito().asociadoAVenta()
+PendienteDeEntrega: (IdRemito != null AND\n LineasVenta.puedeRetirar() AND\n NOT this.dameRemito().estaCancelado()) OR\n NOT this.dameRemito().asociadoAVenta()
 'Hicimos que estado = D para simplicidad en la busqueda.
 Entregada: Estado = "D" 
 
@@ -71,19 +71,20 @@ Pendiente --> Cancelada: LineasVenta.\ncancelar()
 Pendiente --> PendienteDeProduccion: Ventas.\ngenerarOrdenProduccion\n(lv List<LineasVenta>)
 Pendiente --> Reservada: Ventas.\ngenerarRemito\n(lv List<LineasVenta>)
 Reservada --> Pendiente: Remitos.\ncancelar()
-PendienteDeProduccion --> Cancelada: LineaOrdenProduccion.\ncancelar()
-PendienteDeProduccion --> Cancelada: LineasVenta.\ncancelar()
 PendienteDeProduccion --> Cancelada: LineasOrdenProduccion.\ncancelar()
 PendienteDeProduccion --> EnProduccion: Tarea.\nejecutar()
-EnProduccion --> Cancelada: LineaOrdenProduccion.\ncancelar()
-EnProduccion --> Cancelada: LineasVenta.\ncancelar()
+PendienteDeProduccion --> Pendiente: LineasVenta.\ncancelar()
+EnProduccion --> Cancelada: LineasOrdenProduccion.\ncancelar()
+EnProduccion --> Pendiente: LineasVenta.\ncancelar()
+Cancelada --> EnProduccion: LineasOrdenProduccion.\nreanudar()
+Cancelada --> PendienteDeProduccion: LineasOrdenProduccion.\nreanudar()
 Reservada --> Cancelada: LineasVenta.\ncancelar()
-EnProduccion --> Reservada: LineasProducto.\nverificar()
-EnProduccion --> Verificada: LineasProducto.\nverificar()
+EnProduccion --> Verificada: LineasOrdenProduccion.\nverificar()
 Reservada --> PendienteDeEntrega: Ventas.\ncrearComprobante()
 PendienteDeEntrega --> Entregada: Remitos.\nentregar()
+PendienteDeEntrega --> Cancelada: LineasVenta.\ncancelar()
 PendienteDeEntrega --> [*]: Remitos.\nborrarLineaRemito\n(lr LineasRemito)
-Entregada --> Cancelada: LineasVenta.\ncancelar()
+Entregada --> Cancelada: LineasProducto.\ncancelar()
 
 @enduml
 
@@ -121,44 +122,42 @@ Entregada: this.todasLineasNoCanceladasEntregadas()
 EnCreacion --> [*]: GestorPresupuestos.\nborrar\n(p Presupuestos)
 EnCreacion -> EnRevision: this.\nchequearPrecios()
 EnCreacion --> Pendiente: this.\nchequearPrecios()
-EnRevision --> Cancelada: LineasVenta.\ncancelar()
+EnRevision --> Cancelada: LineasProducto.\ncancelar()
 EnRevision --> Pendiente: this.\nrevisar()
-Pendiente --> Cancelada: LineasVenta.\ncancelar()
+Pendiente --> Cancelada: LineasProducto.\ncancelar()
 Pendiente --> Entregada: LineasRemito.\nentregar()
 
 @enduml
 
 @startuml ordenesProduccion
 EnCreacion: Estado = "E"
-Pendiente: Estado = "C"
-Pendiente: Todas las lineas de producto no canceladas, no verificadas y no entregadas estan pendiente de produccion
-EnProduccion: Estado = "C"
-EnProduccion: Al menos una linea esta en produccion
-Verificada: Estado = "C"
-Verificada: Todas las lineas de producto no canceladas estan verificadas o entregadas
-Cancelada: Estado = "C"
-Cancelada: Todas las lineas de producto se encuentran canceladas
+Pendiente: Estado = "C" AND
+Pendiente: OrdenesProduccion.estaPendiente()
+EnProduccion: Estado = "C" AND
+EnProduccion: OrdenesProduccion.estaEnProduccion()
+Verificada: Estado = "C" AND
+Verificada: OrdenesProduccion.estaVerificada()
+Cancelada: Estado = "C" AND
+Cancelada: OrdenesProduccion.estaCancelada()
 
-[*]--> EnCreacion: Desde Ventas
+[*]--> EnCreacion: Ventas.\ngenerarOrdenProduccion\n(lv List<LineasVenta>)
 [*]--> EnCreacion: GestorOrdenesProduccion.\ncrear\n(op OrdenesProduccion)
 EnCreacion --> [*]: GestorOrdenesProduccion.\nborrar\n(op OrdenesProduccion)
-EnCreacion -->Pendiente: LineasOrdenProduccion.\ncancelar()
-EnCreacion -->Pendiente: LineasProducto.\nverificar()
-EnCreacion -->Pendiente: Remitos.\nentregar()
-EnCreacion -->Pendiente: LineasProducto.\ncrearTarea()
+EnCreacion -->Pendiente: this.\npasarAPendiente()
 EnProduccion -->Pendiente: LineasOrdenProduccion.\ncancelar()
-EnProduccion -->Pendiente: LineasProducto.\nverificar()
+EnProduccion -->Pendiente: LineasOrdenProduccion.\nverificar()
 EnProduccion -->Pendiente: Remitos.\nentregar()
-EnProduccion -->Pendiente: LineasProducto.\ncrearTarea()
+EnProduccion -->Cancelada: LineasOrdenProduccion.\ncancelar()
 Pendiente --> EnProduccion: Tareas.\nejecutar()
+Pendiente --> EnProduccion: LineasOrdenProduccion.\nreanudar()
 Cancelada --> Pendiente: LineasOrdenProduccion.\nreanudar()
 Cancelada --> EnProduccion: LineasOrdenProduccion.\nreanudar()
 Pendiente --> Cancelada: LineasOrdenProduccion.\ncancelar()
-EnProduccion --> Verificada: LineasProducto.\nverificar()
-EnProduccion --> Verificada: LineasProducto.\ncancelar()
-EnProduccion --> Verificada: Remitos.\nentregar()
-
-'Revisar si hay vueltas desde Verificada a otro estado...
+Pendiente --> Verificada: LineasOrdenProduccion.\ncancelar()
+EnProduccion --> Verificada: LineasOrdenProduccion.\nverificar()
+EnProduccion --> Verificada: LineasOrdenProduccion.\ncancelar()
+EnProduccion --> Verificada: GestionRemitos.\ncrear\n(r Remitos)
+Verificada --> EnProduccion: LineasOrdenProduccion.\nreanudar()
 
 @enduml
 
@@ -167,12 +166,13 @@ top to bottom direction
 
 EnCreacion: Estado = "E"
 Creado: Estado = "C"
+Creado: FechaEntrega == null
 Entregado: Estado = "C"
 Entregado: FechaEntrega != null
 Cancelado: Estado = "B"
 
 [*] --> EnCreacion: GestorRemitos.\ncrear\n(remito Remitos)
-[*] --> EnCreacion: Ventas.\ngenerarRemito()
+[*] --> EnCreacion: Ventas.\ngenerarRemito\n(lv List<LineasVenta>)
 EnCreacion --> Creado: this.\npasarACreado()
 Creado --> Entregado: Remitos.\nentregar()
 Cancelado --> Creado: Remitos.\ndescancelar()
