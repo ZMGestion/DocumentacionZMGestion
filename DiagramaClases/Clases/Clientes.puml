@@ -10,5 +10,7 @@ class Clientes{
     listarPresupuestos(): List<Presupuestos>
     crearDomicilio(domicilio Domicilios): string
     borrarDomicilio(domicilio Domicilios): string
+    listarPaises(): List<Paises>
+    
 }
 @enduml
