@@ -2,7 +2,9 @@
 class LineasVenta{
     +idVenta: int
 
-    cancelar(): string
-    dameVenta(): Ventas
+    cancelarFabricacion():string
+    puedeRetirar(): bool
+    
+    
 }
 @enduml

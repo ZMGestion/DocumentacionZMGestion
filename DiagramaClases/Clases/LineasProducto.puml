@@ -9,14 +9,8 @@ class LineasProducto{
     estado: string
 
     dameRemito():Remitos
-    listarObservaciones(): List<Observaciones>
-    listarTareas(): List<Tareas>
-    crearObservacion(observacion Observaciones): string
-    borrarObservacion(observacion Observaciones): string
-    crearTarea(tarea Tareas): string
-    borrarTarea(tarea Tareas): string
-    todasTareasPendientes(): bool
-    tieneTareas(): bool
-    verificar(): string
+    cancelar():string
+    damePadre(): IObjeto
+    precioTotal(): float
 }
 @enduml
