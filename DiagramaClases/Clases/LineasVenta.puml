@@ -4,6 +4,7 @@ class LineasVenta{
 
     cancelarFabricacion():string
     puedeRetirar(): bool
+    chequearPrecio():bool
     
     
 }

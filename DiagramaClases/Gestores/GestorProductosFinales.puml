@@ -1,6 +1,6 @@
 @startuml GestorProductosFinales
 class GestorProductosFinales{
-    
+    listarLustres(): List<Lustres>
 }
 
 @enduml
