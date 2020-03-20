@@ -8,5 +8,7 @@ class Domicilios{
     +idProvincia: int
     +idPais: int
     observaciones: string
+
+    
 }
 @enduml
