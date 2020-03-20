@@ -8,7 +8,7 @@ class Personas{
    documento: string
    estado: string
 
-   listarTiposDocumento(): List<TiposDocumento>
+   
    listarPresupuestos(): List<Presupuestos>
    listarVentas(): List<Ventas>
 }

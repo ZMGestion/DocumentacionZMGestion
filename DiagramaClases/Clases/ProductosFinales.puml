@@ -6,6 +6,6 @@ class ProductosFinales{
     +idTela: int
     estado: string
 
-    listarLustres(): List<Lustres>
+    
 }
 @enduml

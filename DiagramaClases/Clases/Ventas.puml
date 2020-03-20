@@ -21,7 +21,7 @@ class Ventas{
     totalPagado(): float
     totalRetirado(): float
     obtenerSaldo(): float
-    chequearPrecios(): bool
+    chequearPrecios(): string
     todasLineasCanceladas(): bool
     todasLineasNoCanceladasEntregadas(): bool
 

@@ -8,10 +8,15 @@ class OrdenesProduccion{
     estado: string
 
     cancelar(): string
+    pasarAPendiente():string
+    estaPendiente():bool
+    estaEnProduccion():bool
+    estaVerificada():bool
+    estaCancelada():bool
     crearLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): string
     modificarLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): string
     borrarLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): string
     listarLineasOrdenProduccion(): List<LineasOrdenProduccion>
-    pasarAPendiente():string
+
 }
 @enduml
