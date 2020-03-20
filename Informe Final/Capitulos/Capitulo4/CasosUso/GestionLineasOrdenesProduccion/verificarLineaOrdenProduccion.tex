@@ -15,7 +15,7 @@
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El administrador indica la línea de orden de producción que desea verificar que esta finalizada.}
-    \addCaseUseStep{ZMGestion pasa la línea de orden de producción al estado `Reservada' en caso de tener una venta asociada, caso contrario al estado de `Verificada'. ZMGestion muestra un mensaje indicando el éxito de la operación.}
+    \addCaseUseStep{ZMGestion pasa la línea de orden de producción al estado `Verificada' y en caso de tener una venta asociada reserva los productos fabricados para el cliente, pasando las lineas de venta utilizadas para generar la orden de produccion al estado `Reservada'.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: La línea de orden de producción no se encuentra en estado `En producción' o sus tareas no están todas finalizadas.}{1} %Flujo alternativoA1.
