@@ -15,8 +15,8 @@
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El administrador indica la línea de remito que desea modificar.}
-    \addCaseUseStep{ZMGestion muestra un formulario autocompletado con los datos de la linea de remito seleccionada, producto, tela, lustre y cantidad. Indicando que todos los el producto y la cantidad son obligatorios.}
-    \addCaseUseStep{El administrador modifica el producto, tela, lustre y cantidad.}
+    \addCaseUseStep{ZMGestion muestra un formulario autocompletado con los datos de la linea de remito seleccionada, producto, tela, lustre, cantidady ubicación. Indicando que todos los el producto y la cantidad son obligatorios.}
+    \addCaseUseStep{El administrador modifica el producto, tela, lustre, cantidad y ubicación.}
     \addCaseUseStep{ZMGestion modifica la línea de remito y muestra un mensaje indicando el éxito de la operación.}
 
 }
@@ -33,7 +33,8 @@
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 
-    \newAlternative{A3: La combinación de producto, tela y lustre ya se encuentra en el remito.}{3} %Flujo alternativo A2.
+    \newAlternative{A3: La combinación de producto, tela, lustre y ubicación
+    ya se encuentra en el remito.}{3} %Flujo alternativo A2.
     \caseUseRow{La secuencia A3 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que ya existe una línea de remito identica en el remito.}
     \caseUseRow{El escenario vuelve al punto 2.}

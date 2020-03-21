@@ -8,22 +8,23 @@ class Ventas{
     fechaAlta: DateTime
     estado: string
 
-    generarOrdenProduccion(lv List<LineasVenta>): string
-    generarRemito(lv List<LineasVenta>): string
-    revisar(): string
-    crearComprobante(comprobante Comprobantes): string
-    crearLineaVenta(lineaVenta LineasVenta): string
-    modificarLineaVenta(lineaVenta LineasVenta): string
-    borrarLineaVenta(lineaVenta LineasVenta): string
+    generarOrdenProduccion(lv List<LineasVenta>): Response
+    generarRemito(lv List<LineasVenta>): Response
+    revisar(): Response
+    crearComprobante(comprobante Comprobantes): Response
+    crearLineaVenta(lineaVenta LineasVenta): Response
+    modificarLineaVenta(lineaVenta LineasVenta): Response
+    borrarLineaVenta(lineaVenta LineasVenta): Response
     listarLineasVenta(): List<LineasVenta>
     desvincularRemito(lv LineasVenta)
     puedeProducir(lv List<LineasVenta>): bool
     totalPagado(): float
     totalRetirado(): float
     obtenerSaldo(): float
-    chequearPrecios(): string
+    chequearPrecios(): Response
     todasLineasCanceladas(): bool
     todasLineasNoCanceladasEntregadas(): bool
+    reservar(lv List<LineasVenta>): Response
 
 }
 @enduml

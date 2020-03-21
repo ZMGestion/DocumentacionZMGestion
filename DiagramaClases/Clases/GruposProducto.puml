@@ -5,6 +5,6 @@ class GruposProducto{
     estado: string
 
     listarProductos(): List<Productos>
-    modificarPreciosProductos(porcentaje float): string
+    modificarPreciosProductos(porcentaje float): Response
 }
 @enduml

@@ -9,7 +9,7 @@ class LineasProducto{
     estado: string
 
     dameRemito():Remitos
-    cancelar():string
+    cancelar():Response
     damePadre(): IObjeto
     precioTotal(): float
 }

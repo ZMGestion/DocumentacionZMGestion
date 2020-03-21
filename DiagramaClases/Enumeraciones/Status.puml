@@ -1,0 +1,9 @@
+@startuml Status
+enum Status{
+    Success
+    Error
+    Waititng
+    None
+}
+
+@enduml

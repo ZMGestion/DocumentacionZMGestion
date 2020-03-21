@@ -1,5 +1,5 @@
 @startuml GestorPresupuestos
 class GestorPresupuestos{
-    transformarPresupuestosEnVenta(lineasPresupuesto List<LineasPresupuesto>): string
+    transformarPresupuestosEnVenta(lp List<LineasPresupuesto>): Response
 }
 @enduml

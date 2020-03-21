@@ -11,12 +11,12 @@ class Tareas{
     estado: string
     observaciones: string
 
-    ejecutar(): string
-    cancelar(): string
-    reanudar(): string
-    pausar(): string
-    finalizar(): string
-    verificar(): string
+    ejecutar(): Response
+    cancelar(): Response
+    reanudar(): Response
+    pausar(): Response
+    finalizar(): Response
+    verificar(): Response
     
 }
 @enduml

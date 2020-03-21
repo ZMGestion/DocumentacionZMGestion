@@ -8,13 +8,13 @@ class Presupuestos{
     periodoValidez: int
     estado: string
 
-    crearLineaPresupuesto(lineaPresupuesto LineasPresupuesto): string
-    modificarLineaPresupuesto(lineaPresupuesto LineasPresupuesto): string
-    borrarLineaPresupuesto(lineaPresupuesto LineasPresupuesto): string
+    crearLineaPresupuesto(lineaPresupuesto LineasPresupuesto): Response
+    modificarLineaPresupuesto(lineaPresupuesto LineasPresupuesto): Response
+    borrarLineaPresupuesto(lineaPresupuesto LineasPresupuesto): Response
     listarLineasPresupuesto(): List<LineasPresupuesto>
-    enviarPresupuestoEmail(): string
+    enviarPresupuestoEmail(f File): Response
     generarPDF(): File
-    pasarACreado(): string
+    pasarACreado(): Response
     estaExpirado(): bool
 }
 @endumls

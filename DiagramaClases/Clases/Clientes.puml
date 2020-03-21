@@ -8,7 +8,7 @@ class Clientes{
     listarDomicilios(): List<Domicilios>
     listarVentas(): List<Ventas>
     listarPresupuestos(): List<Presupuestos>
-    crearDomicilio(domicilio Domicilios): string
-    borrarDomicilio(domicilio Domicilios): string    
+    crearDomicilio(domicilio Domicilios): Reponse
+    borrarDomicilio(domicilio Domicilios): Response    
 }
 @enduml
