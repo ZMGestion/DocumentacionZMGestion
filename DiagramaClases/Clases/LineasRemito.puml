@@ -1,6 +1,7 @@
 @startuml LineasRemito
 class LineasRemito{
     +idRemito: int
+    +idUbicacion: int 
 
 }
 @enduml

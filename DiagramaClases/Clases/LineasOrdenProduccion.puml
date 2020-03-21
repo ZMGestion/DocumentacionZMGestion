@@ -2,13 +2,13 @@
 class LineasOrdenProduccion{
     +idOrdenProduccion: int
 
-    reanudar(): string
+    reanudar(): Response
     listarObservaciones(): List<Observaciones>
     listarTareas(): List<Tareas>
-    crearObservacion(observacion Observaciones): string
-    borrarObservacion(observacion Observaciones): string
-    crearTarea(tarea Tareas): string
-    borrarTarea(tarea Tareas): string
+    crearObservacion(observacion Observaciones): Response
+    borrarObservacion(observacion Observaciones): Response
+    crearTarea(tarea Tareas): Response
+    borrarTarea(tarea Tareas): Response
     todasTareasPendientes(): bool
     tieneTareas(): bool
 

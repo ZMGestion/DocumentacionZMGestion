@@ -1,0 +1,8 @@
+@startuml Response
+class Response{
+    estado: Status
+    mensaje: string
+    objetos: List<IObject>
+}
+
+@enduml

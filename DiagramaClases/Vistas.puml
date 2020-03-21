@@ -33,6 +33,7 @@
 !include ./Clases/LineasVenta.puml
 !include ./Clases/LineasOrdenProduccion.puml
 !include ./Clases/LineasRemito.puml
+
   
 
 left to right direction
@@ -74,6 +75,7 @@ LineasOrdenProduccion "0..*"--* OrdenesProduccion
 LineasPresupuesto "0..*"--* Presupuestos
 Observaciones "0..*"--* LineasOrdenProduccion
 LineasRemito "0..*"--* Remitos
+LineasRemito "0..*" -- "1" Ubicaciones
 LineasProducto "0..*"--"1" ProductosFinales
 Presupuestos "0..*"--"1" Clientes
 Presupuestos "0..*"--"1" Usuarios
@@ -199,6 +201,7 @@ OrdenesProduccion "0..*" -- "1" Usuarios
 LineasProducto "1" -- "0..1" LineasProducto
 LineasProducto <|-- LineasRemito
 LineasRemito "0..*"--* Remitos
+LineasRemito "0..*" -- "1" Ubicaciones
 Ubicaciones "0..1"--"1" Domicilios
 Remitos "0..*"--"0..1" Domicilios 
 Ubicaciones "1"--"0..*" Remitos
@@ -251,6 +254,9 @@ Ubicaciones "1"--"0..*" Remitos
 !include ./Gestores/GestorUsuarios.puml
 !include ./Gestores/GestorVentas.puml
 !include ./Gestores/GestorComprobantes.puml
+!include ./Enumeraciones/Status.puml
+!include ./Clases/Response.puml
+
 @enduml
 
 @startuml vistaCanonica

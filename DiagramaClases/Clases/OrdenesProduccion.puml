@@ -7,15 +7,15 @@ class OrdenesProduccion{
     fechaFinalizacion: DateTime
     estado: string
 
-    cancelar(): string
-    pasarAPendiente():string
-    estaPendiente():bool
-    estaEnProduccion():bool
-    estaVerificada():bool
-    estaCancelada():bool
-    crearLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): string
-    modificarLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): string
-    borrarLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): string
+    cancelar(): Response
+    pasarAPendiente(): Response
+    estaPendiente(): bool
+    estaEnProduccion(): bool
+    estaVerificada(): bool
+    estaCancelada(): bool
+    crearLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): Response
+    modificarLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): Response
+    borrarLineaOrdenProduccion(lineaOrdenProduccion LineasOrdenProduccion): Response
     listarLineasOrdenProduccion(): List<LineasOrdenProduccion>
 
 }

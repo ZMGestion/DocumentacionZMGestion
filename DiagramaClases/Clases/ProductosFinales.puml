@@ -6,6 +6,9 @@ class ProductosFinales{
     +idTela: int
     estado: string
 
+    dameStock():int
+    dameStockPorUbicacion(u Ubicaciones): int
+
     
 }
 @enduml

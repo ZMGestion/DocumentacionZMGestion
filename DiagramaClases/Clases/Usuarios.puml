@@ -11,8 +11,8 @@ class Usuarios {
    estadoCivil: string
    cantidadHijos: int
 
-   iniciarSesion(): string
-   cerrarSesion(): string
+   iniciarSesion(): Response
+   cerrarSesion(): Response
    listarOrdenesProduccion(): List<OrdenesProduccion>
    listarTareas(): List<Tareas>
 }

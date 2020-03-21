@@ -2,10 +2,9 @@
 class LineasVenta{
     +idVenta: int
 
-    cancelarFabricacion():string
+    cancelarFabricacion():Response
     puedeRetirar(): bool
     chequearPrecio():bool
-    
-    
+
 }
 @enduml
