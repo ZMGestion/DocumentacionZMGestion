@@ -1,3 +1,139 @@
-@startuml crearPresupuesto
+@startuml GestionUsuarios
+    actor ":Administradores" as Administradores
+    participant ":GestionRoles" as GestionRoles
+    participant ":GestionUsuarios" as GestionUsuarios
+    participant ":Usuarios" as Usuarios
+    opt Nuevo
+        Administradores -> GestionRoles: listarRoles()
+        Administradores -> GestionUsuarios: listarTiposDocumento()
+        Administradores -> GestionUsuarios: crear(u Usuarios)
+    else Gestionar
+        Administradores -> GestionUsuarios: buscarAvanzado(u Usuarios, incluyeBajas boolean)
+        opt Modificar
+            Administradores -> GestionUsuarios: modificar(u Usuarios)
+        else Borrar
+            Administradores -> GestionUsuarios: borrar(u Usuarios)
+        else DarBaja
+            Administradores -> Usuarios: darBaja()
+        else darAlta
+            Administradores -> Usuarios: darAlta()
+        end
+    end
+@enduml
 
+@startuml GestionClientes
+    actor ":Vendedores" as Vendedores
+    participant ":GestionClientes" as GestionClientes
+    participant ":Clientes" as Clientes
+    opt Nuevo
+        Vendedores -> GestionClientes: listarPaises()
+        Vendedores -> GestionClientes: listarTiposDocumento()
+        Vendedores -> GestionClientes: crear(c Clientes)
+    else Gestionar
+        Vendedores -> GestionClientes: buscarAvanzado(c Clientes, incluyeBajas boolean)
+        opt Modificar
+            Vendedores -> GestionClientes: listarPaises()
+            Vendedores -> GestionClientes: listarTiposDocumento()
+            Vendedores -> GestionClientes: modificar(c Clientes)
+        else Borrar
+            Vendedores -> GestionClientes: borrar(c Clientes)
+        else DarBaja
+            Vendedores -> Clientes: darBaja()
+        else DarAlta
+            Vendedores -> Clientes: darAlta()
+        end
+    end
+@enduml
+
+@startuml GestionDomicilios
+    actor ":Vendedores" as Vendedores
+    participant ":GestionClientes" as GestionClientes
+    participant ":Paises" as Paises
+    participant ":Ciudades" as Ciudades
+    participant ":Clientes" as Clientes
+
+    Vendedores -> GestionClientes: buscarAvanzado(c Clientes, incluyeBajas boolean)
+    Vendedores -> Clientes: listarDomicilios()
+    opt Crear
+        Vendedores -> GestionClientes: listarPaises()
+        Vendedores -> Paises: listarProvincias()
+        Vendedores -> Ciudades: listarCiudades()
+        Vendedores -> Clientes: crearDomicilio(d Domicilios)
+    else Borrar
+        Vendedores -> Clientes: borrar(d Domicilios)
+    end
+        
+@enduml
+
+@startuml GestionPresupuestos
+    actor ":Vendedores" as Vendedores
+    participant ":Presupuestos" as Presupuestos
+    participant ":GestionPresupuestos" as GestionPresupuestos
+
+    opt Nuevo
+        Vendedores -> GestionClientes: buscarAvanzado(c Clientes, incluyeBajas boolean)
+        Vendedores -> GestionPresupuestos: crear(p Presupuestos)
+        loop Gestionar lineas presupuesto
+            opt Nueva linea
+                Vendedores -> GestionProductos: buscarAvanzado(p Productos, incluyeBajas boolean)
+                Vendedores -> GestionProductosFinales: listarLustres()
+                Vendedores -> GestionTelas: listarTelas()
+                Vendedores -> Presupuestos: crearLineaPresupuesto(lp LineasPresupuesto)
+            else Modificar linea
+                Vendedores -> GestionProductos: buscarAvanzado(p Productos, incluyeBajas boolean)
+                Vendedores -> GestionProductosFinales: listarLustres()
+                Vendedores -> GestionTelas: listarTelas()
+                Vendedores -> Presupuestos: modificarLineaPresupuesto(lp LineasPresupuesto)
+            else Borrar linea
+                Vendedores -> Presupuestos: borrarLineaPresupuesto(lp LineasPresupuesto)
+            end
+        end 
+        Vendedores -> Presupuestos: pasarACreado()
+    else Gestionar
+        Vendedores -> GestionPresupuestos: buscarAvanzado(p Presupuestos, incluyeBajas boolean)
+        opt Modificar
+            Vendedores -> Presupuestos: listarLineasPresupuesto()
+            loop Gestionar lineas presupuesto
+                opt Nueva linea
+                    Vendedores -> GestionProductos: buscarAvanzado(p Productos, incluyeBajas boolean)
+                    Vendedores -> GestionProductosFinales: listarLustres()
+                    Vendedores -> GestionTelas: listarTelas()
+                    Vendedores -> Presupuestos: crearLineaPresupuesto(lp LineasPresupuesto)
+                else Modificar linea
+                    Vendedores -> GestionProductos: buscarAvanzado(p Productos, incluyeBajas boolean)
+                    Vendedores -> GestionProductosFinales: listarLustres()
+                    Vendedores -> GestionTelas: listarTelas()
+                    Vendedores -> Presupuestos: modificarLineaPresupuesto(lp LineasPresupuesto)
+                else Borrar linea
+                    Vendedores -> Presupuestos: borrarLineaPresupuesto(lp LineasPresupuesto)
+                end
+            end
+            Vendedores -> GestionPresupuestos: modificar(p Presupuestos)
+        else Borrar
+            Vendedores -> GestionPresupuestos: borrar(p Presupuestos)
+        else Enviar por email
+            Vendedores -> Presupuestos: enviarPresupuestoEmail()
+        else Generar PDF
+            Vendedores -> Presupuestos: generarPDF()
+        else Transformar presupuesto en venta
+            Vendedores -> GestionClientes: buscarAvanzado(c Clientes, incluyeBajas boolean)
+            Vendedores -> Presupuestos: listarLineasPresupuesto()
+            Vendedores -> GestionPresupuestos: transformarPresupuestoEnVenta(lp List<LineasPresupuesto>)
+            'loop Gestionar lineas venta
+            '    opt Nueva linea
+            '        Vendedores -> GestionProductos: buscarAvanzado(p Productos, incluyeBajas boolean)
+            '        Vendedores -> GestionProductosFinales: listarLustres()
+            '        Vendedores -> GestionTelas: listarTelas()
+            '        Vendedores -> Presupuestos: crearLineaPresupuesto(lp LineasPresupuesto)
+            '    else Modificar linea
+            '        Vendedores -> GestionProductos: buscarAvanzado(p Productos, incluyeBajas boolean)
+            '        Vendedores -> GestionProductosFinales: listarLustres()
+            '        Vendedores -> GestionTelas: listarTelas()
+            '        Vendedores -> Presupuestos: modificarLineaPresupuesto(lp LineasPresupuesto)
+            '    else Borrar linea
+            '        Vendedores -> Presupuestos: borrarLineaPresupuesto(lp LineasPresupuesto)
+            '    end
+            'end
+        end
+    end
 @enduml

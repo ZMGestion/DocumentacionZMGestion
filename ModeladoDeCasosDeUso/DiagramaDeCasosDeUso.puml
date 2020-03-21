@@ -393,7 +393,7 @@ rectangle GestionClientes{
     BA <|.. B : <<Extends>>
     C <|.. B : <<Extends>>
     BA <|.. ListarDomicilios : <<Extends>>
-    BA <|.. GestionDomicilios : <<Extends>>
+    ListarDomicilios <|.. GestionDomicilios : <<Extends>>
 }
     Vendedores -- C
     Vendedores -- BA

@@ -12,6 +12,8 @@ class Presupuestos{
     modificarLineaPresupuesto(lineaPresupuesto LineasPresupuesto): string
     borrarLineaPresupuesto(lineaPresupuesto LineasPresupuesto): string
     listarLineasPresupuesto(): List<LineasPresupuesto>
+    enviarPresupuestoEmail(): string
+    generarPDF(): File
     pasarACreado(): string
     estaExpirado(): bool
 }
