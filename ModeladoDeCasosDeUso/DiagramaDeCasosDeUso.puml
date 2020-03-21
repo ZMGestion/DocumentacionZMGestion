@@ -97,6 +97,8 @@ rectangle ZMGestion{
     }
     
     rectangle GestionClientes{
+        rectangle GestionDomicilios{
+        }
     }
 
     Usuarios  ..|> Sesiones
@@ -382,15 +384,34 @@ rectangle GestionClientes{
     UseCase "CU058 - Dar de alta cliente" as DA
     UseCase "CU059 - Modificar cliente" as M
     UseCase "CU060 - Borrar cliente" as B
+    UseCase "CU061 - Listar domicilios" as ListarDomicilios
+    package GestionDomicilios{
+    }
     BA <|.. M : <<Extends>>
     BA <|.. DA : <<Extends>>
     BA <|.. DB : <<Extends>>
     BA <|.. B : <<Extends>>
+    C <|.. B : <<Extends>>
+    BA <|.. ListarDomicilios : <<Extends>>
+    BA <|.. GestionDomicilios : <<Extends>>
 }
     Vendedores -- C
     Vendedores -- BA
     Administradores -- DB
     Administradores -- DA
+
+@enduml
+
+@startuml GestionDomicilios
+!include ../Actors/Actors.wsd
+ left to right direction
+
+rectangle GestionDomicilios{
+    UseCase "CU062 - Crear domicilio" as C
+    UseCase "CU063 - Borrar domicilio" as B
+}
+    Vendedores -- C
+    Vendedores -- B
 
 @enduml
 
@@ -427,14 +448,14 @@ rectangle GestionOperaciones{
  left to right direction
 
 rectangle GestionPrespuestos{
-    UseCase "CU061 - Crear presupuesto" as C
-    UseCase "CU062 - Buscar avanzado presupuestos" as BA
-    UseCase "CU063 - Modificar presupuesto" as M
-    UseCase "CU064 - Borrar presupuesto" as B
-    UseCase "CU065 - Transformar presupuestos en venta" as Transformar
-    UseCase "CU066 - Generar presupuesto en formato PDF" as PDF
-    UseCase "CU067 - Enviar presupuesto por correo electrónico" as Enviar
-    UseCase "CU068 - Listar lineas de presupuesto" as Listar
+    UseCase "CU064 - Crear presupuesto" as C
+    UseCase "CU065 - Buscar avanzado presupuestos" as BA
+    UseCase "CU066 - Modificar presupuesto" as M
+    UseCase "CU067 - Borrar presupuesto" as B
+    UseCase "CU068 - Transformar presupuestos en venta" as Transformar
+    UseCase "CU069 - Generar presupuesto en formato PDF" as PDF
+    UseCase "CU070 - Enviar presupuesto por correo electrónico" as Enviar
+    UseCase "CU071 - Listar lineas de presupuesto" as Listar
     package GestionLineasPresupuesto{
     }
 
@@ -458,9 +479,9 @@ rectangle GestionPrespuestos{
  left to right direction
 
 rectangle GestionLineasPresupuesto{
-    UseCase "CU069 - Crear linea de prespuesto" as C
-    UseCase "CU070 - Modificar linea de presupuesto" as M
-    UseCase "CU071 - Borrar linea de presupuesto " as B
+    UseCase "CU072 - Crear linea de prespuesto" as C
+    UseCase "CU073 - Modificar linea de presupuesto" as M
+    UseCase "CU074 - Borrar linea de presupuesto " as B
 }
     Vendedores -- C
     Vendedores -- M
@@ -473,15 +494,15 @@ rectangle GestionLineasPresupuesto{
  left to right direction
 
 rectangle GestionVentas{
-    UseCase "CU072 - Crear venta" as C
-    UseCase "CU073 - Buscar avanzado ventas " as BA
-    UseCase "CU074 - Listar lineas de venta " as Listar
-    UseCase "CU075 - Modificar venta" as M
-    UseCase "CU076 - Borrar venta" as B
-    UseCase "CU077 - Generar orden de producción a partir de venta" as GenerarOrden
-    UseCase "CU078 - Generar remito a partir de venta" as GenerarRemito
-    UseCase "CU079 - Crear comprobante" as CrearComprobante
-    UseCase "CU080 - Revisar venta" as Revisar
+    UseCase "CU075 - Crear venta" as C
+    UseCase "CU076 - Buscar avanzado ventas " as BA
+    UseCase "CU077 - Listar lineas de venta " as Listar
+    UseCase "CU078 - Modificar venta" as M
+    UseCase "CU079 - Borrar venta" as B
+    UseCase "CU080 - Generar orden de producción a partir de venta" as GenerarOrden
+    UseCase "CU081 - Generar remito a partir de venta" as GenerarRemito
+    UseCase "CU082 - Crear comprobante" as CrearComprobante
+    UseCase "CU083 - Revisar venta" as Revisar
     package GestionLineasVenta{
     }
     package GestionComprobantes{
@@ -509,10 +530,10 @@ rectangle GestionVentas{
  left to right direction
 
 rectangle GestionLineasVenta{
-    UseCase "CU081 - Crear linea de venta" as C
-    UseCase "CU082 - Modificar linea de venta" as M
-    UseCase "CU083 - Borrar linea de venta" as B
-    UseCase "CU084 - Cancelar linea de venta" as Cancelar
+    UseCase "CU084 - Crear linea de venta" as C
+    UseCase "CU085 - Modificar linea de venta" as M
+    UseCase "CU086 - Borrar linea de venta" as B
+    UseCase "CU087 - Cancelar linea de venta" as Cancelar
 }
     Vendedores -- C
     Vendedores -- B
@@ -528,9 +549,9 @@ rectangle GestionLineasVenta{
 
 rectangle GestionComprobantes{
     
-    UseCase "CU085 - Buscar avanzado comprobantes " as BA
-    UseCase "CU086 - Modificar comprobante" as M
-    UseCase "CU087 - Borrar comprobante" as B
+    UseCase "CU088 - Buscar avanzado comprobantes " as BA
+    UseCase "CU089 - Modificar comprobante" as M
+    UseCase "CU090 - Borrar comprobante" as B
 
     BA <|.. M : <<Extends>>
     BA <|.. B : <<Extends>>
@@ -547,14 +568,14 @@ rectangle GestionComprobantes{
  left to right direction
 
 rectangle GestionOrdenesProduccion{
-    UseCase "CU088 - Crear orden de producción" as C
-    UseCase "CU089 - Buscar avanzado órdenes de producción " as BA
-    UseCase "CU090 - Modificar orden de producción" as M
-    UseCase "CU091 - Listar lineas de orden de producción" as ListarLineas
-    UseCase "CU092 - Borrar orden de producción" as B
-    UseCase "CU093 - Cancelar orden de producción" as Cancelar
-    UseCase "CU094 - Listar observaciones de línea de orden de producción" as ListarObservaciones
-    UseCase "CU095 - Listar tareas de línea de orden de producción" as ListarTareas
+    UseCase "CU091 - Crear orden de producción" as C
+    UseCase "CU092 - Buscar avanzado órdenes de producción " as BA
+    UseCase "CU093 - Modificar orden de producción" as M
+    UseCase "CU094 - Listar lineas de orden de producción" as ListarLineas
+    UseCase "CU095 - Borrar orden de producción" as B
+    UseCase "CU096 - Cancelar orden de producción" as Cancelar
+    UseCase "CU097 - Listar observaciones de línea de orden de producción" as ListarObservaciones
+    UseCase "CU098 - Listar tareas de línea de orden de producción" as ListarTareas
     package GestionLineasOrdenProduccion{
     }
     package GestionObservaciones{
@@ -586,12 +607,12 @@ rectangle GestionOrdenesProduccion{
  left to right direction
 
 rectangle GestionLineasOrdenesProduccion{
-    UseCase "CU096 - Crear linea de orden de producción" as C
-    UseCase "CU097 - Modificar linea de orden de producción" as M
-    UseCase "CU098 - Borrar linea de orden de producción" as B
-    UseCase "CU099 - Verificar linea de orden de producción" as Verificar
-    UseCase "CU100 - Cancelar linea de orden de producción" as Cancelar
-    UseCase "CU101 - Reanudar linea de orden de producción" as Reanudar
+    UseCase "CU099 - Crear linea de orden de producción" as C
+    UseCase "CU100 - Modificar linea de orden de producción" as M
+    UseCase "CU101 - Borrar linea de orden de producción" as B
+    UseCase "CU102 - Verificar linea de orden de producción" as Verificar
+    UseCase "CU103 - Cancelar linea de orden de producción" as Cancelar
+    UseCase "CU104 - Reanudar linea de orden de producción" as Reanudar
 }
     Administradores -- C
     Administradores -- Verificar
@@ -607,8 +628,8 @@ rectangle GestionLineasOrdenesProduccion{
  left to right direction
 
 rectangle GestionObservaciones{
-    UseCase "CU102 - Crear observación" as C
-    UseCase "CU103 - Borrar observación" as B
+    UseCase "CU105 - Crear observación" as C
+    UseCase "CU106 - Borrar observación" as B
 }
     Administradores -- C
     Administradores -- B
@@ -619,14 +640,14 @@ rectangle GestionObservaciones{
  left to right direction
 
 rectangle GestionTareas{
-    UseCase "CU104 - Crear tarea" as C
-    UseCase "CU105 - Borrar tarea" as B
-    UseCase "CU106 - Finalizar tarea" as Finalizar
-    UseCase "CU107 - Verificar tarea" as Verificar
-    UseCase "CU108 - Pausar tarea" as Pausar
-    UseCase "CU109 - Reanudar tarea" as Reanudar
-    UseCase "CU110 - Cancelar tarea" as Cancelar
-    UseCase "CU111 - Ejecutar tarea" as Ejecutar
+    UseCase "CU107 - Crear tarea" as C
+    UseCase "CU108 - Borrar tarea" as B
+    UseCase "CU109 - Finalizar tarea" as Finalizar
+    UseCase "CU110 - Verificar tarea" as Verificar
+    UseCase "CU111 - Pausar tarea" as Pausar
+    UseCase "CU112 - Reanudar tarea" as Reanudar
+    UseCase "CU113 - Cancelar tarea" as Cancelar
+    UseCase "CU114 - Ejecutar tarea" as Ejecutar
 }
     Administradores -- C
     Administradores -- B
