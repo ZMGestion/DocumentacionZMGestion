@@ -517,7 +517,7 @@
 	\subsection{Diagrama de clases}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{DiagramaClases/Vistas/diagramaClases}
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramaClases/Vistas/diagramaClases}
 		\caption{Diagrama de clases}
 	\label{fig:Diagrama de clases}
 	\end{figure}
@@ -525,7 +525,7 @@
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{DiagramaClases/Vistas/vistaSistema}
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramaClases/Vistas/vistaSistema}
 		\caption{Diagrama de clases - Vista sistema}
 	\label{fig:Diagrama de clases - Vista sistema}
 	\end{figure}
@@ -585,24 +585,82 @@
 	\clearpage %salto de pagina
 	\subsection{Diagramas de transición de estados}
 	Solo se especificarán los diagramas de transición de estados más relevantes del sistema.
-	\stateDiagram{empleados}{Diagrama de transición de estados - Empleados}
-	\stateDiagram{tareas}{Diagrama de transición de estados - Tareas}
-	\stateDiagram{lineasProducto}{Diagrama de transición de estados - Lineas de producto}
-	\stateDiagram{presupuestos}{Diagrama de transición de estados - Presupuestos}
-	\stateDiagram{ventas}{Diagrama de transición de estados - Ventas}
-	\stateDiagram{ordenesProduccion}{Diagrama de transición de estados - Órdenes de producción}
-	\stateDiagram{remitos}{Diagrama de transición de estados - Remitos}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth,height=0.5\textheight,keepaspectratio]{DiagramasEstado/DiagramaDeEstado/empleados}
+		\caption{Diagrama de transición de estados - Empleados}
+		\label{fig:Diagrama de transición de estados - Empleados}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramasEstado/DiagramaDeEstado/tareas}
+		\caption{Diagrama de transición de estados - Tareas}
+		\label{fig:Diagrama de transición de estados - Tareas}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramasEstado/DiagramaDeEstado/lineasProducto}
+		\caption{Diagrama de transición de estados - Lineas de producto}
+		\label{fig:Diagrama de transición de estados - Lineas de producto}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramasEstado/DiagramaDeEstado/presupuestos}
+		\caption{Diagrama de transición de estados - Presupuestos}
+		\label{fig:Diagrama de transición de estados - Presupuestos}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramasEstado/DiagramaDeEstado/ventas}
+		\caption{Diagrama de transición de estados - Ventas}
+		\label{fig:Diagrama de transición de estados - Ventas}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramasEstado/DiagramaDeEstado/ordenesProduccion}
+		\caption{Diagrama de transición de estados - Órdenes de producción}
+		\label{fig:Diagrama de transición de estados - Órdenes de producción}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramasEstado/DiagramaDeEstado/remitos}
+		\caption{Diagrama de transición de estados - Remitos}
+		\label{fig:Diagrama de transición de estados - Remitos}
+	\end{figure}
 
 	\clearpage %salto de pagina
-	\subsection{Diagramas de interacción}
-	Solo se especificarán los diagramas de interacción más relevantes del sistema.
+	\subsection{Diagramas de secuencia}
+	Solo se especificarán los diagramas de secuencia más relevantes del sistema.
 
-%	\begin{figure}[H]
-%		\centering
-%		\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{DiagramasSecuencia/GestionUsuarios}
-%		\caption{Diagrama de interacción - Gestión de usuarios}
-%	\label{fig:Diagrama de interacción - Gestión de usuarios}
-%	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramasSecuencia/DiagramaDeSecuencia/GestionUsuarios}
+		\caption{Diagrama de secuencia - Gestión de usuarios}
+		\label{fig:Diagrama de secuencia - Gestión de usuarios}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramasSecuencia/DiagramaDeSecuencia/GestionClientes}
+		\caption{Diagrama de secuencia - Gestión de clientes}
+		\label{fig:Diagrama de secuencia - Gestión de clientes}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramasSecuencia/DiagramaDeSecuencia/GestionPresupuestos}
+		\caption{Diagrama de secuencia - Gestión de presupuestos}
+		\label{fig:Diagrama de secuencia - Gestión de presupuestos}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{DiagramasSecuencia/DiagramaDeSecuencia/GestionVentas}
+		\caption{Diagrama de secuencia - Gestión de ventas}
+		\label{fig:Diagrama de secuencia - Gestión de ventas}
+	\end{figure}
+
+	\clearpage %salto de pagina
 	
 	
 		
