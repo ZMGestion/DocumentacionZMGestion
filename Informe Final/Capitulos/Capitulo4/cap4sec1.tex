@@ -25,7 +25,7 @@
 		\centering
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/DiagramaSubsistemaDetallado}
 		\caption{Diagrama de subsistema detallado}
-	\label{fig:DiagramaSubsistema}
+	\label{fig:DiagramaSubsistemaDetallado}
 	\end{figure}
 	\clearpage %salto de pagina
 	\subsection{Listado de casos de uso}
@@ -123,6 +123,12 @@
 			\itemCaseUse{darAltaCliente}{Dar de alta cliente}
 			\itemCaseUse{modificarCliente}{Modificar cliente}
 			\itemCaseUse{borrarCliente}{Borrar cliente}
+			\itemCaseUse{listarDomicilios}{Listar domicilios}
+		\end{itemize}
+		\item Gestión domicilios
+		\begin{itemize}
+			\itemCaseUse{crearDomicilio}{Crear domicilio}
+			\itemCaseUse{borrarDomicilio}{Borrar domicilio}
 		\end{itemize}
 		\item Gestión presupuestos
 		\begin{itemize}
@@ -284,6 +290,12 @@
 	\end{figure}
 	\begin{figure}[H]
 		\centering
+		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionDomicilios}
+		\caption{Diagrama de casos de uso para la gestión de domicilios}
+	\label{fig:GestionDomicilios}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionOperaciones}
 		\caption{Diagrama de casos de uso para la gestión de operaciones}
 	\label{fig:GestionOperaciones}
@@ -340,7 +352,7 @@
 		\centering
 		\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{ModeladoDeCasosDeUso/DiagramaDeCasosDeUso/GestionTareas}
 		\caption{Diagrama de casos de uso para la gestión de tareas}
-	\label{fig:GestionObservaciones}
+	\label{fig:GestionTareas}
 	\end{figure}
 	\clearpage %salto de pagina
 	\subsection{Descripción textual de los casos de uso y diagramas de actividad}
@@ -426,6 +438,11 @@
 			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/darAltaCliente.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/modificarCliente.tex}
 			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/borrarCliente.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/listarDomicilios.tex}
+
+			%GestionDomicilios
+			\input{Capitulos/Capitulo4/CasosUso/GestionDomicilios/crearDomicilio.tex}
+			\input{Capitulos/Capitulo4/CasosUso/GestionDomicilios/borrarDomicilio.tex}
 
 			%GestionPresupuestos
 			\input{Capitulos/Capitulo4/CasosUso/GestionPresupuestos/crearPresupuesto.tex}
@@ -575,6 +592,18 @@
 	\stateDiagram{ventas}{Diagrama de transición de estados - Ventas}
 	\stateDiagram{ordenesProduccion}{Diagrama de transición de estados - Órdenes de producción}
 	\stateDiagram{remitos}{Diagrama de transición de estados - Remitos}
+
+	\clearpage %salto de pagina
+	\subsection{Diagramas de interacción}
+	Solo se especificarán los diagramas de interacción más relevantes del sistema.
+
+%	\begin{figure}[H]
+%		\centering
+%		\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{DiagramasSecuencia/GestionUsuarios}
+%		\caption{Diagrama de interacción - Gestión de usuarios}
+%	\label{fig:Diagrama de interacción - Gestión de usuarios}
+%	\end{figure}
+	
 	
 		
 	

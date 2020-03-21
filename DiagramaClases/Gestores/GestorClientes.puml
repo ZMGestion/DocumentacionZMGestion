@@ -1,7 +1,7 @@
 @startuml GestorClientes
 class GestorClientes{
     listarTiposDocumento(): List<TiposDocumento>
-    
+    listarPaises(): List<Paises>
 }
 
 @enduml

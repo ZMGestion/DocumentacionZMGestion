@@ -1,0 +1,34 @@
+\renewcommand{\caseUseShortName}{crearDomicilio} %cammelCase name
+
+\renewcommand{\caseUseCreated}{20/03/2020} %Fecha creación
+\renewcommand{\caseUseModified}{20/03/2020} %Fecha modificación
+\renewcommand{\caseUseName}{\CUcrearDomicilio - Crear domicilio} %{\CUcammelCase - Title}
+
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion crear un domicilio para un cliente existente.} %Resumen
+\renewcommand{\caseUsePeople}{Vendedores: quiere crear un domicilio para un cliente existente.} %Actor: Meta
+\renewcommand{\caseUsePreconditions}{
+	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoClientes\ (Buscar avanzado clientes).} %Precondiciones
+}
+\renewcommand{\caseUsePostconditions}{
+	\caseUseRow{Ninguna.} %Postcondiciones
+}
+\renewcommand{\caseUseScene}{ %Escenario principal
+    \addCaseUseStep{El vendedor selecciona un cliente al cual le desea crear un domicilio.}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor ingrese calle, número de calle, el código postal y seleccione ciudad, provincia y país. Ademas se le muestra un campo opcional para ingresar observaciones, siendo el resto de los campos obligatorios.}
+    \addCaseUseStep{El vendedor ingresa una calle, numero de calle, código postal, observaciones, ciudad, provincia y país.}
+    \addCaseUseStep{ZMGestion crea el domicilio para el cliente seleccionado por el vendedor.}
+}
+\renewcommand{\alternativeCaseUse}{ %Flujos alternativos
+    \newAlternative{A1: El vendedor ha dejado un campo obligatorio vacio.}{3} %Flujo alternativo A1.
+    \caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que dicho campo es requerido.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
+}
+
+\item Caso de uso \caseUseName
+\input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
+
+%DIAGRAMA DE ACTIVIDAD
+%\lineabreak[0]
+%\activityDiagram{\caseUseShortName}{Diagrama de actividad - \caseUseName}
