@@ -15,8 +15,8 @@
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El vendedor indica el presupuesto que desea modificar.}
-    \addCaseUseStep{ZMGestion muestra un formulario autocompletado para que el usuario modifique el cliente y/o el periodo de validez. Si el vendedor cuenta con los permisos necesarios podrá modificar el periodo de validez.}
-    \addCaseUseStep{El vendedor modifica el cliente y periodo de validez.}
+    \addCaseUseStep{ZMGestion muestra un formulario autocompletado para que el usuario modifique el cliente, observaciones el periodo de validez. Si el vendedor cuenta con los permisos necesarios podrá modificar el periodo de validez.}
+    \addCaseUseStep{El vendedor modifica el cliente, observaciones y periodo de validez.}
     \addCaseUseStep{Se ejecuta el \CUlistarLineasPresupuesto\ (Listar lineas de presupuesto) para el presupuesto seleccionado.}
     \addCaseUseStep{Si el vendedor desea modificar una linea, ejecuta el \CUmodificarLineaPresupuesto\ (Modificar linea de presupuesto), si desea borrar una linea ejecuta el \CUborrarLineaPresupuesto\ (Borrar linea de presupuesto) y si desea agregar una nueva linea ejecuta el \CUcrearLineaPresupuesto\ (Crear linea de presupuesto).}
     \addCaseUseStep{ZMGestion modifica el presupuesto seleccionado y muestra un mensaje indicando el éxito de la operación.}
