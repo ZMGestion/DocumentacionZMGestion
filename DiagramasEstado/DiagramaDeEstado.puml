@@ -38,7 +38,10 @@ Verificada --> EnProceso: Tareas.\nreanudar()
 @enduml
 
 @startuml lineasProducto
-Pendiente: Estado = "P"
+Pendiente: Estado = "P" AND
+Pendiente: this.estaPendiente()
+Produciendo: Estado = "P" AND
+Produciendo: this.estaEnProduccion()
 Cancelada: Estado = "C"
 NoUtilizada: Estado = "N"
 Utilizada: Estado = "U"
@@ -47,12 +50,13 @@ PendienteDeProduccion:(NOT this.\ntieneTareas() OR\n this.\ntodasTareasPendiente
 EnProduccion: Estado = "F" AND
 EnProduccion: NOT this.\ntodasTareasPendientes()
 Verificada: Estado = "V"
-Reservada: Estado = "R"
-Reservada: Venta tiene saldo
-PendienteDeEntrega: Estado = "R"
-PendienteDeEntrega: (IdRemito != null AND\n LineasVenta.puedeRetirar() AND\n NOT this.dameRemito().estaCancelado()) OR\n NOT this.dameRemito().asociadoAVenta()
+Reservada: Estado = "P" AND
+Reservada: LineasVenta.estaReservada()
+PendienteDeEntrega: Estado = "P" AND
+PendienteDeEntrega: LineasProducto.estaPendienteDeEntrega()
 'Hicimos que estado = D para simplicidad en la busqueda.
-Entregada: Estado = "D" 
+Entregada: Estado = "P" AND
+Entregada: this.estaEntregada() 
 
 top to bottom direction
 [*] --> Pendiente: Presupuestos.\ncrearLineaPresupuesto\n(lp LineaPresupuesto)
@@ -69,7 +73,10 @@ NoUtilizada --> Pendiente: GestorVentas.\nborrar\n(venta Ventas)
 Utilizada --> NoUtilizada: Ventas.\nborrarLineaVenta\n(lv LineasVenta)
 Pendiente --> Cancelada: LineasVenta.\ncancelar()
 Pendiente --> PendienteDeProduccion: Ventas.\ngenerarOrdenProduccion\n(lv List<LineasVenta>)
+Pendiente --> Produciendo: Ventas.\ngenerarOrdenProduccion\n(lv List<LineasVenta>)
 Pendiente --> Reservada: Ventas.\ngenerarRemito\n(lv List<LineasVenta>)
+Produciendo --> Pendiente: LineasOrdenProduccion.\ncancelar()
+Produciendo --> Reservada: LineasOrdenProduccion.\nverificar()
 Reservada --> Pendiente: Remitos.\ncancelar()
 PendienteDeProduccion --> Cancelada: LineasOrdenProduccion.\ncancelar()
 PendienteDeProduccion --> EnProduccion: Tarea.\nejecutar()

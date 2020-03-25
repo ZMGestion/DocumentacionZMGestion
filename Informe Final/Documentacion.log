@@ -3,13 +3,13 @@ entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.tex"
-(/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.tex
-LaTeX2e <2018-12-01>
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+**"/home/bachs/Facultad/Trabajo Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.tex"
+(/home/bachs/Facultad/Trabajo Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.tex
+LaTeX2e <2019-10-01> patch level 1
+(/usr/share/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/08/27 v1.4j Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -23,17 +23,17 @@ File: bk10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
- (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+) (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+) (/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) (/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count89
@@ -48,17 +48,17 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2019/05/04 3.31 The Babel package
- (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2019/05/04 3.31 Babel switching mechanism
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2019/10/15 3.35 The Babel package
+ (/usr/share/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2019/10/15 3.35 Babel switching mechanism
+) (/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
- (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2019/05/04 3.31 Babel common definitions
+ (/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2019/10/15 3.35 Babel common definitions
 \babel@savecnt=\count92
 \U@D=\dimen111
- (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
+ (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count93
 )
 \es@quottoks=\toks16
@@ -67,31 +67,31 @@ Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+)) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
- (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+ (/usr/share/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+)) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@headwidth=\skip43
 \f@nch@O@elh=\skip44
@@ -102,8 +102,8 @@ Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@O@erf=\skip49
 \f@nch@O@olf=\skip50
 \f@nch@O@orf=\skip51
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+) (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box27
 \beforetitleunit=\skip52
 \aftertitleunit=\skip53
@@ -113,15 +113,15 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidth=\dimen116
 \titlewidthlast=\dimen117
 \titlewidthfirst=\dimen118
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+) (/usr/share/texmf-dist/tex/latex/hyphenat/hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
-\langwohyphens=\language84
+\langwohyphens=\language85
 LaTeX Info: Redefining \_ on input line 43.
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
- (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2019/09/28 v7.00a Hypertext links for LaTeX
+ (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
- (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+ (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -134,7 +134,7 @@ Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -153,85 +153,85 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+) (/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen119
 \Hy@linkcounter=\count95
 \Hy@pagecounter=\count96
- (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+ (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count97
- (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+ (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `pageanchor' set `true' on input line 4393.
-Package hyperref Info: Option `plainpages' set `false' on input line 4393.
-Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4393.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 4393.
-Package hyperref Info: Option `unicode' set `true' on input line 4393.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
+Package hyperref Info: Option `pageanchor' set `true' on input line 4414.
+Package hyperref Info: Option `plainpages' set `false' on input line 4414.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4414.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 4414.
+Package hyperref Info: Option `unicode' set `true' on input line 4414.
+ (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2019/09/28 v7.00a Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4519.
-Package hyperref Info: Link nesting OFF on input line 4524.
-Package hyperref Info: Hyper index ON on input line 4527.
-Package hyperref Info: Plain pages OFF on input line 4534.
-Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Hyper figures OFF on input line 4540.
+Package hyperref Info: Link nesting OFF on input line 4545.
+Package hyperref Info: Hyper index ON on input line 4548.
+Package hyperref Info: Plain pages OFF on input line 4555.
+Package hyperref Info: Backreferencing OFF on input line 4560.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4772.
+Package hyperref Info: Bookmarks ON on input line 4793.
 \c@Hy@tempcnt=\count98
- (/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+ (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5125.
+LaTeX Info: Redefining \url on input line 5152.
 \XeTeXLinkMargin=\dimen120
 \Fld@menulength=\count99
 \Field@Width=\dimen121
 \Fld@charsize=\dimen122
-Package hyperref Info: Hyper figures OFF on input line 6380.
-Package hyperref Info: Link nesting OFF on input line 6385.
-Package hyperref Info: Hyper index ON on input line 6388.
-Package hyperref Info: backreferencing OFF on input line 6395.
-Package hyperref Info: Link coloring OFF on input line 6400.
-Package hyperref Info: Link coloring with OCG OFF on input line 6405.
-Package hyperref Info: PDF/A mode OFF on input line 6410.
-LaTeX Info: Redefining \ref on input line 6450.
-LaTeX Info: Redefining \pageref on input line 6454.
+Package hyperref Info: Hyper figures OFF on input line 6423.
+Package hyperref Info: Link nesting OFF on input line 6428.
+Package hyperref Info: Hyper index ON on input line 6431.
+Package hyperref Info: backreferencing OFF on input line 6438.
+Package hyperref Info: Link coloring OFF on input line 6443.
+Package hyperref Info: Link coloring with OCG OFF on input line 6448.
+Package hyperref Info: PDF/A mode OFF on input line 6453.
+LaTeX Info: Redefining \ref on input line 6493.
+LaTeX Info: Redefining \pageref on input line 6497.
 \Hy@abspage=\count100
 \c@Item=\count101
 \c@Hfootnote=\count102
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+ (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2019/09/28 v7.00a Hyperref driver for pdfTeX
 \Fld@listcount=\count103
 \c@bookmark@seq@number=\count104
- (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+ (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
 \Hy@SectionHShift=\skip54
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+) (/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen123
 \WF@size=\dimen124
 \c@WF@wrappedlines=\count105
 \WF@box=\box28
 \WF@everypar=\toks20
 Package: wrapfig 2003/01/31  v 3.6
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
+) (/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/rotating.sty
+) (/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
- (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+ (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count106
@@ -239,27 +239,27 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rotFPbot=\skip56
 \rot@float@box=\box29
 \rot@mess@toks=\toks21
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
- (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+ (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
- (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+ (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.jpg,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))) (/usr/local/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+))) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip57
 \multirow@cntb=\count107
 \multirow@dima=\skip58
 \bigstrutjot=\dimen125
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
-Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+) (/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen126
 \ar@mcellbox=\box30
 \extrarowheight=\dimen127
@@ -267,8 +267,8 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \extratabsurround=\skip59
 \backup@length=\skip60
 \ar@cellbox=\box31
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
+) (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2019/02/06 v4.12 Multi-page Table package (DPC)
 \LTleft=\skip61
 \LTright=\skip62
 \LTpre=\skip63
@@ -284,20 +284,20 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \c@LT@tables=\count111
 \c@LT@chunks=\count112
 \LT@p@ftn=\toks23
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count113
 \float@exts=\toks24
 \float@box=\box36
 \@float@everytoks=\toks25
 \@floatcapt=\box37
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
+ (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 \everycr=\toks26
 \minrowclearance=\skip65
@@ -312,15 +312,15 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/textgreek/textgreek.sty
+) (/usr/share/texmf-dist/tex/latex/textgreek/textgreek.sty
 Package: textgreek 2011/10/09 v0.7 Greek symbols in text
 Package textgreek Info: Loading the definitions for the Greek fontencoding. on input line 39.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
-File: lgrenc.def 2015/12/07 v0.13.1 LGR Greek font encoding definitions
+ (/usr/share/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
+File: lgrenc.def 2019/07/09 v0.13.3 LGR Greek font encoding definitions
 Now handling font encoding LGR ...
 ... processing UTF-8 mapping file for font encoding LGR
- (/usr/local/texlive/2019/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
-File: lgrenc.dfu 2015/08/05 1.6 UTF-8 support for Greek
+ (/usr/share/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
+File: lgrenc.dfu 2019/07/11 1.7 UTF-8 support for Greek
    defining Unicode char U+00A8 (decimal 168)
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00AF (decimal 175)
@@ -329,15 +329,6 @@ File: lgrenc.dfu 2015/08/05 1.6 UTF-8 support for Greek
    defining Unicode char U+00BB (decimal 187)
    defining Unicode char U+0259 (decimal 601)
    defining Unicode char U+02D8 (decimal 728)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201A (decimal 8218)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+20AC (decimal 8364)
    defining Unicode char U+0374 (decimal 884)
    defining Unicode char U+0375 (decimal 885)
    defining Unicode char U+037A (decimal 890)
@@ -752,8 +743,9 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \@tempa=\box59
 \@tempa=\box60
 \@tempa=\box61
-\c@columnbadness=\count127
-\c@finalcolumnbadness=\count128
+\c@minrows=\count127
+\c@columnbadness=\count128
+\c@finalcolumnbadness=\count129
 \last@try=\dimen143
 \multicolovershoot=\dimen144
 \multicolundershoot=\dimen145
@@ -827,16 +819,16 @@ LaTeX Info: Redefining \. on input line 95.
 LaTeX Info: Redefining \% on input line 95.
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
+\scratchcounter=\count131
 \scratchdimen=\dimen146
 \scratchbox=\box64
-\nofMPsegments=\count131
-\nofMParguments=\count132
+\nofMPsegments=\count132
+\nofMParguments=\count133
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count133
+\MPscratchCnt=\count134
 \MPscratchDim=\dimen147
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
 \everyMPtoPDFconversion=\toks29
 )
 \AtBeginShipoutBox=\box65
@@ -846,7 +838,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count136
+\c@section@level=\count137
 )
 LaTeX Info: Redefining \ref on input line 95.
 LaTeX Info: Redefining \pageref on input line 95.
@@ -1116,7 +1108,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1136,7 +1128,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/iniciar
 (pdftex.def)             Requested size: 417.12308pt x 353.78041pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/Sesiones/cerrarSesion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1153,7 +1145,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1165,7 +1157,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [35])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/buscarAvanzadoEmpleados.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1182,7 +1174,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [36])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/darBajaEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1199,7 +1191,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [37])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionEmpleados/darAltaEmpleado.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1214,7 +1206,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1238,7 +1230,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1255,7 +1247,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1273,7 +1265,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/crearRo
 (pdftex.def)             Requested size: 417.11519pt x 282.76347pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/listarRoles.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1290,7 +1282,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1302,7 +1294,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [43])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRoles/borrarRol.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1322,7 +1314,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1348,7 +1340,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--28
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1366,7 +1358,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/buscarA
 (pdftex.def)             Requested size: 417.11018pt x 252.91766pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/darBajaProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1389,7 +1381,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/darBaja
 (pdftex.def)             Requested size: 417.11885pt x 170.16553pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/darAltaProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1419,7 +1411,7 @@ LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 [49 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/DiagramasActividad/DiagramaDeActividad/darAltaProducto.png (PNG copy)>]
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1437,7 +1429,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/modific
 (pdftex.def)             Requested size: 417.10966pt x 348.73856pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductos/borrarProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1465,7 +1457,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1486,7 +1478,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [53] (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1504,7 +1496,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/listarT
 (pdftex.def)             Requested size: 417.10959pt x 126.16554pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/darBajaTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1527,7 +1519,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/darBaja
 (pdftex.def)             Requested size: 417.1305pt x 240.01047pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTelas/darAltaTela.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1555,7 +1547,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1576,7 +1568,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [58] (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1599,7 +1591,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/borrarT
 (pdftex.def)             Requested size: 417.11989pt x 160.50812pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/crearProductoFinal.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1627,7 +1619,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--28
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1639,7 +1631,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [61 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/DiagramasActividad/DiagramaDeActividad/crearProductoFinal.png (PNG copy)>])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/darBajaProductoFinal.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1656,7 +1648,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [62])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionProductosFinales/darAltaProductoFinal.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1676,7 +1668,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1696,7 +1688,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1706,7 +1698,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/crearGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1723,7 +1715,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [65])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarGruposProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1735,7 +1727,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [66])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darBajaGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1752,7 +1744,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [67])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darAltaGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1772,7 +1764,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1784,7 +1776,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [68])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/borrarGrupoProducto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1801,7 +1793,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [69])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarProductosGrupo.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1818,7 +1810,7 @@ LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 [70]
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1835,7 +1827,7 @@ LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 [71]
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1845,7 +1837,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/listarUbicaciones.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1857,7 +1849,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [72])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darBajaUbicacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1869,7 +1861,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [73])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darAltaUbicacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1884,7 +1876,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1903,7 +1895,7 @@ LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 [75]
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1918,7 +1910,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1930,7 +1922,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [76])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRemitos/buscarAvanzadoRemitos.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1947,7 +1939,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [77])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRemitos/cancelarRemito.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1969,7 +1961,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1986,7 +1978,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -1998,7 +1990,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [80])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRemitos/borrarRemito.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2013,7 +2005,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionRemitos/listarLineasRemito.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2035,7 +2027,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2052,7 +2044,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2064,7 +2056,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [83])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasRemito/borrarLineaRemito.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2081,7 +2073,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2102,7 +2094,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [86] (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2125,7 +2117,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/buscarA
 (pdftex.def)             Requested size: 417.12204pt x 207.52853pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/darBajaCliente.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2142,7 +2134,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [88 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/DiagramasActividad/DiagramaDeActividad/buscarAvanzadoClientes.png (PNG copy)>])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/darAltaCliente.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2162,7 +2154,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2181,7 +2173,7 @@ LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 [90]
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2191,7 +2183,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 26--32
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionClientes/listarDomicilios.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2208,7 +2200,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [91])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionDomicilios/crearDomicilio.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2230,7 +2222,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2247,7 +2239,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2265,7 +2257,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/crearPr
 (pdftex.def)             Requested size: 417.11964pt x 308.93056pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/buscarAvanzadoPresupuestos.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2293,7 +2285,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2314,7 +2306,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/modific
 (pdftex.def)             Requested size: 417.10736pt x 247.80469pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/borrarPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2342,7 +2334,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2363,7 +2355,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/transfo
 (pdftex.def)             Requested size: 417.09863pt x 237.84387pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/generarPresupuestoPDF.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2381,7 +2373,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/generar
 (pdftex.def)             Requested size: 417.11018pt x 138.18686pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/enviarPresupuestoEmail.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2404,7 +2396,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/enviarP
 (pdftex.def)             Requested size: 417.11855pt x 160.85239pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionPresupuestos/listarLineasPresupuesto.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2426,7 +2418,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2443,7 +2435,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2460,7 +2452,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--28
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2477,7 +2469,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2498,7 +2490,7 @@ LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
  [108] (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2515,7 +2507,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [109 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/DiagramasActividad/DiagramaDeActividad/crearVenta.png (PNG copy)>])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionVentas/listarLineasVenta.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2537,7 +2529,7 @@ LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 [110]
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2555,7 +2547,7 @@ Package pdftex.def Info: Imagenes/DiagramasActividad/DiagramaDeActividad/modific
 (pdftex.def)             Requested size: 417.10277pt x 250.26166pt.
 ) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionVentas/borrarVenta.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2577,7 +2569,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2594,7 +2586,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2611,7 +2603,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2628,7 +2620,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--28
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2645,7 +2637,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2662,7 +2654,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2674,7 +2666,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [118])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasVenta/borrarLineaVenta.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2691,7 +2683,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [119])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasVenta/cancelarLineaVenta.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2701,7 +2693,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--32
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionComprobantes/buscarAvanzadoComprobantes.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2723,7 +2715,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2735,7 +2727,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [121])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionComprobantes/borrarComprobante.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2747,7 +2739,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [122])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/crearOrdenProduccion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2764,7 +2756,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [123])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/buscarAvanzadoOrdenesProduccion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2786,7 +2778,7 @@ LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 [124]
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2798,7 +2790,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [125])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/listarLineasOrdenProduccion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2813,7 +2805,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/borrarOrdenProduccion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2830,7 +2822,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [126])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/cancelarOrdenProduccion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2847,7 +2839,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [127])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/listarTareasLineaOrdenProduccion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2855,7 +2847,9 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
  [] [] [] 
  []
 
-
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
+[128]
 Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
  [] [] [] 
  []
@@ -2867,7 +2861,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2887,7 +2881,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2904,7 +2898,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [130])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/borrarLineaOrdenProduccion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2916,7 +2910,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [131])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/verificarLineaOrdenProduccion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2933,7 +2927,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [132])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/cancelarLineaOrdenProduccion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2950,7 +2944,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [133])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/reanudarLineaOrdenProduccion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2965,7 +2959,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionObservaciones/crearObservacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2982,7 +2976,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [134])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionObservaciones/listarObservaciones.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -2999,7 +2993,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [135])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionObservaciones/borrarObservacion.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -3016,7 +3010,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -3028,7 +3022,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [137])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTareas/borrarTarea.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -3036,14 +3030,16 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--31
  [] [] [] 
  []
 
-
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
+[138]
 Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
  [] [] [] 
  []
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTareas/finalizarTarea.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -3060,7 +3056,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [138])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTareas/verificarTarea.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -3077,7 +3073,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [139])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTareas/pausarTarea.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -3092,7 +3088,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 31--32
 
 )) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTareas/reanudarTarea.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -3109,7 +3105,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 [140])) (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/GestionTareas/cancelarTarea.tex (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Capitulos/Capitulo4/CasosUso/generalTable.tex
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -3131,7 +3127,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 2--26
 
 
 Underfull \hbox (badness 2173) in paragraph at lines 29--29
-\T1/cmr/m/n/10 má-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
+\T1/cmr/m/n/10 mï¿½-xi-mo de 10 se-gun-dos en una ve-lo-ci-dad
  []
 
 
@@ -3361,9 +3357,9 @@ LaTeX Info: Redefining \. on input line 146.
 LaTeX Info: Redefining \% on input line 146.
  [165 </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeloRelacional/vistaPresupuestosVentas.jpg> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeloRelacional/vistaProduccion.jpg> </Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Imagenes/ModeloRelacional/vistaEntregas.jpg>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
- (/Users/Lchoua/Desktop/Loik/UNT/Trabajo de Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.aux
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
+ (/home/bachs/Facultad/Trabajo Graduacion/DocumentacionZMGestion/Informe Final/Documentacion.aux
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
