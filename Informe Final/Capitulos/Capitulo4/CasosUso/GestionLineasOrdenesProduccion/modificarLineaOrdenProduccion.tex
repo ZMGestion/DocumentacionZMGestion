@@ -15,8 +15,8 @@
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El administrador indica la línea de orden de producción que desea modificar.}
-    \addCaseUseStep{ZMGestion muestra un formulario autocompletado con los datos de la linea de orden de producción seleccionada, producto, tela, lustre y cantidad a producirse.}
-    \addCaseUseStep{El administrador modifica el producto, tela, lustre y cantidad a producirse.}
+    \addCaseUseStep{ZMGestion muestra un formulario autocompletado con los datos de la linea de orden de producción seleccionada, producto, tela, lustre y cantidad a producirse. Indicando que el producto y la cantidad son obligatorios.}
+    \addCaseUseStep{El administrador modifica el formulario.}
     \addCaseUseStep{ZMGestion modifica la línea de orden de producción y muestra un mensaje indicando el éxito de la operación.}
 
 }
@@ -42,6 +42,12 @@
     \newAlternative{A4: El tipo de producto seleccionado no es del tipo `Producible'.}{3} %Flujo alternativo A4.
     \caseUseRow{La secuencia A4 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que el producto seleccionado no puede ser asignado a una orden de producción.}
+    \caseUseRow{El escenario vuelve al punto 2.}
+    \caseUseRow{}
+
+    \newAlternative{A5: El administrador ha dejado un campo obligatorio vacio.}{3} %Flujo alternativo A1.
+    \caseUseRow{La secuencia A5 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que ha dejado un campo obligatorio vacio.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 }

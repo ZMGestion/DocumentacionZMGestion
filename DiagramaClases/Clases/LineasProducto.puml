@@ -2,15 +2,22 @@
 class LineasProducto{
     +idLineaProducto: int
     +idLineaProductoPadre: int
-    +idRemito: int
     +idProductoFinal: int
+    tipo: string
     precioUnitario: float
     cantidad: int
     estado: string
 
-    dameRemito():Remitos
+    
     cancelar():Response
     damePadre(): IObjeto
     precioTotal(): float
+    dameLineaProductoPadre(): LineasProducto
+    dameLineasVentaHijas(): List<LineasVenta>
+    dameLineasOrdenProduccionHijas(): List<LineasOrdenProduccion>
+    dameLineasRemitoHijas(): List<LineasRemito>
+    estaEntregada(): bool
+    estaPendienteDeEntrega(): bool
+    estaProduciendo():bool
 }
 @enduml

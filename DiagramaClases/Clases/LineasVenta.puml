@@ -5,6 +5,7 @@ class LineasVenta{
     cancelarFabricacion():Response
     puedeRetirar(): bool
     chequearPrecio():bool
+    estaReservada():bool
 
 }
 @enduml

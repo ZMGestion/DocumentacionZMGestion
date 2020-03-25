@@ -76,48 +76,46 @@
 \contentsline {paragraph}{\indent }{11}{paragraph*.76}% 
 \contentsline {paragraph}{\indent }{11}{paragraph*.77}% 
 \contentsline {paragraph}{\indent }{11}{paragraph*.78}% 
-\contentsline {paragraph}{\indent }{12}{paragraph*.79}% 
+\contentsline {paragraph}{\indent }{11}{paragraph*.79}% 
 \contentsline {paragraph}{\indent }{12}{paragraph*.80}% 
 \contentsline {paragraph}{\indent }{12}{paragraph*.81}% 
 \contentsline {paragraph}{\indent }{12}{paragraph*.82}% 
 \contentsline {paragraph}{\indent }{12}{paragraph*.83}% 
 \contentsline {paragraph}{\indent }{12}{paragraph*.84}% 
 \contentsline {paragraph}{\indent }{12}{paragraph*.85}% 
-\contentsline {section}{\numberline {2.2}Suposiciones y dependencias}{12}{section.86}% 
-\contentsline {paragraph}{\indent }{12}{paragraph*.87}% 
+\contentsline {paragraph}{\indent }{12}{paragraph*.86}% 
+\contentsline {section}{\numberline {2.2}Suposiciones y dependencias}{12}{section.87}% 
 \contentsline {paragraph}{\indent }{12}{paragraph*.88}% 
-\contentsline {section}{\numberline {2.3}Requisitos de usuario y tecnol\IeC {\'o}gicos}{12}{section.89}% 
-\contentsline {section}{\numberline {2.4}Requisitos de interfaces externas}{13}{section.90}% 
-\contentsline {section}{\numberline {2.5}Requisitos de rendimiento}{13}{section.91}% 
-\contentsline {section}{\numberline {2.6}Requisitos de desarrollo}{13}{section.92}% 
-\contentsline {section}{\numberline {2.7}Restricciones de dise\IeC {\~n}o}{13}{section.93}% 
-\contentsline {paragraph}{\textbf }{13}{paragraph*.94}% 
+\contentsline {paragraph}{\indent }{12}{paragraph*.89}% 
+\contentsline {section}{\numberline {2.3}Requisitos de usuario y tecnol\IeC {\'o}gicos}{12}{section.90}% 
+\contentsline {section}{\numberline {2.4}Requisitos de interfaces externas}{13}{section.91}% 
+\contentsline {section}{\numberline {2.5}Requisitos de rendimiento}{13}{section.92}% 
+\contentsline {section}{\numberline {2.6}Requisitos de desarrollo}{13}{section.93}% 
+\contentsline {section}{\numberline {2.7}Restricciones de dise\IeC {\~n}o}{13}{section.94}% 
 \contentsline {paragraph}{\textbf }{13}{paragraph*.95}% 
 \contentsline {paragraph}{\textbf }{13}{paragraph*.96}% 
 \contentsline {paragraph}{\textbf }{13}{paragraph*.97}% 
 \contentsline {paragraph}{\textbf }{13}{paragraph*.98}% 
-\contentsline {chapter}{\numberline {3}Selecci\IeC {\'o}n del modelo de ciclo de vida y gesti\IeC {\'o}n del proyecto}{14}{chapter.99}% 
-\contentsline {chapter}{\numberline {4}Especificaci\IeC {\'o}n C}{15}{chapter.100}% 
-\contentsline {section}{\numberline {4.1}Modelizaci\IeC {\'o}n del sistema}{15}{section.101}% 
-\contentsline {subsection}{\numberline {4.1.1}Actores}{15}{subsection.102}% 
-\contentsline {paragraph}{\indent }{15}{paragraph*.103}% 
-\contentsline {subsection}{\numberline {4.1.2}Diagrama de contexto}{15}{subsection.104}% 
-\contentsline {subsection}{\numberline {4.1.3}Diagrama de subsistema}{16}{subsection.106}% 
-\contentsline {subsection}{\numberline {4.1.4}Listado de casos de uso}{18}{subsection.109}% 
-\contentsline {subsection}{\numberline {4.1.5}Diagrama de casos de uso}{21}{subsection.221}% 
-\contentsline {subsection}{\numberline {4.1.6}Descripci\IeC {\'o}n textual de los casos de uso y diagramas de actividad}{32}{subsection.245}% 
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {4.1.7}Diagrama de clases}{140}{subsection.494}% 
-=======
-\contentsline {subsection}{\numberline {4.1.7}Diagrama de clases}{139}{subsection.494}% 
->>>>>>> master
-\contentsline {subsection}{\numberline {4.1.8}Vista can\IeC {\'o}nica}{145}{subsection.502}% 
-\contentsline {subsection}{\numberline {4.1.9}Ficha t\IeC {\'e}cnica de clases}{146}{subsection.504}% 
-\contentsline {subsection}{\numberline {4.1.10}Diagramas de transici\IeC {\'o}n de estados}{147}{subsection.506}% 
-\contentsline {section}{\numberline {4.2}Identificaci\IeC {\'o}n de roles, sus funciones y restricciones:}{151}{section.514}% 
-\contentsline {subsection}{\numberline {4.2.1}Roles}{151}{subsection.515}% 
-\contentsline {subsection}{\numberline {4.2.2}Funciones de los usuarios por rol}{151}{subsection.516}% 
-\contentsline {subsection}{\numberline {4.2.3}Restricciones de datos}{155}{subsection.517}% 
-\contentsline {chapter}{\numberline {5}Especificaci\IeC {\'o}n D}{156}{chapter.518}% 
-\contentsline {section}{\numberline {5.1}Dise\IeC {\~n}o del modelo l\IeC {\'o}gico y f\IeC {\'\i }sico de datos del sistema}{156}{section.519}% 
-\contentsline {subsection}{\numberline {5.1.1}Modelo relacional}{156}{subsection.520}% 
+\contentsline {paragraph}{\textbf }{13}{paragraph*.99}% 
+\contentsline {chapter}{\numberline {3}Selecci\IeC {\'o}n del modelo de ciclo de vida y gesti\IeC {\'o}n del proyecto}{14}{chapter.100}% 
+\contentsline {chapter}{\numberline {4}Especificaci\IeC {\'o}n C}{15}{chapter.101}% 
+\contentsline {section}{\numberline {4.1}Modelizaci\IeC {\'o}n del sistema}{15}{section.102}% 
+\contentsline {subsection}{\numberline {4.1.1}Actores}{15}{subsection.103}% 
+\contentsline {paragraph}{\indent }{15}{paragraph*.104}% 
+\contentsline {subsection}{\numberline {4.1.2}Diagrama de contexto}{15}{subsection.105}% 
+\contentsline {subsection}{\numberline {4.1.3}Diagrama de subsistema}{16}{subsection.107}% 
+\contentsline {subsection}{\numberline {4.1.4}Listado de casos de uso}{18}{subsection.110}% 
+\contentsline {subsection}{\numberline {4.1.5}Diagrama de casos de uso}{21}{subsection.225}% 
+\contentsline {subsection}{\numberline {4.1.6}Descripci\IeC {\'o}n textual de los casos de uso y diagramas de actividad}{33}{subsection.250}% 
+\contentsline {subsection}{\numberline {4.1.7}Diagrama de clases}{143}{subsection.505}% 
+\contentsline {subsection}{\numberline {4.1.8}Vista can\IeC {\'o}nica}{147}{subsection.513}% 
+\contentsline {subsection}{\numberline {4.1.9}Ficha t\IeC {\'e}cnica de clases}{148}{subsection.515}% 
+\contentsline {subsection}{\numberline {4.1.10}Diagramas de transici\IeC {\'o}n de estados}{149}{subsection.517}% 
+\contentsline {subsection}{\numberline {4.1.11}Diagramas de secuencia}{154}{subsection.525}% 
+\contentsline {section}{\numberline {4.2}Identificaci\IeC {\'o}n de roles, sus funciones y restricciones:}{158}{section.530}% 
+\contentsline {subsection}{\numberline {4.2.1}Roles}{158}{subsection.531}% 
+\contentsline {subsection}{\numberline {4.2.2}Funciones de los usuarios por rol}{158}{subsection.532}% 
+\contentsline {subsection}{\numberline {4.2.3}Restricciones de datos}{162}{subsection.533}% 
+\contentsline {chapter}{\numberline {5}Especificaci\IeC {\'o}n D}{163}{chapter.534}% 
+\contentsline {section}{\numberline {5.1}Dise\IeC {\~n}o del modelo l\IeC {\'o}gico y f\IeC {\'\i }sico de datos del sistema}{163}{section.535}% 
+\contentsline {subsection}{\numberline {5.1.1}Modelo relacional}{163}{subsection.536}% 
