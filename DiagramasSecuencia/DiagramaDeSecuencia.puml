@@ -179,7 +179,6 @@
     participant ":GestionRemitos" as GestionRemitos
     participant ":GestionOrdenesProduccion" as GestionOrdenesProduccion
     participant ":LineasVenta" as LineasVenta
-    participant ":Remitos" as Remitos
 
     opt Nuevo
         Vendedores -> GestionClientes: buscarAvanzado(c Clientes)
