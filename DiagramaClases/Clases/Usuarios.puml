@@ -7,7 +7,6 @@ class Usuarios {
    token: string
    fechaNacimiento: DateTime
    fechaInicio: DateTime
-   fechaFin: DateTime
    estadoCivil: string
    cantidadHijos: int
 

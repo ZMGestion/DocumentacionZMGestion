@@ -3,6 +3,9 @@ class Ubicaciones{
     +idUbicacion: int
     +idDomicilio: int
     ubicacion: string
+    fechaAlta: DateTime
+    fechaBaja: DateTime
+    observaciones: string
     estado: string
 
     listarPresupuestos(): List<Presupuestos>

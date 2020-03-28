@@ -2,5 +2,7 @@
 class Roles{
     +idRol: int
     rol: string
+    fechaAlta: DateTime
+    observaciones: string
 }
 @enduml

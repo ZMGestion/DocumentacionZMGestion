@@ -7,6 +7,9 @@ class Productos{
     +idCategoriaProducto: int
     +idGrupoProducto: int
     +idTipoProducto: int
+    fechaAlta: DateTime
+    fechaBaja: DateTime
+    observaciones: string
 
     listarPrecios(): List<Precios>
     damePrecioActual(): Precios

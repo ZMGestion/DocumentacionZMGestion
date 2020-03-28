@@ -4,6 +4,8 @@ class ProductosFinales{
     +idProducto: int
     +idLustre: int
     +idTela: int
+    fechaAlta: DateTime
+    fechaBaja: DateTime
     estado: string
 
     dameStock():int

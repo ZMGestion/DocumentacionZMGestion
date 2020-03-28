@@ -6,6 +6,8 @@ class Comprobantes{
     numeroComprobante: int
     monto: double
     fechaAlta: DateTime
+    fechaBaja: DateTime
     estado: string
+    observaciones: string
 }
 @enduml

@@ -2,6 +2,7 @@
 class TiposProducto{
     +idTipoProducto: int
     tipoProducto: string
+    descripcion: string
 
     listarProductos(): List<Productos>
 }

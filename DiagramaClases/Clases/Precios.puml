@@ -2,7 +2,7 @@
 class Precios{
     +idPrecio: int
     precio: float
-    estado: string
     fechaAlta: DateTime
+    estado: string
 }
 @enduml

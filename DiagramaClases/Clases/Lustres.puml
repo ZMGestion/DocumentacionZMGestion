@@ -2,5 +2,6 @@
 class Lustres{
     +idLustre: int
     lustre: string
+    observaciones: string
 }
 @enduml

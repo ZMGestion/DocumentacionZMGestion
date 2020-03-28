@@ -2,6 +2,7 @@
 class TiposDocumento{
    +idTipoDocumento: int
    tipoDocumento: string
+   descripcion: string
    estado: string
 }
 @enduml

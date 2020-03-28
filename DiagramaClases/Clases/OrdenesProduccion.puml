@@ -4,7 +4,7 @@ class OrdenesProduccion{
     +idUsuario: int
     +idVenta: int
     fechaAlta: DateTime
-    fechaFinalizacion: DateTime
+    observaciones: string
     estado: string
 
     cancelar(): Response

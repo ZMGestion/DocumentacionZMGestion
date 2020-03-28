@@ -2,6 +2,9 @@
 class GruposProducto{
     +idGrupoProducto: int
     grupo: string
+    fechaAlta: DateTime
+    fechaBaja: DateTime
+    descripcion: string
     estado: string
 
     listarProductos(): List<Productos>

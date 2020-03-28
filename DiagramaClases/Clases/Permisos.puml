@@ -2,5 +2,6 @@
 class Permisos{
     +idPermiso: int
     permiso: string
+    descripcion: string
 }
 @enduml

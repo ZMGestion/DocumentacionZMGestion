@@ -3,6 +3,9 @@ class Telas{
     +idTela: int
     tela: string
     +idPrecio: int
+    fechaAlta: DateTime
+    fechaBaja: DateTime
+    observaciones: string
     estado: string
 }
 @enduml
