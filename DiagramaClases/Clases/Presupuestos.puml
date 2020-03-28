@@ -6,6 +6,7 @@ class Presupuestos{
     +idUsuario: int
     fechaAlta: DateTime
     periodoValidez: int
+    observaciones: string
     estado: string
 
     crearLineaPresupuesto(lineaPresupuesto LineasPresupuesto): Response

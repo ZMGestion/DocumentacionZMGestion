@@ -5,9 +5,12 @@ class Tareas{
     +idUsuarioFabricante: int
     +idUsuarioRevisor: int
     tarea: string
+    fechaInicio: DateTime
+    fechaPausa: DateTime
     fechaAlta: DateTime
     fechaFinalizacion: DateTime
     fechaRevision: DateTime
+    fechaCancelacion: DateTime
     estado: string
     observaciones: string
 

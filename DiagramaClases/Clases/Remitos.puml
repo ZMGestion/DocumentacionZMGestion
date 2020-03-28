@@ -6,12 +6,11 @@ class Remitos{
     tipo: string
     fechaAlta: DateTime
     fechaEntrega: DateTime
+    observaciones: DateTime
     
     cancelar(): Response
     descancelar(): Response
     entregar(): Response
-    asociarVentar(v Venta): Response
-    asignarLineas(lv List<LineasVenta>):Response
     crearLineaRemito(lineaRemito LineasRemito): Response
     modificarLineaRemito(lineaRemito LineasRemito): Response
     borrarLineaRemito(lineaRemito LineasRemito): Response

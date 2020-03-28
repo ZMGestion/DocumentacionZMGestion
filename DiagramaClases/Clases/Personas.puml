@@ -7,7 +7,8 @@ class Personas{
    +idTipoDocumento: int
    documento: string
    estado: string
-
+   fechaAlta: DateTime
+   fechaBaja: DateTime
    
    listarPresupuestos(): List<Presupuestos>
    listarVentas(): List<Ventas>
