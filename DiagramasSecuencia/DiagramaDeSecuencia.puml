@@ -29,12 +29,14 @@
     actor ":Vendedores" as Vendedores
     participant ":GestionClientes" as GestionClientes
     participant ":Clientes" as Clientes
+    participant ":Paises" as Paises
+    participant ":Provincias" as Provincias
     opt Nuevo
         Vendedores -> GestionClientes: listarPaises()
         Vendedores -> GestionClientes: listarTiposDocumento()
         Vendedores -> GestionClientes: crear(c Clientes)
     else Gestionar
-        Vendedores -> GestionClientes: buscarAvanzado(c ClientesVentas)
+        Vendedores -> GestionClientes: buscarAvanzado(c Clientes)
         opt Modificar
             Vendedores -> GestionClientes: listarPaises()
             Vendedores -> GestionClientes: listarTiposDocumento()
@@ -45,29 +47,38 @@
             Vendedores -> Clientes: darBaja()
         else DarAlta
             Vendedores -> Clientes: darAlta()
+        else GestionDomicilios
+            Vendedores -> Clientes: listarDomicilios()
+            opt Crear
+                Vendedores -> GestionClientes: listarPaises()
+                Vendedores -> Paises: listarProvincias()
+                Vendedores -> Provincias: listarCiudades()
+                Vendedores -> Clientes: crearDomicilio(d Domicilios)
+            else Borrar
+                Vendedores -> Clientes: borrar(d Domicilios)
+            end
         end
     end
 @enduml
 
-@startuml GestionDomicilios
-    actor ":Vendedores" as Vendedores
-    participant ":GestionClientes" as GestionClientes
-    participant ":Paises" as Paises
-    participant ":Provincias" as Provincias
-    participant ":Clientes" as Clientes
-
-    Vendedores -> GestionClientes: buscarAvanzado(c ClientesVentas)
-    Vendedores -> Clientes: listarDomicilios()
-    opt Crear
-        Vendedores -> GestionClientes: listarPaises()
-        Vendedores -> Paises: listarProvincias()
-        Vendedores -> Provincias: listarCiudades()
-        Vendedores -> Clientes: crearDomicilio(d Domicilios)
-    else Borrar
-        Vendedores -> Clientes: borrar(d Domicilios)
-    end
-        
-@enduml
+'@startuml GestionDomicilios
+'    actor ":Vendedores" as Vendedores
+'    participant ":GestionClientes" as GestionClientes
+'    participant ":Paises" as Paises
+'    participant ":Provincias" as Provincias
+'    participant ":Clientes" as Clientes
+'
+'    Vendedores -> GestionClientes: buscarAvanzado(c ClientesVentas)
+'    Vendedores -> Clientes: listarDomicilios()
+'    opt Crear
+'        Vendedores -> GestionClientes: listarPaises()
+'        Vendedores -> Paises: listarProvincias()
+'        Vendedores -> Provincias: listarCiudades()
+'        Vendedores -> Clientes: crearDomicilio(d Domicilios)
+'    else Borrar
+'        Vendedores -> Clientes: borrar(d Domicilios)
+'    end
+'@enduml
 
 @startuml GestionPresupuestos
     actor ":Vendedores" as Vendedores
@@ -81,16 +92,16 @@
     participant ":Ventas" as Ventas
 
     opt Nuevo
-        Vendedores -> GestionClientes: buscarAvanzado(c ClientesVentas)
+        Vendedores -> GestionClientes: buscarAvanzado(c Clientes)
         Vendedores -> GestionPresupuestos: crear(p Presupuestos)
         loop Gestionar lineas presupuesto
             opt Nueva linea
-                Vendedores -> GestionProductos: buscarAvanzado(p ProductosVentas)
+                Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                 Vendedores -> GestionProductosFinales: listarLustres()
                 Vendedores -> GestionTelas: listarTelas()
                 Vendedores -> Presupuestos: crearLineaPresupuesto(lp LineasPresupuesto)
             else Modificar linea
-                Vendedores -> GestionProductos: buscarAvanzado(p ProductosVentas)
+                Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                 Vendedores -> GestionProductosFinales: listarLustres()
                 Vendedores -> GestionTelas: listarTelas()
                 Vendedores -> Presupuestos: modificarLineaPresupuesto(lp LineasPresupuesto)
@@ -100,17 +111,17 @@
         end 
         Vendedores -> Presupuestos: pasarACreado()
     else Gestionar
-        Vendedores -> GestionPresupuestos: buscarAvanzado(p PresupuestosVentas)
+        Vendedores -> GestionPresupuestos: buscarAvanzado(p Presupuestos)
         opt Modificar
             Vendedores -> Presupuestos: listarLineasPresupuesto()
             loop Gestionar lineas presupuesto
                 opt Nueva linea
-                    Vendedores -> GestionProductos: buscarAvanzado(p ProductosVentas)
+                    Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                     Vendedores -> GestionProductosFinales: listarLustres()
                     Vendedores -> GestionTelas: listarTelas()
                     Vendedores -> Presupuestos: crearLineaPresupuesto(lp LineasPresupuesto)
                 else Modificar linea
-                    Vendedores -> GestionProductos: buscarAvanzado(p ProductosVentas)
+                    Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                     Vendedores -> GestionProductosFinales: listarLustres()
                     Vendedores -> GestionTelas: listarTelas()
                     Vendedores -> Presupuestos: modificarLineaPresupuesto(lp LineasPresupuesto)
@@ -127,20 +138,20 @@
         else Generar PDF
             Vendedores -> Presupuestos: generarPDF()
         else Transformar presupuesto en venta
-            Vendedores -> GestionClientes: buscarAvanzado(c ClientesVentas)
+            Vendedores -> GestionClientes: buscarAvanzado(c Clientes)
             Vendedores -> Clientes: listarDomicilios()
             loop Para cada presupuesto seleccionado
                 Vendedores -> Presupuestos: listarLineasPresupuesto()
-                Vendedores -> GestionPresupuestos: transformarPresupuestosEnVenta(lp List<LineasPresupuesto>)
             end
+            Vendedores -> GestionPresupuestos: transformarPresupuestosEnVenta(lp List<LineasPresupuesto>)
             loop Gestionar lineas venta
                 opt Nueva linea
-                    Vendedores -> GestionProductos: buscarAvanzado(p ProductosVentas)
+                    Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                     Vendedores -> GestionProductosFinales: listarLustres()
                     Vendedores -> GestionTelas: listarTelas()
                     Vendedores -> Ventas: crearLineaVenta(lv LineasVenta)
                 else Modificar linea
-                    Vendedores -> GestionProductos: buscarAvanzado(p ProductosVentas)
+                    Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                     Vendedores -> GestionProductosFinales: listarLustres()
                     Vendedores -> GestionTelas: listarTelas()
                     Vendedores -> Ventas: modificarLineaVenta(lv LineasVenta)
@@ -166,20 +177,21 @@
     participant ":ProductosFinales" as ProductosFinales
     participant ":GestionUbicaciones" as GestionUbicaciones
     participant ":GestionRemitos" as GestionRemitos
-    participant ":Remitos" as Remitos
+    participant ":GestionOrdenesProduccion" as GestionOrdenesProduccion
+    participant ":LineasVenta" as LineasVenta
 
     opt Nuevo
-        Vendedores -> GestionClientes: buscarAvanzado(c ClientesVentas)
+        Vendedores -> GestionClientes: buscarAvanzado(c Clientes)
         Vendedores -> Clientes: listarDomicilios()
         Vendedores -> GestionVentas: crear(v Ventas)
         loop Gestionar lineas venta
             opt Nueva linea
-                Vendedores -> GestionProductos: buscarAvanzado(p ProductosVentas)
+                Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                 Vendedores -> GestionProductosFinales: listarLustres()
                 Vendedores -> GestionTelas: listarTelas()
                 Vendedores -> Ventas: crearLineaVenta(lv LineasVenta)
             else Modificar linea
-                Vendedores -> GestionProductos: buscarAvanzado(p ProductosVentas)
+                Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                 Vendedores -> GestionProductosFinales: listarLustres()
                 Vendedores -> GestionTelas: listarTelas()
                 Vendedores -> Ventas: modificarLineaVenta(lv LineasVenta)
@@ -189,18 +201,18 @@
         end 
         Vendedores -> Ventas: chequearPrecios()
     else Gestionar
-        Vendedores -> GestionVentas: buscarAvanzado(v VentasVentas)
+        Vendedores -> GestionVentas: buscarAvanzado(v Ventas)
         opt Modificar
             Vendedores -> Ventas: listarLineasVenta()
             Vendedores -> Clientes: listarDomicilios()
             loop Gestionar lineas venta
                 opt Nueva linea
-                    Vendedores -> GestionProductos: buscarAvanzado(p ProductosVentas)
+                    Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                     Vendedores -> GestionProductosFinales: listarLustres()
                     Vendedores -> GestionTelas: listarTelas()
                     Vendedores -> Ventas: crearLineaVenta(lv LineasVenta)
                 else Modificar linea
-                    Vendedores -> GestionProductos: buscarAvanzado(p ProductosVentas)
+                    Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                     Vendedores -> GestionProductosFinales: listarLustres()
                     Vendedores -> GestionTelas: listarTelas()
                     Vendedores -> Ventas: modificarLineaVenta(lv LineasVenta)
@@ -213,7 +225,10 @@
             Vendedores -> GestionVentas: borrar(v Ventas)
         else Generar orden produccion a partir de venta
             Vendedores -> Ventas: listarLineasVenta()
-            Vendedores -> GestionVentas: generarOrdenProduccion(lv List<LineasVenta>)
+            Vendedores -> GestionOrdenesProduccion: crear(op OrdenesProduccion)
+            loop Por cada linea de venta seleccionada
+                Vendedores -> LineasVenta: crearLineaProductoHija(lop LineasOrdenProduccion)
+            end
             loop Gestionar lineas orden produccion
                 opt Borrar linea
                     Vendedores -> OrdenesProduccion: borrarLineaOrdenProduccion(lop LineasOrdenProduccion)
@@ -229,11 +244,14 @@
                     Vendedores -> ProductosFinales: dameStockPorUbicacion()
                 end
             end
-            Vendedores -> GestionRemitos: crear(r Remitos)
-            loop Por cada linea de venta seleccionada
-                Vendedores -> Remitos: crearLineaRemito(lr LineasRemito)
+            opt Si se ha seleccionado al menos una linea
+                Vendedores -> GestionRemitos: crear(r Remitos)
+                loop Por cada linea de venta seleccionada
+                    Vendedores -> LineasVenta: crearLineaProductoHija(lr LineasRemito)
+                    ' se crean las lineas de remito dado que se debe asociar la ubicacion de la cual
+                    ' se sacaran cada linea
+                end
             end
-            Vendedores -> Remitos: asociarVenta(v Ventas)
         end
     end
 @enduml
