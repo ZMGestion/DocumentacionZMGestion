@@ -70,6 +70,7 @@ Ventas "0..*" -- "1" Ubicaciones
 Ventas "0..1" -- "0..*" Presupuestos
 Ventas "0..1" -- "0..1" OrdenesProduccion
 Ventas "1" -- "0..*" Comprobantes
+Comprobantes "0..*" -- "1" Usuarios
 LineasVenta "0..*"--* Ventas
 LineasOrdenProduccion "0..*"--* OrdenesProduccion
 LineasPresupuesto "0..*"--* Presupuestos
@@ -80,6 +81,7 @@ LineasProducto "0..*"--"1" ProductosFinales
 Presupuestos "0..*"--"1" Clientes
 Presupuestos "0..*"--"1" Usuarios
 Remitos "0..*"--"0..1" Domicilios
+Remitos "0..*" -- "1" Usuarios
 Ubicaciones "1"--"0..*" Remitos
 Tareas "0..*"--"1" Usuarios
 Tareas "0..*"--"0..1" Usuarios
@@ -147,6 +149,7 @@ Presupuestos "0..*"--"1" Clientes
 Ventas "0..1" -- "0..*" Presupuestos
 LineasProducto "0..*"--"1" ProductosFinales
 Ventas "1" -- "0..*" Comprobantes
+Comprobantes "0..*" -- "1" Usuarios
 @enduml
 
 @startuml vistaClientes
@@ -205,6 +208,7 @@ LineasRemito "0..*" -- "1" Ubicaciones
 Ubicaciones "0..1"--"1" Domicilios
 Remitos "0..*"--"0..1" Domicilios 
 Ubicaciones "1"--"0..*" Remitos
+Remitos "0..*" -- "1" Usuarios
 @enduml
 
 @startuml fichaTecnicaClases
