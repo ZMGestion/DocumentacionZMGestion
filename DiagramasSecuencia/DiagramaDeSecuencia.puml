@@ -61,25 +61,6 @@
     end
 @enduml
 
-'@startuml GestionDomicilios
-'    actor ":Vendedores" as Vendedores
-'    participant ":GestionClientes" as GestionClientes
-'    participant ":Paises" as Paises
-'    participant ":Provincias" as Provincias
-'    participant ":Clientes" as Clientes
-'
-'    Vendedores -> GestionClientes: buscarAvanzado(c ClientesVentas)
-'    Vendedores -> Clientes: listarDomicilios()
-'    opt Crear
-'        Vendedores -> GestionClientes: listarPaises()
-'        Vendedores -> Paises: listarProvincias()
-'        Vendedores -> Provincias: listarCiudades()
-'        Vendedores -> Clientes: crearDomicilio(d Domicilios)
-'    else Borrar
-'        Vendedores -> Clientes: borrar(d Domicilios)
-'    end
-'@enduml
-
 @startuml GestionPresupuestos
     actor ":Vendedores" as Vendedores
     participant ":Presupuestos" as Presupuestos
