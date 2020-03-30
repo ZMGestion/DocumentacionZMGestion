@@ -5,6 +5,8 @@ class Usuarios {
    usuario: string
    password: string
    token: string
+   cantidadIntentos : int
+   fechaUltIntento: DateTime
    fechaNacimiento: DateTime
    fechaInicio: DateTime
    estadoCivil: string
