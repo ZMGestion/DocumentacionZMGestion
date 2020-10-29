@@ -1,0 +1,67 @@
+\section{Introducción}
+	\paragraph\indent
+	A cada etapa de desarrollo le corresponde una etapa de prueba del mismo nivel y según a quién está orientada la misma se puede clasificar en:
+	\begin{itemize}
+		\item Pruebas orientadas al desarrollo:
+			\begin{itemize}
+				\item Test de unidades: prueba de las unidades individuales de código.
+				\item Test de módulos: prueba de módulos funcionales del sistema.
+				\item Test de integración: prueba de la estructura modular del programa y su interacción.
+			\end{itemize}
+		\item Pruebas orientadas al Cliente:
+			\begin{itemize}
+				\item Test de Aceptación: prueba de la estructura modular del programa y su interacción.
+			\end{itemize}
+	\end{itemize}
+	
+\section{Test de unidades}
+\subsection{Pruebas de caja blanca}
+
+\paragraph\indent
+Es un tipo de método de prueba que permite detectar errores internos del código de cada módulo.
+
+\paragraph\indent
+Con estas pruebas de pueden garantizar que se ejercitan por lo menos una vez todos los caminos independientes de cada módulo, que las decisiones lógicas se evalúan en sus variantes verdadera y falsa, que se ejecutan todos los bucles en sus límites operacionales y, por último, que se ejercitan las estructuras internas de datos para asegurar su validez.
+	
+\section{Test de módulos}
+\subsection{Pruebas de caja negra}
+
+\paragraph\indent
+Se ve a cada módulo como una caja negra y se generan conjuntos de condiciones de entrada que ejerciten completamente todos los requisitos funcionales del programa, observando las salidas. La prueba de la caja negra centra su atención en la información y la clave está en generar el conjunto de datos o condiciones de entrada. Se detectan los siguientes errores:
+\begin{itemize}
+	\item Funciones incorrectas o ausentes.
+	\item Errores de interfaz.
+	\item Errores en estructuras de datos o en accesos a bases de datos externas.
+	\item Errores de rendimiento.
+	\item Errores de inicialización y terminación.
+\end{itemize}
+
+\subsection{Prueba de estrés}
+
+\paragraph\indent
+Se centra en realizar el análisis de valores límite, y en condiciones límite, ya que se ha demostrado que los errores tienden a darse más en los límites del campo de entrada y sometidos a condiciones límite.
+
+\section{Test de integración}
+Los errores que surgen de integrar los módulos son: 
+\begin{itemize}
+	\item Los datos se pueden perder en una interfaz: un módulo puede tener un efecto adverso e inadvertido sobre otro.
+	\item Las subfunciones, cuando se combinan, pueden no producir la función principal.
+	\item Las estructuras de datos globales pueden presentar problemas.
+\end{itemize}
+
+El objetivo es tomar los módulos probados y construir una estructura de programa que esté de acuerdo con lo que dicta la Especificación C.
+
+Existen dos tipos de integración:
+\begin{itemize}
+	\item Integración descendente: se integran los módulos moviéndose hacia abajo por la jerarquía de control, comenzando con el módulo de control principal.
+	\item Integración ascendente: se integran los módulos atómicos (niveles más bajos) primero y luego se continúa con el nivel inmediato superior.
+\end{itemize}
+
+\section{Test de aceptación}
+\subsection{Pruebas alfa y beta}
+
+La prueba \textalpha \, es conducida por el cliente en el lugar de desarrollo. Se usa el software de forma natural (previa capacitación), con el encargado de desarrollo mirando por encima del hombro del usuario y registrando errores y problemas de uso. Se llevan a cabo en un entorno controlado.
+
+La prueba \textbeta \,se lleva a cabo en uno o más lugares de clientes, por los usuarios finales de software. El encargado de desarrollo a cabo no está presente. El cliente registra todos los problemas (reales e imaginarios) que encuentra durante la prueba e informa a intervalos regulares al equipo de desarrollo.
+
+Tanto los planes como los procedimientos de prueba, estarán diseñados para asegurar que se satisfacen todos los requisitos funcionales y que se alcanzan todos los requisitos de rendimientos.
