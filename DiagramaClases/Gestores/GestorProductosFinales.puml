@@ -1,4 +1,5 @@
 @startuml GestorProductosFinales
+hide circle
 class GestorProductosFinales{
     listarLustres(): List<Lustres>
 }

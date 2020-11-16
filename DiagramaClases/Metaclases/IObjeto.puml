@@ -1,7 +1,8 @@
 @startuml IObjeto
+hide circle
 interface IObjeto{
-    +dame()
-    +darAlta()
-    +darBaja()
+    dame()
+    darAlta()
+    darBaja()
 }
 @enduml

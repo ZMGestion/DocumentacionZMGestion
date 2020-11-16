@@ -1,7 +1,8 @@
 @startuml Observaciones
+hide circle
 class Observaciones{
-    +idLineaProducto: int
-    +idObservacion: int
+    idLineaProducto: int
+    idObservacion: int
     observacion: string
 }
 @enduml

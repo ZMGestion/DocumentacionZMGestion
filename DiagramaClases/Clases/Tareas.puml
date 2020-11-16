@@ -1,9 +1,10 @@
 @startuml Tareas
+hide circle
 class Tareas{
-    +idTarea: int
-    +idLineaProducto: int
-    +idUsuarioFabricante: int
-    +idUsuarioRevisor: int
+    idTarea: int
+    idLineaProducto: int
+    idUsuarioFabricante: int
+    idUsuarioRevisor: int
     tarea: string
     fechaInicio: DateTime
     fechaPausa: DateTime

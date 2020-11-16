@@ -1,10 +1,11 @@
 @startuml Personas
+hide circle
 class Personas{
    nombres: string
    apellidos: string
    telefono: string
    email: string
-   +idTipoDocumento: int
+   idTipoDocumento: int
    documento: string
    estado: string
    fechaAlta: DateTime

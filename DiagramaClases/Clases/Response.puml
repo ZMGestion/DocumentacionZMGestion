@@ -1,4 +1,5 @@
 @startuml Response
+hide circle
 class Response{
     estado: Status
     mensaje: string

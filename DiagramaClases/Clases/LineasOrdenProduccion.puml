@@ -1,6 +1,7 @@
 @startuml LineasOrdenProduccion
+hide circle
 class LineasOrdenProduccion{
-    +idOrdenProduccion: int
+    idOrdenProduccion: int
 
     reanudar(): Response
     listarObservaciones(): List<Observaciones>

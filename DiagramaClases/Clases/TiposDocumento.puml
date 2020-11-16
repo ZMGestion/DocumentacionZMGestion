@@ -1,6 +1,7 @@
 @startuml TiposDocumento
+hide circle
 class TiposDocumento{
-   +idTipoDocumento: int
+   idTipoDocumento: int
    tipoDocumento: string
    descripcion: string
    estado: string

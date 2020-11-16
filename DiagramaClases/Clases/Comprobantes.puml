@@ -1,8 +1,9 @@
 @startuml Comprobantes
+hide circle
 class Comprobantes{
-    +idComprobante: int
-    +idVenta: int
-    +idUsuario: int
+    idComprobante: int
+    idVenta: int
+    idUsuario: int
     tipo: string
     numeroComprobante: int
     monto: double

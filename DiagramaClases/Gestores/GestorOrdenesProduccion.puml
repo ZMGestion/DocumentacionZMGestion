@@ -1,4 +1,5 @@
 @startuml GestorOrdenesProduccion
+hide circle
 class GestorOrdenesProduccion{
     
 }

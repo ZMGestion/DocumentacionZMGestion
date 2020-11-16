@@ -1,9 +1,10 @@
 @startuml Presupuestos
+hide circle
 class Presupuestos{
-    +idPresupuesto: int
-    +idUbicacion: int
-    +idCliente: int
-    +idUsuario: int
+    idPresupuesto: int
+    idUbicacion: int
+    idCliente: int
+    idUsuario: int
     fechaAlta: DateTime
     periodoValidez: int
     observaciones: string

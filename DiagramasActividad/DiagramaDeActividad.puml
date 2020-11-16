@@ -333,8 +333,8 @@ junto con la cantidad que desea producir del mismo;
 :Selecciona el producto, tela, lustre y cantidad a producir;
 |ZMGestion|
 repeat while (La cantidad ingresada es menor o igual que cero) is (V)
-repeat while (El producto, tela y lustre indicado ya se encuentra en la orden de producción)
-repeat while (El producto indicado no es del tipo producible)
+repeat while (El producto, tela y lustre indicado ya se encuentra en la orden de producción) is (V)
+repeat while (El producto indicado no es del tipo producible) is (V)
 if(Si la combinacion de producto, tela y lustre no existe) then (V)
 :Ejecuta el CU025(Crear producto final) para el producto, tela y lustre seleccionado|
 endif
@@ -544,7 +544,7 @@ start
 repeat
 repeat
 :Selecciona el presupuesto que desea modificar;
-repeat while(El presupuesto se encuentra en estado "Vendido")
+repeat while(El presupuesto se encuentra en estado "Vendido") is (V)
 repeat while (El vendedor que esta intentando modificar el presupuesto no es administrador 
 y el presupuesto no le pertenece)
 |ZMGestion|
@@ -589,10 +589,10 @@ cantidad de tela necesaria;
 |Administrador|
 :Modifica los campos que desea cambiar;
 |ZMGestion|
-repeat while(Alguno de los campos requeridos se encuentra vacío)
-repeat while(El nombre, grupo y categoría ingresados ya estan en uso)
-repeat while(El precio es menor o igual que cero)
-repeat while(La cantidad de tela necesaria es menor que cero)
+repeat while(Alguno de los campos requeridos se encuentra vacío) is (V)
+repeat while(El nombre, grupo y categoría ingresados ya estan en uso) is (V)
+repeat while(El precio es menor o igual que cero) is (V)
+repeat while(La cantidad de tela necesaria es menor que cero) is (V)
 :Modifica el producto con los datos ingresados y muestra un mensaje idnicando el éxito de la operación;
 |Administrador|
 end
@@ -630,7 +630,7 @@ repeat
 :Selecciona la venta que desea modificar;
 repeat while(La venta no se encuentra en estado 'En creación') is (V)
 repeat while (El vendedor que esta intentando modificar la venta no es administrador 
-y la venta no le pertenece)
+y la venta no le pertenece) is (V)
 |ZMGestion|
 repeat
 :Muestra un formulario autocompletado con el cliente.;
@@ -659,7 +659,7 @@ start
 :Ha ejecutado con éxito el CU068(Buscar avanzado ventas);
 repeat
 :Selecciona la venta la cual desea revisar;
-repeat while(La venta seleccionada no se encuentra en estado 'En revisión')
+repeat while(La venta seleccionada se encuentra en estado 'En revisión') is (V)
 |ZMGestion|
 :Muestra el cliente al cual pertenece la venta y ejecuta el CU069(Listar lineas de venta)
 para la venta seleccionada;

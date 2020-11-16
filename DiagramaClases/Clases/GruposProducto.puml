@@ -1,6 +1,7 @@
 @startuml GruposProducto
+hide circle
 class GruposProducto{
-    +idGrupoProducto: int
+    idGrupoProducto: int
     grupo: string
     fechaAlta: DateTime
     fechaBaja: DateTime

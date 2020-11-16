@@ -1,6 +1,7 @@
 @startuml Permisos
+hide circle
 class Permisos{
-    +idPermiso: int
+    idPermiso: int
     permiso: string
     descripcion: string
 }

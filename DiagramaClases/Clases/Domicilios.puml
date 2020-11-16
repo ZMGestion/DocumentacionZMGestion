@@ -1,12 +1,13 @@
 @startuml Domicilios
+hide circle
 class Domicilios{
-    +idDomicilio: int
+    idDomicilio: int
     domicilio: string
     codigoPostal: string
-    +idCliente: int
-    +idCiudad: int
-    +idProvincia: int
-    +idPais: int
+    idCliente: int
+    idCiudad: int
+    idProvincia: int
+    idPais: int
     fechaAlta: DateTime
     observaciones: string
 

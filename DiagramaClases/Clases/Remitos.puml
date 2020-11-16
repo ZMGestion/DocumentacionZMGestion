@@ -1,9 +1,10 @@
 @startuml Remitos
+hide circle
 class Remitos{
-    +idRemito: int
-    +idUbicacion: int
-    +idDomicilio: int
-    +idUsuario: int
+    idRemito: int
+    idUbicacion: int
+    idDomicilio: int
+    idUsuario: int
     tipo: string
     fechaAlta: DateTime
     fechaEntrega: DateTime

@@ -1,8 +1,9 @@
 @startuml Telas
+hide circle
 class Telas{
-    +idTela: int
+    idTela: int
     tela: string
-    +idPrecio: int
+    idPrecio: int
     fechaAlta: DateTime
     fechaBaja: DateTime
     observaciones: string

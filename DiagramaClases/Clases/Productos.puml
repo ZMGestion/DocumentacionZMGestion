@@ -1,12 +1,13 @@
 @startuml Productos
+hide circle
 class Productos{
-    +idProducto: int
+    idProducto: int
     producto: string
     longitudTela: float
-    +idPrecio: int
-    +idCategoriaProducto: int
-    +idGrupoProducto: int
-    +idTipoProducto: int
+    idPrecio: int
+    idCategoriaProducto: int
+    idGrupoProducto: int
+    idTipoProducto: int
     fechaAlta: DateTime
     fechaBaja: DateTime
     observaciones: string

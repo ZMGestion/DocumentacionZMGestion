@@ -1,4 +1,5 @@
 @startuml GestorPresupuestos
+hide circle
 class GestorPresupuestos{
     transformarPresupuestosEnVenta(lp List<LineasPresupuesto>): Response
 }

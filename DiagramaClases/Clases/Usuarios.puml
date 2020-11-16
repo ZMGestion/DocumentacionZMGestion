@@ -1,7 +1,8 @@
 @startuml Usuarios
+hide circle
 class Usuarios {
-   +idUsuario : int
-   +idUbicacion: int
+   idUsuario : int
+   idUbicacion: int
    usuario: string
    password: string
    token: string

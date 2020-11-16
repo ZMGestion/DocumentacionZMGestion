@@ -1,8 +1,9 @@
 @startuml IGestor
+hide circle
 interface IGestor{
-    + crear(o IObjeto): Response
-    + buscarAvanzado(o IObjeto): List<IObjeto>
-    + modificar(o IObjeto): Response
-    + borrar(o IObjeto): Response
+    crear(o IObjeto): Response
+    buscarAvanzado(o IObjeto): List<IObjeto>
+    modificar(o IObjeto): Response
+    borrar(o IObjeto): Response
 }
 @enduml

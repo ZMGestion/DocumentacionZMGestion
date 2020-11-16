@@ -1,6 +1,7 @@
 @startuml LineasVenta
+hide circle
 class LineasVenta{
-    +idVenta: int
+    idVenta: int
 
     cancelarFabricacion():Response
     puedeRetirar(): bool

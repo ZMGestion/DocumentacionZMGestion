@@ -1,7 +1,8 @@
 @startuml Provincias
+hide circle
 class Provincias{
-    +idProvincia: int
-    +idPais: int
+    idProvincia: int
+    idPais: int
     provincia: string
 
     listarCiudades(): List<Ciudades>
