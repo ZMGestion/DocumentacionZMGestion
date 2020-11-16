@@ -1,7 +1,8 @@
 @startuml LineasRemito
+hide circle
 class LineasRemito{
-    +idRemito: int
-    +idUbicacion: int 
+    idRemito: int
+    idUbicacion: int 
 
 }
 @enduml

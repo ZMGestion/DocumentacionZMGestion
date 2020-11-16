@@ -1,9 +1,10 @@
 @startuml Clientes
+hide circle
 class Clientes{
-    +idCliente: int
+    idCliente: int
     tipo: string
     razonSocial: string 
-    +idPais: int
+    idPais: int
 
     listarDomicilios(): List<Domicilios>
     listarVentas(): List<Ventas>

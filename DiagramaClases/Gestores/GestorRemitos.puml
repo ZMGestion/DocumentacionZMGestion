@@ -1,4 +1,5 @@
 @startuml GestorRemitos
+hide circle
 class GestorRemitos{
     generarStockTotal(): Map<Productos, int>
 }

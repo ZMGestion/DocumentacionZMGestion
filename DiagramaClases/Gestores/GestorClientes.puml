@@ -1,4 +1,5 @@
 @startuml GestorClientes
+hide circle
 class GestorClientes{
     listarTiposDocumento(): List<TiposDocumento>
     listarPaises(): List<Paises>

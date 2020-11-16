@@ -1,8 +1,9 @@
 @startuml LineasProducto
+hide circle
 class LineasProducto{
-    +idLineaProducto: int
-    +idLineaProductoPadre: int
-    +idProductoFinal: int
+    idLineaProducto: int
+    idLineaProductoPadre: int
+    idProductoFinal: int
     fechaAlta: DateTime
     fechaCancelacion: DateTime
     tipo: string

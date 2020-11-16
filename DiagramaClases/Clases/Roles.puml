@@ -1,6 +1,7 @@
 @startuml Roles
+hide circle
 class Roles{
-    +idRol: int
+    idRol: int
     rol: string
     fechaAlta: DateTime
     observaciones: string

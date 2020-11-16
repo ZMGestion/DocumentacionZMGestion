@@ -1,6 +1,7 @@
 @startuml PermisosRol
+hide circle
 class PermisosRol{
-    +idRol: int
-    +idPermiso: int
+    idRol: int
+    idPermiso: int
 }
 @enduml

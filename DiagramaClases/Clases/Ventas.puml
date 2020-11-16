@@ -1,10 +1,11 @@
 @startuml Ventas
+hide circle
 class Ventas{
-    +idVenta: int
-    +idCliente: int
-    +idDomicilio: int
-    +idUbicacion: int
-    +idUsuario: int
+    idVenta: int
+    idCliente: int
+    idDomicilio: int
+    idUbicacion: int
+    idUsuario: int
     fechaAlta: DateTime
     observaciones: string
     estado: string

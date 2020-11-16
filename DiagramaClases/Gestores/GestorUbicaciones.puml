@@ -1,4 +1,5 @@
 @startuml GestorUbicaciones
+hide circle
 class GestorUbicaciones{
     listarUbicaciones(): List<Ubicaciones>
 }

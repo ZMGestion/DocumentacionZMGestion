@@ -1,8 +1,9 @@
 @startuml Ciudades
+hide circle
 class Ciudades{
-    +idCiudad: int
-    +idPais: int
-    +idProvincia: int
+    idCiudad: int
+    idPais: int
+    idProvincia: int
     ciudad: string  
 }
 @enduml

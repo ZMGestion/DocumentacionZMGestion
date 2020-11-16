@@ -1,4 +1,5 @@
 @startuml GestorTelas
+hide circle
 class GestorTelas{
     listarTelas: List<Telas>
 }

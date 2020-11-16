@@ -1,4 +1,5 @@
 @startuml GestorComprobantes
+hide circle
 class GestorComprobantes{
 }
 @enduml

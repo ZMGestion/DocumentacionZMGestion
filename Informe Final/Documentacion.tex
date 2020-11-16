@@ -21,6 +21,30 @@
 % \setcounter{tocdepth}{3} para que aparezcan las subsecciones en el indice https://www.lawebdelprogramador.com/foros/TeX-Latex/619886-subsubsection.html
 % \usepackage[latin1]{inputenc}
 \usepackage[none]{hyphenat}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=SQL,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
 \usepackage[
 pdfauthor={Nicolás Bachs, Loïk Choua},
 pdftitle={Sistema de Gestión de mueblería},
@@ -102,7 +126,7 @@ unicode	]{hyperref}
 	{\scshape departamento de electricidad, electrónica y computación\par}
 	{\scshape\Large ingeniería en computación\par}
 	\vspace{0.5cm}
-	{\scshape julio 2020\par} %modificar e ingresar fecha cuando corresponda
+	{\scshape noviembre 2020\par} %modificar e ingresar fecha cuando corresponda
 	\vfill
 	{\LARGE\mdseries Trabajo de Graduación\par}
 	\vspace{0.5cm}
@@ -135,8 +159,8 @@ unicode	]{hyperref}
 \input{Dedicatorias.tex}
 \tableofcontents
 \input{Capitulo1.tex}
-\input{Capitulo2.tex}
 \input{Capitulo3.tex}
+\input{Capitulo2.tex}
 \input{Capitulo4.tex}
 \input{Capitulo5.tex}
 \input{Capitulo6.tex}

@@ -1,4 +1,5 @@
 @startuml GestorRoles
+hide circle
 class GestorRoles{
     listarRoles(): List<Roles>
 }

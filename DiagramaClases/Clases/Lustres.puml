@@ -1,6 +1,7 @@
 @startuml Lustres
+hide circle
 class Lustres{
-    +idLustre: int
+    idLustre: int
     lustre: string
     observaciones: string
 }

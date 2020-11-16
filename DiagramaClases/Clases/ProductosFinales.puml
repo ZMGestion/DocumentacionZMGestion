@@ -1,9 +1,10 @@
 @startuml ProductosFinales
+hide circle
 class ProductosFinales{
-    +idProductoFinal: int   
-    +idProducto: int
-    +idLustre: int
-    +idTela: int
+    idProductoFinal: int   
+    idProducto: int
+    idLustre: int
+    idTela: int
     fechaAlta: DateTime
     fechaBaja: DateTime
     estado: string

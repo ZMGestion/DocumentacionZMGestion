@@ -1,6 +1,7 @@
 @startuml TiposProducto
+hide circle
 class TiposProducto{
-    +idTipoProducto: int
+    idTipoProducto: int
     tipoProducto: string
     descripcion: string
 

@@ -1,4 +1,5 @@
 @startuml GestorUsuarios
+hide circle
 class GestorUsuarios{
     listarTiposDocumento(): List<TiposDocumento>
 }

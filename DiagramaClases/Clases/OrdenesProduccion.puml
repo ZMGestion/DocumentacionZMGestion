@@ -1,8 +1,9 @@
 @startuml OrdenesProduccion
+hide circle
 class OrdenesProduccion{
-    +idOrdenProduccion: int
-    +idUsuario: int
-    +idVenta: int
+    idOrdenProduccion: int
+    idUsuario: int
+    idVenta: int
     fechaAlta: DateTime
     observaciones: string
     estado: string

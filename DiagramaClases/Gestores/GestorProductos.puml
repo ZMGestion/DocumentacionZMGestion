@@ -1,4 +1,5 @@
 @startuml GestorProductos
+hide circle
 class GestorProductos{
     listarTiposProducto(): List<TiposProducto>
 }

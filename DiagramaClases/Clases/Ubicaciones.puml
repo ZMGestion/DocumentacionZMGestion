@@ -1,7 +1,8 @@
 @startuml Ubicaciones
+hide circle
 class Ubicaciones{
-    +idUbicacion: int
-    +idDomicilio: int
+    idUbicacion: int
+    idDomicilio: int
     ubicacion: string
     fechaAlta: DateTime
     fechaBaja: DateTime

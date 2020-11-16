@@ -1,5 +1,6 @@
 @startuml LineasPresupuesto
+hide circle
 class LineasPresupuesto{
-    +idPresupuesto: int
+    idPresupuesto: int
 }
 @enduml

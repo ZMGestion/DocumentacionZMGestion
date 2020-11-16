@@ -1,6 +1,7 @@
 @startuml Precios
+hide circle
 class Precios{
-    +idPrecio: int
+    idPrecio: int
     precio: float
     fechaAlta: DateTime
     estado: string
