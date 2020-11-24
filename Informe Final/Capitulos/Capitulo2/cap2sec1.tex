@@ -25,7 +25,7 @@
             \paragraph\indent
             En esta versión se realizará lo recién mencionado dejando para futuras versiones la  contabilidad y la gestión con los proveedores.
             \paragraph\indent
-            El desarrollo lo llevará a cabo \textbf{NL}, con opción a ser resopnsable del posterior mantenimiento de éste.
+            El desarrollo lo llevará a cabo \textbf{NL}, con opción a ser responsable del posterior mantenimiento de éste.
         \subsubsection{Definiciones, acrónimos y abreviaturas}
             \underline{Definiciones:}
             \begin{itemize}
@@ -49,7 +49,7 @@
 				Esta sección presenta una descripción general del sistema con el fin de conocer las funciones que debe soportar, los datos asociados, las restricciones impuestas y cualquier otro factor que pueda influir en la construcción del mismo.
 				\paragraph\indent\textbf{Usuarios:}
 				\paragraph\indent
-				Para poder acceder a ZM Gestion se deberá contar con una cuenta (nombre de usuario y contraseña). Cada empleado de la mueblería tendrá una sola cuenta de usuario, de ellos se desea saber: nombres, apellidos, tipo y número de documento, fecha de nacimiento, fecha de inicio de actividad laboral en la empresa, estado civil, cantidad de hijos, número de telefono de contacto, correo electrónico y contraseña. Todos los datos recién mencionados serán de carácter obligatorio. Todas las funciones del sistema requerirán que los usuarios inicien sesión. Los usuarios tendrán dos estados posibles: alta o baja. Cuando su estado sea dado de alta, tendran la posibilidad de iniciar sesión y ejercer pleno uso de sus funciones. Mientras que cuando estén dados de baja no podrán iniciar sesión.
+				Para poder acceder a ZM Gestion se deberá contar con una cuenta (nombre de usuario y contraseña). Cada empleado de la mueblería tendrá una sola cuenta de usuario, de ellos se desea saber: nombres, apellidos, tipo y número de documento, fecha de nacimiento, fecha de inicio de actividad laboral en la empresa, estado civil, cantidad de hijos, número de telefono de contacto, correo electrónico y contraseña. Todos los datos recién mencionados serán de carácter obligatorio. Todas las funciones del sistema requerirán que los usuarios inicien sesión. Los usuarios tendrán dos estados posibles: alta o baja. Cuando su estado sea dado de alta, tendrán la posibilidad de iniciar sesión y ejercer pleno uso de sus funciones. Mientras que cuando estén dados de baja no podrán iniciar sesión.
 				\clearpage
 				\paragraph\indent\textbf{Roles:}
 				\paragraph\indent	
@@ -79,16 +79,16 @@
 				Un producto tiene nombre, código identificador (único para cada producto), tipo de producto ( con proceso de producción, sin proceso de producción o a medida), lustre y tela. Además cada producto pertenecerá a una categoría y grupo. Todos los datos de los productos son obligatorios excepto la tela y/o lustre para aquellos sin proceso de producción. Los usuarios que cuenten con los permisos necesarios podrán gestionar productos (crear, modificar, borrar, dar de alta y dar de baja). No se podrán borrar productos que hayan sido utilizados en algún presupuesto, venta, orden de producción u orden de resposición.
 				\paragraph\indent\textbf{Categorías de producto:}
 				\paragraph\indent	
-				Los productos perteneceran a una unica categoria y una categoría podrá tener cero o mas productos. De la categoria se desea saber el nombre y estado (pudiendo ser alta o baja). Las categorías se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes. No se podran borrar categorias que tengan al menos un producto asociado.
+				Los productos perteneceran a una única categoria y una categoría podrá tener cero o más productos. De la categoria se desea saber el nombre y estado (pudiendo ser alta o baja). Las categorías se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes. No se podrán borrar categorias que tengan al menos un producto asociado.
 				\paragraph\indent\textbf{Grupos de productos:}
 				\paragraph\indent	
-				Los productos se encontrarán asociados en grupos de productos. Estos estarán compuestos por cero o mas productos. De los grupos se desea saber: codigo, estado (pudiendo ser alta o baja) y descripción. Los grupos de productos se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes. No se podrán borrar grupos que estén compuestos por al menos un producto.
+				Los productos se encontrarán asociados en grupos de productos. Estos estarán compuestos por cero o más productos. De los grupos se desea saber: código, estado (pudiendo ser alta o baja) y descripción. Los grupos de productos se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes. No se podrán borrar grupos que estén compuestos por al menos un producto.
 				\paragraph\indent\textbf{Ubicaciones y Stock:}
 				\paragraph\indent	
-				Los productos tendran asociado una o mas ubicaciones geograficas. De las ubicaciones se desea saber: nombre y dirección. Las ubicaciones podran tener almacenados cero o mas productos. Las ubicaciones se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes.. Por cada producto se desea saber: cantidad por ubicación a una fecha dada y observaciones.
+				Los productos tendrán asociado una o más ubicaciones geográficas. De las ubicaciones se desea saber: nombre y dirección. Las ubicaciones podrán tener almacenados cero o más productos. Las ubicaciones se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes.. Por cada producto se desea saber: cantidad por ubicación a una fecha dada y observaciones.
 				\paragraph\indent\textbf{Lista de precios:}
 				\paragraph\indent	
-				Cada producto tendrá asociado uno o más precios con su respectiva fecha de establecimiento. El precio vigente será el ultimo que se haya establecido. La actualización de precios se podrá realizar a todos los productos pertenecientes a un determinado grupo en igual proporción (incremento o decremento) respecto del precio vigente de cada producto. La lista de precio se podrá generar en formato PDF.
+				Cada producto tendrá asociado uno o más precios con su respectiva fecha de establecimiento. El precio vigente será el último que se haya establecido. La actualización de precios se podrá realizar a todos los productos pertenecientes a un determinado grupo en igual proporción (incremento o decremento) respecto del precio vigente de cada producto. La lista de precio se podrá generar en formato PDF.
 				\paragraph\indent\textbf{Ventas:}
 				\paragraph\indent	
 				Una venta se podrá realizar a partir de uno o más presupuestos existentes o no. En caso de que un cliente quiera realizar una compra de uno o más productos que hayan sido presupuestados previamente, un usuario deberá buscar dicho/s presupuesto/s a través de su código de identificación o bien con datos del cliente para así acceder a sus presupuestos. De los presupuestos se podrán elegir cuales líneas de presupuesto el cliente desea comprar, pudiendo modificar la cantidad del mismo y asignar el precio a aquellos que no tuviesen, o bien el precio del producto haya cambiado. 
@@ -109,7 +109,7 @@
 				Cuando todas las líneas de producto no canceladas de una venta se encuentren en estado verificada se enviará un correo electrónico al cliente (en caso de haberlo proporcionado) notificándole su deuda en caso de existir e informándole que los productos que compró ya están disponibles.
 				\paragraph\indent\textbf{Líneas de producto:}
 				\paragraph\indent	
-				Una venta tiene una o mas líneas de producto. Una línea de producto está compuesta por: un producto, la cantidad solicitada de dicho producto, cero o más observaciones, el precio por la cantidad solicitada y estado. Siendo de caracter obligatorio producto, cantidad y estado.
+				Una venta tiene una o más líneas de producto. Una línea de producto está compuesta por: un producto, la cantidad solicitada de dicho producto, cero o más observaciones, el precio por la cantidad solicitada y estado. Siendo de caracter obligatorio producto, cantidad y estado.
 				\paragraph\indent
 				Los posibles estados de una línea de producto son:
 				\begin{itemize}
@@ -119,7 +119,7 @@
 					\item \textbf{Pendiente de producción:} Cuando un administrador seleccionó la línea para ser producida pero aún no se está realizando ninguna de sus tareas de producción.
 					\item \textbf{En producción:} Cuando se están realizando al menos una de sus tareas de producción asignadas.
 					\item \textbf{Reservada:} Cuando los productos se reservaron para el cliente.
-					\item \textbf{Pendiente de entrega:} Cuando la línea de producto ha sido reservada y el credito es superior al total de dicha línea de producto. Se debe tener en cuenta que:
+					\item \textbf{Pendiente de entrega:} Cuando la línea de producto ha sido reservada y el crédito es superior al total de dicha línea de producto. Se debe tener en cuenta que:
 					\begin{center}
 						CREDITO = MONTO TOTAL DE VENTA - (TOTAL EN PRODUCTOS ENTREGADO + DEUDA)
 	
@@ -155,7 +155,7 @@
 				Cada factura tendrá uno o más recibos asociados. De los recibos interesa saber: código de identificación, fecha en que se realizó, cantidad de dinero recibido, medio de pago utilizado, factura asociada y descripción. Los recibos podrán gestionarse (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios para hacerlo.
 				\paragraph\indent\textbf{Órdenes de Producción:}
 				\paragraph\indent	
-				Una orden de producción está compuesta por una o mas líneas de producto, fecha de creación, fecha en la que se finaliza, usuario que la crea, usuario que marca como finalizada y usuario que verifica que este finalizada y estado.
+				Una orden de producción está compuesta por una o más líneas de producto, fecha de creación, fecha en la que se finaliza, usuario que la crea, usuario que marca como finalizada y usuario que verifica que este finalizada y estado.
 				\paragraph\indent
 				Los estados de una orden de producción pueden ser:
 				\begin{itemize}
