@@ -15,7 +15,7 @@
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El vendedor selecciona el cliente que desea modificar.}
-    \addCaseUseStep{ZMGestion muestra un formulario autocompletado con los datos del cliente seleccioando para que el vendedor modifique: el tipo de persona, nombre y apellido (o razón social), número y tipo de documento, correo electrónico, número de telefono y nacionalidad. }
+    \addCaseUseStep{ZMGestion muestra un formulario autocompletado con los datos del cliente seleccioando para que el vendedor modifique: el tipo de persona, nombre y apellido (o razón social), número y tipo de documento, correo electrónico, número de teléfono y nacionalidad. }
     \addCaseUseStep{El vendedor modifica los campos que desea cambiar.}
     \addCaseUseStep{ZMGestion modifica el cliente y muestra un mensaje indicando el éxito de la operación.}
 }
@@ -32,7 +32,7 @@
     \caseUseRow{El escenario vuele al punto 2.}
     \caseUseRow{}
 
-    \newAlternative{A3: El vendedor ha dejado un campo obligatorio vacio.}{3} %Flujo alternativo A2.
+    \newAlternative{A3: El vendedor ha dejado un campo obligatorio vacío.}{3} %Flujo alternativo A2.
     \caseUseRow{La secuencia A3 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que dicho campo es requerido.}
     \caseUseRow{El escenario vuelve al punto 2.}

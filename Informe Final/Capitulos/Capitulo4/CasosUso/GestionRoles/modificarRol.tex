@@ -19,13 +19,13 @@
     \addCaseUseStep{ZMGestion modifica el rol y muestra un mensaje indicando el éxito de la operación.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: El nombre del rol ingresado ya esta en uso.}{3} %Flujo alternativo A1.
+	\newAlternative{A1: El nombre del rol ingresado ya está en uso.}{3} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMgestion muestra un mensaje indicando que el nombre ingresado ya se encuentra en uso.}
     \caseUseRow{El escenario vuelve al punto 2.}    
     \caseUseRow{}
 
-	\newAlternative{A2:El administrador ha dejado un campo obligatorio vacio.}{3} %Flujo alternativo A2.
+	\newAlternative{A2:El administrador ha dejado un campo obligatorio vacío.}{3} %Flujo alternativo A2.
     \caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que dicho campo es requerido.}
     \caseUseRow{EL escenario vuelve al punto 2.}

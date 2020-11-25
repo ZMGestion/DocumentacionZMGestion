@@ -3,10 +3,10 @@
 
 \renewcommand{\caseUseCreated}{05/03/2020} %Fecha creación
 \renewcommand{\caseUseModified}{05/03/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CUlistarLineasOrdenProduccion - Listar lineas de orden de producción} %{\CUcammelCase - Title}
+\renewcommand{\caseUseName}{\CUlistarLineasOrdenProduccion - Listar líneas de orden de producción} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un fabricante de ZMGestion listar las lineas de órdenes de producción de una orden de producción determinada.} %Resumen
-\renewcommand{\caseUsePeople}{Vendedores: quiere listar las lineas de venta de una venta existente.} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un fabricante de ZMGestion listar las líneas de órdenes de producción de una orden de producción determinada.} %Resumen
+\renewcommand{\caseUsePeople}{Vendedores: quiere listar las líneas de venta de una venta existente.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoOrdenesProduccion\ (Buscar avanzado órdenes de producción).} %Precondiciones
 }
@@ -14,11 +14,11 @@
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{El fabricante indica la orden de producción a la cual desea listar sus lineas de orden de producción.}
-    \addCaseUseStep{ZMGestion lista las lineas de orden de producción existentes de la orden de producción seleccionada.}
+    \addCaseUseStep{El fabricante indica la orden de producción a la cual desea listar sus líneas de orden de producción.}
+    \addCaseUseStep{ZMGestion lista las líneas de orden de producción existentes de la orden de producción seleccionada.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: La orden de producción no posee lineas de orden de producción.}{1} %Flujo alternativo A1.
+	\newAlternative{A1: La orden de producción no posee líneas de orden de producción.}{1} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje indicando que la orden de producción seleccionada no posee ninguna linea de orden de producción.}
     \caseUseRow{El escenario vuelve al punto 1.}

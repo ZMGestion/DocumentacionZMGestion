@@ -15,18 +15,18 @@
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El vendedor accede a la pantalla para crear clientes.}
-    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor ingrese el tipo de persona (física o jurídica), nombre y apellido (o razón social), tipo y número de documento, correo electrónico, número de telefono y nacionalidad. Indicando que todos los campos son obligatorios exceptuando al de correo electrónico, número de telefono y dependiendo el tipo de persona el nombre y apellido o razon social.}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor ingrese el tipo de persona (física o jurídica), nombre y apellido (o razón social), tipo y número de documento, correo electrónico, número de teléfono y nacionalidad. Indicando que todos los campos son obligatorios exceptuando al de correo electrónico, número de teléfono y dependiendo el tipo de persona el nombre y apellido o razon social.}
     \addCaseUseStep{El vendedor completa los campos del formulario.}
     \addCaseUseStep{ZMGestion crea el cliente y muestra un mensaje indicando el éxito de la operación.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: El correo electrónico ingresado ya se encuentra en uso.}{3} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 3 del escenario principal.} %¡Indicar número paso!
-    \alternativeRow{ZMGestion muestra un mensaje de error indicando que el correo electrónico ingresado ya esta en uso.}
+    \alternativeRow{ZMGestion muestra un mensaje de error indicando que el correo electrónico ingresado ya está en uso.}
     \caseUseRow{El escenario vuelve al punto 2.}
     \caseUseRow{}
 
-	\newAlternative{A2: El vendedor ha dejado un campo obligatorio vacio.}{3} %Flujo alternativo A2.
+	\newAlternative{A2: El vendedor ha dejado un campo obligatorio vacío.}{3} %Flujo alternativo A2.
     \caseUseRow{La secuencia A2 comienza luego del punto 3 del escenario principal.}%¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que dicho campo es requerido.}
     \caseUseRow{El escenario vuelve al punto 2.}
