@@ -19,9 +19,9 @@
 			Esta especificación se ha realizado de acuerdo al estándar ``IEEE Recommended Practice for Software Requirements Specifications (IEEE/ANSI 830-1998)''.
 		\subsubsection{Objetivos y alcance del sistema}
 			\paragraph\indent
-            El principal objetivo es desarrollar una aplicación web para el uso exclusivo del personal interno de la mueblería Zimmerman Muebles SRL, a partir de ahora ZM, con el fin de automatizar el proceso de manejo de stock, desde la emision de presupuestos, pasando por las ventas, hasta la entrega de productos.
+            El principal objetivo es desarrollar una aplicación web para el uso exclusivo del personal interno de la mueblería Zimmerman Muebles SRL, a partir de ahora ZM, con el fin de automatizar el proceso de manejo de stock, desde la emisión de presupuestos, pasando por las ventas, hasta la entrega de productos.
 			\paragraph\indent
-            Se podrá realizar la gestión de usuarios, clientes, productos, presupuestos, ventas, órdenes de producción, remitos y órdenes de resposición. Además, se podrá gestionar la entrega de los productos. El futuro sistema llevará el nombre de \textbf{ZMGestion}.
+            Se podrá realizar la gestión de usuarios, clientes, productos, presupuestos, ventas, órdenes de producción, remitos y órdenes de reposición. Además, se podrá gestionar la entrega de los productos. El futuro sistema llevará el nombre de \textbf{ZMGestion}.
             \paragraph\indent
             En esta versión se realizará lo recién mencionado dejando para futuras versiones la  contabilidad y la gestión con los proveedores.
             \paragraph\indent
@@ -29,7 +29,7 @@
         \subsubsection{Definiciones, acrónimos y abreviaturas}
             \underline{Definiciones:}
             \begin{itemize}
-                \item Interfaz: En este contexto, llamamos interfaz a la pantalla que una persona puede acceder para recibir o transmitir información.
+                \item Interfaz: en este contexto, llamamos interfaz a la pantalla que una persona puede acceder para recibir o transmitir información.
                 \item Cliente: toda aquella persona que solicitó un presupuesto y/o efectuó una compra.
                 \item ZM: refiere a la empresa Zimmerman Muebles SRL.
             \end{itemize}
@@ -49,53 +49,51 @@
 				Esta sección presenta una descripción general del sistema con el fin de conocer las funciones que debe soportar, los datos asociados, las restricciones impuestas y cualquier otro factor que pueda influir en la construcción del mismo.
 				\paragraph\indent\textbf{Usuarios:}
 				\paragraph\indent
-				Para poder acceder a ZM Gestion se deberá contar con una cuenta (nombre de usuario y contraseña). Cada empleado de la mueblería tendrá una sola cuenta de usuario, de ellos se desea saber: nombres, apellidos, tipo y número de documento, fecha de nacimiento, fecha de inicio de actividad laboral en la empresa, estado civil, cantidad de hijos, número de telefono de contacto, correo electrónico y contraseña. Todos los datos recién mencionados serán de carácter obligatorio. Todas las funciones del sistema requerirán que los usuarios inicien sesión. Los usuarios tendrán dos estados posibles: alta o baja. Cuando su estado sea dado de alta, tendrán la posibilidad de iniciar sesión y ejercer pleno uso de sus funciones. Mientras que cuando estén dados de baja no podrán iniciar sesión.
+				Para poder acceder a ZMGestion se debe contar con una cuenta (nombre de usuario y contraseña). Cada empleado de la mueblería tiene una sola cuenta de usuario, de ellos se desea saber: nombres, apellidos, tipo y número de documento, fecha de nacimiento, fecha de inicio de actividad laboral en la empresa, estado civil, cantidad de hijos, número de teléfono de contacto, correo electrónico y contraseña. Todos los datos recién mencionados son de carácter obligatorio. Todas las funciones del sistema requieren que los usuarios inicien sesión. Los usuarios tienen dos estados posibles: alta o baja. Cuando el estado sea alta, tienen la posibilidad de iniciar sesión y ejercer pleno uso de sus funciones. Mientras que cuando estén dados de baja no pueden iniciar sesión.
 				\clearpage
 				\paragraph\indent\textbf{Roles:}
 				\paragraph\indent	
-				Cada empleado tendrá un rol, pudiendo ser: Administrador, Vendedor o Productor. Dependiendo del rol que ocupen en la mueblería, tendrán distintos permisos lo que les permitirá realizar distintas funciones del sistema. Los roles se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que tengan el permiso de hacerlo.
-				\paragraph\indent\textbf{Gestión empleados:}
+				Cada empleado tiene un rol, pudiendo ser: Administrador, Vendedor o Productor. Dependiendo del rol que ocupen en la mueblería, cuentan distintos permisos lo que les permite realizar distintas funciones del sistema. Los roles se pueden gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que tengan el permiso de hacerlo.
+				\paragraph\indent\textbf{Empleados:}
 				\paragraph\indent	
-				Exisitira una gestión de empleados (crear, modificar, borrar, dar de alta y dar de baja) que será realizada por los usuarios con los debidos permisos. No se podrán borrar aquellos usuarios que hayan realizado algún presupuesto, venta u orden de producción. O bien, tengan asociada alguna orden de producción.
+				Existe una gestión de empleados (crear, modificar, borrar, dar de alta y dar de baja) que es realizada por los usuarios con los debidos permisos. No se pueden borrar aquellos usuarios que hayan realizado algún presupuesto, venta u orden de producción. O bien, tengan asociada alguna orden de producción.
 				\paragraph\indent\textbf{Clientes:}
 				\paragraph\indent	
-				Un cliente es aquella persona (física o jurídica) que solicita un presupuesto o realiza una compra. Para que un cliente sea dado de alta se necesita saber: el tipo de persona (física o jurídica), nombres y apellidos (o razón social en caso de las personas jurídicas), tipo y número de documento (CUIT en caso de las personas jurídicas), correo electrónico, nacionalidad (en caso de las personas físicas), número de teléfono y domicilio. Siendo obligatorio: el tipo de persona, nombres y apellidos (o razón social), tipo y número de documento y correo electrónico. El correo electrónico será único entre los usuarios y se podrán dar de alta clientes que tengan el mismo tipo y número de documento, emitiendo una advertencia que ya existe un cliente con los mismos datos. Los clientes se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usaurios que cuenten con los permisos necesarios. No se podrá borrar un cliente que tenga asociado un presupuesto o venta.
+				Un cliente es aquella persona (física o jurídica) que solicita un presupuesto o realiza una compra. Para que un cliente sea dado de alta es necesario saber: el tipo de persona (física o jurídica), nombres y apellidos (o razón social en caso de las personas jurídicas), tipo y número de documento (CUIT en caso de las personas jurídicas), correo electrónico, nacionalidad (en caso de las personas físicas), número de teléfono y domicilio. Siendo obligatorio: el tipo de persona, nombres y apellidos (o razón social), tipo y número de documento y correo electrónico. El correo electrónico es único entre los usuarios y se pueden dar de alta clientes que tengan el mismo tipo y número de documento, emitiendo una advertencia que ya existe un cliente con los mismos datos. Los clientes se pueden gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con los permisos necesarios. No se puede borrar un cliente que tenga asociado un presupuesto o venta.
 				\paragraph\indent\textbf{Presupuestos:}
 				\paragraph\indent	
-				Al momento de presentarse un cliente solicitando un presupuesto se comprobará si está activo para ello se preguntará el tipo y número de documento y se verificará el resto de los datos. En caso de no existir se procederá a crearlo. Un presupuesto tiene un código de identificación, fecha en la que se realiza, periodo de validez (previamente asignado por los administradores), cliente asociado, una o más líneas de presupuesto y estado (pudiendo ser: en creacion, incompleto, creado,  vendido y expirado). Los presupuestos se podrán gestionar (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios. No se podrán borrar presupuestos que hayan sido utilizados para realizar una venta. Los presupuestos serán enviados por correo electrónico siempre y cuando el cliente haya proporcionado dicha información.
+				Al momento de presentarse un cliente solicitando un presupuesto se comprueba si está activo para ello se pregunta el tipo y número de documento y se verifica el resto de los datos. En caso de no existir se procede a crearlo. Un presupuesto tiene un código de identificación, fecha en la que se realiza, periodo de validez (previamente asignado por los administradores), cliente asociado, una o más líneas de presupuesto y estado (pudiendo ser: en creación, incompleto, creado,  vendido y expirado). Los presupuestos se pueden gestionar (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios. No se pueden borrar los presupuestos que hayan sido utilizados para realizar una venta. Los presupuestos son enviados por correo electrónico siempre y cuando el cliente haya proporcionado dicha información.
 				\paragraph\indent\textbf{Líneas de presupuesto:}
 				\paragraph\indent	
-				Una línea de presupuesto está formada por un producto, la cantidad solicitada de dicho producto, el importe unitario, el importe total para dicha cantidad y un estado (pudiendo ser: pendiente, utilizada o no utilizada).
-				\paragraph\indent
-				Los posibles estados de una línea de presupuesto son:
+				Una línea de presupuesto está formada por un producto, la cantidad solicitada de dicho producto, el importe unitario, el importe total para dicha cantidad y un estado (pudiendo ser: pendiente, utilizada o no utilizada). Los posibles estados de una línea de presupuesto son:
 				\begin{itemize}
 					\item \textbf{Pendiente:} Cuando se ha creado una línea de presupuesto.
 					\item \textbf{Utilizada:} Cuando la línea de presupuesto ha sido utilizada para crear una venta.
 					\item \textbf{No utilizada:} Cuando la línea de presupuesto ha sido descartada al momento de crear una venta a partir del presupuesto al cual pertenece.
 				\end{itemize}
-				Las líneas de presupuesto se podrán gestionar (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios. Además algunos usuarios contarán con un permiso que les permitirá modificar el importe unitario o total de una línea de presupuesto.
+				Las líneas de presupuesto se pueden gestionar (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios. Además algunos usuarios cuentan con un permiso que les permite modificar el importe unitario o total de una línea de presupuesto.
 				\paragraph\indent\textbf{Productos:}
 				\paragraph\indent	
-				Un producto tiene nombre, código identificador (único para cada producto), tipo de producto ( con proceso de producción, sin proceso de producción o a medida), lustre y tela. Además cada producto pertenecerá a una categoría y grupo. Todos los datos de los productos son obligatorios excepto la tela y/o lustre para aquellos sin proceso de producción. Los usuarios que cuenten con los permisos necesarios podrán gestionar productos (crear, modificar, borrar, dar de alta y dar de baja). No se podrán borrar productos que hayan sido utilizados en algún presupuesto, venta, orden de producción u orden de resposición.
+				Un producto tiene nombre, código identificador (único para cada producto), tipo de producto ( con proceso de producción, sin proceso de producción o a medida), lustre y tela. Además cada producto pertenece a una categoría y grupo. Todos los datos de los productos son obligatorios excepto la tela y/o lustre para aquellos sin proceso de producción. Los usuarios que cuenten con los permisos necesarios pueden gestionar productos (crear, modificar, borrar, dar de alta y dar de baja). No se pueden borrar productos que hayan sido utilizados en algún presupuesto, venta, orden de producción u orden de reposición.
 				\paragraph\indent\textbf{Categorías de producto:}
 				\paragraph\indent	
-				Los productos perteneceran a una única categoria y una categoría podrá tener cero o más productos. De la categoria se desea saber el nombre y estado (pudiendo ser alta o baja). Las categorías se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes. No se podrán borrar categorias que tengan al menos un producto asociado.
+				Los productos pertenecen a una única categoría y una categoría puede tener cero o más productos. De la categoría se desea saber el nombre y estado (pudiendo ser alta o baja). Las categorías se pueden gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes. No se pueden borrar categorías que tengan al menos un producto asociado.
 				\paragraph\indent\textbf{Grupos de productos:}
 				\paragraph\indent	
-				Los productos se encontrarán asociados en grupos de productos. Estos estarán compuestos por cero o más productos. De los grupos se desea saber: código, estado (pudiendo ser alta o baja) y descripción. Los grupos de productos se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes. No se podrán borrar grupos que estén compuestos por al menos un producto.
+				Los productos se encuentran asociados en grupos de productos. Estos están compuestos por cero o más productos. De los grupos se desea saber: código, estado (pudiendo ser alta o baja) y descripción. Los grupos de productos se pueden gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes. No se pueden borrar grupos que estén compuestos por al menos un producto.
 				\paragraph\indent\textbf{Ubicaciones y Stock:}
 				\paragraph\indent	
-				Los productos tendrán asociado una o más ubicaciones geográficas. De las ubicaciones se desea saber: nombre y dirección. Las ubicaciones podrán tener almacenados cero o más productos. Las ubicaciones se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes.. Por cada producto se desea saber: cantidad por ubicación a una fecha dada y observaciones.
+				Los productos tienen asociado una o más ubicaciones geográficas. De las ubicaciones se desea saber: nombre y dirección. Las ubicaciones pueden tener almacenados cero o más productos. Las ubicaciones se pueden gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes.. Por cada producto se desea saber: cantidad por ubicación a una fecha dada y observaciones.
 				\paragraph\indent\textbf{Lista de precios:}
 				\paragraph\indent	
-				Cada producto tendrá asociado uno o más precios con su respectiva fecha de establecimiento. El precio vigente será el último que se haya establecido. La actualización de precios se podrá realizar a todos los productos pertenecientes a un determinado grupo en igual proporción (incremento o decremento) respecto del precio vigente de cada producto. La lista de precio se podrá generar en formato PDF.
+				Cada producto tiene asociado uno o más precios con su respectiva fecha de establecimiento. El precio vigente es el último que se haya establecido. La actualización de precios se puede realizar a todos los productos pertenecientes a un determinado grupo en igual proporción (incremento o decremento) respecto del precio vigente de cada producto. La lista de precios se puede generar en formato PDF.
 				\paragraph\indent\textbf{Ventas:}
 				\paragraph\indent	
-				Una venta se podrá realizar a partir de uno o más presupuestos existentes o no. En caso de que un cliente quiera realizar una compra de uno o más productos que hayan sido presupuestados previamente, un usuario deberá buscar dicho/s presupuesto/s a través de su código de identificación o bien con datos del cliente para así acceder a sus presupuestos. De los presupuestos se podrán elegir cuales líneas de presupuesto el cliente desea comprar, pudiendo modificar la cantidad del mismo y asignar el precio a aquellos que no tuviesen, o bien el precio del producto haya cambiado. 
+				Una venta se puede realizar a partir de uno o más presupuestos existentes o no. En caso de que un cliente quiera realizar una compra de uno o más productos que hayan sido presupuestados previamente, un usuario debe buscar dicho/s presupuesto/s a través de su código de identificación o bien con datos del cliente para así acceder a sus presupuestos. De los presupuestos se puede elegir cuáles líneas de presupuesto el cliente desea comprar, pudiendo modificar la cantidad del mismo y asignar el precio a aquellos que no tuviesen, o bien el precio del producto haya cambiado. 
 				\paragraph\indent
-				Las líneas de presupuesto que hayan sido seleccionadas, pasarán al estado de utilizados, mientras que las descartadas pasarán al estado de no utilizadas. A su vez, el presupuesto utilizado pasará al estado vendido.
+				Las líneas de presupuesto que hayan sido seleccionadas, pasan al estado de utilizados, mientras que las descartadas pasan al estado de no utilizadas. A su vez, el presupuesto utilizado pasa al estado vendido.
 				\paragraph\indent
-				El cliente deberá realizar un pago total o parcial y se le solicitará, en caso que no lo haya otorgado, su número de teléfono, una dirección e información de entrega (nombre y apellido de la persona que recibirá el o los productos en la dirección de entrega), siendo de carácter obligatorio el número de teléfono. Una venta tendrá un cliente, código de identificación, una o más factura, de las cuales sólo una podrá estar activa, uno o más recibos, fecha de venta, monto total, una o más líneas de producto, una orden de producción, uno o más remitos, ubicación donde se generó la venta, un usuario asociado y un estado. Dichos datos serán obligatorios.
+				El cliente debe realizar un pago total o parcial y se le solicita, en caso que no lo haya otorgado, su número de teléfono, una dirección e información de entrega (nombre y apellido de la persona que recibirá el o los productos en la dirección de entrega), siendo de carácter obligatorio el número de teléfono. Una venta tiene un cliente, código de identificación, una o más facturas, uno o más recibos, fecha de venta, monto total, una o más líneas de producto, una orden de producción, uno o más remitos, ubicación donde se genera la venta, un usuario asociado y un estado. Dichos datos serán obligatorios.
 				\paragraph\indent
 				Los posibles estados de una venta son los siguientes:
 				\begin{itemize}
@@ -106,10 +104,10 @@
 					\item \textbf{Entregada:} Cuando todas las líneas de producto no canceladas estén en estado entregadas.
 				\end{itemize}
 				\paragraph\indent
-				Cuando todas las líneas de producto no canceladas de una venta se encuentren en estado verificada se enviará un correo electrónico al cliente (en caso de haberlo proporcionado) notificándole su deuda en caso de existir e informándole que los productos que compró ya están disponibles.
+				Cuando todas las líneas de producto no canceladas de una venta se encuentran en estado verificada se envía un correo electrónico al cliente (en caso de haberlo proporcionado) notificándole su deuda en caso de existir e informándole que los productos que compró ya están disponibles.
 				\paragraph\indent\textbf{Líneas de producto:}
 				\paragraph\indent	
-				Una venta tiene una o más líneas de producto. Una línea de producto está compuesta por: un producto, la cantidad solicitada de dicho producto, cero o más observaciones, el precio por la cantidad solicitada y estado. Siendo de caracter obligatorio producto, cantidad y estado.
+				Una venta tiene una o más líneas de producto. Una línea de producto está compuesta por: un producto, la cantidad solicitada de dicho producto, cero o más observaciones, el precio por la cantidad solicitada y estado. Siendo de carácter obligatorio producto, cantidad y estado.
 				\paragraph\indent
 				Los posibles estados de una línea de producto son:
 				\begin{itemize}
@@ -121,7 +119,7 @@
 					\item \textbf{Reservada:} Cuando los productos se reservaron para el cliente.
 					\item \textbf{Pendiente de entrega:} Cuando la línea de producto ha sido reservada y el crédito es superior al total de dicha línea de producto. Se debe tener en cuenta que:
 					\begin{center}
-						CREDITO = MONTO TOTAL DE VENTA - (TOTAL EN PRODUCTOS ENTREGADO + DEUDA)
+						CRÉDITO = MONTO TOTAL DE VENTA - (TOTAL EN PRODUCTOS ENTREGADO + DEUDA)
 	
 						DEUDA = MONTO TOTAL - SUMA DE RECIBOS
 					\end{center}
@@ -132,7 +130,7 @@
 				\paragraph\indent	
 				Al momento de producir una línea de producto se deben realizar una serie de tareas. Las tareas pueden tener encadenada una tarea a realizarse posterior a que se ha verificado su finalización o no. Las tareas son asignadas a un fabricante y deben ser verificadas por un administrador. Los posibles estados de las tareas son:
 				\begin{itemize}
-					\item \textbf{Pendiente:} Cuando se creo y asigno a un fabricante una tarea.
+					\item \textbf{Pendiente:} Cuando se crea y asigna una tarea a un fabricante.
 					\item \textbf{En proceso:} Cuando el fabricante indica que ha comenzado a realizar la tarea.
 					\item \textbf{Cancelada:} Cuando un administrador desea cancelar la ejecución de la tarea.
 					\item \textbf{Pausada:} Cuando un administrador desea pausar la ejecución de una tarea.
@@ -141,44 +139,44 @@
 				\end{itemize}
 				\paragraph\indent\textbf{Facturas:}
 				\paragraph\indent	
-				Una venta tendrá una o más facturas asociadas, de las facturas se desea saber: número de factura, venta asociada, fecha en la que se realizó, uno o más recibos, cero o más notas de crédito y estado (pudiendo ser: alta o baja). Si una venta se encuentra en estado pendiente o entregada, deberá tener una factura en estado activo. Las facturas se podrán gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con los permisos necesarios.
+				Una venta tiene una o más facturas asociadas, de las facturas se desea saber: número de factura, venta asociada, una fecha en la que se realiza, uno o más recibos, cero o más notas de crédito y estado (pudiendo ser: alta o baja). Si una venta se encuentra en estado pendiente o entregada, debe tener una factura en estado activo. Las facturas se pueden gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con los permisos necesarios.
 				\begin{center}
 					MONTO TOTAL DE VENTA = SUMA TOTAL DE LOS RECIBOS ASOCIADOS A LA FACTURA ACTIVA DE DICHA VENTA - MONTO TOTAL DE LA NOTA DE CRÉDITO ASOCIADA A LA FACTURA ACTIVA DE DICHA VENTA (EN CASO DE EXISTIR)
 				\end{center}
 				\paragraph\indent
-				Al momento de cancelar una venta se podrá cancelar la factura (pasandola al estado baja) o bien asociarle una o más notas de crédito.
+				Al momento de cancelar una venta se puede cancelar la factura (pasándola al estado baja) o bien asociarle una o más notas de crédito.
 				\paragraph\indent\textbf{Notas de crédito:}
 				\paragraph\indent	
-				Una nota de crédito tendrá un número de identificación, una fecha en la que se realizó, el monto de la misma, una factura asociada y un estado (pudiendo ser: alta o baja).  Las notas de crédito se podrán gestionar (crear, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con los permisos necesarios.
+				Una nota de crédito tiene un número de identificación, la fecha en la que se realiza, el monto de la misma, una factura asociada y un estado (pudiendo ser: alta o baja). Las notas de crédito se pueden gestionar (crear, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con los permisos necesarios.
 				\paragraph\indent\textbf{Recibos:}
 				\paragraph\indent	
-				Cada factura tendrá uno o más recibos asociados. De los recibos interesa saber: código de identificación, fecha en que se realizó, cantidad de dinero recibido, medio de pago utilizado, factura asociada y descripción. Los recibos podrán gestionarse (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios para hacerlo.
+				Cada factura tiene uno o más recibos asociados. De los recibos interesa saber: código de identificación, fecha en que se realizó, cantidad de dinero recibido, medio de pago utilizado, factura asociada y descripción. Los recibos se pueden gestionar (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios para hacerlo.
 				\paragraph\indent\textbf{Órdenes de Producción:}
 				\paragraph\indent	
-				Una orden de producción está compuesta por una o más líneas de producto, fecha de creación, fecha en la que se finaliza, usuario que la crea, usuario que marca como finalizada y usuario que verifica que este finalizada y estado.
+				Una orden de producción está compuesta por una o más líneas de producto, fecha de creación, fecha en la que se finaliza, usuario que la crea, usuario que marca como finalizada y usuario que verifica que esté finalizada y estado.
 				\paragraph\indent
 				Los estados de una orden de producción pueden ser:
 				\begin{itemize}
-					\item \textbf{En creación:} Cuando se estan agregando líneas de producto a la orden de producción.
+					\item \textbf{En creación:} Cuando se están agregando líneas de producto a la orden de producción.
 					\item \textbf{Pendiente:} Cuando las líneas de producto no canceladas, no verificadas y no entregadas de la orden de producción se encuentran en estado pendiente de producción.
 					\item \textbf{En producción:} Cuando al menos una línea de producto de la orden de producción se encuentran en estado de en producción.
 					\item \textbf{Cancelada:} Cuando todas las líneas de producto de la orden de producción se encuentran en estado cancelada.
 					\item \textbf{Verificada:} Cuando todas las líneas de productos no canceladas se encuentran verificadas o entregadas.
 				\end{itemize}
 				\paragraph\indent
-				Una orden de producción puede ser creada a partir de una venta existente o no. En el caso de que sea creada a partir de una venta, no se podrán agregar nuevas líneas de producto para producir.
+				Una orden de producción puede ser creada a partir de una venta existente o no. En el caso de que sea creada a partir de una venta, no se pueden agregar nuevas líneas de producto para producir.
 				\paragraph\indent
-				Cuando una orden de producción pase al estado de verificada se deberá asignar una ubicación, de manera que todos las líneas de producto producidas se agregarán al stock correspondiente.
+				Cuando una orden de producción pase al estado de verificada se debe asignar una ubicación, de manera que todos las líneas de producto producidas se agregan al stock correspondiente de dicha ubicación.
 				\paragraph\indent\textbf{Remitos:}
 				\paragraph\indent	
-				Un remito tendrá una fecha y dirección de entrega, una o más líneas de producto y una venta asociada, por cada línea de producto, se podrá seleccionar la ubicación de la cual se extraerá. Al generarse el remito se deberá cambiar el estado de la línea de producto de la venta a entregado.  Además se decrementará el stock correspondiente.
+				Un remito tiene una fecha y dirección de entrega, una o más líneas de producto y una venta asociada, por cada línea de producto, se puede seleccionar la ubicación de la cual se extraerá. Al generarse el remito se debe cambiar el estado de la línea de producto de la venta a entregado.  Decrementando, además, el stock correspondiente.
 				\paragraph\indent\textbf{Órdenes de reposición:}
 				\paragraph\indent	
-				Los productos existentes se podrán mover de una ubibación a otra, para ello se deberá generar una orden de reposición en la cual se indicará la cantidad de productos a mover, ubicación origen y ubicación destino. Decrementando el stock en la ubicación origen e incrementando el stock en la ubicación destino.
+				Los productos existentes se pueden mover de una ubicación a otra, para ello se debe generar una orden de reposición en la cual se indica la cantidad de productos a mover, ubicación origen y ubicación destino. Decrementando el stock en la ubicación origen e incrementando el stock en la ubicación destino.
 		
 \section{Suposiciones y dependencias}
 \paragraph\indent 	
-\textbf{Suposiciones:} Se asume que los requisitos en este documento son estables una vez que sean aprobados por la Dirección de Zimmerman Muebles SRL. Cualquier petición de cambios en la especificación debe ser aprobada por todas las partes intervinientes y será gestionada por el equipo de desarrollo. 
+\textbf{Suposiciones:} Se asume que los requisitos en este documento son estables una vez que sean aprobados por la Dirección de Zimmerman Muebles SRL. Cualquier petición de cambios en la especificación debe ser aprobada por todas las partes intervinientes y debe ser gestionada por el equipo de desarrollo. 
 \paragraph\indent
 \textbf{Dependencias:} No posee dependencias.
 
@@ -208,7 +206,7 @@ El ciclo de vida será el de Prototipado Evolutivo, debiendo orientarse hacia el
 \paragraph\textbf{Política de Respaldo:} La seguridad de la comunicación será establecida por https con ssh de 128 bits y la de los datos por el Sistema Gestor de Base de Datos Relacional que se emplee. 
 \begin{itemize}
 	\item 1 Backup completo por semana.
-	\item 1 Backup transaccional por dia. 
+	\item 1 Backup transaccional por día. 
 \end{itemize}
 
 \paragraph\textbf{Base de Datos:} El Sistema Gestor de Base de Datos debe ser relacional.

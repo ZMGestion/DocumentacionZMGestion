@@ -140,7 +140,7 @@ telefono y nacionalidad;
 :Completa el formulario;
 |ZMGestion|
 repeat while(El vendedor ha dejado un campo obligatorio vacío) is (V)
-repeat while(El correo electrónico ingresado ya esta en uso) is (V)
+repeat while(El correo electrónico ingresado ya está en uso) is (V)
 repeat while(El tipo y número de documento ingresado ya existe) is (V)
 :Crea el cliente y muestra un mensaje indicando el éxito de la operación;
 |Vendedor|
@@ -195,7 +195,7 @@ el producto. Indicando que todos los campos son requeridos, excepto por la canti
 el grupo y categoría a la cual pertenece el producto;
 |ZMGestion|
 repeat while (El administrador ha dejado un campo obligatorio vacío) is (V)
-repeat while(El nombre ingresado ya existe para el grupo y categoria seleccionadas) is (V)
+repeat while(El nombre ingresado ya existe para el grupo y categoría seleccionadas) is (V)
 repeat while(El precio ingresado sea menor o igual que cero) is (V)
 repeat while(La cantidad de tela necesaria ingresada sea menor que cero) is (V)
 :Crea el producto con los campos ingresados por el usuario y 
@@ -236,7 +236,7 @@ son obligatorios;
 :Completa los campos requeridos;
 |ZMGestion|
 repeat while(Alguno de los campos obligatorios se encuentra vacío) is (V)
-repeat while(El nombre ingresado ya esta en uso) is (V)
+repeat while(El nombre ingresado ya está en uso) is (V)
 :Crea el rol y muestra un mensaje indicando el éxito de la operación;
 |Administrador|
 end
@@ -472,9 +472,9 @@ nombre de usuario y contraseña;
 repeat while(El nombre de usuario ingresado existe) is (F)
 repeat while(El usuario se encuentra activo) is (F)
 repeat while(La contraseña ingresada es incorrecta 
-y no supero el limite de intentos permitidos) is (V)
+y no supero el límite de intentos permitidos) is (V)
 if(La contraseña ingresada es incorrecta 
-y supero el limite de intentos permitidos ) then (V)
+y supero el límite de intentos permitidos ) then (V)
 :Bloquea al usuario;
 else (F)
 :Genera el token de sesión y lo almacena;
