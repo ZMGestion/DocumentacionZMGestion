@@ -8,14 +8,14 @@
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor transformar uno o más presupuestos existentes en venta.} %Resumen
 \renewcommand{\caseUsePeople}{Vendedores: quiere realizar una venta a partir de uno o más presupuestos.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoPresupuestos\ (Buscar avanzado presupuestos).} %Precondiciones
+	\caseUseRow{Haber realizado con éxito el CU65 (Buscar avanzado presupuestos).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El vendedor indica uno o más presupuestos a partir de los cuales desea generar la venta.}
-    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor seleccione un cliente existente y se ejecuta el \CUlistarLineasPresupuesto\ (Listar lineas de presupuesto) para cada presupuesto seleccionado, mostrando una opción por cada linea para indicar si desea añadirla a la venta.}
+    \addCaseUseStep{ZMGestion muestra un formulario para que el vendedor seleccione un cliente existente y se ejecuta el CU71 (Listar lineas de presupuesto) para cada presupuesto seleccionado, mostrando una opción por cada linea para indicar si desea añadirla a la venta.}
     \addCaseUseStep{El vendedor selecciona un cliente existente y las lineas de presupuestos que desea agregar a la venta.}
     \addCaseUseStep{ZMGestion crea una venta en estado "En creación" para el cliente seleccionado, ejecuta el \CUcrearLineaVenta\ (Crear linea de venta) con los valores de producto, cantidad y precio de cada linea de presupuesto seleccionada.}
     \addCaseUseStep{Si el vendedor desea modificar alguna de las lineas de venta agregadas ejecuta el \CUmodificarLineaVenta\ (Modificar linea de venta). Si el vendedor desea quitar alguna linea de venta agregada se ejecuta el \CUborrarLineaVenta\ (Borrar linea de venta). Si el vendedor desea agregar una nueva linea de venta se ejecuta el \CUcrearLineaVenta\ (Crear linea de venta).}
@@ -39,7 +39,7 @@
     \caseUseRow{El escenario vuelve al punto 5.}
 
 }
-\item Caso de uso \caseUseName
+%\item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 
 %DIAGRAMA DE ACTIVIDAD

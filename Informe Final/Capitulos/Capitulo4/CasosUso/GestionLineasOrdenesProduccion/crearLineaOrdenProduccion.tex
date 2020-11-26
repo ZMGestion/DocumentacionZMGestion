@@ -2,15 +2,15 @@
 
 \renewcommand{\caseUseCreated}{02/03/2020} %Fecha creación
 \renewcommand{\caseUseModified}{02/03/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CUcrearLineaOrdenProduccion\ - Crear linea de orden de producción.} %{\CUcammelCase - Title}
+\renewcommand{\caseUseName}{CU98 - Crear linea de orden de producción.} %{\CUcammelCase - Title}
 
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador crear una linea de orden de producción para una determinada orden de producción.} %Resumen
 \renewcommand{\caseUsePeople}{Administradores: quiere crear una linea de orden de producción.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Estar ejecutando el \CUcrearOrdenProduccion (Crear orden de producción) o el \CUmodificarOrdenProduccion (Modificar orden de producción).} %Precondiciones
+	\caseUseRow{Estar ejecutando el CU91 (Crear orden de producción) o el CU93 (Modificar orden de producción).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
-	\caseUseRow{Si el producto, tela y lustre no pertenece a ningun producto final existente se ejecuta el \CUcrearProductoFinal\ (Crear producto final) con el producto, tela y lustre seleccionados.} %Postcondiciones
+	\caseUseRow{Si el producto, tela y lustre no pertenece a ningun producto final existente se ejecuta el CU25 (Crear producto final) con el producto, tela y lustre seleccionados.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El administrador desea agregar una linea de orden de producción a una determinada orden de producción.}
@@ -42,7 +42,7 @@
     \caseUseRow{}
 }
 
-\item Caso de uso \caseUseName
+%\item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 
 %DIAGRAMA DE ACTIVIDAD

@@ -1,17 +1,17 @@
 \renewcommand{\caseUseShortName}{listarObservaciones} %cammelCase name
 \renewcommand{\caseUseCreated}{05/03/2020} %Fecha creación
 \renewcommand{\caseUseModified}{05/03/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CUlistarObservaciones - Listar observaciones.} %{\CUcammelCase - Title}
+\renewcommand{\caseUseName}{CU105 - Listar observaciones.} %{\CUcammelCase - Title}
 
 \renewcommand{\caseUseSummary}{Este caso de uso permite a los usaurios de ZMGestion listar las observaciones de una línea de presupuesto, venta, orden de producción o remito.} %Resumen
 \renewcommand{\caseUsePeople}{Usuarios: quiere listar las observaciones de una linea de presupuesto, venta, orden de produccióno o remito.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
     \caseUseRow{Haber realizado con éxito alguno de los siguientes casos de uso: 
         \begin{itemize}
-            \item \CUlistarLineasPresupuesto\ (Listar líneas de presupuesto).
-            \item \CUlistarLineasVenta\ (Listar líneas de venta).
-            \item \CUlistarLineasOrdenProduccion\ (Listar líneas de orden de producción).
-            \item \CUlistarLineasRemito\ (Listar líneas de remito.).
+            \item CU71 (Listar líneas de presupuesto).
+            \item CU77 (Listar líneas de venta).
+            \item CU94 (Listar líneas de orden de producción).
+            \item CU51 (Listar líneas de remito.).
         \end{itemize} 
     }
 } %Precondiciones
@@ -31,7 +31,7 @@
     \caseUseRow{}
 }
 
-\item Caso de uso \caseUseName
+%\item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 
 %DIAGRAMA DE ACTIVIDAD
