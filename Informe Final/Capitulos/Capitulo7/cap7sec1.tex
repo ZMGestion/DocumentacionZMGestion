@@ -24,10 +24,14 @@ Es un tipo de método de prueba que permite detectar errores internos del códig
 Con estas pruebas de pueden garantizar que se ejercitan por lo menos una vez todos los caminos independientes de cada módulo, que las decisiones lógicas se evalúan en sus variantes verdadera y falsa, que se ejecutan todos los bucles en sus límites operacionales y, por último, que se ejercitan las estructuras internas de datos para asegurar su validez.
 
 \paragraph\indent
-Para realizar este test se utilizaron distintos conjuntos de datos, de manera tal que se atraviesen todas las bifuraciones del código. Los resultados de este test fueron exitosos. 
+Para realizar este test se procedió primero a determinar el conjunto de datos representativos del dominio de la prueba, de manera tal que se
+se atraviesen todas las bifuraciones del código, decisiones y loop. 
 
 \paragraph\indent
-Existe una herramienta para realizar tests automatizados que viene incorporado con Golang, el paquete test.
+Se utilizó una herramienta para realizar tests automatizados que viene incorporado con Golang: el paquete test.
+
+\paragraph\indent
+Los resultados de este test fueron exitosos.
 
 \section{Test de módulos}
 \subsection{Pruebas de caja negra}
@@ -49,6 +53,12 @@ Para realizar este test se eligieron datos representativos del dominio, verifica
 
 \paragraph\indent
 Se centra en realizar el análisis de valores límite, y en condiciones límite, ya que se ha demostrado que los errores tienden a darse más en los límites del campo de entrada y sometidos a condiciones límite.
+
+\paragraph\indent
+Se sometió a la aplicación al 500\% de su carga máxima, mediante un autómata escrito en un script MySQL que se ejecuta mediante un evento, duplicando el número de conexiones simultáneas.
+
+\paragraph\indent
+Los resultados del test fueron exitosos.
 
 \section{Test de integración}
 Los errores que surgen de integrar los módulos son: 

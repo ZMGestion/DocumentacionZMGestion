@@ -49,7 +49,9 @@
 				Esta sección presenta una descripción general del sistema con el fin de conocer las funciones que debe soportar, los datos asociados, las restricciones impuestas y cualquier otro factor que pueda influir en la construcción del mismo.
 				\paragraph\indent\textbf{Usuarios:}
 				\paragraph\indent
-				Para poder acceder a ZMGestion se debe contar con una cuenta (nombre de usuario y contraseña). Cada empleado de la mueblería tiene una sola cuenta de usuario, de ellos se desea saber: nombres, apellidos, tipo y número de documento, fecha de nacimiento, fecha de inicio de actividad laboral en la empresa, estado civil, cantidad de hijos, número de teléfono de contacto, correo electrónico y contraseña. Todos los datos recién mencionados son de carácter obligatorio. Todas las funciones del sistema requieren que los usuarios inicien sesión. Los usuarios tienen dos estados posibles: alta o baja. Cuando el estado sea alta, tienen la posibilidad de iniciar sesión y ejercer pleno uso de sus funciones. Mientras que cuando estén dados de baja no pueden iniciar sesión.
+				Para poder acceder a ZMGestion se debe contar con una cuenta (nombre de usuario y contraseña). Cada empleado de la mueblería tiene una sola cuenta de usuario, de ellos se desea saber: nombres, apellidos, tipo y número de documento, fecha de nacimiento, fecha de inicio de actividad laboral en la empresa, estado civil, cantidad de hijos, número de teléfono de contacto, correo electrónico y contraseña. Todos los datos recién mencionados son de carácter obligatorio. Todas las funciones del sistema requieren que los usuarios inicien sesión. 
+				\paragraph\indent
+				Los usuarios tienen dos estados posibles: alta o baja. Cuando el estado sea alta, tienen la posibilidad de iniciar sesión y ejercer pleno uso de sus funciones. Mientras que cuando estén dados de baja no pueden iniciar sesión.
 				\clearpage
 				\paragraph\indent\textbf{Roles:}
 				\paragraph\indent	
@@ -59,10 +61,16 @@
 				Existe una gestión de empleados (crear, modificar, borrar, dar de alta y dar de baja) que es realizada por los usuarios con los debidos permisos. No se pueden borrar aquellos usuarios que hayan realizado algún presupuesto, venta u orden de producción. O bien, tengan asociada alguna orden de producción.
 				\paragraph\indent\textbf{Clientes:}
 				\paragraph\indent	
-				Un cliente es aquella persona que solicita un presupuesto o realiza una compra. Para que un cliente sea dado de alta es necesario saber: el tipo de persona (física o jurídica), nombres y apellidos (o razón social), tipo y número de documento, correo electrónico, nacionalidad, número de teléfono y domicilio. Siendo obligatorio: el tipo de persona, nombres y apellidos (o razón social), tipo y número de documento y correo electrónico. El correo electrónico es único entre los usuarios y se pueden dar de alta clientes que tengan el mismo tipo y número de documento, emitiendo una advertencia que ya existe un cliente con los mismos datos. Los clientes se pueden gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con los permisos necesarios. No se puede borrar un cliente que tenga asociado un presupuesto o venta.
+				Un cliente es aquella persona que solicita un presupuesto o realiza una compra. Para que un cliente sea dado de alta es necesario saber: el tipo de persona (física o jurídica), nombres y apellidos (o razón social), tipo y número de documento, correo electrónico, nacionalidad, número de teléfono y domicilio. Siendo obligatorio: el tipo de persona, nombres y apellidos (o razón social), tipo y número de documento y correo electrónico. 
+				\paragraph\indent
+				El correo electrónico es único entre los usuarios y se pueden dar de alta clientes que tengan el mismo tipo y número de documento, emitiendo una advertencia que ya existe un cliente con los mismos datos. 
+				\paragraph\indent
+				Los clientes se pueden gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con los permisos necesarios. No se puede borrar un cliente que tenga asociado un presupuesto o venta.
 				\paragraph\indent\textbf{Presupuestos:}
 				\paragraph\indent	
-				Al momento de presentarse un cliente solicitando un presupuesto se comprueba si está activo para ello se pregunta el tipo y número de documento y se verifica el resto de los datos. En caso de no existir se procede a crearlo. Un presupuesto tiene un código de identificación, fecha en la que se realiza, periodo de validez, cliente asociado, una o más líneas de presupuesto y estado. Los presupuestos se pueden gestionar (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios. No se pueden borrar los presupuestos que hayan sido utilizados para realizar una venta. Los presupuestos son enviados por correo electrónico siempre y cuando el cliente haya proporcionado dicha información.
+				Al momento de presentarse un cliente solicitando un presupuesto se comprueba si está activo para ello se pregunta el tipo y número de documento y se verifica el resto de los datos. En caso de no existir se procede a crearlo. Un presupuesto tiene un código de identificación, fecha en la que se realiza, periodo de validez, cliente asociado, una o más líneas de presupuesto y estado. 
+				\paragraph\indent
+				Los presupuestos se pueden gestionar (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios. No se pueden borrar los presupuestos que hayan sido utilizados para realizar una venta. Los presupuestos son enviados por correo electrónico siempre y cuando el cliente haya proporcionado dicha información.
 				\paragraph\indent\textbf{Líneas de presupuesto:}
 				\paragraph\indent	
 				Una línea de presupuesto está formada por un producto, la cantidad solicitada de dicho producto, el importe unitario, el importe total para dicha cantidad y un estado (pudiendo ser: pendiente, utilizada o no utilizada). Los posibles estados de una línea de presupuesto son:
@@ -75,7 +83,9 @@
 				Las líneas de presupuesto se pueden gestionar (crear, modificar y borrar) por aquellos usuarios que cuenten con los permisos necesarios. Además algunos usuarios cuentan con un permiso que les permite modificar el importe unitario o total de una línea de presupuesto.
 				\paragraph\indent\textbf{Productos:}
 				\paragraph\indent	
-				Un producto tiene nombre, código identificador (único para cada producto), tipo de producto ( con proceso de producción, sin proceso de producción o a medida), lustre y tela. Además cada producto pertenece a una categoría y grupo. Todos los datos de los productos son obligatorios excepto la tela y/o lustre para aquellos sin proceso de producción. Los usuarios que cuenten con los permisos necesarios pueden gestionar productos (crear, modificar, borrar, dar de alta y dar de baja). No se pueden borrar productos que hayan sido utilizados en algún presupuesto, venta, orden de producción u orden de reposición.
+				Un producto tiene nombre, código identificador (único para cada producto), tipo de producto ( con proceso de producción, sin proceso de producción o a medida), lustre y tela. Además cada producto pertenece a una categoría y grupo. Todos los datos de los productos son obligatorios excepto la tela y/o lustre para aquellos sin proceso de producción. 
+				\paragraph\indent
+				Los usuarios que cuenten con los permisos necesarios pueden gestionar productos (crear, modificar, borrar, dar de alta y dar de baja). No se pueden borrar productos que hayan sido utilizados en algún presupuesto, venta, orden de producción u orden de reposición.
 				\paragraph\indent\textbf{Categorías de producto:}
 				\paragraph\indent	
 				Los productos pertenecen a una única categoría y una categoría puede tener cero o más productos. De la categoría se desea saber el nombre y estado (pudiendo ser alta o baja). Las categorías se pueden gestionar (crear, modificar, borrar, dar de alta y dar de baja) por aquellos usuarios que cuenten con  los permisos suficientes. No se pueden borrar categorías que tengan al menos un producto asociado.
@@ -94,7 +104,9 @@
 				\paragraph\indent
 				Las líneas de presupuesto que hayan sido seleccionadas, pasan al estado de utilizados, mientras que las descartadas pasan al estado de no utilizadas. A su vez, el presupuesto utilizado pasa al estado vendido.
 				\paragraph\indent
-				El cliente debe realizar un pago total o parcial y se le solicita, en caso que no lo haya otorgado, su número de teléfono, una dirección e información de entrega (nombre y apellido de la persona que recibirá el o los productos en la dirección de entrega), siendo de carácter obligatorio el número de teléfono. Una venta tiene un cliente, código de identificación, una o más facturas, uno o más recibos, fecha de venta, monto total, una o más líneas de producto, una orden de producción, uno o más remitos, ubicación donde se genera la venta, un usuario asociado y un estado. Dichos datos serán obligatorios.
+				El cliente debe realizar un pago total o parcial y se le solicita, en caso que no lo haya otorgado, su número de teléfono, una dirección e información de entrega (nombre y apellido de la persona que recibirá el o los productos en la dirección de entrega), siendo de carácter obligatorio el número de teléfono. 
+				\paragraph\indent
+				Una venta tiene un cliente, código de identificación, una o más facturas, uno o más recibos, fecha de venta, monto total, una o más líneas de producto, una orden de producción, uno o más remitos, ubicación donde se genera la venta, un usuario asociado y un estado. Dichos datos serán obligatorios.
 				\paragraph\indent
 				Los posibles estados de una venta son los siguientes:
 				\begin{itemize}
@@ -182,9 +194,12 @@
 \textbf{Dependencias:} No posee dependencias.
 
 \section{Requisitos de usuario y tecnológicos}
+\paragraph\indent
 \textbf{Requisitos de usuario:} Los usuarios serán todas aquellas personas mayores de 18 años que puedan acceder a la aplicación Web, sean empleados de la empresa Zimmerman Muebles SRL y tengan una dirección de correo electrónico. Las interfaces deben ser intuitivas, fáciles de usar y amigables, de manera que con unas breves instrucciones sean capaces de usarla.
-
-\textbf{Requisitos tecnológicos:} En vista de que la aplicación debe correr en diferentes navegadores de diferentes dispositivos, y teniendo en cuenta un futuro crecimiento de ZM Gestión, se optará por un entorno económico y fácil de instalar. La aplicación se ejecutará sobre un esquema Cliente/Servidor Internet, con los procesos ejecutándose parte en el servidor web y de bases de datos, y la interfaz de usuario y procesos de interfaz ejecutándose en los clientes y éstos solicitando requerimientos al servidor vía el protocolo HTTP. El navegador del cliente debe ser HTML 2.0 compatible y los servidores serán dimensionados en base a los servicios web, de bases de datos y conexiones simultáneas; la aplicación debe estar disponible en un régimen de 24x7 y el número esperado de usuarios será de 100, con un factor de simultaneidad de 40 porciento. 
+\paragraph\indent
+\textbf{Requisitos tecnológicos:} En vista de que la aplicación debe correr en diferentes navegadores de diferentes dispositivos, y teniendo en cuenta un futuro crecimiento de ZMGestion, se optará por un entorno económico y fácil de instalar. La aplicación se ejecutará sobre un esquema Cliente/Servidor Internet, con los procesos ejecutándose parte en el servidor web y de bases de datos, y la interfaz de usuario y procesos de interfaz ejecutándose en los clientes y éstos solicitando requerimientos al servidor vía el protocolo HTTP. 
+\paragraph\indent
+El navegador del cliente debe ser HTML 2.0 compatible y los servidores serán dimensionados en base a los servicios web, de bases de datos y conexiones simultáneas; la aplicación debe estar disponible en un régimen de 24x7 y el número esperado de usuarios será de 100, con un factor de simultaneidad de 40 porciento. 
 
 \section{Requisitos de interfaces externas}
 \textbf{Interfaces de usuario:} La interfaz de usuario debe ser web responsive.
