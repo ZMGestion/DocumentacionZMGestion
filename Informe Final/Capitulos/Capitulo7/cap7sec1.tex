@@ -22,7 +22,13 @@ Es un tipo de método de prueba que permite detectar errores internos del códig
 
 \paragraph\indent
 Con estas pruebas de pueden garantizar que se ejercitan por lo menos una vez todos los caminos independientes de cada módulo, que las decisiones lógicas se evalúan en sus variantes verdadera y falsa, que se ejecutan todos los bucles en sus límites operacionales y, por último, que se ejercitan las estructuras internas de datos para asegurar su validez.
-	
+
+\paragraph\indent
+Para realizar este test se utilizaron distintos conjuntos de datos, de manera tal que se atraviesen todas las bifuraciones del código. Los resultados de este test fueron exitosos. 
+
+\paragraph\indent
+Existe una herramienta para realizar tests automatizados que viene incorporado con Golang, el paquete test.
+
 \section{Test de módulos}
 \subsection{Pruebas de caja negra}
 
@@ -35,6 +41,9 @@ Se ve a cada módulo como una caja negra y se generan conjuntos de condiciones d
 	\item Errores de rendimiento.
 	\item Errores de inicialización y terminación.
 \end{itemize}
+
+\paragraph\indent
+Para realizar este test se eligieron datos representativos del dominio, verificando sus salidas. Los resultados de este test fueron exitosos.
 
 \subsection{Prueba de estrés}
 
@@ -65,3 +74,5 @@ La prueba \textalpha \, es conducida por el cliente en el lugar de desarrollo. S
 La prueba \textbeta \,se lleva a cabo en uno o más lugares de clientes, por los usuarios finales de software. El encargado de desarrollo a cabo no está presente. El cliente registra todos los problemas (reales e imaginarios) que encuentra durante la prueba e informa a intervalos regulares al equipo de desarrollo.
 
 Tanto los planes como los procedimientos de prueba, estarán diseñados para asegurar que se satisfacen todos los requisitos funcionales y que se alcanzan todos los requisitos de rendimientos.
+
+Los tests de aceptación fueron realizados con el cliente en la mueblería, verificando el funcionamiento del sistema y que el mismo cumpla con las expectativas del cliente. Los resultados fueron exitosos.

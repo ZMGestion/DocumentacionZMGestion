@@ -3,12 +3,12 @@
 
 \renewcommand{\caseUseCreated}{27/01/2020} %Fecha creación
 \renewcommand{\caseUseModified}{27/01/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CUdarBajaEmpleado - Dar de baja empleado} %{\CUcammelCase - Title}
+\renewcommand{\caseUseName}{CU05 - Dar de baja empleado} %{\CUcammelCase - Title}
 
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador dar de baja un empleado que se encuentra en el estado de Activo.} %Resumen
 \renewcommand{\caseUsePeople}{Administradores: quiere dar de baja un empleado que se encuentra en estado Activo.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoEmpleados (Buscar avanzado empleados).} %Precondiciones
+	\caseUseRow{Haber realizado con éxito el CU04 (Buscar avanzado empleados).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Se cierra la sesión del empleado que se está dando de baja.} %Postcondiciones
@@ -25,7 +25,7 @@
     \caseUseRow{El escenario vuelve al punto 1.}
 }
 
-\item Caso de uso \caseUseName
+%\item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 
 %DIAGRAMA DE ACTIVIDAD

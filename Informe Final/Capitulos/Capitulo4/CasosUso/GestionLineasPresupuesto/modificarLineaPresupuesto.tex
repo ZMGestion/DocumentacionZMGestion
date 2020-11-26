@@ -3,15 +3,15 @@
 
 \renewcommand{\caseUseCreated}{04/02/2020} %Fecha creación
 \renewcommand{\caseUseModified}{04/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CUmodificarLineaPresupuesto\ - Modificar linea de presupuesto} %{\CUcammelCase - Title}
+\renewcommand{\caseUseName}{CU73 - Modificar linea de presupuesto} %{\CUcammelCase - Title}
 
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor modificar una linea de presupuesto.} %Resumen
 \renewcommand{\caseUsePeople}{Vendedores: quiere modificar una linea de presupuesto.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasPresupuesto (Listar lineas de presupuesto)} %Precondiciones
+	\caseUseRow{Haber ejecutado con éxito el CU71 (Listar lineas de presupuesto)} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
-	\caseUseRow{Si el producto, tela y lustre seleccionado no pertenece a ningún producto final existente se ejecuta el \CUcrearProductoFinal\ (Crear producto final) con el producto, tela y lustre seleccionados.} %Postcondiciones
+	\caseUseRow{Si el producto, tela y lustre seleccionado no pertenece a ningún producto final existente se ejecuta el CU25 (Crear producto final) con el producto, tela y lustre seleccionados.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El vendedor indica la linea de presupuesto que desea modificar.}
@@ -43,7 +43,7 @@
     \caseUseRow{El escenario vuelve al punto 4.}
 }
 
-\item Caso de uso \caseUseName
+%\item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 
 %DIAGRAMA DE ACTIVIDAD

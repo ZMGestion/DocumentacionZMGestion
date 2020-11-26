@@ -3,7 +3,7 @@
 
 \renewcommand{\caseUseCreated}{04/02/2020} %Fecha creación
 \renewcommand{\caseUseModified}{04/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CUcrearPresupuesto - Crear presupuesto} %{\CUcammelCase - Title}
+\renewcommand{\caseUseName}{CU64 - Crear presupuesto} %{\CUcammelCase - Title}
 
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion crear un presupuesto para un determinado cliente.} %Resumen
 \renewcommand{\caseUsePeople}{Vendedores: quiere crear un presupuesto.} %Actor: Meta
@@ -18,7 +18,7 @@
     \addCaseUseStep{ZMGestion le muestra un formulario para que el vendedor seleccione un cliente y observaciones. Además se muestra un campo autocompletado con el periodo de validez, si tiene permisos puede modificarlo. Indicando que el cliente es obligatorio. }
     \addCaseUseStep{El vendedor selecciona un cliente, ingresa observaciones y modifica el periodo de validez.}%3
     \addCaseUseStep{ZMGestion crea un presupuesto en estado de `En creación' para el cliente con el periodo de validez y observaciones ingresado por el vendedor.}%4
-    \addCaseUseStep{Si el vendedor desea agregar una linea de presupuesto se ejecuta el \CUcrearLineaPresupuesto (Crear linea de presupuesto). Si el vendedor desea borrar una linea de presupuesto se ejecuta el \CUborrarLineaPresupuesto (Borrar linea de presupuesto). Si el vendedor desea modificar una linea de presupuesto se ejecuta el \CUmodificarLineaPresupuesto (Modificar linea de presupuesto).}%5
+    \addCaseUseStep{Si el vendedor desea agregar una linea de presupuesto se ejecuta el CU72 (Crear linea de presupuesto). Si el vendedor desea borrar una linea de presupuesto se ejecuta el CU74 (Borrar linea de presupuesto). Si el vendedor desea modificar una linea de presupuesto se ejecuta el CU73 (Modificar linea de presupuesto).}%5
     \addCaseUseStep{ZMGestión pasa el estado del presupuesto a `Creado' y muestra un mensaje indicando el éxito de la operacion.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
@@ -34,7 +34,7 @@
     \caseUseRow{}
 }
 
-\item Caso de uso \caseUseName
+%\item Caso de uso \caseUseName
 \input{Capitulos/Capitulo4/CasosUso/generalTable.tex}
 
 %DIAGRAMA DE ACTIVIDAD

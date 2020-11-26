@@ -357,163 +357,69 @@
 	\end{figure}
 	\clearpage %salto de pagina
 	\subsection{Descripción textual de los casos de uso y diagramas de actividad}
-		\begin{enumerate}
-			%Sesiones
-			\input{Capitulos/Capitulo4/CasosUso/Sesiones/iniciarSesion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/Sesiones/cerrarSesion.tex}
+		A continuación se encuentran los casos de uso más relevantes del sistema. Los restantes pueden ser consultados en el Anexo.
+		%GestionRemitos
+		\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/crearRemito.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/buscarAvanzadoRemitos.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/cancelarRemito.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/descancelarRemito.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/entregarRemito.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/borrarRemito.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/listarLineasRemito.tex}
 
-			%GestionEmpleados
-			\input{Capitulos/Capitulo4/CasosUso/GestionEmpleados/crearEmpleado.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionEmpleados/buscarAvanzadoEmpleados.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionEmpleados/darBajaEmpleado.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionEmpleados/darAltaEmpleado.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionEmpleados/modificarEmpleado.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionEmpleados/borrarEmpleado.tex}
+		%GestionLineasRemito
+		\input{Capitulos/Capitulo4/CasosUso/GestionLineasRemito/crearLineaRemito.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionLineasRemito/modificarLineaRemito.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionLineasRemito/borrarLineaRemito.tex}
 
-			%GestionRoles
-			\input{Capitulos/Capitulo4/CasosUso/GestionRoles/crearRol.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionRoles/listarRoles.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionRoles/modificarRol.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionRoles/borrarRol.tex}
+		%GestionPresupuestos
+		\input{Capitulos/Capitulo4/CasosUso/GestionPresupuestos/transformarPresupuestosEnVenta.tex}
 
-			%GestionProductos
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductos/crearProducto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductos/buscarAvanzadoProductos.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductos/darBajaProducto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductos/darAltaProducto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductos/modificarProducto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductos/borrarProducto.tex}
+		%GestionVentas
+		\input{Capitulos/Capitulo4/CasosUso/GestionVentas/crearVenta.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionVentas/buscarAvanzadoVentas.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionVentas/listarLineasVenta.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionVentas/modificarVenta.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionVentas/borrarVenta.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionVentas/generarOrdenProduccionDesdeVenta.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionVentas/generarRemitoDesdeVenta.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionVentas/crearComprobante.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionVentas/revisarVenta.tex}
 
-			%GestionTelas
-			\input{Capitulos/Capitulo4/CasosUso/GestionTelas/crearTela.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTelas/listarTelas.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTelas/darBajaTela.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTelas/darAltaTela.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTelas/modificarTela.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTelas/borrarTela.tex}
+		%GestionLineasVenta
+		\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/crearLineaVenta.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/modificarLineaVenta.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/borrarLineaVenta.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/cancelarLineaVenta.tex}
 
-			%GestionProductosFinales
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductosFinales/crearProductoFinal.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductosFinales/buscarAvanzadoProductosFinales.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductosFinales/darBajaProductoFinal.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductosFinales/darAltaProductoFinal.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductosFinales/modificarProductoFinal.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionProductosFinales/borrarProductoFinal.tex}
-
-			%GestionGruposProducto
-			\input{Capitulos/Capitulo4/CasosUso/GestionGruposProducto/crearGrupoProducto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarGruposProducto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darBajaGrupoProducto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionGruposProducto/darAltaGrupoProducto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionGruposProducto/modificarGrupoProducto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionGruposProducto/borrarGrupoProducto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionGruposProducto/listarProductosGrupo.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionGruposProducto/modificarPreciosGrupo.tex}
-	
-			%GestionUbicaciones
-			\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/crearUbicacion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/listarUbicaciones.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darBajaUbicacion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/darAltaUbicacion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/modificarUbicacion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionUbicaciones/borrarUbicacion.tex}
-
-			%GestionRemitos
-			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/crearRemito.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/buscarAvanzadoRemitos.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/cancelarRemito.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/descancelarRemito.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/entregarRemito.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/borrarRemito.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionRemitos/listarLineasRemito.tex}
-
-			%GestionLineasRemito
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasRemito/crearLineaRemito.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasRemito/modificarLineaRemito.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasRemito/borrarLineaRemito.tex}
+		%GestionComprobantes
+		\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/buscarAvanzadoComprobantes.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/modificarComprobante.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/borrarComprobante.tex}
 		
-			%GestionClientes
-			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/crearCliente.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/buscarAvanzadoClientes.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/darBajaCliente.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/darAltaCliente.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/modificarCliente.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/borrarCliente.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionClientes/listarDomicilios.tex}
+		%GestionOrdenesProduccion
+		\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/crearOrdenProduccion.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/buscarAvanzadoOrdenesProduccion.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/modificarOrdenProduccion.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/listarLineasOrdenProduccion.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/borrarOrdenProduccion.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/cancelarOrdenProduccion.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/listarTareasLineaOrdenProduccion.tex}
 
-			%GestionDomicilios
-			\input{Capitulos/Capitulo4/CasosUso/GestionDomicilios/crearDomicilio.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionDomicilios/borrarDomicilio.tex}
-
-			%GestionPresupuestos
-			\input{Capitulos/Capitulo4/CasosUso/GestionPresupuestos/crearPresupuesto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionPresupuestos/buscarAvanzadoPresupuestos.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionPresupuestos/modificarPresupuesto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionPresupuestos/borrarPresupuesto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionPresupuestos/transformarPresupuestosEnVenta.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionPresupuestos/generarPresupuestoPDF.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionPresupuestos/enviarPresupuestoEmail.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionPresupuestos/listarLineasPresupuesto.tex}
-
-			%GestionLineasPresupuesto
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasPresupuesto/crearLineaPresupuesto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasPresupuesto/modificarLineaPresupuesto.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasPresupuesto/borrarLineaPresupuesto.tex}
-
-			%GestionVentas
-			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/crearVenta.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/buscarAvanzadoVentas.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/listarLineasVenta.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/modificarVenta.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/borrarVenta.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/generarOrdenProduccionDesdeVenta.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/generarRemitoDesdeVenta.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/crearComprobante.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionVentas/revisarVenta.tex}
-
-			%GestionLineasVenta
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/crearLineaVenta.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/modificarLineaVenta.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/borrarLineaVenta.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasVenta/cancelarLineaVenta.tex}
-
-			%GestionComprobantes
-			\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/buscarAvanzadoComprobantes.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/modificarComprobante.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionComprobantes/borrarComprobante.tex}
-			
-			%GestionOrdenesProduccion
-			\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/crearOrdenProduccion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/buscarAvanzadoOrdenesProduccion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/modificarOrdenProduccion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/listarLineasOrdenProduccion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/borrarOrdenProduccion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/cancelarOrdenProduccion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionOrdenesProduccion/listarTareasLineaOrdenProduccion.tex}
-
-			%GestionLineasOrdenesProduccion
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/crearLineaOrdenProduccion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/modificarLineaOrdenProduccion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/borrarLineaOrdenProduccion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/verificarLineaOrdenProduccion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/cancelarLineaOrdenProduccion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/reanudarLineaOrdenProduccion.tex}
-
-			%GestionObservaciones
-			\input{Capitulos/Capitulo4/CasosUso/GestionObservaciones/crearObservacion.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionObservaciones/listarObservaciones.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionObservaciones/borrarObservacion.tex}
-			
-			%GestionTareas
-			\input{Capitulos/Capitulo4/CasosUso/GestionTareas/crearTarea.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTareas/borrarTarea.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTareas/finalizarTarea.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTareas/verificarTarea.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTareas/pausarTarea.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTareas/reanudarTarea.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTareas/cancelarTarea.tex}
-			\input{Capitulos/Capitulo4/CasosUso/GestionTareas/ejecutarTarea.tex}
-		\end{enumerate}
+		%GestionLineasOrdenesProduccion
+		\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/verificarLineaOrdenProduccion.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/cancelarLineaOrdenProduccion.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionLineasOrdenesProduccion/reanudarLineaOrdenProduccion.tex}
+		
+		%GestionTareas
+		\input{Capitulos/Capitulo4/CasosUso/GestionTareas/crearTarea.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionTareas/borrarTarea.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionTareas/finalizarTarea.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionTareas/verificarTarea.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionTareas/pausarTarea.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionTareas/reanudarTarea.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionTareas/cancelarTarea.tex}
+		\input{Capitulos/Capitulo4/CasosUso/GestionTareas/ejecutarTarea.tex}
 
 	\subsection{Diagrama de clases}
 	\begin{figure}[H]
@@ -576,9 +482,45 @@
 	\subsection{Ficha técnica de clases}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{DiagramaClases/Vistas/fichaTecnicaClases}
-		\caption{Diagrama de clases - Ficha técnica de clases}
-	\label{fig:Modelo de clases - Ficha técnica de clases}
+		\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{DiagramaClases/Vistas/fichaTecnicaClases1}
+		\caption{Diagrama de clases - Ficha técnica de clases (Parte 1)}
+	\label{fig:Modelo de clases - Ficha técnica de clases 1}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{DiagramaClases/Vistas/fichaTecnicaClases2}
+		\caption{Diagrama de clases - Ficha técnica de clases (Parte 2)}
+	\label{fig:Modelo de clases - Ficha técnica de clases 2}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{DiagramaClases/Vistas/fichaTecnicaClases3}
+		\caption{Diagrama de clases - Ficha técnica de clases (Parte 3)}
+	\label{fig:Modelo de clases - Ficha técnica de clases 3}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{DiagramaClases/Vistas/fichaTecnicaClases4}
+		\caption{Diagrama de clases - Ficha técnica de clases (Parte 4)}
+	\label{fig:Modelo de clases - Ficha técnica de clases 4}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{DiagramaClases/Vistas/fichaTecnicaClases5}
+		\caption{Diagrama de clases - Ficha técnica de clases (Parte 5)}
+	\label{fig:Modelo de clases - Ficha técnica de clases 5}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{DiagramaClases/Vistas/fichaTecnicaClases6}
+		\caption{Diagrama de clases - Ficha técnica de clases (Parte 6)}
+	\label{fig:Modelo de clases - Ficha técnica de clases 6}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{DiagramaClases/Vistas/fichaTecnicaClases7}
+		\caption{Diagrama de clases - Ficha técnica de clases (Parte 7)}
+	\label{fig:Modelo de clases - Ficha técnica de clases 7}
 	\end{figure}
 
 	
