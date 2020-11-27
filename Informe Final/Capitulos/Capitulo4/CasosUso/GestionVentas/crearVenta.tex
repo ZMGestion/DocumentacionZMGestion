@@ -18,7 +18,7 @@
     \addCaseUseStep{El vendedor selecciona un cliente e ingresa observaciones.}%3
     \addCaseUseStep{ZMGestion crea una venta en estado de `En creación' para el cliente seleccionado.}%4
     \addCaseUseStep{Si el vendedor desea agregar una linea de venta se ejecuta el \CUcrearLineaVenta\ (Crear linea de venta). Si el vendedor desea quitar una linea de venta ejecuta el \CUborrarLineaVenta\ (Borrar linea de venta). Si el vendedor desea modificar una linea de venta se ejecuta el \CUmodificarLineaVenta\ (Modificar linea de venta)}%5
-    \addCaseUseStep{ZMGestion verifica que todas las lineas de venta tengan el precio actual del producto a vender.}%6
+    \addCaseUseStep{ZMGestion verifica que todas las líneas de venta tengan el precio actual del producto a vender.}%6
     \addCaseUseStep{ZMGestion pasa el estado de la venta a `Pendiente' y muestra un mensaje indicando el éxito de la operación.}%7
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
@@ -32,7 +32,7 @@
     \alternativeRow{ZMGestion muestra un mensaje de error indicando que debe agregar al menos una linea de venta.}
     \caseUseRow{El escenario vuelve al punto 5.}
     \caseUseRow{}
-    \newAlternative{A3: Alguna de las lineas de venta tiene un precio diferente al actual para el producto indicado.}{6} %Flujo alternativo A2.
+    \newAlternative{A3: Alguna de las líneas de venta tiene un precio diferente al actual para el producto indicado.}{6} %Flujo alternativo A2.
     \caseUseRow{La secuencia A2 comienza luego del punto 6 del escenario principal.}%¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje indicando que un administrador debe revisar la venta y pasa la venta al estado de `En revisión'.}
     \caseUseRow{}

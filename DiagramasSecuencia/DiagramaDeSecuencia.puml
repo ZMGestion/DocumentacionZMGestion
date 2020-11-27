@@ -75,7 +75,7 @@
     opt Nuevo
         Vendedores -> GestionClientes: buscarAvanzado(c Clientes)
         Vendedores -> GestionPresupuestos: crear(p Presupuestos)
-        loop Gestionar lineas presupuesto
+        loop Gestionar líneas presupuesto
             opt Nueva linea
                 Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                 Vendedores -> GestionProductosFinales: listarLustres()
@@ -95,7 +95,7 @@
         Vendedores -> GestionPresupuestos: buscarAvanzado(p Presupuestos)
         opt Modificar
             Vendedores -> Presupuestos: listarLineasPresupuesto()
-            loop Gestionar lineas presupuesto
+            loop Gestionar líneas presupuesto
                 opt Nueva linea
                     Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                     Vendedores -> GestionProductosFinales: listarLustres()
@@ -125,7 +125,7 @@
                 Vendedores -> Presupuestos: listarLineasPresupuesto()
             end
             Vendedores -> GestionPresupuestos: transformarPresupuestosEnVenta(lp List<LineasPresupuesto>)
-            loop Gestionar lineas venta
+            loop Gestionar líneas venta
                 opt Nueva linea
                     Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                     Vendedores -> GestionProductosFinales: listarLustres()
@@ -165,7 +165,7 @@
         Vendedores -> GestionClientes: buscarAvanzado(c Clientes)
         Vendedores -> Clientes: listarDomicilios()
         Vendedores -> GestionVentas: crear(v Ventas)
-        loop Gestionar lineas venta
+        loop Gestionar líneas venta
             opt Nueva linea
                 Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                 Vendedores -> GestionProductosFinales: listarLustres()
@@ -186,7 +186,7 @@
         opt Modificar
             Vendedores -> Ventas: listarLineasVenta()
             Vendedores -> Clientes: listarDomicilios()
-            loop Gestionar lineas venta
+            loop Gestionar líneas venta
                 opt Nueva linea
                     Vendedores -> GestionProductos: buscarAvanzado(p Productos)
                     Vendedores -> GestionProductosFinales: listarLustres()
@@ -210,13 +210,13 @@
             loop Por cada linea de venta seleccionada
                 Vendedores -> LineasVenta: crearLineaProductoHija(lop LineasOrdenProduccion)
             end
-            loop Gestionar lineas orden produccion
+            loop Gestionar líneas orden produccion
                 opt Borrar linea
                     Vendedores -> OrdenesProduccion: borrarLineaOrdenProduccion(lop LineasOrdenProduccion)
                 end
             end
             Vendedores -> OrdenesProduccion: pasarAPendiente()
-        else Reservar lineas
+        else Reservar líneas
             Vendedores -> Ventas: listarLineasVenta()
             loop Por cada linea de venta
                 Vendedores -> ProductosFinales: dameStock()
@@ -229,7 +229,7 @@
                 Vendedores -> GestionRemitos: crear(r Remitos)
                 loop Por cada linea de venta seleccionada
                     Vendedores -> LineasVenta: crearLineaProductoHija(lr LineasRemito)
-                    ' se crean las lineas de remito dado que se debe asociar la ubicacion de la cual
+                    ' se crean las líneas de remito dado que se debe asociar la ubicacion de la cual
                     ' se sacaran cada linea
                 end
             end

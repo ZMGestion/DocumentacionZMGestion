@@ -338,7 +338,7 @@ rectangle GestionRemitos{
     UseCase "CU048 - Descancelar remito" as Descancelar
     UseCase "CU049 - Entregar remito" as Entregar
     UseCase "CU050 - Borrar remito" as B
-    UseCase "CU051 - Listar lineas remito" as Listar
+    UseCase "CU051 - Listar líneas remito" as Listar
     package GestionLineasRemito{
     }
     
@@ -455,7 +455,7 @@ rectangle GestionPrespuestos{
     UseCase "CU068 - Transformar presupuestos en venta" as Transformar
     UseCase "CU069 - Generar presupuesto en formato PDF" as PDF
     UseCase "CU070 - Enviar presupuesto por correo electrónico" as Enviar
-    UseCase "CU071 - Listar lineas de presupuesto" as Listar
+    UseCase "CU071 - Listar líneas de presupuesto" as Listar
     package GestionLineasPresupuesto{
     }
 
@@ -496,7 +496,7 @@ rectangle GestionLineasPresupuesto{
 rectangle GestionVentas{
     UseCase "CU075 - Crear venta" as C
     UseCase "CU076 - Buscar avanzado ventas " as BA
-    UseCase "CU077 - Listar lineas de venta " as Listar
+    UseCase "CU077 - Listar líneas de venta " as Listar
     UseCase "CU078 - Modificar venta" as M
     UseCase "CU079 - Borrar venta" as B
     UseCase "CU080 - Generar orden de producción a partir de venta" as GenerarOrden
@@ -571,7 +571,7 @@ rectangle GestionOrdenesProduccion{
     UseCase "CU091 - Crear orden de producción" as C
     UseCase "CU092 - Buscar avanzado órdenes de producción " as BA
     UseCase "CU093 - Modificar orden de producción" as M
-    UseCase "CU094 - Listar lineas de orden de producción" as ListarLineas
+    UseCase "CU094 - Listar líneas de orden de producción" as ListarLineas
     UseCase "CU095 - Borrar orden de producción" as B
     UseCase "CU096 - Cancelar orden de producción" as Cancelar
     UseCase "CU097 - Listar tareas de línea de orden de producción" as ListarTareas

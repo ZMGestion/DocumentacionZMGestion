@@ -5,7 +5,7 @@
 \renewcommand{\caseUseModified}{05/03/2020} %Fecha modificación
 \renewcommand{\caseUseName}{\CUrevisarVenta - Revisar venta} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion revisar una venta en donde una de las lineas tiene el precio desactualizado para aceptar o rechazar su creación.} %Resumen
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion revisar una venta en donde una de las líneas tiene el precio desactualizado para aceptar o rechazar su creación.} %Resumen
 \renewcommand{\caseUsePeople}{Administradores: quiere aceptar o rechazar la creación de una venta con precio desactualizado.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoVentas\ (Buscar avanzado ventas).} %Precondiciones
@@ -16,7 +16,7 @@
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El administrador selecciona una venta que desea revisar.}
     \addCaseUseStep{ZMGestion muestra el cliente al cual pertenece la venta y se ejecuta el \CUlistarLineasVenta para la venta seleccionada.}
-    \addCaseUseStep{ZMGestion indica las lineas de venta que tienen el precio desactualizado.}
+    \addCaseUseStep{ZMGestion indica las líneas de venta que tienen el precio desactualizado.}
     \addCaseUseStep{Si el administrador desea aceptar la venta se pasa la venta a estado `Pendiente'. Si el administrador desea rechazar la venta se pasa la venta a estado `Cancelada'.}
     \addCaseUseStep{ZMGestion muestra un mensaje indicando el éxito de la operación.}
 }

@@ -3,10 +3,10 @@
 
 \renewcommand{\caseUseCreated}{13/02/2020} %Fecha creación
 \renewcommand{\caseUseModified}{13/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{\CUlistarLineasVenta - Listar lineas de venta} %{\CUcammelCase - Title}
+\renewcommand{\caseUseName}{\CUlistarLineasVenta - Listar líneas de venta} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion listar las lineas de venta de una venta determinada.} %Resumen
-\renewcommand{\caseUsePeople}{Vendedores: quiere listar las lineas de venta de una venta existente.} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion listar las líneas de venta de una venta determinada.} %Resumen
+\renewcommand{\caseUsePeople}{Vendedores: quiere listar las líneas de venta de una venta existente.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber realizado con éxito el \CUbuscarAvanzadoVentas\ (Buscar avanzado ventas).} %Precondiciones
 }
@@ -14,11 +14,11 @@
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{El vendedor indica la venta a la cual desea listar sus lineas de venta.}
-    \addCaseUseStep{ZMGestion lista las lineas de venta existentes de la venta seleccionada.}
+    \addCaseUseStep{El vendedor indica la venta a la cual desea listar sus líneas de venta.}
+    \addCaseUseStep{ZMGestion lista las líneas de venta existentes de la venta seleccionada.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: La venta no posee lineas de venta.}{1} %Flujo alternativo A1.
+	\newAlternative{A1: La venta no posee líneas de venta.}{1} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje indicando que la venta seleccionada no posee ninguna linea de venta.}
     \caseUseRow{El escenario vuelve al punto 1.}
