@@ -8,14 +8,14 @@
 \renewcommand{\caseUseSummary}{Este caso de uso permite a un administrador de ZMGestion verificar que una línea de orden de producción (cuyas tareas se encuentran finalizadas) efectivamente se ha finalizado.} %Resumen
 \renewcommand{\caseUsePeople}{Administradores: quiere verificar que una línea de orden de producción está finalizada.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
-	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasOrdenProduccion (Listar lineas de orden de producción).} %Precondiciones
+	\caseUseRow{Haber ejecutado con éxito el \CUlistarLineasOrdenProduccion (Listar líneas de orden de producción).} %Precondiciones
 }
 \renewcommand{\caseUsePostconditions}{
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
     \addCaseUseStep{El administrador indica la línea de orden de producción que desea verificar que esta finalizada.}
-    \addCaseUseStep{ZMGestion pasa la línea de orden de producción al estado `Verificada' y en caso de tener una venta asociada reserva los productos fabricados para el cliente, pasando las lineas de venta utilizadas para generar la orden de produccion al estado `Reservada'.}
+    \addCaseUseStep{ZMGestion pasa la línea de orden de producción al estado `Verificada' y en caso de tener una venta asociada reserva los productos fabricados para el cliente, pasando las líneas de venta utilizadas para generar la orden de produccion al estado `Reservada'.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
 	\newAlternative{A1: La línea de orden de producción no se encuentra en estado `En producción' o sus tareas no están todas finalizadas.}{1} %Flujo alternativoA1.

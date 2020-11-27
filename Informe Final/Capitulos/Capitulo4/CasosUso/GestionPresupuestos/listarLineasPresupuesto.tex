@@ -3,10 +3,10 @@
 
 \renewcommand{\caseUseCreated}{04/02/2020} %Fecha creación
 \renewcommand{\caseUseModified}{04/02/2020} %Fecha modificación
-\renewcommand{\caseUseName}{CU71 - Listar lineas de presupuesto} %{\CUcammelCase - Title}
+\renewcommand{\caseUseName}{CU71 - Listar líneas de presupuesto} %{\CUcammelCase - Title}
 
-\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion listar las lineas de presupuesto de un presupuesto determinado.} %Resumen
-\renewcommand{\caseUsePeople}{Vendedores: quiere listar las lineas de presupuesto de un presupuesto existente.} %Actor: Meta
+\renewcommand{\caseUseSummary}{Este caso de uso permite a un vendedor de ZMGestion listar las líneas de presupuesto de un presupuesto determinado.} %Resumen
+\renewcommand{\caseUsePeople}{Vendedores: quiere listar las líneas de presupuesto de un presupuesto existente.} %Actor: Meta
 \renewcommand{\caseUsePreconditions}{
 	\caseUseRow{Haber realizado con éxito el CU65 (Buscar avanzado presupuestos).} %Precondiciones
 }
@@ -14,11 +14,11 @@
 	\caseUseRow{Ninguna.} %Postcondiciones
 }
 \renewcommand{\caseUseScene}{ %Escenario principal
-    \addCaseUseStep{El vendedor indica el presupuesto del cual desea listar sus lineas de presupuesto.}
-    \addCaseUseStep{ZMGestion lista las lineas de presupuesto existentes del presupuesto seleccionado.}
+    \addCaseUseStep{El vendedor indica el presupuesto del cual desea listar sus líneas de presupuesto.}
+    \addCaseUseStep{ZMGestion lista las líneas de presupuesto existentes del presupuesto seleccionado.}
 }
 \renewcommand{\alternativeCaseUse}{ %Flujos alternativos
-	\newAlternative{A1: El presupuesto no posee lineas de presupuesto.}{1} %Flujo alternativo A1.
+	\newAlternative{A1: El presupuesto no posee líneas de presupuesto.}{1} %Flujo alternativo A1.
 	\caseUseRow{La secuencia A1 comienza luego del punto 1 del escenario principal.} %¡Indicar número paso!
     \alternativeRow{ZMGestion muestra un mensaje indicando que el presupuesto seleccionado no posee ninguna linea de presupuesto.}
     \caseUseRow{El escenario vuelve al punto 1.}
